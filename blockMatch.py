@@ -1138,6 +1138,7 @@ def describe_group(nl, blocks, idxs, chains, bit_names):
     kinds = Counter(blocks[i].template.name for i in idxs)
     members = [blocks[i] for i in idxs]
     parts, detail = [], {}
+    
 
     slices = [b for b in members if b.template.name in ADDER_KINDS]
     if slices:
