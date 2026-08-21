@@ -1,0 +1,15 @@
+# Verilator build trees and bookkeeping (recreate with `make`)
+obj_dir_*/
+.stamp.*
+
+# Simulation output (recreate with `make sim`)
+*.vcd
+# ...except the puzzle's own reference stimulus, which is a shipped input.
+!example_inputs.vcd
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store

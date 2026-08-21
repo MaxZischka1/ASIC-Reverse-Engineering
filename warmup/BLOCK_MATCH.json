@@ -1,0 +1,5080 @@
+{
+  "clouds": [
+    {
+      "id": 0,
+      "gates": [
+        "1002:sky130_fd_sc_hd__nand2_2",
+        "1011:sky130_fd_sc_hd__and2_2",
+        "1048:sky130_fd_sc_hd__a31o_2",
+        "1052:sky130_fd_sc_hd__xnor2_2",
+        "1069:sky130_fd_sc_hd__or2_2",
+        "1070:sky130_fd_sc_hd__and2_2",
+        "108:sky130_fd_sc_hd__and3_2",
+        "613:sky130_fd_sc_hd__a31o_2",
+        "616:sky130_fd_sc_hd__nor2_2",
+        "617:sky130_fd_sc_hd__nor2_2",
+        "618:sky130_fd_sc_hd__nor2_2",
+        "619:sky130_fd_sc_hd__nor2_2",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "629:sky130_fd_sc_hd__and2_2",
+        "630:sky130_fd_sc_hd__and2_2",
+        "631:sky130_fd_sc_hd__xor2_2",
+        "632:sky130_fd_sc_hd__xor2_2",
+        "633:sky130_fd_sc_hd__xor2_2",
+        "634:sky130_fd_sc_hd__xor2_2",
+        "635:sky130_fd_sc_hd__a31o_2",
+        "636:sky130_fd_sc_hd__or2_2",
+        "639:sky130_fd_sc_hd__and2_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "685:sky130_fd_sc_hd__or2_2",
+        "6:sky130_fd_sc_hd__and4bb_2",
+        "707:sky130_fd_sc_hd__a21bo_2",
+        "711:sky130_fd_sc_hd__and2_2",
+        "761:sky130_fd_sc_hd__nor2_2",
+        "765:sky130_fd_sc_hd__nor2_2",
+        "781:sky130_fd_sc_hd__a21o_2",
+        "841:sky130_fd_sc_hd__or2_2",
+        "844:sky130_fd_sc_hd__nor2_2",
+        "852:sky130_fd_sc_hd__nand2_2",
+        "864:sky130_fd_sc_hd__and2_2",
+        "866:sky130_fd_sc_hd__a31o_2",
+        "895:sky130_fd_sc_hd__or2_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "917:sky130_fd_sc_hd__a31o_2",
+        "972:sky130_fd_sc_hd__xor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2",
+        "976:sky130_fd_sc_hd__nand2_2",
+        "978:sky130_fd_sc_hd__nand2_2",
+        "989:sky130_fd_sc_hd__nor2_2"
+      ],
+      "sources": [
+        {
+          "net": "1542",
+          "kind": "register",
+          "from": "180:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1542(DFRTP#180.Q)"
+        },
+        {
+          "net": "1646",
+          "kind": "register",
+          "from": "387:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1646(DFRTP#387.Q)"
+        },
+        {
+          "net": "1811",
+          "kind": "register",
+          "from": "368:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1811(DFRTP#368.Q)"
+        },
+        {
+          "net": "1881",
+          "kind": "register",
+          "from": "142:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1881(DFRTP#142.Q)"
+        },
+        {
+          "net": "1900",
+          "kind": "register",
+          "from": "141:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1900(DFRTP#141.Q)"
+        },
+        {
+          "net": "1908",
+          "kind": "register",
+          "from": "348:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1908(DFRTP#348.Q)"
+        },
+        {
+          "net": "1957",
+          "kind": "register",
+          "from": "146:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1957(DFRTP#146.Q)"
+        },
+        {
+          "net": "1965",
+          "kind": "register",
+          "from": "453:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1965(DFRTP#453.Q)"
+        },
+        {
+          "net": "1968",
+          "kind": "register",
+          "from": "385:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1968(DFRTP#385.Q)"
+        },
+        {
+          "net": "1988",
+          "kind": "register",
+          "from": "541:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1988(DFRTP#541.Q)"
+        },
+        {
+          "net": "1989",
+          "kind": "register",
+          "from": "433:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1989(DFRTP#433.Q)"
+        },
+        {
+          "net": "2007",
+          "kind": "register",
+          "from": "554:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n2007(DFRTP#554.Q)"
+        },
+        {
+          "net": "2012",
+          "kind": "register",
+          "from": "181:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n2012(DFRTP#181.Q)"
+        },
+        {
+          "net": "2085",
+          "kind": "register",
+          "from": "182:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n2085(DFRTP#182.Q)"
+        },
+        {
+          "net": "2088",
+          "kind": "register",
+          "from": "388:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n2088(DFRTP#388.Q)"
+        },
+        {
+          "net": "2092",
+          "kind": "register",
+          "from": "386:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n2092(DFRTP#386.Q)"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "1877",
+          "label": "S",
+          "to": [
+            {
+              "instance": "PORT:S",
+              "pin": "S"
+            },
+            {
+              "instance": "PORT:S",
+              "pin": "S"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [],
+      "levels": {
+        "1002:sky130_fd_sc_hd__nand2_2": 0,
+        "1069:sky130_fd_sc_hd__or2_2": 0,
+        "1070:sky130_fd_sc_hd__and2_2": 0,
+        "616:sky130_fd_sc_hd__nor2_2": 0,
+        "617:sky130_fd_sc_hd__nor2_2": 0,
+        "618:sky130_fd_sc_hd__nor2_2": 0,
+        "629:sky130_fd_sc_hd__and2_2": 1,
+        "630:sky130_fd_sc_hd__and2_2": 0,
+        "631:sky130_fd_sc_hd__xor2_2": 0,
+        "636:sky130_fd_sc_hd__or2_2": 0,
+        "639:sky130_fd_sc_hd__and2_2": 0,
+        "685:sky130_fd_sc_hd__or2_2": 0,
+        "711:sky130_fd_sc_hd__and2_2": 0,
+        "761:sky130_fd_sc_hd__nor2_2": 1,
+        "765:sky130_fd_sc_hd__nor2_2": 1,
+        "841:sky130_fd_sc_hd__or2_2": 0,
+        "844:sky130_fd_sc_hd__nor2_2": 0,
+        "864:sky130_fd_sc_hd__and2_2": 0,
+        "866:sky130_fd_sc_hd__a31o_2": 1,
+        "895:sky130_fd_sc_hd__or2_2": 0,
+        "976:sky130_fd_sc_hd__nand2_2": 0,
+        "978:sky130_fd_sc_hd__nand2_2": 0,
+        "989:sky130_fd_sc_hd__nor2_2": 1,
+        "1011:sky130_fd_sc_hd__and2_2": 1,
+        "1048:sky130_fd_sc_hd__a31o_2": 1,
+        "1052:sky130_fd_sc_hd__xnor2_2": 1,
+        "613:sky130_fd_sc_hd__a31o_2": 1,
+        "619:sky130_fd_sc_hd__nor2_2": 1,
+        "634:sky130_fd_sc_hd__xor2_2": 2,
+        "707:sky130_fd_sc_hd__a21bo_2": 2,
+        "852:sky130_fd_sc_hd__nand2_2": 1,
+        "917:sky130_fd_sc_hd__a31o_2": 2,
+        "972:sky130_fd_sc_hd__xor2_2": 3,
+        "633:sky130_fd_sc_hd__xor2_2": 3,
+        "635:sky130_fd_sc_hd__a31o_2": 3,
+        "781:sky130_fd_sc_hd__a21o_2": 3,
+        "900:sky130_fd_sc_hd__xnor2_2": 4,
+        "622:sky130_fd_sc_hd__a21boi_2": 4,
+        "623:sky130_fd_sc_hd__o21bai_2": 5,
+        "632:sky130_fd_sc_hd__xor2_2": 4,
+        "6:sky130_fd_sc_hd__and4bb_2": 5,
+        "975:sky130_fd_sc_hd__xnor2_2": 5,
+        "108:sky130_fd_sc_hd__and3_2": 6,
+        "659:sky130_fd_sc_hd__and4bb_2": 7
+      },
+      "loose_gates": [
+        "1002:sky130_fd_sc_hd__nand2_2",
+        "1069:sky130_fd_sc_hd__or2_2",
+        "1070:sky130_fd_sc_hd__and2_2",
+        "616:sky130_fd_sc_hd__nor2_2",
+        "617:sky130_fd_sc_hd__nor2_2",
+        "618:sky130_fd_sc_hd__nor2_2",
+        "630:sky130_fd_sc_hd__and2_2",
+        "631:sky130_fd_sc_hd__xor2_2",
+        "636:sky130_fd_sc_hd__or2_2",
+        "639:sky130_fd_sc_hd__and2_2",
+        "685:sky130_fd_sc_hd__or2_2",
+        "711:sky130_fd_sc_hd__and2_2",
+        "841:sky130_fd_sc_hd__or2_2",
+        "844:sky130_fd_sc_hd__nor2_2",
+        "864:sky130_fd_sc_hd__and2_2",
+        "895:sky130_fd_sc_hd__or2_2",
+        "976:sky130_fd_sc_hd__nand2_2",
+        "978:sky130_fd_sc_hd__nand2_2"
+      ],
+      "fanin2_gates": [
+        "1002:sky130_fd_sc_hd__nand2_2",
+        "1011:sky130_fd_sc_hd__and2_2",
+        "1052:sky130_fd_sc_hd__xnor2_2",
+        "1069:sky130_fd_sc_hd__or2_2",
+        "1070:sky130_fd_sc_hd__and2_2",
+        "616:sky130_fd_sc_hd__nor2_2",
+        "617:sky130_fd_sc_hd__nor2_2",
+        "618:sky130_fd_sc_hd__nor2_2",
+        "619:sky130_fd_sc_hd__nor2_2",
+        "629:sky130_fd_sc_hd__and2_2",
+        "630:sky130_fd_sc_hd__and2_2",
+        "631:sky130_fd_sc_hd__xor2_2",
+        "632:sky130_fd_sc_hd__xor2_2",
+        "633:sky130_fd_sc_hd__xor2_2",
+        "634:sky130_fd_sc_hd__xor2_2",
+        "636:sky130_fd_sc_hd__or2_2",
+        "639:sky130_fd_sc_hd__and2_2",
+        "685:sky130_fd_sc_hd__or2_2",
+        "711:sky130_fd_sc_hd__and2_2",
+        "761:sky130_fd_sc_hd__nor2_2",
+        "765:sky130_fd_sc_hd__nor2_2",
+        "841:sky130_fd_sc_hd__or2_2",
+        "844:sky130_fd_sc_hd__nor2_2",
+        "852:sky130_fd_sc_hd__nand2_2",
+        "864:sky130_fd_sc_hd__and2_2",
+        "895:sky130_fd_sc_hd__or2_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "972:sky130_fd_sc_hd__xor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2",
+        "976:sky130_fd_sc_hd__nand2_2",
+        "978:sky130_fd_sc_hd__nand2_2",
+        "989:sky130_fd_sc_hd__nor2_2"
+      ]
+    },
+    {
+      "id": 1,
+      "gates": [
+        "136:sky130_fd_sc_hd__clkbuf_16",
+        "443:sky130_fd_sc_hd__clkbuf_16",
+        "5:sky130_fd_sc_hd__clkbuf_16"
+      ],
+      "sources": [
+        {
+          "net": "1910",
+          "kind": "port",
+          "from": "clk",
+          "label": "clk"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "1918",
+          "label": "n1918(CLKBUF#136.X)",
+          "to": [
+            {
+              "instance": "141:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "CLK"
+            },
+            {
+              "instance": "142:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "CLK"
+            },
+            {
+              "instance": "146:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "CLK"
+            },
+            {
+              "instance": "180:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "CLK"
+            },
+            {
+              "instance": "181:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "CLK"
+            },
+            {
+              "instance": "182:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "CLK"
+            },
+            {
+              "instance": "348:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "CLK"
+            },
+            {
+              "instance": "368:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "CLK"
+            }
+          ]
+        },
+        {
+          "net": "1976",
+          "label": "n1976(CLKBUF#443.X)",
+          "to": [
+            {
+              "instance": "385:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "CLK"
+            },
+            {
+              "instance": "386:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "CLK"
+            },
+            {
+              "instance": "387:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "CLK"
+            },
+            {
+              "instance": "388:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "CLK"
+            },
+            {
+              "instance": "433:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "CLK"
+            },
+            {
+              "instance": "453:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "CLK"
+            },
+            {
+              "instance": "541:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "CLK"
+            },
+            {
+              "instance": "554:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "CLK"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "141:sky130_fd_sc_hd__dfrtp_2",
+        "142:sky130_fd_sc_hd__dfrtp_2",
+        "146:sky130_fd_sc_hd__dfrtp_2",
+        "180:sky130_fd_sc_hd__dfrtp_2",
+        "181:sky130_fd_sc_hd__dfrtp_2",
+        "182:sky130_fd_sc_hd__dfrtp_2",
+        "348:sky130_fd_sc_hd__dfrtp_2",
+        "368:sky130_fd_sc_hd__dfrtp_2",
+        "385:sky130_fd_sc_hd__dfrtp_2",
+        "386:sky130_fd_sc_hd__dfrtp_2",
+        "387:sky130_fd_sc_hd__dfrtp_2",
+        "388:sky130_fd_sc_hd__dfrtp_2",
+        "433:sky130_fd_sc_hd__dfrtp_2",
+        "453:sky130_fd_sc_hd__dfrtp_2",
+        "541:sky130_fd_sc_hd__dfrtp_2",
+        "554:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "5:sky130_fd_sc_hd__clkbuf_16": 0,
+        "136:sky130_fd_sc_hd__clkbuf_16": 1,
+        "443:sky130_fd_sc_hd__clkbuf_16": 1
+      },
+      "loose_gates": [
+        "5:sky130_fd_sc_hd__clkbuf_16"
+      ],
+      "fanin2_gates": []
+    },
+    {
+      "id": 2,
+      "gates": [
+        "379:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "net": "1972",
+          "kind": "port",
+          "from": "B",
+          "label": "B"
+        },
+        {
+          "net": "1988",
+          "kind": "register",
+          "from": "541:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1988(DFRTP#541.Q)"
+        },
+        {
+          "net": "1996",
+          "kind": "port",
+          "from": "en",
+          "label": "en"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "5782",
+          "label": "n5782(MUX2#379.X)",
+          "to": [
+            {
+              "instance": "541:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "541:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "379:sky130_fd_sc_hd__mux2_1": 0
+      },
+      "loose_gates": [
+        "379:sky130_fd_sc_hd__mux2_1"
+      ],
+      "fanin2_gates": []
+    },
+    {
+      "id": 3,
+      "gates": [
+        "369:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "net": "1989",
+          "kind": "register",
+          "from": "433:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1989(DFRTP#433.Q)"
+        },
+        {
+          "net": "1996",
+          "kind": "port",
+          "from": "en",
+          "label": "en"
+        },
+        {
+          "net": "2088",
+          "kind": "register",
+          "from": "388:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n2088(DFRTP#388.Q)"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "5645",
+          "label": "n5645(MUX2#369.X)",
+          "to": [
+            {
+              "instance": "388:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "388:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "369:sky130_fd_sc_hd__mux2_1": 0
+      },
+      "loose_gates": [
+        "369:sky130_fd_sc_hd__mux2_1"
+      ],
+      "fanin2_gates": []
+    },
+    {
+      "id": 4,
+      "gates": [
+        "603:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "net": "1996",
+          "kind": "port",
+          "from": "en",
+          "label": "en"
+        },
+        {
+          "net": "2088",
+          "kind": "register",
+          "from": "388:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n2088(DFRTP#388.Q)"
+        },
+        {
+          "net": "2092",
+          "kind": "register",
+          "from": "386:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n2092(DFRTP#386.Q)"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "1999",
+          "label": "n1999(MUX2#603.X)",
+          "to": [
+            {
+              "instance": "386:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "386:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "603:sky130_fd_sc_hd__mux2_1": 0
+      },
+      "loose_gates": [
+        "603:sky130_fd_sc_hd__mux2_1"
+      ],
+      "fanin2_gates": []
+    },
+    {
+      "id": 5,
+      "gates": [
+        "138:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "net": "1881",
+          "kind": "register",
+          "from": "142:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1881(DFRTP#142.Q)"
+        },
+        {
+          "net": "1957",
+          "kind": "register",
+          "from": "146:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1957(DFRTP#146.Q)"
+        },
+        {
+          "net": "1996",
+          "kind": "port",
+          "from": "en",
+          "label": "en"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "1949",
+          "label": "n1949(MUX2#138.X)",
+          "to": [
+            {
+              "instance": "142:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "142:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "138:sky130_fd_sc_hd__mux2_1": 0
+      },
+      "loose_gates": [
+        "138:sky130_fd_sc_hd__mux2_1"
+      ],
+      "fanin2_gates": []
+    },
+    {
+      "id": 6,
+      "gates": [
+        "404:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "net": "1646",
+          "kind": "register",
+          "from": "387:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1646(DFRTP#387.Q)"
+        },
+        {
+          "net": "1968",
+          "kind": "register",
+          "from": "385:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1968(DFRTP#385.Q)"
+        },
+        {
+          "net": "1996",
+          "kind": "port",
+          "from": "en",
+          "label": "en"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "2003",
+          "label": "n2003(MUX2#404.X)",
+          "to": [
+            {
+              "instance": "387:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "387:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "404:sky130_fd_sc_hd__mux2_1": 0
+      },
+      "loose_gates": [
+        "404:sky130_fd_sc_hd__mux2_1"
+      ],
+      "fanin2_gates": []
+    },
+    {
+      "id": 7,
+      "gates": [
+        "418:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "net": "1996",
+          "kind": "port",
+          "from": "en",
+          "label": "en"
+        },
+        {
+          "net": "2007",
+          "kind": "register",
+          "from": "554:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n2007(DFRTP#554.Q)"
+        },
+        {
+          "net": "2092",
+          "kind": "register",
+          "from": "386:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n2092(DFRTP#386.Q)"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "2000",
+          "label": "n2000(MUX2#418.X)",
+          "to": [
+            {
+              "instance": "554:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "554:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "418:sky130_fd_sc_hd__mux2_1": 0
+      },
+      "loose_gates": [
+        "418:sky130_fd_sc_hd__mux2_1"
+      ],
+      "fanin2_gates": []
+    },
+    {
+      "id": 8,
+      "gates": [
+        "339:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "net": "1811",
+          "kind": "register",
+          "from": "368:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1811(DFRTP#368.Q)"
+        },
+        {
+          "net": "1996",
+          "kind": "port",
+          "from": "en",
+          "label": "en"
+        },
+        {
+          "net": "2012",
+          "kind": "register",
+          "from": "181:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n2012(DFRTP#181.Q)"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "1946",
+          "label": "n1946(MUX2#339.X)",
+          "to": [
+            {
+              "instance": "368:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "368:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "339:sky130_fd_sc_hd__mux2_1": 0
+      },
+      "loose_gates": [
+        "339:sky130_fd_sc_hd__mux2_1"
+      ],
+      "fanin2_gates": []
+    },
+    {
+      "id": 9,
+      "gates": [
+        "596:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "net": "1965",
+          "kind": "register",
+          "from": "453:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1965(DFRTP#453.Q)"
+        },
+        {
+          "net": "1996",
+          "kind": "port",
+          "from": "en",
+          "label": "en"
+        },
+        {
+          "net": "2007",
+          "kind": "register",
+          "from": "554:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n2007(DFRTP#554.Q)"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "2001",
+          "label": "n2001(MUX2#596.X)",
+          "to": [
+            {
+              "instance": "453:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "453:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "596:sky130_fd_sc_hd__mux2_1": 0
+      },
+      "loose_gates": [
+        "596:sky130_fd_sc_hd__mux2_1"
+      ],
+      "fanin2_gates": []
+    },
+    {
+      "id": 10,
+      "gates": [
+        "139:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "net": "1900",
+          "kind": "register",
+          "from": "141:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1900(DFRTP#141.Q)"
+        },
+        {
+          "net": "1996",
+          "kind": "port",
+          "from": "en",
+          "label": "en"
+        },
+        {
+          "net": "2085",
+          "kind": "register",
+          "from": "182:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n2085(DFRTP#182.Q)"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "1951",
+          "label": "n1951(MUX2#139.X)",
+          "to": [
+            {
+              "instance": "182:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "182:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "139:sky130_fd_sc_hd__mux2_1": 0
+      },
+      "loose_gates": [
+        "139:sky130_fd_sc_hd__mux2_1"
+      ],
+      "fanin2_gates": []
+    },
+    {
+      "id": 11,
+      "gates": [
+        "274:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "net": "1908",
+          "kind": "register",
+          "from": "348:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1908(DFRTP#348.Q)"
+        },
+        {
+          "net": "1996",
+          "kind": "port",
+          "from": "en",
+          "label": "en"
+        },
+        {
+          "net": "2085",
+          "kind": "register",
+          "from": "182:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n2085(DFRTP#182.Q)"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "1954",
+          "label": "n1954(MUX2#274.X)",
+          "to": [
+            {
+              "instance": "348:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "348:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "274:sky130_fd_sc_hd__mux2_1": 0
+      },
+      "loose_gates": [
+        "274:sky130_fd_sc_hd__mux2_1"
+      ],
+      "fanin2_gates": []
+    },
+    {
+      "id": 12,
+      "gates": [
+        "210:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "net": "1881",
+          "kind": "register",
+          "from": "142:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1881(DFRTP#142.Q)"
+        },
+        {
+          "net": "1900",
+          "kind": "register",
+          "from": "141:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1900(DFRTP#141.Q)"
+        },
+        {
+          "net": "1996",
+          "kind": "port",
+          "from": "en",
+          "label": "en"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "1950",
+          "label": "n1950(MUX2#210.X)",
+          "to": [
+            {
+              "instance": "141:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "141:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "210:sky130_fd_sc_hd__mux2_1": 0
+      },
+      "loose_gates": [
+        "210:sky130_fd_sc_hd__mux2_1"
+      ],
+      "fanin2_gates": []
+    },
+    {
+      "id": 13,
+      "gates": [
+        "137:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "net": "1542",
+          "kind": "register",
+          "from": "180:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1542(DFRTP#180.Q)"
+        },
+        {
+          "net": "1957",
+          "kind": "register",
+          "from": "146:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1957(DFRTP#146.Q)"
+        },
+        {
+          "net": "1996",
+          "kind": "port",
+          "from": "en",
+          "label": "en"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "1948",
+          "label": "n1948(MUX2#137.X)",
+          "to": [
+            {
+              "instance": "146:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "146:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "137:sky130_fd_sc_hd__mux2_1": 0
+      },
+      "loose_gates": [
+        "137:sky130_fd_sc_hd__mux2_1"
+      ],
+      "fanin2_gates": []
+    },
+    {
+      "id": 14,
+      "gates": [
+        "378:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "net": "1988",
+          "kind": "register",
+          "from": "541:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1988(DFRTP#541.Q)"
+        },
+        {
+          "net": "1989",
+          "kind": "register",
+          "from": "433:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1989(DFRTP#433.Q)"
+        },
+        {
+          "net": "1996",
+          "kind": "port",
+          "from": "en",
+          "label": "en"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "5744",
+          "label": "n5744(MUX2#378.X)",
+          "to": [
+            {
+              "instance": "433:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "433:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "378:sky130_fd_sc_hd__mux2_1": 0
+      },
+      "loose_gates": [
+        "378:sky130_fd_sc_hd__mux2_1"
+      ],
+      "fanin2_gates": []
+    },
+    {
+      "id": 15,
+      "gates": [
+        "140:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "net": "1876",
+          "kind": "port",
+          "from": "A",
+          "label": "A"
+        },
+        {
+          "net": "1996",
+          "kind": "port",
+          "from": "en",
+          "label": "en"
+        },
+        {
+          "net": "2012",
+          "kind": "register",
+          "from": "181:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n2012(DFRTP#181.Q)"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "3493",
+          "label": "n3493(MUX2#140.X)",
+          "to": [
+            {
+              "instance": "181:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "181:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "140:sky130_fd_sc_hd__mux2_1": 0
+      },
+      "loose_gates": [
+        "140:sky130_fd_sc_hd__mux2_1"
+      ],
+      "fanin2_gates": []
+    },
+    {
+      "id": 16,
+      "gates": [
+        "426:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "net": "1965",
+          "kind": "register",
+          "from": "453:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1965(DFRTP#453.Q)"
+        },
+        {
+          "net": "1968",
+          "kind": "register",
+          "from": "385:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1968(DFRTP#385.Q)"
+        },
+        {
+          "net": "1996",
+          "kind": "port",
+          "from": "en",
+          "label": "en"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "2002",
+          "label": "n2002(MUX2#426.X)",
+          "to": [
+            {
+              "instance": "385:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "385:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "426:sky130_fd_sc_hd__mux2_1": 0
+      },
+      "loose_gates": [
+        "426:sky130_fd_sc_hd__mux2_1"
+      ],
+      "fanin2_gates": []
+    },
+    {
+      "id": 17,
+      "gates": [
+        "234:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "net": "1542",
+          "kind": "register",
+          "from": "180:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1542(DFRTP#180.Q)"
+        },
+        {
+          "net": "1811",
+          "kind": "register",
+          "from": "368:sky130_fd_sc_hd__dfrtp_2",
+          "label": "n1811(DFRTP#368.Q)"
+        },
+        {
+          "net": "1996",
+          "kind": "port",
+          "from": "en",
+          "label": "en"
+        }
+      ],
+      "sinks": [
+        {
+          "net": "1947",
+          "label": "n1947(MUX2#234.X)",
+          "to": [
+            {
+              "instance": "180:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D"
+            }
+          ]
+        }
+      ],
+      "flops_reached": [
+        "180:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "levels": {
+        "234:sky130_fd_sc_hd__mux2_1": 0
+      },
+      "loose_gates": [
+        "234:sky130_fd_sc_hd__mux2_1"
+      ],
+      "fanin2_gates": []
+    }
+  ],
+  "walks": [
+    {
+      "source": "n1542(DFRTP#180.Q)",
+      "net": "1542",
+      "gates_walked": [
+        "1011:sky130_fd_sc_hd__and2_2",
+        "108:sky130_fd_sc_hd__and3_2",
+        "137:sky130_fd_sc_hd__mux2_1",
+        "234:sky130_fd_sc_hd__mux2_1",
+        "613:sky130_fd_sc_hd__a31o_2",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "632:sky130_fd_sc_hd__xor2_2",
+        "633:sky130_fd_sc_hd__xor2_2",
+        "634:sky130_fd_sc_hd__xor2_2",
+        "635:sky130_fd_sc_hd__a31o_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "685:sky130_fd_sc_hd__or2_2",
+        "6:sky130_fd_sc_hd__and4bb_2",
+        "707:sky130_fd_sc_hd__a21bo_2",
+        "781:sky130_fd_sc_hd__a21o_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "917:sky130_fd_sc_hd__a31o_2",
+        "972:sky130_fd_sc_hd__xor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2",
+        "978:sky130_fd_sc_hd__nand2_2"
+      ],
+      "stopped_at_flops": [
+        "146:sky130_fd_sc_hd__dfrtp_2",
+        "180:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "n1646(DFRTP#387.Q)",
+      "net": "1646",
+      "gates_walked": [
+        "108:sky130_fd_sc_hd__and3_2",
+        "404:sky130_fd_sc_hd__mux2_1",
+        "616:sky130_fd_sc_hd__nor2_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "630:sky130_fd_sc_hd__and2_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "975:sky130_fd_sc_hd__xnor2_2",
+        "989:sky130_fd_sc_hd__nor2_2"
+      ],
+      "stopped_at_flops": [
+        "387:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "n1811(DFRTP#368.Q)",
+      "net": "1811",
+      "gates_walked": [
+        "1048:sky130_fd_sc_hd__a31o_2",
+        "1052:sky130_fd_sc_hd__xnor2_2",
+        "108:sky130_fd_sc_hd__and3_2",
+        "234:sky130_fd_sc_hd__mux2_1",
+        "339:sky130_fd_sc_hd__mux2_1",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "631:sky130_fd_sc_hd__xor2_2",
+        "632:sky130_fd_sc_hd__xor2_2",
+        "633:sky130_fd_sc_hd__xor2_2",
+        "634:sky130_fd_sc_hd__xor2_2",
+        "635:sky130_fd_sc_hd__a31o_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "6:sky130_fd_sc_hd__and4bb_2",
+        "707:sky130_fd_sc_hd__a21bo_2",
+        "781:sky130_fd_sc_hd__a21o_2",
+        "864:sky130_fd_sc_hd__and2_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "917:sky130_fd_sc_hd__a31o_2",
+        "972:sky130_fd_sc_hd__xor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2"
+      ],
+      "stopped_at_flops": [
+        "180:sky130_fd_sc_hd__dfrtp_2",
+        "368:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "A",
+      "net": "1876",
+      "gates_walked": [
+        "140:sky130_fd_sc_hd__mux2_1"
+      ],
+      "stopped_at_flops": [
+        "181:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "n1881(DFRTP#142.Q)",
+      "net": "1881",
+      "gates_walked": [
+        "1070:sky130_fd_sc_hd__and2_2",
+        "108:sky130_fd_sc_hd__and3_2",
+        "138:sky130_fd_sc_hd__mux2_1",
+        "210:sky130_fd_sc_hd__mux2_1",
+        "619:sky130_fd_sc_hd__nor2_2",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "632:sky130_fd_sc_hd__xor2_2",
+        "633:sky130_fd_sc_hd__xor2_2",
+        "635:sky130_fd_sc_hd__a31o_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "6:sky130_fd_sc_hd__and4bb_2",
+        "781:sky130_fd_sc_hd__a21o_2",
+        "844:sky130_fd_sc_hd__nor2_2",
+        "866:sky130_fd_sc_hd__a31o_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2"
+      ],
+      "stopped_at_flops": [
+        "141:sky130_fd_sc_hd__dfrtp_2",
+        "142:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "n1900(DFRTP#141.Q)",
+      "net": "1900",
+      "gates_walked": [
+        "108:sky130_fd_sc_hd__and3_2",
+        "139:sky130_fd_sc_hd__mux2_1",
+        "210:sky130_fd_sc_hd__mux2_1",
+        "618:sky130_fd_sc_hd__nor2_2",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "632:sky130_fd_sc_hd__xor2_2",
+        "635:sky130_fd_sc_hd__a31o_2",
+        "639:sky130_fd_sc_hd__and2_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "6:sky130_fd_sc_hd__and4bb_2",
+        "761:sky130_fd_sc_hd__nor2_2",
+        "841:sky130_fd_sc_hd__or2_2",
+        "866:sky130_fd_sc_hd__a31o_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2"
+      ],
+      "stopped_at_flops": [
+        "141:sky130_fd_sc_hd__dfrtp_2",
+        "182:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "n1908(DFRTP#348.Q)",
+      "net": "1908",
+      "gates_walked": [
+        "108:sky130_fd_sc_hd__and3_2",
+        "274:sky130_fd_sc_hd__mux2_1",
+        "616:sky130_fd_sc_hd__nor2_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "630:sky130_fd_sc_hd__and2_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "975:sky130_fd_sc_hd__xnor2_2",
+        "989:sky130_fd_sc_hd__nor2_2"
+      ],
+      "stopped_at_flops": [
+        "348:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "clk",
+      "net": "1910",
+      "gates_walked": [
+        "136:sky130_fd_sc_hd__clkbuf_16",
+        "443:sky130_fd_sc_hd__clkbuf_16",
+        "5:sky130_fd_sc_hd__clkbuf_16"
+      ],
+      "stopped_at_flops": [
+        "141:sky130_fd_sc_hd__dfrtp_2",
+        "142:sky130_fd_sc_hd__dfrtp_2",
+        "146:sky130_fd_sc_hd__dfrtp_2",
+        "180:sky130_fd_sc_hd__dfrtp_2",
+        "181:sky130_fd_sc_hd__dfrtp_2",
+        "182:sky130_fd_sc_hd__dfrtp_2",
+        "348:sky130_fd_sc_hd__dfrtp_2",
+        "368:sky130_fd_sc_hd__dfrtp_2",
+        "385:sky130_fd_sc_hd__dfrtp_2",
+        "386:sky130_fd_sc_hd__dfrtp_2",
+        "387:sky130_fd_sc_hd__dfrtp_2",
+        "388:sky130_fd_sc_hd__dfrtp_2",
+        "433:sky130_fd_sc_hd__dfrtp_2",
+        "453:sky130_fd_sc_hd__dfrtp_2",
+        "541:sky130_fd_sc_hd__dfrtp_2",
+        "554:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "n1957(DFRTP#146.Q)",
+      "net": "1957",
+      "gates_walked": [
+        "108:sky130_fd_sc_hd__and3_2",
+        "137:sky130_fd_sc_hd__mux2_1",
+        "138:sky130_fd_sc_hd__mux2_1",
+        "613:sky130_fd_sc_hd__a31o_2",
+        "617:sky130_fd_sc_hd__nor2_2",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "632:sky130_fd_sc_hd__xor2_2",
+        "633:sky130_fd_sc_hd__xor2_2",
+        "635:sky130_fd_sc_hd__a31o_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "6:sky130_fd_sc_hd__and4bb_2",
+        "711:sky130_fd_sc_hd__and2_2",
+        "765:sky130_fd_sc_hd__nor2_2",
+        "781:sky130_fd_sc_hd__a21o_2",
+        "895:sky130_fd_sc_hd__or2_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "917:sky130_fd_sc_hd__a31o_2",
+        "972:sky130_fd_sc_hd__xor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2"
+      ],
+      "stopped_at_flops": [
+        "142:sky130_fd_sc_hd__dfrtp_2",
+        "146:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "n1965(DFRTP#453.Q)",
+      "net": "1965",
+      "gates_walked": [
+        "108:sky130_fd_sc_hd__and3_2",
+        "426:sky130_fd_sc_hd__mux2_1",
+        "596:sky130_fd_sc_hd__mux2_1",
+        "618:sky130_fd_sc_hd__nor2_2",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "632:sky130_fd_sc_hd__xor2_2",
+        "635:sky130_fd_sc_hd__a31o_2",
+        "639:sky130_fd_sc_hd__and2_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "6:sky130_fd_sc_hd__and4bb_2",
+        "761:sky130_fd_sc_hd__nor2_2",
+        "841:sky130_fd_sc_hd__or2_2",
+        "866:sky130_fd_sc_hd__a31o_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2"
+      ],
+      "stopped_at_flops": [
+        "385:sky130_fd_sc_hd__dfrtp_2",
+        "453:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "n1968(DFRTP#385.Q)",
+      "net": "1968",
+      "gates_walked": [
+        "108:sky130_fd_sc_hd__and3_2",
+        "404:sky130_fd_sc_hd__mux2_1",
+        "426:sky130_fd_sc_hd__mux2_1",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "636:sky130_fd_sc_hd__or2_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "852:sky130_fd_sc_hd__nand2_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2",
+        "976:sky130_fd_sc_hd__nand2_2"
+      ],
+      "stopped_at_flops": [
+        "385:sky130_fd_sc_hd__dfrtp_2",
+        "387:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "B",
+      "net": "1972",
+      "gates_walked": [
+        "379:sky130_fd_sc_hd__mux2_1"
+      ],
+      "stopped_at_flops": [
+        "541:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "n1988(DFRTP#541.Q)",
+      "net": "1988",
+      "gates_walked": [
+        "1002:sky130_fd_sc_hd__nand2_2",
+        "1048:sky130_fd_sc_hd__a31o_2",
+        "1052:sky130_fd_sc_hd__xnor2_2",
+        "1069:sky130_fd_sc_hd__or2_2",
+        "108:sky130_fd_sc_hd__and3_2",
+        "378:sky130_fd_sc_hd__mux2_1",
+        "379:sky130_fd_sc_hd__mux2_1",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "629:sky130_fd_sc_hd__and2_2",
+        "632:sky130_fd_sc_hd__xor2_2",
+        "633:sky130_fd_sc_hd__xor2_2",
+        "634:sky130_fd_sc_hd__xor2_2",
+        "635:sky130_fd_sc_hd__a31o_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "6:sky130_fd_sc_hd__and4bb_2",
+        "707:sky130_fd_sc_hd__a21bo_2",
+        "781:sky130_fd_sc_hd__a21o_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "917:sky130_fd_sc_hd__a31o_2",
+        "972:sky130_fd_sc_hd__xor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2"
+      ],
+      "stopped_at_flops": [
+        "433:sky130_fd_sc_hd__dfrtp_2",
+        "541:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "n1989(DFRTP#433.Q)",
+      "net": "1989",
+      "gates_walked": [
+        "1048:sky130_fd_sc_hd__a31o_2",
+        "1052:sky130_fd_sc_hd__xnor2_2",
+        "108:sky130_fd_sc_hd__and3_2",
+        "369:sky130_fd_sc_hd__mux2_1",
+        "378:sky130_fd_sc_hd__mux2_1",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "631:sky130_fd_sc_hd__xor2_2",
+        "632:sky130_fd_sc_hd__xor2_2",
+        "633:sky130_fd_sc_hd__xor2_2",
+        "634:sky130_fd_sc_hd__xor2_2",
+        "635:sky130_fd_sc_hd__a31o_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "6:sky130_fd_sc_hd__and4bb_2",
+        "707:sky130_fd_sc_hd__a21bo_2",
+        "781:sky130_fd_sc_hd__a21o_2",
+        "864:sky130_fd_sc_hd__and2_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "917:sky130_fd_sc_hd__a31o_2",
+        "972:sky130_fd_sc_hd__xor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2"
+      ],
+      "stopped_at_flops": [
+        "388:sky130_fd_sc_hd__dfrtp_2",
+        "433:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "en",
+      "net": "1996",
+      "gates_walked": [
+        "137:sky130_fd_sc_hd__mux2_1",
+        "138:sky130_fd_sc_hd__mux2_1",
+        "139:sky130_fd_sc_hd__mux2_1",
+        "140:sky130_fd_sc_hd__mux2_1",
+        "210:sky130_fd_sc_hd__mux2_1",
+        "234:sky130_fd_sc_hd__mux2_1",
+        "274:sky130_fd_sc_hd__mux2_1",
+        "339:sky130_fd_sc_hd__mux2_1",
+        "369:sky130_fd_sc_hd__mux2_1",
+        "378:sky130_fd_sc_hd__mux2_1",
+        "379:sky130_fd_sc_hd__mux2_1",
+        "404:sky130_fd_sc_hd__mux2_1",
+        "418:sky130_fd_sc_hd__mux2_1",
+        "426:sky130_fd_sc_hd__mux2_1",
+        "596:sky130_fd_sc_hd__mux2_1",
+        "603:sky130_fd_sc_hd__mux2_1"
+      ],
+      "stopped_at_flops": [
+        "141:sky130_fd_sc_hd__dfrtp_2",
+        "142:sky130_fd_sc_hd__dfrtp_2",
+        "146:sky130_fd_sc_hd__dfrtp_2",
+        "180:sky130_fd_sc_hd__dfrtp_2",
+        "181:sky130_fd_sc_hd__dfrtp_2",
+        "182:sky130_fd_sc_hd__dfrtp_2",
+        "348:sky130_fd_sc_hd__dfrtp_2",
+        "368:sky130_fd_sc_hd__dfrtp_2",
+        "385:sky130_fd_sc_hd__dfrtp_2",
+        "386:sky130_fd_sc_hd__dfrtp_2",
+        "387:sky130_fd_sc_hd__dfrtp_2",
+        "388:sky130_fd_sc_hd__dfrtp_2",
+        "433:sky130_fd_sc_hd__dfrtp_2",
+        "453:sky130_fd_sc_hd__dfrtp_2",
+        "541:sky130_fd_sc_hd__dfrtp_2",
+        "554:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "n2007(DFRTP#554.Q)",
+      "net": "2007",
+      "gates_walked": [
+        "1070:sky130_fd_sc_hd__and2_2",
+        "108:sky130_fd_sc_hd__and3_2",
+        "418:sky130_fd_sc_hd__mux2_1",
+        "596:sky130_fd_sc_hd__mux2_1",
+        "619:sky130_fd_sc_hd__nor2_2",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "632:sky130_fd_sc_hd__xor2_2",
+        "633:sky130_fd_sc_hd__xor2_2",
+        "635:sky130_fd_sc_hd__a31o_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "6:sky130_fd_sc_hd__and4bb_2",
+        "781:sky130_fd_sc_hd__a21o_2",
+        "844:sky130_fd_sc_hd__nor2_2",
+        "866:sky130_fd_sc_hd__a31o_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2"
+      ],
+      "stopped_at_flops": [
+        "453:sky130_fd_sc_hd__dfrtp_2",
+        "554:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "n2012(DFRTP#181.Q)",
+      "net": "2012",
+      "gates_walked": [
+        "1002:sky130_fd_sc_hd__nand2_2",
+        "1048:sky130_fd_sc_hd__a31o_2",
+        "1052:sky130_fd_sc_hd__xnor2_2",
+        "1069:sky130_fd_sc_hd__or2_2",
+        "108:sky130_fd_sc_hd__and3_2",
+        "140:sky130_fd_sc_hd__mux2_1",
+        "339:sky130_fd_sc_hd__mux2_1",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "629:sky130_fd_sc_hd__and2_2",
+        "632:sky130_fd_sc_hd__xor2_2",
+        "633:sky130_fd_sc_hd__xor2_2",
+        "634:sky130_fd_sc_hd__xor2_2",
+        "635:sky130_fd_sc_hd__a31o_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "6:sky130_fd_sc_hd__and4bb_2",
+        "707:sky130_fd_sc_hd__a21bo_2",
+        "781:sky130_fd_sc_hd__a21o_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "917:sky130_fd_sc_hd__a31o_2",
+        "972:sky130_fd_sc_hd__xor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2"
+      ],
+      "stopped_at_flops": [
+        "181:sky130_fd_sc_hd__dfrtp_2",
+        "368:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "n2085(DFRTP#182.Q)",
+      "net": "2085",
+      "gates_walked": [
+        "108:sky130_fd_sc_hd__and3_2",
+        "139:sky130_fd_sc_hd__mux2_1",
+        "274:sky130_fd_sc_hd__mux2_1",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "636:sky130_fd_sc_hd__or2_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "852:sky130_fd_sc_hd__nand2_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2",
+        "976:sky130_fd_sc_hd__nand2_2"
+      ],
+      "stopped_at_flops": [
+        "182:sky130_fd_sc_hd__dfrtp_2",
+        "348:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "n2088(DFRTP#388.Q)",
+      "net": "2088",
+      "gates_walked": [
+        "1011:sky130_fd_sc_hd__and2_2",
+        "108:sky130_fd_sc_hd__and3_2",
+        "369:sky130_fd_sc_hd__mux2_1",
+        "603:sky130_fd_sc_hd__mux2_1",
+        "613:sky130_fd_sc_hd__a31o_2",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "632:sky130_fd_sc_hd__xor2_2",
+        "633:sky130_fd_sc_hd__xor2_2",
+        "634:sky130_fd_sc_hd__xor2_2",
+        "635:sky130_fd_sc_hd__a31o_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "685:sky130_fd_sc_hd__or2_2",
+        "6:sky130_fd_sc_hd__and4bb_2",
+        "707:sky130_fd_sc_hd__a21bo_2",
+        "781:sky130_fd_sc_hd__a21o_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "917:sky130_fd_sc_hd__a31o_2",
+        "972:sky130_fd_sc_hd__xor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2",
+        "978:sky130_fd_sc_hd__nand2_2"
+      ],
+      "stopped_at_flops": [
+        "386:sky130_fd_sc_hd__dfrtp_2",
+        "388:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "n2092(DFRTP#386.Q)",
+      "net": "2092",
+      "gates_walked": [
+        "108:sky130_fd_sc_hd__and3_2",
+        "418:sky130_fd_sc_hd__mux2_1",
+        "603:sky130_fd_sc_hd__mux2_1",
+        "613:sky130_fd_sc_hd__a31o_2",
+        "617:sky130_fd_sc_hd__nor2_2",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "632:sky130_fd_sc_hd__xor2_2",
+        "633:sky130_fd_sc_hd__xor2_2",
+        "635:sky130_fd_sc_hd__a31o_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "6:sky130_fd_sc_hd__and4bb_2",
+        "711:sky130_fd_sc_hd__and2_2",
+        "765:sky130_fd_sc_hd__nor2_2",
+        "781:sky130_fd_sc_hd__a21o_2",
+        "895:sky130_fd_sc_hd__or2_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "917:sky130_fd_sc_hd__a31o_2",
+        "972:sky130_fd_sc_hd__xor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2"
+      ],
+      "stopped_at_flops": [
+        "386:sky130_fd_sc_hd__dfrtp_2",
+        "554:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    },
+    {
+      "source": "rst_n",
+      "net": "3700",
+      "gates_walked": [],
+      "stopped_at_flops": [
+        "141:sky130_fd_sc_hd__dfrtp_2",
+        "142:sky130_fd_sc_hd__dfrtp_2",
+        "146:sky130_fd_sc_hd__dfrtp_2",
+        "180:sky130_fd_sc_hd__dfrtp_2",
+        "181:sky130_fd_sc_hd__dfrtp_2",
+        "182:sky130_fd_sc_hd__dfrtp_2",
+        "348:sky130_fd_sc_hd__dfrtp_2",
+        "368:sky130_fd_sc_hd__dfrtp_2",
+        "385:sky130_fd_sc_hd__dfrtp_2",
+        "386:sky130_fd_sc_hd__dfrtp_2",
+        "387:sky130_fd_sc_hd__dfrtp_2",
+        "388:sky130_fd_sc_hd__dfrtp_2",
+        "433:sky130_fd_sc_hd__dfrtp_2",
+        "453:sky130_fd_sc_hd__dfrtp_2",
+        "541:sky130_fd_sc_hd__dfrtp_2",
+        "554:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "kind": "LOAD_ENABLE_REG",
+      "note": "mux2 + flop whose A0 leg is the flop's own Q: the bit holds unless sel steers the load leg in",
+      "cloud": 13,
+      "check": "structure",
+      "gates": [
+        {
+          "role": "mux",
+          "instance": "137:sky130_fd_sc_hd__mux2_1",
+          "cell": "MUX2",
+          "pins": {
+            "A0": {
+              "symbol": "hold",
+              "net": "1957",
+              "label": "n1957(DFRTP#146.Q)"
+            },
+            "A1": {
+              "symbol": "load",
+              "net": "1542",
+              "label": "n1542(DFRTP#180.Q)"
+            },
+            "S": {
+              "symbol": "sel",
+              "net": "1996",
+              "label": "en"
+            }
+          },
+          "out": "1948"
+        },
+        {
+          "role": "ff",
+          "instance": "146:sky130_fd_sc_hd__dfrtp_2",
+          "cell": "DFRTP",
+          "pins": {
+            "CLK": {
+              "symbol": "clk",
+              "net": "1918",
+              "label": "n1918(CLKBUF#136.X)"
+            },
+            "D": {
+              "symbol": "mux",
+              "net": "1948",
+              "label": "n1948(MUX2#137.X)"
+            },
+            "RESET_B": {
+              "symbol": "rst",
+              "net": "3700",
+              "label": "rst_n"
+            }
+          },
+          "out": "1957"
+        }
+      ],
+      "signals": {
+        "clk": {
+          "net": "1918",
+          "label": "n1918(CLKBUF#136.X)"
+        },
+        "ff": {
+          "net": "1957",
+          "label": "n1957(DFRTP#146.Q)"
+        },
+        "hold": {
+          "net": "1957",
+          "label": "n1957(DFRTP#146.Q)"
+        },
+        "load": {
+          "net": "1542",
+          "label": "n1542(DFRTP#180.Q)"
+        },
+        "mux": {
+          "net": "1948",
+          "label": "n1948(MUX2#137.X)"
+        },
+        "rst": {
+          "net": "3700",
+          "label": "rst_n"
+        },
+        "sel": {
+          "net": "1996",
+          "label": "en"
+        }
+      }
+    },
+    {
+      "kind": "LOAD_ENABLE_REG",
+      "note": "mux2 + flop whose A0 leg is the flop's own Q: the bit holds unless sel steers the load leg in",
+      "cloud": 5,
+      "check": "structure",
+      "gates": [
+        {
+          "role": "mux",
+          "instance": "138:sky130_fd_sc_hd__mux2_1",
+          "cell": "MUX2",
+          "pins": {
+            "A0": {
+              "symbol": "hold",
+              "net": "1881",
+              "label": "n1881(DFRTP#142.Q)"
+            },
+            "A1": {
+              "symbol": "load",
+              "net": "1957",
+              "label": "n1957(DFRTP#146.Q)"
+            },
+            "S": {
+              "symbol": "sel",
+              "net": "1996",
+              "label": "en"
+            }
+          },
+          "out": "1949"
+        },
+        {
+          "role": "ff",
+          "instance": "142:sky130_fd_sc_hd__dfrtp_2",
+          "cell": "DFRTP",
+          "pins": {
+            "CLK": {
+              "symbol": "clk",
+              "net": "1918",
+              "label": "n1918(CLKBUF#136.X)"
+            },
+            "D": {
+              "symbol": "mux",
+              "net": "1949",
+              "label": "n1949(MUX2#138.X)"
+            },
+            "RESET_B": {
+              "symbol": "rst",
+              "net": "3700",
+              "label": "rst_n"
+            }
+          },
+          "out": "1881"
+        }
+      ],
+      "signals": {
+        "clk": {
+          "net": "1918",
+          "label": "n1918(CLKBUF#136.X)"
+        },
+        "ff": {
+          "net": "1881",
+          "label": "n1881(DFRTP#142.Q)"
+        },
+        "hold": {
+          "net": "1881",
+          "label": "n1881(DFRTP#142.Q)"
+        },
+        "load": {
+          "net": "1957",
+          "label": "n1957(DFRTP#146.Q)"
+        },
+        "mux": {
+          "net": "1949",
+          "label": "n1949(MUX2#138.X)"
+        },
+        "rst": {
+          "net": "3700",
+          "label": "rst_n"
+        },
+        "sel": {
+          "net": "1996",
+          "label": "en"
+        }
+      }
+    },
+    {
+      "kind": "LOAD_ENABLE_REG",
+      "note": "mux2 + flop whose A0 leg is the flop's own Q: the bit holds unless sel steers the load leg in",
+      "cloud": 10,
+      "check": "structure",
+      "gates": [
+        {
+          "role": "mux",
+          "instance": "139:sky130_fd_sc_hd__mux2_1",
+          "cell": "MUX2",
+          "pins": {
+            "A0": {
+              "symbol": "hold",
+              "net": "2085",
+              "label": "n2085(DFRTP#182.Q)"
+            },
+            "A1": {
+              "symbol": "load",
+              "net": "1900",
+              "label": "n1900(DFRTP#141.Q)"
+            },
+            "S": {
+              "symbol": "sel",
+              "net": "1996",
+              "label": "en"
+            }
+          },
+          "out": "1951"
+        },
+        {
+          "role": "ff",
+          "instance": "182:sky130_fd_sc_hd__dfrtp_2",
+          "cell": "DFRTP",
+          "pins": {
+            "CLK": {
+              "symbol": "clk",
+              "net": "1918",
+              "label": "n1918(CLKBUF#136.X)"
+            },
+            "D": {
+              "symbol": "mux",
+              "net": "1951",
+              "label": "n1951(MUX2#139.X)"
+            },
+            "RESET_B": {
+              "symbol": "rst",
+              "net": "3700",
+              "label": "rst_n"
+            }
+          },
+          "out": "2085"
+        }
+      ],
+      "signals": {
+        "clk": {
+          "net": "1918",
+          "label": "n1918(CLKBUF#136.X)"
+        },
+        "ff": {
+          "net": "2085",
+          "label": "n2085(DFRTP#182.Q)"
+        },
+        "hold": {
+          "net": "2085",
+          "label": "n2085(DFRTP#182.Q)"
+        },
+        "load": {
+          "net": "1900",
+          "label": "n1900(DFRTP#141.Q)"
+        },
+        "mux": {
+          "net": "1951",
+          "label": "n1951(MUX2#139.X)"
+        },
+        "rst": {
+          "net": "3700",
+          "label": "rst_n"
+        },
+        "sel": {
+          "net": "1996",
+          "label": "en"
+        }
+      }
+    },
+    {
+      "kind": "LOAD_ENABLE_REG",
+      "note": "mux2 + flop whose A0 leg is the flop's own Q: the bit holds unless sel steers the load leg in",
+      "cloud": 15,
+      "check": "structure",
+      "gates": [
+        {
+          "role": "mux",
+          "instance": "140:sky130_fd_sc_hd__mux2_1",
+          "cell": "MUX2",
+          "pins": {
+            "A0": {
+              "symbol": "hold",
+              "net": "2012",
+              "label": "n2012(DFRTP#181.Q)"
+            },
+            "A1": {
+              "symbol": "load",
+              "net": "1876",
+              "label": "A"
+            },
+            "S": {
+              "symbol": "sel",
+              "net": "1996",
+              "label": "en"
+            }
+          },
+          "out": "3493"
+        },
+        {
+          "role": "ff",
+          "instance": "181:sky130_fd_sc_hd__dfrtp_2",
+          "cell": "DFRTP",
+          "pins": {
+            "CLK": {
+              "symbol": "clk",
+              "net": "1918",
+              "label": "n1918(CLKBUF#136.X)"
+            },
+            "D": {
+              "symbol": "mux",
+              "net": "3493",
+              "label": "n3493(MUX2#140.X)"
+            },
+            "RESET_B": {
+              "symbol": "rst",
+              "net": "3700",
+              "label": "rst_n"
+            }
+          },
+          "out": "2012"
+        }
+      ],
+      "signals": {
+        "clk": {
+          "net": "1918",
+          "label": "n1918(CLKBUF#136.X)"
+        },
+        "ff": {
+          "net": "2012",
+          "label": "n2012(DFRTP#181.Q)"
+        },
+        "hold": {
+          "net": "2012",
+          "label": "n2012(DFRTP#181.Q)"
+        },
+        "load": {
+          "net": "1876",
+          "label": "A"
+        },
+        "mux": {
+          "net": "3493",
+          "label": "n3493(MUX2#140.X)"
+        },
+        "rst": {
+          "net": "3700",
+          "label": "rst_n"
+        },
+        "sel": {
+          "net": "1996",
+          "label": "en"
+        }
+      }
+    },
+    {
+      "kind": "LOAD_ENABLE_REG",
+      "note": "mux2 + flop whose A0 leg is the flop's own Q: the bit holds unless sel steers the load leg in",
+      "cloud": 12,
+      "check": "structure",
+      "gates": [
+        {
+          "role": "mux",
+          "instance": "210:sky130_fd_sc_hd__mux2_1",
+          "cell": "MUX2",
+          "pins": {
+            "A0": {
+              "symbol": "hold",
+              "net": "1900",
+              "label": "n1900(DFRTP#141.Q)"
+            },
+            "A1": {
+              "symbol": "load",
+              "net": "1881",
+              "label": "n1881(DFRTP#142.Q)"
+            },
+            "S": {
+              "symbol": "sel",
+              "net": "1996",
+              "label": "en"
+            }
+          },
+          "out": "1950"
+        },
+        {
+          "role": "ff",
+          "instance": "141:sky130_fd_sc_hd__dfrtp_2",
+          "cell": "DFRTP",
+          "pins": {
+            "CLK": {
+              "symbol": "clk",
+              "net": "1918",
+              "label": "n1918(CLKBUF#136.X)"
+            },
+            "D": {
+              "symbol": "mux",
+              "net": "1950",
+              "label": "n1950(MUX2#210.X)"
+            },
+            "RESET_B": {
+              "symbol": "rst",
+              "net": "3700",
+              "label": "rst_n"
+            }
+          },
+          "out": "1900"
+        }
+      ],
+      "signals": {
+        "clk": {
+          "net": "1918",
+          "label": "n1918(CLKBUF#136.X)"
+        },
+        "ff": {
+          "net": "1900",
+          "label": "n1900(DFRTP#141.Q)"
+        },
+        "hold": {
+          "net": "1900",
+          "label": "n1900(DFRTP#141.Q)"
+        },
+        "load": {
+          "net": "1881",
+          "label": "n1881(DFRTP#142.Q)"
+        },
+        "mux": {
+          "net": "1950",
+          "label": "n1950(MUX2#210.X)"
+        },
+        "rst": {
+          "net": "3700",
+          "label": "rst_n"
+        },
+        "sel": {
+          "net": "1996",
+          "label": "en"
+        }
+      }
+    },
+    {
+      "kind": "LOAD_ENABLE_REG",
+      "note": "mux2 + flop whose A0 leg is the flop's own Q: the bit holds unless sel steers the load leg in",
+      "cloud": 17,
+      "check": "structure",
+      "gates": [
+        {
+          "role": "mux",
+          "instance": "234:sky130_fd_sc_hd__mux2_1",
+          "cell": "MUX2",
+          "pins": {
+            "A0": {
+              "symbol": "hold",
+              "net": "1542",
+              "label": "n1542(DFRTP#180.Q)"
+            },
+            "A1": {
+              "symbol": "load",
+              "net": "1811",
+              "label": "n1811(DFRTP#368.Q)"
+            },
+            "S": {
+              "symbol": "sel",
+              "net": "1996",
+              "label": "en"
+            }
+          },
+          "out": "1947"
+        },
+        {
+          "role": "ff",
+          "instance": "180:sky130_fd_sc_hd__dfrtp_2",
+          "cell": "DFRTP",
+          "pins": {
+            "CLK": {
+              "symbol": "clk",
+              "net": "1918",
+              "label": "n1918(CLKBUF#136.X)"
+            },
+            "D": {
+              "symbol": "mux",
+              "net": "1947",
+              "label": "n1947(MUX2#234.X)"
+            },
+            "RESET_B": {
+              "symbol": "rst",
+              "net": "3700",
+              "label": "rst_n"
+            }
+          },
+          "out": "1542"
+        }
+      ],
+      "signals": {
+        "clk": {
+          "net": "1918",
+          "label": "n1918(CLKBUF#136.X)"
+        },
+        "ff": {
+          "net": "1542",
+          "label": "n1542(DFRTP#180.Q)"
+        },
+        "hold": {
+          "net": "1542",
+          "label": "n1542(DFRTP#180.Q)"
+        },
+        "load": {
+          "net": "1811",
+          "label": "n1811(DFRTP#368.Q)"
+        },
+        "mux": {
+          "net": "1947",
+          "label": "n1947(MUX2#234.X)"
+        },
+        "rst": {
+          "net": "3700",
+          "label": "rst_n"
+        },
+        "sel": {
+          "net": "1996",
+          "label": "en"
+        }
+      }
+    },
+    {
+      "kind": "LOAD_ENABLE_REG",
+      "note": "mux2 + flop whose A0 leg is the flop's own Q: the bit holds unless sel steers the load leg in",
+      "cloud": 11,
+      "check": "structure",
+      "gates": [
+        {
+          "role": "mux",
+          "instance": "274:sky130_fd_sc_hd__mux2_1",
+          "cell": "MUX2",
+          "pins": {
+            "A0": {
+              "symbol": "hold",
+              "net": "1908",
+              "label": "n1908(DFRTP#348.Q)"
+            },
+            "A1": {
+              "symbol": "load",
+              "net": "2085",
+              "label": "n2085(DFRTP#182.Q)"
+            },
+            "S": {
+              "symbol": "sel",
+              "net": "1996",
+              "label": "en"
+            }
+          },
+          "out": "1954"
+        },
+        {
+          "role": "ff",
+          "instance": "348:sky130_fd_sc_hd__dfrtp_2",
+          "cell": "DFRTP",
+          "pins": {
+            "CLK": {
+              "symbol": "clk",
+              "net": "1918",
+              "label": "n1918(CLKBUF#136.X)"
+            },
+            "D": {
+              "symbol": "mux",
+              "net": "1954",
+              "label": "n1954(MUX2#274.X)"
+            },
+            "RESET_B": {
+              "symbol": "rst",
+              "net": "3700",
+              "label": "rst_n"
+            }
+          },
+          "out": "1908"
+        }
+      ],
+      "signals": {
+        "clk": {
+          "net": "1918",
+          "label": "n1918(CLKBUF#136.X)"
+        },
+        "ff": {
+          "net": "1908",
+          "label": "n1908(DFRTP#348.Q)"
+        },
+        "hold": {
+          "net": "1908",
+          "label": "n1908(DFRTP#348.Q)"
+        },
+        "load": {
+          "net": "2085",
+          "label": "n2085(DFRTP#182.Q)"
+        },
+        "mux": {
+          "net": "1954",
+          "label": "n1954(MUX2#274.X)"
+        },
+        "rst": {
+          "net": "3700",
+          "label": "rst_n"
+        },
+        "sel": {
+          "net": "1996",
+          "label": "en"
+        }
+      }
+    },
+    {
+      "kind": "LOAD_ENABLE_REG",
+      "note": "mux2 + flop whose A0 leg is the flop's own Q: the bit holds unless sel steers the load leg in",
+      "cloud": 8,
+      "check": "structure",
+      "gates": [
+        {
+          "role": "mux",
+          "instance": "339:sky130_fd_sc_hd__mux2_1",
+          "cell": "MUX2",
+          "pins": {
+            "A0": {
+              "symbol": "hold",
+              "net": "1811",
+              "label": "n1811(DFRTP#368.Q)"
+            },
+            "A1": {
+              "symbol": "load",
+              "net": "2012",
+              "label": "n2012(DFRTP#181.Q)"
+            },
+            "S": {
+              "symbol": "sel",
+              "net": "1996",
+              "label": "en"
+            }
+          },
+          "out": "1946"
+        },
+        {
+          "role": "ff",
+          "instance": "368:sky130_fd_sc_hd__dfrtp_2",
+          "cell": "DFRTP",
+          "pins": {
+            "CLK": {
+              "symbol": "clk",
+              "net": "1918",
+              "label": "n1918(CLKBUF#136.X)"
+            },
+            "D": {
+              "symbol": "mux",
+              "net": "1946",
+              "label": "n1946(MUX2#339.X)"
+            },
+            "RESET_B": {
+              "symbol": "rst",
+              "net": "3700",
+              "label": "rst_n"
+            }
+          },
+          "out": "1811"
+        }
+      ],
+      "signals": {
+        "clk": {
+          "net": "1918",
+          "label": "n1918(CLKBUF#136.X)"
+        },
+        "ff": {
+          "net": "1811",
+          "label": "n1811(DFRTP#368.Q)"
+        },
+        "hold": {
+          "net": "1811",
+          "label": "n1811(DFRTP#368.Q)"
+        },
+        "load": {
+          "net": "2012",
+          "label": "n2012(DFRTP#181.Q)"
+        },
+        "mux": {
+          "net": "1946",
+          "label": "n1946(MUX2#339.X)"
+        },
+        "rst": {
+          "net": "3700",
+          "label": "rst_n"
+        },
+        "sel": {
+          "net": "1996",
+          "label": "en"
+        }
+      }
+    },
+    {
+      "kind": "LOAD_ENABLE_REG",
+      "note": "mux2 + flop whose A0 leg is the flop's own Q: the bit holds unless sel steers the load leg in",
+      "cloud": 3,
+      "check": "structure",
+      "gates": [
+        {
+          "role": "mux",
+          "instance": "369:sky130_fd_sc_hd__mux2_1",
+          "cell": "MUX2",
+          "pins": {
+            "A0": {
+              "symbol": "hold",
+              "net": "2088",
+              "label": "n2088(DFRTP#388.Q)"
+            },
+            "A1": {
+              "symbol": "load",
+              "net": "1989",
+              "label": "n1989(DFRTP#433.Q)"
+            },
+            "S": {
+              "symbol": "sel",
+              "net": "1996",
+              "label": "en"
+            }
+          },
+          "out": "5645"
+        },
+        {
+          "role": "ff",
+          "instance": "388:sky130_fd_sc_hd__dfrtp_2",
+          "cell": "DFRTP",
+          "pins": {
+            "CLK": {
+              "symbol": "clk",
+              "net": "1976",
+              "label": "n1976(CLKBUF#443.X)"
+            },
+            "D": {
+              "symbol": "mux",
+              "net": "5645",
+              "label": "n5645(MUX2#369.X)"
+            },
+            "RESET_B": {
+              "symbol": "rst",
+              "net": "3700",
+              "label": "rst_n"
+            }
+          },
+          "out": "2088"
+        }
+      ],
+      "signals": {
+        "clk": {
+          "net": "1976",
+          "label": "n1976(CLKBUF#443.X)"
+        },
+        "ff": {
+          "net": "2088",
+          "label": "n2088(DFRTP#388.Q)"
+        },
+        "hold": {
+          "net": "2088",
+          "label": "n2088(DFRTP#388.Q)"
+        },
+        "load": {
+          "net": "1989",
+          "label": "n1989(DFRTP#433.Q)"
+        },
+        "mux": {
+          "net": "5645",
+          "label": "n5645(MUX2#369.X)"
+        },
+        "rst": {
+          "net": "3700",
+          "label": "rst_n"
+        },
+        "sel": {
+          "net": "1996",
+          "label": "en"
+        }
+      }
+    },
+    {
+      "kind": "LOAD_ENABLE_REG",
+      "note": "mux2 + flop whose A0 leg is the flop's own Q: the bit holds unless sel steers the load leg in",
+      "cloud": 14,
+      "check": "structure",
+      "gates": [
+        {
+          "role": "mux",
+          "instance": "378:sky130_fd_sc_hd__mux2_1",
+          "cell": "MUX2",
+          "pins": {
+            "A0": {
+              "symbol": "hold",
+              "net": "1989",
+              "label": "n1989(DFRTP#433.Q)"
+            },
+            "A1": {
+              "symbol": "load",
+              "net": "1988",
+              "label": "n1988(DFRTP#541.Q)"
+            },
+            "S": {
+              "symbol": "sel",
+              "net": "1996",
+              "label": "en"
+            }
+          },
+          "out": "5744"
+        },
+        {
+          "role": "ff",
+          "instance": "433:sky130_fd_sc_hd__dfrtp_2",
+          "cell": "DFRTP",
+          "pins": {
+            "CLK": {
+              "symbol": "clk",
+              "net": "1976",
+              "label": "n1976(CLKBUF#443.X)"
+            },
+            "D": {
+              "symbol": "mux",
+              "net": "5744",
+              "label": "n5744(MUX2#378.X)"
+            },
+            "RESET_B": {
+              "symbol": "rst",
+              "net": "3700",
+              "label": "rst_n"
+            }
+          },
+          "out": "1989"
+        }
+      ],
+      "signals": {
+        "clk": {
+          "net": "1976",
+          "label": "n1976(CLKBUF#443.X)"
+        },
+        "ff": {
+          "net": "1989",
+          "label": "n1989(DFRTP#433.Q)"
+        },
+        "hold": {
+          "net": "1989",
+          "label": "n1989(DFRTP#433.Q)"
+        },
+        "load": {
+          "net": "1988",
+          "label": "n1988(DFRTP#541.Q)"
+        },
+        "mux": {
+          "net": "5744",
+          "label": "n5744(MUX2#378.X)"
+        },
+        "rst": {
+          "net": "3700",
+          "label": "rst_n"
+        },
+        "sel": {
+          "net": "1996",
+          "label": "en"
+        }
+      }
+    },
+    {
+      "kind": "LOAD_ENABLE_REG",
+      "note": "mux2 + flop whose A0 leg is the flop's own Q: the bit holds unless sel steers the load leg in",
+      "cloud": 2,
+      "check": "structure",
+      "gates": [
+        {
+          "role": "mux",
+          "instance": "379:sky130_fd_sc_hd__mux2_1",
+          "cell": "MUX2",
+          "pins": {
+            "A0": {
+              "symbol": "hold",
+              "net": "1988",
+              "label": "n1988(DFRTP#541.Q)"
+            },
+            "A1": {
+              "symbol": "load",
+              "net": "1972",
+              "label": "B"
+            },
+            "S": {
+              "symbol": "sel",
+              "net": "1996",
+              "label": "en"
+            }
+          },
+          "out": "5782"
+        },
+        {
+          "role": "ff",
+          "instance": "541:sky130_fd_sc_hd__dfrtp_2",
+          "cell": "DFRTP",
+          "pins": {
+            "CLK": {
+              "symbol": "clk",
+              "net": "1976",
+              "label": "n1976(CLKBUF#443.X)"
+            },
+            "D": {
+              "symbol": "mux",
+              "net": "5782",
+              "label": "n5782(MUX2#379.X)"
+            },
+            "RESET_B": {
+              "symbol": "rst",
+              "net": "3700",
+              "label": "rst_n"
+            }
+          },
+          "out": "1988"
+        }
+      ],
+      "signals": {
+        "clk": {
+          "net": "1976",
+          "label": "n1976(CLKBUF#443.X)"
+        },
+        "ff": {
+          "net": "1988",
+          "label": "n1988(DFRTP#541.Q)"
+        },
+        "hold": {
+          "net": "1988",
+          "label": "n1988(DFRTP#541.Q)"
+        },
+        "load": {
+          "net": "1972",
+          "label": "B"
+        },
+        "mux": {
+          "net": "5782",
+          "label": "n5782(MUX2#379.X)"
+        },
+        "rst": {
+          "net": "3700",
+          "label": "rst_n"
+        },
+        "sel": {
+          "net": "1996",
+          "label": "en"
+        }
+      }
+    },
+    {
+      "kind": "LOAD_ENABLE_REG",
+      "note": "mux2 + flop whose A0 leg is the flop's own Q: the bit holds unless sel steers the load leg in",
+      "cloud": 16,
+      "check": "structure",
+      "gates": [
+        {
+          "role": "mux",
+          "instance": "426:sky130_fd_sc_hd__mux2_1",
+          "cell": "MUX2",
+          "pins": {
+            "A0": {
+              "symbol": "hold",
+              "net": "1968",
+              "label": "n1968(DFRTP#385.Q)"
+            },
+            "A1": {
+              "symbol": "load",
+              "net": "1965",
+              "label": "n1965(DFRTP#453.Q)"
+            },
+            "S": {
+              "symbol": "sel",
+              "net": "1996",
+              "label": "en"
+            }
+          },
+          "out": "2002"
+        },
+        {
+          "role": "ff",
+          "instance": "385:sky130_fd_sc_hd__dfrtp_2",
+          "cell": "DFRTP",
+          "pins": {
+            "CLK": {
+              "symbol": "clk",
+              "net": "1976",
+              "label": "n1976(CLKBUF#443.X)"
+            },
+            "D": {
+              "symbol": "mux",
+              "net": "2002",
+              "label": "n2002(MUX2#426.X)"
+            },
+            "RESET_B": {
+              "symbol": "rst",
+              "net": "3700",
+              "label": "rst_n"
+            }
+          },
+          "out": "1968"
+        }
+      ],
+      "signals": {
+        "clk": {
+          "net": "1976",
+          "label": "n1976(CLKBUF#443.X)"
+        },
+        "ff": {
+          "net": "1968",
+          "label": "n1968(DFRTP#385.Q)"
+        },
+        "hold": {
+          "net": "1968",
+          "label": "n1968(DFRTP#385.Q)"
+        },
+        "load": {
+          "net": "1965",
+          "label": "n1965(DFRTP#453.Q)"
+        },
+        "mux": {
+          "net": "2002",
+          "label": "n2002(MUX2#426.X)"
+        },
+        "rst": {
+          "net": "3700",
+          "label": "rst_n"
+        },
+        "sel": {
+          "net": "1996",
+          "label": "en"
+        }
+      }
+    },
+    {
+      "kind": "LOAD_ENABLE_REG",
+      "note": "mux2 + flop whose A0 leg is the flop's own Q: the bit holds unless sel steers the load leg in",
+      "cloud": 4,
+      "check": "structure",
+      "gates": [
+        {
+          "role": "mux",
+          "instance": "603:sky130_fd_sc_hd__mux2_1",
+          "cell": "MUX2",
+          "pins": {
+            "A0": {
+              "symbol": "hold",
+              "net": "2092",
+              "label": "n2092(DFRTP#386.Q)"
+            },
+            "A1": {
+              "symbol": "load",
+              "net": "2088",
+              "label": "n2088(DFRTP#388.Q)"
+            },
+            "S": {
+              "symbol": "sel",
+              "net": "1996",
+              "label": "en"
+            }
+          },
+          "out": "1999"
+        },
+        {
+          "role": "ff",
+          "instance": "386:sky130_fd_sc_hd__dfrtp_2",
+          "cell": "DFRTP",
+          "pins": {
+            "CLK": {
+              "symbol": "clk",
+              "net": "1976",
+              "label": "n1976(CLKBUF#443.X)"
+            },
+            "D": {
+              "symbol": "mux",
+              "net": "1999",
+              "label": "n1999(MUX2#603.X)"
+            },
+            "RESET_B": {
+              "symbol": "rst",
+              "net": "3700",
+              "label": "rst_n"
+            }
+          },
+          "out": "2092"
+        }
+      ],
+      "signals": {
+        "clk": {
+          "net": "1976",
+          "label": "n1976(CLKBUF#443.X)"
+        },
+        "ff": {
+          "net": "2092",
+          "label": "n2092(DFRTP#386.Q)"
+        },
+        "hold": {
+          "net": "2092",
+          "label": "n2092(DFRTP#386.Q)"
+        },
+        "load": {
+          "net": "2088",
+          "label": "n2088(DFRTP#388.Q)"
+        },
+        "mux": {
+          "net": "1999",
+          "label": "n1999(MUX2#603.X)"
+        },
+        "rst": {
+          "net": "3700",
+          "label": "rst_n"
+        },
+        "sel": {
+          "net": "1996",
+          "label": "en"
+        }
+      }
+    },
+    {
+      "kind": "LOAD_ENABLE_REG",
+      "note": "mux2 + flop whose A0 leg is the flop's own Q: the bit holds unless sel steers the load leg in",
+      "cloud": 6,
+      "check": "structure",
+      "gates": [
+        {
+          "role": "mux",
+          "instance": "404:sky130_fd_sc_hd__mux2_1",
+          "cell": "MUX2",
+          "pins": {
+            "A0": {
+              "symbol": "hold",
+              "net": "1646",
+              "label": "n1646(DFRTP#387.Q)"
+            },
+            "A1": {
+              "symbol": "load",
+              "net": "1968",
+              "label": "n1968(DFRTP#385.Q)"
+            },
+            "S": {
+              "symbol": "sel",
+              "net": "1996",
+              "label": "en"
+            }
+          },
+          "out": "2003"
+        },
+        {
+          "role": "ff",
+          "instance": "387:sky130_fd_sc_hd__dfrtp_2",
+          "cell": "DFRTP",
+          "pins": {
+            "CLK": {
+              "symbol": "clk",
+              "net": "1976",
+              "label": "n1976(CLKBUF#443.X)"
+            },
+            "D": {
+              "symbol": "mux",
+              "net": "2003",
+              "label": "n2003(MUX2#404.X)"
+            },
+            "RESET_B": {
+              "symbol": "rst",
+              "net": "3700",
+              "label": "rst_n"
+            }
+          },
+          "out": "1646"
+        }
+      ],
+      "signals": {
+        "clk": {
+          "net": "1976",
+          "label": "n1976(CLKBUF#443.X)"
+        },
+        "ff": {
+          "net": "1646",
+          "label": "n1646(DFRTP#387.Q)"
+        },
+        "hold": {
+          "net": "1646",
+          "label": "n1646(DFRTP#387.Q)"
+        },
+        "load": {
+          "net": "1968",
+          "label": "n1968(DFRTP#385.Q)"
+        },
+        "mux": {
+          "net": "2003",
+          "label": "n2003(MUX2#404.X)"
+        },
+        "rst": {
+          "net": "3700",
+          "label": "rst_n"
+        },
+        "sel": {
+          "net": "1996",
+          "label": "en"
+        }
+      }
+    },
+    {
+      "kind": "LOAD_ENABLE_REG",
+      "note": "mux2 + flop whose A0 leg is the flop's own Q: the bit holds unless sel steers the load leg in",
+      "cloud": 7,
+      "check": "structure",
+      "gates": [
+        {
+          "role": "mux",
+          "instance": "418:sky130_fd_sc_hd__mux2_1",
+          "cell": "MUX2",
+          "pins": {
+            "A0": {
+              "symbol": "hold",
+              "net": "2007",
+              "label": "n2007(DFRTP#554.Q)"
+            },
+            "A1": {
+              "symbol": "load",
+              "net": "2092",
+              "label": "n2092(DFRTP#386.Q)"
+            },
+            "S": {
+              "symbol": "sel",
+              "net": "1996",
+              "label": "en"
+            }
+          },
+          "out": "2000"
+        },
+        {
+          "role": "ff",
+          "instance": "554:sky130_fd_sc_hd__dfrtp_2",
+          "cell": "DFRTP",
+          "pins": {
+            "CLK": {
+              "symbol": "clk",
+              "net": "1976",
+              "label": "n1976(CLKBUF#443.X)"
+            },
+            "D": {
+              "symbol": "mux",
+              "net": "2000",
+              "label": "n2000(MUX2#418.X)"
+            },
+            "RESET_B": {
+              "symbol": "rst",
+              "net": "3700",
+              "label": "rst_n"
+            }
+          },
+          "out": "2007"
+        }
+      ],
+      "signals": {
+        "clk": {
+          "net": "1976",
+          "label": "n1976(CLKBUF#443.X)"
+        },
+        "ff": {
+          "net": "2007",
+          "label": "n2007(DFRTP#554.Q)"
+        },
+        "hold": {
+          "net": "2007",
+          "label": "n2007(DFRTP#554.Q)"
+        },
+        "load": {
+          "net": "2092",
+          "label": "n2092(DFRTP#386.Q)"
+        },
+        "mux": {
+          "net": "2000",
+          "label": "n2000(MUX2#418.X)"
+        },
+        "rst": {
+          "net": "3700",
+          "label": "rst_n"
+        },
+        "sel": {
+          "net": "1996",
+          "label": "en"
+        }
+      }
+    },
+    {
+      "kind": "LOAD_ENABLE_REG",
+      "note": "mux2 + flop whose A0 leg is the flop's own Q: the bit holds unless sel steers the load leg in",
+      "cloud": 9,
+      "check": "structure",
+      "gates": [
+        {
+          "role": "mux",
+          "instance": "596:sky130_fd_sc_hd__mux2_1",
+          "cell": "MUX2",
+          "pins": {
+            "A0": {
+              "symbol": "hold",
+              "net": "1965",
+              "label": "n1965(DFRTP#453.Q)"
+            },
+            "A1": {
+              "symbol": "load",
+              "net": "2007",
+              "label": "n2007(DFRTP#554.Q)"
+            },
+            "S": {
+              "symbol": "sel",
+              "net": "1996",
+              "label": "en"
+            }
+          },
+          "out": "2001"
+        },
+        {
+          "role": "ff",
+          "instance": "453:sky130_fd_sc_hd__dfrtp_2",
+          "cell": "DFRTP",
+          "pins": {
+            "CLK": {
+              "symbol": "clk",
+              "net": "1976",
+              "label": "n1976(CLKBUF#443.X)"
+            },
+            "D": {
+              "symbol": "mux",
+              "net": "2001",
+              "label": "n2001(MUX2#596.X)"
+            },
+            "RESET_B": {
+              "symbol": "rst",
+              "net": "3700",
+              "label": "rst_n"
+            }
+          },
+          "out": "1965"
+        }
+      ],
+      "signals": {
+        "clk": {
+          "net": "1976",
+          "label": "n1976(CLKBUF#443.X)"
+        },
+        "ff": {
+          "net": "1965",
+          "label": "n1965(DFRTP#453.Q)"
+        },
+        "hold": {
+          "net": "1965",
+          "label": "n1965(DFRTP#453.Q)"
+        },
+        "load": {
+          "net": "2007",
+          "label": "n2007(DFRTP#554.Q)"
+        },
+        "mux": {
+          "net": "2001",
+          "label": "n2001(MUX2#596.X)"
+        },
+        "rst": {
+          "net": "3700",
+          "label": "rst_n"
+        },
+        "sel": {
+          "net": "1996",
+          "label": "en"
+        }
+      }
+    },
+    {
+      "kind": "HALF_ADDER",
+      "note": "sum + carry over two operand bits (adder LSB / incrementer)",
+      "cloud": 0,
+      "check": "function",
+      "gates": [
+        {
+          "role": "sum",
+          "instance": "631:sky130_fd_sc_hd__xor2_2",
+          "cell": "XOR2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "1989",
+              "label": "n1989(DFRTP#433.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "1811",
+              "label": "n1811(DFRTP#368.Q)"
+            }
+          },
+          "out": "2026"
+        },
+        {
+          "role": "carry",
+          "instance": "864:sky130_fd_sc_hd__and2_2",
+          "cell": "AND2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "1989",
+              "label": "n1989(DFRTP#433.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "1811",
+              "label": "n1811(DFRTP#368.Q)"
+            }
+          },
+          "out": "2025"
+        }
+      ],
+      "signals": {
+        "a": {
+          "net": "1989",
+          "label": "n1989(DFRTP#433.Q)"
+        },
+        "b": {
+          "net": "1811",
+          "label": "n1811(DFRTP#368.Q)"
+        },
+        "carry": {
+          "net": "2025",
+          "label": "n2025(AND2#864.X)"
+        },
+        "sum": {
+          "net": "2026",
+          "label": "n2026(XOR2#631.X)"
+        }
+      }
+    },
+    {
+      "kind": "ADDER_SLICE",
+      "note": "carry-lookahead bit slice: generate, propagate, and (where built) the half-sum of one operand bit pair",
+      "cloud": 0,
+      "check": "function",
+      "gates": [
+        {
+          "role": "g",
+          "instance": "711:sky130_fd_sc_hd__and2_2",
+          "cell": "AND2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "2092",
+              "label": "n2092(DFRTP#386.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "1957",
+              "label": "n1957(DFRTP#146.Q)"
+            }
+          },
+          "out": "2039"
+        },
+        {
+          "role": "p",
+          "instance": "617:sky130_fd_sc_hd__nor2_2",
+          "cell": "NOR2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "2092",
+              "label": "n2092(DFRTP#386.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "1957",
+              "label": "n1957(DFRTP#146.Q)"
+            }
+          },
+          "out": "1710"
+        },
+        {
+          "role": "p2",
+          "instance": "895:sky130_fd_sc_hd__or2_2",
+          "cell": "OR2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "2092",
+              "label": "n2092(DFRTP#386.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "1957",
+              "label": "n1957(DFRTP#146.Q)"
+            }
+          },
+          "out": "2037"
+        },
+        {
+          "role": "xs",
+          "instance": "765:sky130_fd_sc_hd__nor2_2",
+          "cell": "NOR2",
+          "pins": {
+            "B": {
+              "symbol": "g",
+              "net": "2039",
+              "label": "n2039(AND2#711.X)"
+            },
+            "A": {
+              "symbol": "p",
+              "net": "1710",
+              "label": "n1710(NOR2#617.Y)"
+            }
+          },
+          "out": "1829"
+        }
+      ],
+      "signals": {
+        "a": {
+          "net": "2092",
+          "label": "n2092(DFRTP#386.Q)"
+        },
+        "b": {
+          "net": "1957",
+          "label": "n1957(DFRTP#146.Q)"
+        },
+        "g": {
+          "net": "2039",
+          "label": "n2039(AND2#711.X)"
+        },
+        "p": {
+          "net": "1710",
+          "label": "n1710(NOR2#617.Y)"
+        },
+        "p2": {
+          "net": "2037",
+          "label": "n2037(OR2#895.X)"
+        },
+        "xs": {
+          "net": "1829",
+          "label": "n1829(NOR2#765.Y)"
+        }
+      }
+    },
+    {
+      "kind": "ADDER_SLICE",
+      "note": "carry-lookahead bit slice: generate, propagate, and (where built) the half-sum of one operand bit pair",
+      "cloud": 0,
+      "check": "function",
+      "gates": [
+        {
+          "role": "g",
+          "instance": "639:sky130_fd_sc_hd__and2_2",
+          "cell": "AND2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "1965",
+              "label": "n1965(DFRTP#453.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "1900",
+              "label": "n1900(DFRTP#141.Q)"
+            }
+          },
+          "out": "2061"
+        },
+        {
+          "role": "p",
+          "instance": "618:sky130_fd_sc_hd__nor2_2",
+          "cell": "NOR2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "1965",
+              "label": "n1965(DFRTP#453.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "1900",
+              "label": "n1900(DFRTP#141.Q)"
+            }
+          },
+          "out": "2058"
+        },
+        {
+          "role": "p2",
+          "instance": "841:sky130_fd_sc_hd__or2_2",
+          "cell": "OR2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "1965",
+              "label": "n1965(DFRTP#453.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "1900",
+              "label": "n1900(DFRTP#141.Q)"
+            }
+          },
+          "out": "2059"
+        },
+        {
+          "role": "xs",
+          "instance": "761:sky130_fd_sc_hd__nor2_2",
+          "cell": "NOR2",
+          "pins": {
+            "B": {
+              "symbol": "g",
+              "net": "2061",
+              "label": "n2061(AND2#639.X)"
+            },
+            "A": {
+              "symbol": "p",
+              "net": "2058",
+              "label": "n2058(NOR2#618.Y)"
+            }
+          },
+          "out": "2062"
+        }
+      ],
+      "signals": {
+        "a": {
+          "net": "1965",
+          "label": "n1965(DFRTP#453.Q)"
+        },
+        "b": {
+          "net": "1900",
+          "label": "n1900(DFRTP#141.Q)"
+        },
+        "g": {
+          "net": "2061",
+          "label": "n2061(AND2#639.X)"
+        },
+        "p": {
+          "net": "2058",
+          "label": "n2058(NOR2#618.Y)"
+        },
+        "p2": {
+          "net": "2059",
+          "label": "n2059(OR2#841.X)"
+        },
+        "xs": {
+          "net": "2062",
+          "label": "n2062(NOR2#761.Y)"
+        }
+      }
+    },
+    {
+      "kind": "ADDER_SLICE",
+      "note": "carry-lookahead bit slice: generate, propagate, and (where built) the half-sum of one operand bit pair",
+      "cloud": 0,
+      "check": "function",
+      "gates": [
+        {
+          "role": "g",
+          "instance": "1002:sky130_fd_sc_hd__nand2_2",
+          "cell": "NAND2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "1988",
+              "label": "n1988(DFRTP#541.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "2012",
+              "label": "n2012(DFRTP#181.Q)"
+            }
+          },
+          "out": "2022"
+        },
+        {
+          "role": "p",
+          "instance": "1069:sky130_fd_sc_hd__or2_2",
+          "cell": "OR2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "1988",
+              "label": "n1988(DFRTP#541.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "2012",
+              "label": "n2012(DFRTP#181.Q)"
+            }
+          },
+          "out": "2074"
+        },
+        {
+          "role": "xs",
+          "instance": "629:sky130_fd_sc_hd__and2_2",
+          "cell": "AND2",
+          "pins": {
+            "A": {
+              "symbol": "g",
+              "net": "2022",
+              "label": "n2022(NAND2#1002.Y)"
+            },
+            "B": {
+              "symbol": "p",
+              "net": "2074",
+              "label": "n2074(OR2#1069.X)"
+            }
+          },
+          "out": "1888"
+        }
+      ],
+      "signals": {
+        "a": {
+          "net": "1988",
+          "label": "n1988(DFRTP#541.Q)"
+        },
+        "b": {
+          "net": "2012",
+          "label": "n2012(DFRTP#181.Q)"
+        },
+        "g": {
+          "net": "2022",
+          "label": "n2022(NAND2#1002.Y)"
+        },
+        "p": {
+          "net": "2074",
+          "label": "n2074(OR2#1069.X)"
+        },
+        "xs": {
+          "net": "1888",
+          "label": "n1888(AND2#629.X)"
+        }
+      }
+    },
+    {
+      "kind": "ADDER_SLICE",
+      "note": "carry-lookahead bit slice: generate, propagate, and (where built) the half-sum of one operand bit pair",
+      "cloud": 0,
+      "check": "function",
+      "gates": [
+        {
+          "role": "g",
+          "instance": "978:sky130_fd_sc_hd__nand2_2",
+          "cell": "NAND2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "2088",
+              "label": "n2088(DFRTP#388.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "1542",
+              "label": "n1542(DFRTP#180.Q)"
+            }
+          },
+          "out": "2031"
+        },
+        {
+          "role": "p",
+          "instance": "685:sky130_fd_sc_hd__or2_2",
+          "cell": "OR2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "2088",
+              "label": "n2088(DFRTP#388.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "1542",
+              "label": "n1542(DFRTP#180.Q)"
+            }
+          },
+          "out": "2030"
+        },
+        {
+          "role": "xs",
+          "instance": "1011:sky130_fd_sc_hd__and2_2",
+          "cell": "AND2",
+          "pins": {
+            "B": {
+              "symbol": "g",
+              "net": "2031",
+              "label": "n2031(NAND2#978.Y)"
+            },
+            "A": {
+              "symbol": "p",
+              "net": "2030",
+              "label": "n2030(OR2#685.X)"
+            }
+          },
+          "out": "2034"
+        }
+      ],
+      "signals": {
+        "a": {
+          "net": "2088",
+          "label": "n2088(DFRTP#388.Q)"
+        },
+        "b": {
+          "net": "1542",
+          "label": "n1542(DFRTP#180.Q)"
+        },
+        "g": {
+          "net": "2031",
+          "label": "n2031(NAND2#978.Y)"
+        },
+        "p": {
+          "net": "2030",
+          "label": "n2030(OR2#685.X)"
+        },
+        "xs": {
+          "net": "2034",
+          "label": "n2034(AND2#1011.X)"
+        }
+      }
+    },
+    {
+      "kind": "ADDER_SLICE",
+      "note": "carry-lookahead bit slice: generate, propagate, and (where built) the half-sum of one operand bit pair",
+      "cloud": 0,
+      "check": "function",
+      "gates": [
+        {
+          "role": "g",
+          "instance": "1070:sky130_fd_sc_hd__and2_2",
+          "cell": "AND2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "2007",
+              "label": "n2007(DFRTP#554.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "1881",
+              "label": "n1881(DFRTP#142.Q)"
+            }
+          },
+          "out": "2046"
+        },
+        {
+          "role": "p",
+          "instance": "844:sky130_fd_sc_hd__nor2_2",
+          "cell": "NOR2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "2007",
+              "label": "n2007(DFRTP#554.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "1881",
+              "label": "n1881(DFRTP#142.Q)"
+            }
+          },
+          "out": "2048"
+        },
+        {
+          "role": "xs",
+          "instance": "619:sky130_fd_sc_hd__nor2_2",
+          "cell": "NOR2",
+          "pins": {
+            "A": {
+              "symbol": "g",
+              "net": "2046",
+              "label": "n2046(AND2#1070.X)"
+            },
+            "B": {
+              "symbol": "p",
+              "net": "2048",
+              "label": "n2048(NOR2#844.Y)"
+            }
+          },
+          "out": "2051"
+        }
+      ],
+      "signals": {
+        "a": {
+          "net": "2007",
+          "label": "n2007(DFRTP#554.Q)"
+        },
+        "b": {
+          "net": "1881",
+          "label": "n1881(DFRTP#142.Q)"
+        },
+        "g": {
+          "net": "2046",
+          "label": "n2046(AND2#1070.X)"
+        },
+        "p": {
+          "net": "2048",
+          "label": "n2048(NOR2#844.Y)"
+        },
+        "xs": {
+          "net": "2051",
+          "label": "n2051(NOR2#619.Y)"
+        }
+      }
+    },
+    {
+      "kind": "ADDER_SLICE",
+      "note": "carry-lookahead bit slice: generate, propagate, and (where built) the half-sum of one operand bit pair",
+      "cloud": 0,
+      "check": "function",
+      "gates": [
+        {
+          "role": "g",
+          "instance": "630:sky130_fd_sc_hd__and2_2",
+          "cell": "AND2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "1646",
+              "label": "n1646(DFRTP#387.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "1908",
+              "label": "n1908(DFRTP#348.Q)"
+            }
+          },
+          "out": "2069"
+        },
+        {
+          "role": "p",
+          "instance": "616:sky130_fd_sc_hd__nor2_2",
+          "cell": "NOR2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "1646",
+              "label": "n1646(DFRTP#387.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "1908",
+              "label": "n1908(DFRTP#348.Q)"
+            }
+          },
+          "out": "2070"
+        },
+        {
+          "role": "xs",
+          "instance": "989:sky130_fd_sc_hd__nor2_2",
+          "cell": "NOR2",
+          "pins": {
+            "A": {
+              "symbol": "g",
+              "net": "2069",
+              "label": "n2069(AND2#630.X)"
+            },
+            "B": {
+              "symbol": "p",
+              "net": "2070",
+              "label": "n2070(NOR2#616.Y)"
+            }
+          },
+          "out": "2071"
+        }
+      ],
+      "signals": {
+        "a": {
+          "net": "1646",
+          "label": "n1646(DFRTP#387.Q)"
+        },
+        "b": {
+          "net": "1908",
+          "label": "n1908(DFRTP#348.Q)"
+        },
+        "g": {
+          "net": "2069",
+          "label": "n2069(AND2#630.X)"
+        },
+        "p": {
+          "net": "2070",
+          "label": "n2070(NOR2#616.Y)"
+        },
+        "xs": {
+          "net": "2071",
+          "label": "n2071(NOR2#989.Y)"
+        }
+      }
+    },
+    {
+      "kind": "ADDER_SLICE",
+      "note": "carry-lookahead bit slice: generate, propagate, and (where built) the half-sum of one operand bit pair",
+      "cloud": 0,
+      "check": "function",
+      "gates": [
+        {
+          "role": "g",
+          "instance": "976:sky130_fd_sc_hd__nand2_2",
+          "cell": "NAND2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "1968",
+              "label": "n1968(DFRTP#385.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "2085",
+              "label": "n2085(DFRTP#182.Q)"
+            }
+          },
+          "out": "2063"
+        },
+        {
+          "role": "p",
+          "instance": "636:sky130_fd_sc_hd__or2_2",
+          "cell": "OR2",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "1968",
+              "label": "n1968(DFRTP#385.Q)"
+            },
+            "B": {
+              "symbol": "b",
+              "net": "2085",
+              "label": "n2085(DFRTP#182.Q)"
+            }
+          },
+          "out": "1821"
+        },
+        {
+          "role": "xs",
+          "instance": "852:sky130_fd_sc_hd__nand2_2",
+          "cell": "NAND2",
+          "pins": {
+            "A": {
+              "symbol": "g",
+              "net": "2063",
+              "label": "n2063(NAND2#976.Y)"
+            },
+            "B": {
+              "symbol": "p",
+              "net": "1821",
+              "label": "n1821(OR2#636.X)"
+            }
+          },
+          "out": "2065"
+        }
+      ],
+      "signals": {
+        "a": {
+          "net": "1968",
+          "label": "n1968(DFRTP#385.Q)"
+        },
+        "b": {
+          "net": "2085",
+          "label": "n2085(DFRTP#182.Q)"
+        },
+        "g": {
+          "net": "2063",
+          "label": "n2063(NAND2#976.Y)"
+        },
+        "p": {
+          "net": "1821",
+          "label": "n1821(OR2#636.X)"
+        },
+        "xs": {
+          "net": "2065",
+          "label": "n2065(NAND2#852.Y)"
+        }
+      }
+    },
+    {
+      "kind": "CLOCK_BUFFER",
+      "note": "clock-tree buffer",
+      "cloud": 1,
+      "check": "function",
+      "gates": [
+        {
+          "role": "buf",
+          "instance": "136:sky130_fd_sc_hd__clkbuf_16",
+          "cell": "CLKBUF",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "1885",
+              "label": "n1885(CLKBUF#5.X)"
+            }
+          },
+          "out": "1918"
+        }
+      ],
+      "signals": {
+        "a": {
+          "net": "1885",
+          "label": "n1885(CLKBUF#5.X)"
+        },
+        "buf": {
+          "net": "1918",
+          "label": "n1918(CLKBUF#136.X)"
+        }
+      }
+    },
+    {
+      "kind": "CLOCK_BUFFER",
+      "note": "clock-tree buffer",
+      "cloud": 1,
+      "check": "function",
+      "gates": [
+        {
+          "role": "buf",
+          "instance": "443:sky130_fd_sc_hd__clkbuf_16",
+          "cell": "CLKBUF",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "1885",
+              "label": "n1885(CLKBUF#5.X)"
+            }
+          },
+          "out": "1976"
+        }
+      ],
+      "signals": {
+        "a": {
+          "net": "1885",
+          "label": "n1885(CLKBUF#5.X)"
+        },
+        "buf": {
+          "net": "1976",
+          "label": "n1976(CLKBUF#443.X)"
+        }
+      }
+    },
+    {
+      "kind": "CLOCK_BUFFER",
+      "note": "clock-tree buffer",
+      "cloud": 1,
+      "check": "function",
+      "gates": [
+        {
+          "role": "buf",
+          "instance": "5:sky130_fd_sc_hd__clkbuf_16",
+          "cell": "CLKBUF",
+          "pins": {
+            "A": {
+              "symbol": "a",
+              "net": "1910",
+              "label": "clk"
+            }
+          },
+          "out": "1885"
+        }
+      ],
+      "signals": {
+        "a": {
+          "net": "1910",
+          "label": "clk"
+        },
+        "buf": {
+          "net": "1885",
+          "label": "n1885(CLKBUF#5.X)"
+        }
+      }
+    },
+    {
+      "kind": "CARRY_MERGE",
+      "note": "AND-OR compound folding a bit slice's generate term into the carry chain",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "1048:sky130_fd_sc_hd__a31o_2",
+          "cell": "A31O",
+          "pins": {
+            "A1": {
+              "symbol": "in_A1",
+              "net": "1988",
+              "label": "n1988(DFRTP#541.Q)"
+            },
+            "A2": {
+              "symbol": "in_A2",
+              "net": "2012",
+              "label": "n2012(DFRTP#181.Q)"
+            },
+            "B1": {
+              "symbol": "in_B1",
+              "net": "2025",
+              "label": "n2025(AND2#864.X)"
+            },
+            "A3": {
+              "symbol": "in_A3",
+              "net": "2026",
+              "label": "n2026(XOR2#631.X)"
+            }
+          },
+          "out": "2027"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "2027",
+          "label": "n2027(A31O#1048.X)"
+        },
+        "in_A1": {
+          "net": "1988",
+          "label": "n1988(DFRTP#541.Q)"
+        },
+        "in_A2": {
+          "net": "2012",
+          "label": "n2012(DFRTP#181.Q)"
+        },
+        "in_A3": {
+          "net": "2026",
+          "label": "n2026(XOR2#631.X)"
+        },
+        "in_B1": {
+          "net": "2025",
+          "label": "n2025(AND2#864.X)"
+        }
+      }
+    },
+    {
+      "kind": "SUM_BIT",
+      "note": "a sum bit of the adder: combines slice terms and the carry into it, and is consumed only by the reduce tree",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "1052:sky130_fd_sc_hd__xnor2_2",
+          "cell": "XNOR2",
+          "pins": {
+            "A": {
+              "symbol": "in_A",
+              "net": "2022",
+              "label": "n2022(NAND2#1002.Y)"
+            },
+            "B": {
+              "symbol": "in_B",
+              "net": "2026",
+              "label": "n2026(XOR2#631.X)"
+            }
+          },
+          "out": "2096"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "2096",
+          "label": "n2096(XNOR2#1052.Y)"
+        },
+        "in_A": {
+          "net": "2022",
+          "label": "n2022(NAND2#1002.Y)"
+        },
+        "in_B": {
+          "net": "2026",
+          "label": "n2026(XOR2#631.X)"
+        }
+      }
+    },
+    {
+      "kind": "EQ_REDUCE",
+      "note": "AND-class gate reducing sum/compare bits toward a single equality output",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "108:sky130_fd_sc_hd__and3_2",
+          "cell": "AND3",
+          "pins": {
+            "A": {
+              "symbol": "in_A",
+              "net": "1893",
+              "label": "n1893(XNOR2#900.Y)"
+            },
+            "B": {
+              "symbol": "in_B",
+              "net": "1894",
+              "label": "n1894(XNOR2#975.Y)"
+            },
+            "C": {
+              "symbol": "in_C",
+              "net": "1895",
+              "label": "n1895(O21BAI#623.Y)"
+            }
+          },
+          "out": "1896"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "1896",
+          "label": "n1896(AND3#108.X)"
+        },
+        "in_A": {
+          "net": "1893",
+          "label": "n1893(XNOR2#900.Y)"
+        },
+        "in_B": {
+          "net": "1894",
+          "label": "n1894(XNOR2#975.Y)"
+        },
+        "in_C": {
+          "net": "1895",
+          "label": "n1895(O21BAI#623.Y)"
+        }
+      }
+    },
+    {
+      "kind": "CARRY_MERGE",
+      "note": "AND-OR compound folding a bit slice's generate term into the carry chain",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "613:sky130_fd_sc_hd__a31o_2",
+          "cell": "A31O",
+          "pins": {
+            "A1": {
+              "symbol": "in_A1",
+              "net": "2088",
+              "label": "n2088(DFRTP#388.Q)"
+            },
+            "A3": {
+              "symbol": "in_A3",
+              "net": "2037",
+              "label": "n2037(OR2#895.X)"
+            },
+            "A2": {
+              "symbol": "in_A2",
+              "net": "1542",
+              "label": "n1542(DFRTP#180.Q)"
+            },
+            "B1": {
+              "symbol": "in_B1",
+              "net": "2039",
+              "label": "n2039(AND2#711.X)"
+            }
+          },
+          "out": "2052"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "2052",
+          "label": "n2052(A31O#613.X)"
+        },
+        "in_A1": {
+          "net": "2088",
+          "label": "n2088(DFRTP#388.Q)"
+        },
+        "in_A2": {
+          "net": "1542",
+          "label": "n1542(DFRTP#180.Q)"
+        },
+        "in_A3": {
+          "net": "2037",
+          "label": "n2037(OR2#895.X)"
+        },
+        "in_B1": {
+          "net": "2039",
+          "label": "n2039(AND2#711.X)"
+        }
+      }
+    },
+    {
+      "kind": "CARRY_MERGE",
+      "note": "AND-OR compound folding a bit slice's generate term into the carry chain",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "622:sky130_fd_sc_hd__a21boi_2",
+          "cell": "A21BOI",
+          "pins": {
+            "B1_N": {
+              "symbol": "in_B1_N",
+              "net": "2063",
+              "label": "n2063(NAND2#976.Y)"
+            },
+            "A1": {
+              "symbol": "in_A1",
+              "net": "1821",
+              "label": "n1821(OR2#636.X)"
+            },
+            "A2": {
+              "symbol": "in_A2",
+              "net": "2067",
+              "label": "n2067(A31O#635.X)"
+            }
+          },
+          "out": "2072"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "2072",
+          "label": "n2072(A21BOI#622.Y)"
+        },
+        "in_A1": {
+          "net": "1821",
+          "label": "n1821(OR2#636.X)"
+        },
+        "in_A2": {
+          "net": "2067",
+          "label": "n2067(A31O#635.X)"
+        },
+        "in_B1_N": {
+          "net": "2063",
+          "label": "n2063(NAND2#976.Y)"
+        }
+      }
+    },
+    {
+      "kind": "SUM_BIT",
+      "note": "a sum bit of the adder: combines slice terms and the carry into it, and is consumed only by the reduce tree",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "623:sky130_fd_sc_hd__o21bai_2",
+          "cell": "O21BAI",
+          "pins": {
+            "A1": {
+              "symbol": "in_A1",
+              "net": "2070",
+              "label": "n2070(NOR2#616.Y)"
+            },
+            "A2": {
+              "symbol": "in_A2",
+              "net": "2072",
+              "label": "n2072(A21BOI#622.Y)"
+            },
+            "B1_N": {
+              "symbol": "in_B1_N",
+              "net": "2069",
+              "label": "n2069(AND2#630.X)"
+            }
+          },
+          "out": "1895"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "1895",
+          "label": "n1895(O21BAI#623.Y)"
+        },
+        "in_A1": {
+          "net": "2070",
+          "label": "n2070(NOR2#616.Y)"
+        },
+        "in_A2": {
+          "net": "2072",
+          "label": "n2072(A21BOI#622.Y)"
+        },
+        "in_B1_N": {
+          "net": "2069",
+          "label": "n2069(AND2#630.X)"
+        }
+      }
+    },
+    {
+      "kind": "SUM_BIT",
+      "note": "a sum bit of the adder: combines slice terms and the carry into it, and is consumed only by the reduce tree",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "632:sky130_fd_sc_hd__xor2_2",
+          "cell": "XOR2",
+          "pins": {
+            "A": {
+              "symbol": "in_A",
+              "net": "2062",
+              "label": "n2062(NOR2#761.Y)"
+            },
+            "B": {
+              "symbol": "in_B",
+              "net": "9400",
+              "label": "n9400(A21O#781.X)"
+            }
+          },
+          "out": "1892"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "1892",
+          "label": "n1892(XOR2#632.X)"
+        },
+        "in_A": {
+          "net": "2062",
+          "label": "n2062(NOR2#761.Y)"
+        },
+        "in_B": {
+          "net": "9400",
+          "label": "n9400(A21O#781.X)"
+        }
+      }
+    },
+    {
+      "kind": "SUM_BIT",
+      "note": "a sum bit of the adder: combines slice terms and the carry into it, and is consumed only by the reduce tree",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "633:sky130_fd_sc_hd__xor2_2",
+          "cell": "XOR2",
+          "pins": {
+            "B": {
+              "symbol": "in_B",
+              "net": "2057",
+              "label": "n2057(A31O#917.X)"
+            },
+            "A": {
+              "symbol": "in_A",
+              "net": "2051",
+              "label": "n2051(NOR2#619.Y)"
+            }
+          },
+          "out": "1891"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "1891",
+          "label": "n1891(XOR2#633.X)"
+        },
+        "in_A": {
+          "net": "2051",
+          "label": "n2051(NOR2#619.Y)"
+        },
+        "in_B": {
+          "net": "2057",
+          "label": "n2057(A31O#917.X)"
+        }
+      }
+    },
+    {
+      "kind": "SUM_BIT",
+      "note": "a sum bit of the adder: combines slice terms and the carry into it, and is consumed only by the reduce tree",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "634:sky130_fd_sc_hd__xor2_2",
+          "cell": "XOR2",
+          "pins": {
+            "A": {
+              "symbol": "in_A",
+              "net": "2027",
+              "label": "n2027(A31O#1048.X)"
+            },
+            "B": {
+              "symbol": "in_B",
+              "net": "2034",
+              "label": "n2034(AND2#1011.X)"
+            }
+          },
+          "out": "1889"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "1889",
+          "label": "n1889(XOR2#634.X)"
+        },
+        "in_A": {
+          "net": "2027",
+          "label": "n2027(A31O#1048.X)"
+        },
+        "in_B": {
+          "net": "2034",
+          "label": "n2034(AND2#1011.X)"
+        }
+      }
+    },
+    {
+      "kind": "CARRY_MERGE",
+      "note": "AND-OR compound folding a bit slice's generate term into the carry chain",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "635:sky130_fd_sc_hd__a31o_2",
+          "cell": "A31O",
+          "pins": {
+            "A2": {
+              "symbol": "in_A2",
+              "net": "2057",
+              "label": "n2057(A31O#917.X)"
+            },
+            "A1": {
+              "symbol": "in_A1",
+              "net": "2051",
+              "label": "n2051(NOR2#619.Y)"
+            },
+            "A3": {
+              "symbol": "in_A3",
+              "net": "2062",
+              "label": "n2062(NOR2#761.Y)"
+            },
+            "B1": {
+              "symbol": "in_B1",
+              "net": "2066",
+              "label": "n2066(A31O#866.X)"
+            }
+          },
+          "out": "2067"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "2067",
+          "label": "n2067(A31O#635.X)"
+        },
+        "in_A1": {
+          "net": "2051",
+          "label": "n2051(NOR2#619.Y)"
+        },
+        "in_A2": {
+          "net": "2057",
+          "label": "n2057(A31O#917.X)"
+        },
+        "in_A3": {
+          "net": "2062",
+          "label": "n2062(NOR2#761.Y)"
+        },
+        "in_B1": {
+          "net": "2066",
+          "label": "n2066(A31O#866.X)"
+        }
+      }
+    },
+    {
+      "kind": "EQ_REDUCE",
+      "note": "AND-class gate reducing sum/compare bits toward a single equality output",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "659:sky130_fd_sc_hd__and4bb_2",
+          "cell": "AND4BB",
+          "pins": {
+            "B_N": {
+              "symbol": "in_B_N",
+              "net": "1888",
+              "label": "n1888(AND2#629.X)"
+            },
+            "C": {
+              "symbol": "in_C",
+              "net": "1896",
+              "label": "n1896(AND3#108.X)"
+            },
+            "A_N": {
+              "symbol": "in_A_N",
+              "net": "2096",
+              "label": "n2096(XNOR2#1052.Y)"
+            },
+            "D": {
+              "symbol": "in_D",
+              "net": "1897",
+              "label": "n1897(AND4BB#6.X)"
+            }
+          },
+          "out": "1877"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "1877",
+          "label": "S"
+        },
+        "in_A_N": {
+          "net": "2096",
+          "label": "n2096(XNOR2#1052.Y)"
+        },
+        "in_B_N": {
+          "net": "1888",
+          "label": "n1888(AND2#629.X)"
+        },
+        "in_C": {
+          "net": "1896",
+          "label": "n1896(AND3#108.X)"
+        },
+        "in_D": {
+          "net": "1897",
+          "label": "n1897(AND4BB#6.X)"
+        }
+      }
+    },
+    {
+      "kind": "EQ_REDUCE",
+      "note": "AND-class gate reducing sum/compare bits toward a single equality output",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "6:sky130_fd_sc_hd__and4bb_2",
+          "cell": "AND4BB",
+          "pins": {
+            "B_N": {
+              "symbol": "in_B_N",
+              "net": "1889",
+              "label": "n1889(XOR2#634.X)"
+            },
+            "A_N": {
+              "symbol": "in_A_N",
+              "net": "1890",
+              "label": "n1890(XOR2#972.X)"
+            },
+            "D": {
+              "symbol": "in_D",
+              "net": "1892",
+              "label": "n1892(XOR2#632.X)"
+            },
+            "C": {
+              "symbol": "in_C",
+              "net": "1891",
+              "label": "n1891(XOR2#633.X)"
+            }
+          },
+          "out": "1897"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "1897",
+          "label": "n1897(AND4BB#6.X)"
+        },
+        "in_A_N": {
+          "net": "1890",
+          "label": "n1890(XOR2#972.X)"
+        },
+        "in_B_N": {
+          "net": "1889",
+          "label": "n1889(XOR2#634.X)"
+        },
+        "in_C": {
+          "net": "1891",
+          "label": "n1891(XOR2#633.X)"
+        },
+        "in_D": {
+          "net": "1892",
+          "label": "n1892(XOR2#632.X)"
+        }
+      }
+    },
+    {
+      "kind": "CARRY_MERGE",
+      "note": "AND-OR compound folding a bit slice's generate term into the carry chain",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "707:sky130_fd_sc_hd__a21bo_2",
+          "cell": "A21BO",
+          "pins": {
+            "A1": {
+              "symbol": "in_A1",
+              "net": "2027",
+              "label": "n2027(A31O#1048.X)"
+            },
+            "A2": {
+              "symbol": "in_A2",
+              "net": "2034",
+              "label": "n2034(AND2#1011.X)"
+            },
+            "B1_N": {
+              "symbol": "in_B1_N",
+              "net": "2031",
+              "label": "n2031(NAND2#978.Y)"
+            }
+          },
+          "out": "2045"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "2045",
+          "label": "n2045(A21BO#707.X)"
+        },
+        "in_A1": {
+          "net": "2027",
+          "label": "n2027(A31O#1048.X)"
+        },
+        "in_A2": {
+          "net": "2034",
+          "label": "n2034(AND2#1011.X)"
+        },
+        "in_B1_N": {
+          "net": "2031",
+          "label": "n2031(NAND2#978.Y)"
+        }
+      }
+    },
+    {
+      "kind": "CARRY_MERGE",
+      "note": "AND-OR compound folding a bit slice's generate term into the carry chain",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "781:sky130_fd_sc_hd__a21o_2",
+          "cell": "A21O",
+          "pins": {
+            "A2": {
+              "symbol": "in_A2",
+              "net": "2057",
+              "label": "n2057(A31O#917.X)"
+            },
+            "B1": {
+              "symbol": "in_B1",
+              "net": "2046",
+              "label": "n2046(AND2#1070.X)"
+            },
+            "A1": {
+              "symbol": "in_A1",
+              "net": "2051",
+              "label": "n2051(NOR2#619.Y)"
+            }
+          },
+          "out": "9400"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "9400",
+          "label": "n9400(A21O#781.X)"
+        },
+        "in_A1": {
+          "net": "2051",
+          "label": "n2051(NOR2#619.Y)"
+        },
+        "in_A2": {
+          "net": "2057",
+          "label": "n2057(A31O#917.X)"
+        },
+        "in_B1": {
+          "net": "2046",
+          "label": "n2046(AND2#1070.X)"
+        }
+      }
+    },
+    {
+      "kind": "CARRY_MERGE",
+      "note": "AND-OR compound folding a bit slice's generate term into the carry chain",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "866:sky130_fd_sc_hd__a31o_2",
+          "cell": "A31O",
+          "pins": {
+            "A2": {
+              "symbol": "in_A2",
+              "net": "1881",
+              "label": "n1881(DFRTP#142.Q)"
+            },
+            "A1": {
+              "symbol": "in_A1",
+              "net": "2007",
+              "label": "n2007(DFRTP#554.Q)"
+            },
+            "B1": {
+              "symbol": "in_B1",
+              "net": "2061",
+              "label": "n2061(AND2#639.X)"
+            },
+            "A3": {
+              "symbol": "in_A3",
+              "net": "2059",
+              "label": "n2059(OR2#841.X)"
+            }
+          },
+          "out": "2066"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "2066",
+          "label": "n2066(A31O#866.X)"
+        },
+        "in_A1": {
+          "net": "2007",
+          "label": "n2007(DFRTP#554.Q)"
+        },
+        "in_A2": {
+          "net": "1881",
+          "label": "n1881(DFRTP#142.Q)"
+        },
+        "in_A3": {
+          "net": "2059",
+          "label": "n2059(OR2#841.X)"
+        },
+        "in_B1": {
+          "net": "2061",
+          "label": "n2061(AND2#639.X)"
+        }
+      }
+    },
+    {
+      "kind": "SUM_BIT",
+      "note": "a sum bit of the adder: combines slice terms and the carry into it, and is consumed only by the reduce tree",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "900:sky130_fd_sc_hd__xnor2_2",
+          "cell": "XNOR2",
+          "pins": {
+            "B": {
+              "symbol": "in_B",
+              "net": "2067",
+              "label": "n2067(A31O#635.X)"
+            },
+            "A": {
+              "symbol": "in_A",
+              "net": "2065",
+              "label": "n2065(NAND2#852.Y)"
+            }
+          },
+          "out": "1893"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "1893",
+          "label": "n1893(XNOR2#900.Y)"
+        },
+        "in_A": {
+          "net": "2065",
+          "label": "n2065(NAND2#852.Y)"
+        },
+        "in_B": {
+          "net": "2067",
+          "label": "n2067(A31O#635.X)"
+        }
+      }
+    },
+    {
+      "kind": "CARRY_MERGE",
+      "note": "AND-OR compound folding a bit slice's generate term into the carry chain",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "917:sky130_fd_sc_hd__a31o_2",
+          "cell": "A31O",
+          "pins": {
+            "B1": {
+              "symbol": "in_B1",
+              "net": "2052",
+              "label": "n2052(A31O#613.X)"
+            },
+            "A1": {
+              "symbol": "in_A1",
+              "net": "2027",
+              "label": "n2027(A31O#1048.X)"
+            },
+            "A2": {
+              "symbol": "in_A2",
+              "net": "2034",
+              "label": "n2034(AND2#1011.X)"
+            },
+            "A3": {
+              "symbol": "in_A3",
+              "net": "1829",
+              "label": "n1829(NOR2#765.Y)"
+            }
+          },
+          "out": "2057"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "2057",
+          "label": "n2057(A31O#917.X)"
+        },
+        "in_A1": {
+          "net": "2027",
+          "label": "n2027(A31O#1048.X)"
+        },
+        "in_A2": {
+          "net": "2034",
+          "label": "n2034(AND2#1011.X)"
+        },
+        "in_A3": {
+          "net": "1829",
+          "label": "n1829(NOR2#765.Y)"
+        },
+        "in_B1": {
+          "net": "2052",
+          "label": "n2052(A31O#613.X)"
+        }
+      }
+    },
+    {
+      "kind": "SUM_BIT",
+      "note": "a sum bit of the adder: combines slice terms and the carry into it, and is consumed only by the reduce tree",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "972:sky130_fd_sc_hd__xor2_2",
+          "cell": "XOR2",
+          "pins": {
+            "A": {
+              "symbol": "in_A",
+              "net": "1829",
+              "label": "n1829(NOR2#765.Y)"
+            },
+            "B": {
+              "symbol": "in_B",
+              "net": "2045",
+              "label": "n2045(A21BO#707.X)"
+            }
+          },
+          "out": "1890"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "1890",
+          "label": "n1890(XOR2#972.X)"
+        },
+        "in_A": {
+          "net": "1829",
+          "label": "n1829(NOR2#765.Y)"
+        },
+        "in_B": {
+          "net": "2045",
+          "label": "n2045(A21BO#707.X)"
+        }
+      }
+    },
+    {
+      "kind": "SUM_BIT",
+      "note": "a sum bit of the adder: combines slice terms and the carry into it, and is consumed only by the reduce tree",
+      "cloud": 0,
+      "check": "context",
+      "gates": [
+        {
+          "role": "cell",
+          "instance": "975:sky130_fd_sc_hd__xnor2_2",
+          "cell": "XNOR2",
+          "pins": {
+            "B": {
+              "symbol": "in_B",
+              "net": "2072",
+              "label": "n2072(A21BOI#622.Y)"
+            },
+            "A": {
+              "symbol": "in_A",
+              "net": "2071",
+              "label": "n2071(NOR2#989.Y)"
+            }
+          },
+          "out": "1894"
+        }
+      ],
+      "signals": {
+        "cell": {
+          "net": "1894",
+          "label": "n1894(XNOR2#975.Y)"
+        },
+        "in_A": {
+          "net": "2071",
+          "label": "n2071(NOR2#989.Y)"
+        },
+        "in_B": {
+          "net": "2072",
+          "label": "n2072(A21BOI#622.Y)"
+        }
+      }
+    }
+  ],
+  "groups": [
+    {
+      "label": "8-bit adder (8 carry merges, 8 sum bits) + compare/equality tree (3 reduce stages)",
+      "cloud": 0,
+      "kind_counts": {
+        "HALF_ADDER": 1,
+        "ADDER_SLICE": 7,
+        "CARRY_MERGE": 8,
+        "SUM_BIT": 8,
+        "EQ_REDUCE": 3
+      },
+      "blocks": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "operand_bits": [
+        {
+          "bit": "0",
+          "a": "A[0]",
+          "b": "B[0]",
+          "kind": "ADDER_SLICE",
+          "terms": [
+            "g",
+            "p",
+            "xs"
+          ]
+        },
+        {
+          "bit": "1",
+          "a": "A[1]",
+          "b": "B[1]",
+          "kind": "HALF_ADDER",
+          "terms": [
+            "carry",
+            "sum"
+          ]
+        },
+        {
+          "bit": "2",
+          "a": "A[2]",
+          "b": "B[2]",
+          "kind": "ADDER_SLICE",
+          "terms": [
+            "g",
+            "p",
+            "xs"
+          ]
+        },
+        {
+          "bit": "3",
+          "a": "A[3]",
+          "b": "B[3]",
+          "kind": "ADDER_SLICE",
+          "terms": [
+            "g",
+            "p",
+            "p2",
+            "xs"
+          ]
+        },
+        {
+          "bit": "4",
+          "a": "A[4]",
+          "b": "B[4]",
+          "kind": "ADDER_SLICE",
+          "terms": [
+            "g",
+            "p",
+            "xs"
+          ]
+        },
+        {
+          "bit": "5",
+          "a": "A[5]",
+          "b": "B[5]",
+          "kind": "ADDER_SLICE",
+          "terms": [
+            "g",
+            "p",
+            "p2",
+            "xs"
+          ]
+        },
+        {
+          "bit": "6",
+          "a": "A[6]",
+          "b": "B[6]",
+          "kind": "ADDER_SLICE",
+          "terms": [
+            "g",
+            "p",
+            "xs"
+          ]
+        },
+        {
+          "bit": "7",
+          "a": "A[7]",
+          "b": "B[7]",
+          "kind": "ADDER_SLICE",
+          "terms": [
+            "g",
+            "p",
+            "xs"
+          ]
+        }
+      ],
+      "width": 8,
+      "drives_ports": [
+        "S"
+      ]
+    },
+    {
+      "label": "1 enable-gated shift register(s), width 8",
+      "cloud": 13,
+      "kind_counts": {
+        "LOAD_ENABLE_REG": 8
+      },
+      "blocks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "shift_chains": [
+        {
+          "length": 8,
+          "serial_in": "A",
+          "enable": "en",
+          "stages": [
+            {
+              "bit": 0,
+              "flop": "181:sky130_fd_sc_hd__dfrtp_2",
+              "name": "A[0]"
+            },
+            {
+              "bit": 1,
+              "flop": "368:sky130_fd_sc_hd__dfrtp_2",
+              "name": "A[1]"
+            },
+            {
+              "bit": 2,
+              "flop": "180:sky130_fd_sc_hd__dfrtp_2",
+              "name": "A[2]"
+            },
+            {
+              "bit": 3,
+              "flop": "146:sky130_fd_sc_hd__dfrtp_2",
+              "name": "A[3]"
+            },
+            {
+              "bit": 4,
+              "flop": "142:sky130_fd_sc_hd__dfrtp_2",
+              "name": "A[4]"
+            },
+            {
+              "bit": 5,
+              "flop": "141:sky130_fd_sc_hd__dfrtp_2",
+              "name": "A[5]"
+            },
+            {
+              "bit": 6,
+              "flop": "182:sky130_fd_sc_hd__dfrtp_2",
+              "name": "A[6]"
+            },
+            {
+              "bit": 7,
+              "flop": "348:sky130_fd_sc_hd__dfrtp_2",
+              "name": "A[7]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "1 enable-gated shift register(s), width 8",
+      "cloud": 3,
+      "kind_counts": {
+        "LOAD_ENABLE_REG": 8
+      },
+      "blocks": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "shift_chains": [
+        {
+          "length": 8,
+          "serial_in": "B",
+          "enable": "en",
+          "stages": [
+            {
+              "bit": 0,
+              "flop": "541:sky130_fd_sc_hd__dfrtp_2",
+              "name": "B[0]"
+            },
+            {
+              "bit": 1,
+              "flop": "433:sky130_fd_sc_hd__dfrtp_2",
+              "name": "B[1]"
+            },
+            {
+              "bit": 2,
+              "flop": "388:sky130_fd_sc_hd__dfrtp_2",
+              "name": "B[2]"
+            },
+            {
+              "bit": 3,
+              "flop": "386:sky130_fd_sc_hd__dfrtp_2",
+              "name": "B[3]"
+            },
+            {
+              "bit": 4,
+              "flop": "554:sky130_fd_sc_hd__dfrtp_2",
+              "name": "B[4]"
+            },
+            {
+              "bit": 5,
+              "flop": "453:sky130_fd_sc_hd__dfrtp_2",
+              "name": "B[5]"
+            },
+            {
+              "bit": 6,
+              "flop": "385:sky130_fd_sc_hd__dfrtp_2",
+              "name": "B[6]"
+            },
+            {
+              "bit": 7,
+              "flop": "387:sky130_fd_sc_hd__dfrtp_2",
+              "name": "B[7]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "clock tree (3 buffers -> 16 flop clock pins)",
+      "cloud": 1,
+      "kind_counts": {
+        "CLOCK_BUFFER": 3
+      },
+      "blocks": [
+        24,
+        25,
+        26
+      ],
+      "clocked_flops": [
+        "141:sky130_fd_sc_hd__dfrtp_2",
+        "142:sky130_fd_sc_hd__dfrtp_2",
+        "146:sky130_fd_sc_hd__dfrtp_2",
+        "180:sky130_fd_sc_hd__dfrtp_2",
+        "181:sky130_fd_sc_hd__dfrtp_2",
+        "182:sky130_fd_sc_hd__dfrtp_2",
+        "348:sky130_fd_sc_hd__dfrtp_2",
+        "368:sky130_fd_sc_hd__dfrtp_2",
+        "385:sky130_fd_sc_hd__dfrtp_2",
+        "386:sky130_fd_sc_hd__dfrtp_2",
+        "387:sky130_fd_sc_hd__dfrtp_2",
+        "388:sky130_fd_sc_hd__dfrtp_2",
+        "433:sky130_fd_sc_hd__dfrtp_2",
+        "453:sky130_fd_sc_hd__dfrtp_2",
+        "541:sky130_fd_sc_hd__dfrtp_2",
+        "554:sky130_fd_sc_hd__dfrtp_2"
+      ]
+    }
+  ],
+  "unmatched_gates": [],
+  "stats": {
+    "cells": 79,
+    "ports": 6,
+    "clouds": 18,
+    "blocks": 46,
+    "cells_claimed": 79,
+    "cells_unmatched": 0,
+    "block_kinds": {
+      "LOAD_ENABLE_REG": 16,
+      "HALF_ADDER": 1,
+      "ADDER_SLICE": 7,
+      "CLOCK_BUFFER": 3,
+      "CARRY_MERGE": 8,
+      "SUM_BIT": 8,
+      "EQ_REDUCE": 3
+    }
+  }
+}
