@@ -1,0 +1,4810 @@
+{
+  "reduction": {
+    "buffers_removed": [
+      "136:sky130_fd_sc_hd__clkbuf_16",
+      "443:sky130_fd_sc_hd__clkbuf_16",
+      "5:sky130_fd_sc_hd__clkbuf_16"
+    ],
+    "inverters_removed": [],
+    "diodes_dropped": [],
+    "num_buffers_removed": 3,
+    "num_inverters_removed": 0,
+    "num_diodes_dropped": 0,
+    "inverted_connections": 0
+  },
+  "ports": {
+    "inputs": [
+      "A",
+      "B",
+      "clk",
+      "en",
+      "rst_n"
+    ],
+    "outputs": {
+      "S": {
+        "net": "1877",
+        "inv": false
+      }
+    }
+  },
+  "clock_network": {
+    "roots": [
+      {
+        "net": "1910",
+        "inverted": false,
+        "source": {
+          "kind": "input_port",
+          "net": "1910",
+          "port": "clk"
+        },
+        "num_flops": 16
+      }
+    ],
+    "gated_clocks": []
+  },
+  "constants": [],
+  "cells": {
+    "1002:sky130_fd_sc_hd__nand2_2": {
+      "cell": "sky130_fd_sc_hd__nand2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "1988",
+          "inv": false
+        },
+        "B": {
+          "net": "2012",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "2022"
+      }
+    },
+    "1011:sky130_fd_sc_hd__and2_2": {
+      "cell": "sky130_fd_sc_hd__and2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2030",
+          "inv": false
+        },
+        "B": {
+          "net": "2031",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2034"
+      }
+    },
+    "1048:sky130_fd_sc_hd__a31o_2": {
+      "cell": "sky130_fd_sc_hd__a31o_2",
+      "kind": "comb",
+      "inputs": {
+        "A1": {
+          "net": "1988",
+          "inv": false
+        },
+        "A2": {
+          "net": "2012",
+          "inv": false
+        },
+        "A3": {
+          "net": "2026",
+          "inv": false
+        },
+        "B1": {
+          "net": "2025",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2027"
+      }
+    },
+    "1052:sky130_fd_sc_hd__xnor2_2": {
+      "cell": "sky130_fd_sc_hd__xnor2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2022",
+          "inv": false
+        },
+        "B": {
+          "net": "2026",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "2096"
+      }
+    },
+    "1069:sky130_fd_sc_hd__or2_2": {
+      "cell": "sky130_fd_sc_hd__or2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "1988",
+          "inv": false
+        },
+        "B": {
+          "net": "2012",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2074"
+      }
+    },
+    "1070:sky130_fd_sc_hd__and2_2": {
+      "cell": "sky130_fd_sc_hd__and2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2007",
+          "inv": false
+        },
+        "B": {
+          "net": "1881",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2046"
+      }
+    },
+    "108:sky130_fd_sc_hd__and3_2": {
+      "cell": "sky130_fd_sc_hd__and3_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "1893",
+          "inv": false
+        },
+        "B": {
+          "net": "1894",
+          "inv": false
+        },
+        "C": {
+          "net": "1895",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1896"
+      }
+    },
+    "137:sky130_fd_sc_hd__mux2_1": {
+      "cell": "sky130_fd_sc_hd__mux2_1",
+      "kind": "comb",
+      "inputs": {
+        "A0": {
+          "net": "1957",
+          "inv": false
+        },
+        "A1": {
+          "net": "1542",
+          "inv": false
+        },
+        "S": {
+          "net": "1996",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1948"
+      }
+    },
+    "138:sky130_fd_sc_hd__mux2_1": {
+      "cell": "sky130_fd_sc_hd__mux2_1",
+      "kind": "comb",
+      "inputs": {
+        "A0": {
+          "net": "1881",
+          "inv": false
+        },
+        "A1": {
+          "net": "1957",
+          "inv": false
+        },
+        "S": {
+          "net": "1996",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1949"
+      }
+    },
+    "139:sky130_fd_sc_hd__mux2_1": {
+      "cell": "sky130_fd_sc_hd__mux2_1",
+      "kind": "comb",
+      "inputs": {
+        "A0": {
+          "net": "2085",
+          "inv": false
+        },
+        "A1": {
+          "net": "1900",
+          "inv": false
+        },
+        "S": {
+          "net": "1996",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1951"
+      }
+    },
+    "140:sky130_fd_sc_hd__mux2_1": {
+      "cell": "sky130_fd_sc_hd__mux2_1",
+      "kind": "comb",
+      "inputs": {
+        "A0": {
+          "net": "2012",
+          "inv": false
+        },
+        "A1": {
+          "net": "1876",
+          "inv": false
+        },
+        "S": {
+          "net": "1996",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "3493"
+      }
+    },
+    "141:sky130_fd_sc_hd__dfrtp_2": {
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "kind": "seq",
+      "inputs": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "1950",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Q": "1900"
+      }
+    },
+    "142:sky130_fd_sc_hd__dfrtp_2": {
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "kind": "seq",
+      "inputs": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "1949",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Q": "1881"
+      }
+    },
+    "146:sky130_fd_sc_hd__dfrtp_2": {
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "kind": "seq",
+      "inputs": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "1948",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Q": "1957"
+      }
+    },
+    "180:sky130_fd_sc_hd__dfrtp_2": {
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "kind": "seq",
+      "inputs": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "1947",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Q": "1542"
+      }
+    },
+    "181:sky130_fd_sc_hd__dfrtp_2": {
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "kind": "seq",
+      "inputs": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "3493",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Q": "2012"
+      }
+    },
+    "182:sky130_fd_sc_hd__dfrtp_2": {
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "kind": "seq",
+      "inputs": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "1951",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Q": "2085"
+      }
+    },
+    "210:sky130_fd_sc_hd__mux2_1": {
+      "cell": "sky130_fd_sc_hd__mux2_1",
+      "kind": "comb",
+      "inputs": {
+        "A0": {
+          "net": "1900",
+          "inv": false
+        },
+        "A1": {
+          "net": "1881",
+          "inv": false
+        },
+        "S": {
+          "net": "1996",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1950"
+      }
+    },
+    "234:sky130_fd_sc_hd__mux2_1": {
+      "cell": "sky130_fd_sc_hd__mux2_1",
+      "kind": "comb",
+      "inputs": {
+        "A0": {
+          "net": "1542",
+          "inv": false
+        },
+        "A1": {
+          "net": "1811",
+          "inv": false
+        },
+        "S": {
+          "net": "1996",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1947"
+      }
+    },
+    "274:sky130_fd_sc_hd__mux2_1": {
+      "cell": "sky130_fd_sc_hd__mux2_1",
+      "kind": "comb",
+      "inputs": {
+        "A0": {
+          "net": "1908",
+          "inv": false
+        },
+        "A1": {
+          "net": "2085",
+          "inv": false
+        },
+        "S": {
+          "net": "1996",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1954"
+      }
+    },
+    "339:sky130_fd_sc_hd__mux2_1": {
+      "cell": "sky130_fd_sc_hd__mux2_1",
+      "kind": "comb",
+      "inputs": {
+        "A0": {
+          "net": "1811",
+          "inv": false
+        },
+        "A1": {
+          "net": "2012",
+          "inv": false
+        },
+        "S": {
+          "net": "1996",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1946"
+      }
+    },
+    "348:sky130_fd_sc_hd__dfrtp_2": {
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "kind": "seq",
+      "inputs": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "1954",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Q": "1908"
+      }
+    },
+    "368:sky130_fd_sc_hd__dfrtp_2": {
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "kind": "seq",
+      "inputs": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "1946",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Q": "1811"
+      }
+    },
+    "369:sky130_fd_sc_hd__mux2_1": {
+      "cell": "sky130_fd_sc_hd__mux2_1",
+      "kind": "comb",
+      "inputs": {
+        "A0": {
+          "net": "2088",
+          "inv": false
+        },
+        "A1": {
+          "net": "1989",
+          "inv": false
+        },
+        "S": {
+          "net": "1996",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "5645"
+      }
+    },
+    "378:sky130_fd_sc_hd__mux2_1": {
+      "cell": "sky130_fd_sc_hd__mux2_1",
+      "kind": "comb",
+      "inputs": {
+        "A0": {
+          "net": "1989",
+          "inv": false
+        },
+        "A1": {
+          "net": "1988",
+          "inv": false
+        },
+        "S": {
+          "net": "1996",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "5744"
+      }
+    },
+    "379:sky130_fd_sc_hd__mux2_1": {
+      "cell": "sky130_fd_sc_hd__mux2_1",
+      "kind": "comb",
+      "inputs": {
+        "A0": {
+          "net": "1988",
+          "inv": false
+        },
+        "A1": {
+          "net": "1972",
+          "inv": false
+        },
+        "S": {
+          "net": "1996",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "5782"
+      }
+    },
+    "385:sky130_fd_sc_hd__dfrtp_2": {
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "kind": "seq",
+      "inputs": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "2002",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Q": "1968"
+      }
+    },
+    "386:sky130_fd_sc_hd__dfrtp_2": {
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "kind": "seq",
+      "inputs": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "1999",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Q": "2092"
+      }
+    },
+    "387:sky130_fd_sc_hd__dfrtp_2": {
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "kind": "seq",
+      "inputs": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "2003",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Q": "1646"
+      }
+    },
+    "388:sky130_fd_sc_hd__dfrtp_2": {
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "kind": "seq",
+      "inputs": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "5645",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Q": "2088"
+      }
+    },
+    "404:sky130_fd_sc_hd__mux2_1": {
+      "cell": "sky130_fd_sc_hd__mux2_1",
+      "kind": "comb",
+      "inputs": {
+        "A0": {
+          "net": "1646",
+          "inv": false
+        },
+        "A1": {
+          "net": "1968",
+          "inv": false
+        },
+        "S": {
+          "net": "1996",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2003"
+      }
+    },
+    "418:sky130_fd_sc_hd__mux2_1": {
+      "cell": "sky130_fd_sc_hd__mux2_1",
+      "kind": "comb",
+      "inputs": {
+        "A0": {
+          "net": "2007",
+          "inv": false
+        },
+        "A1": {
+          "net": "2092",
+          "inv": false
+        },
+        "S": {
+          "net": "1996",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2000"
+      }
+    },
+    "426:sky130_fd_sc_hd__mux2_1": {
+      "cell": "sky130_fd_sc_hd__mux2_1",
+      "kind": "comb",
+      "inputs": {
+        "A0": {
+          "net": "1968",
+          "inv": false
+        },
+        "A1": {
+          "net": "1965",
+          "inv": false
+        },
+        "S": {
+          "net": "1996",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2002"
+      }
+    },
+    "433:sky130_fd_sc_hd__dfrtp_2": {
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "kind": "seq",
+      "inputs": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "5744",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Q": "1989"
+      }
+    },
+    "453:sky130_fd_sc_hd__dfrtp_2": {
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "kind": "seq",
+      "inputs": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "2001",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Q": "1965"
+      }
+    },
+    "541:sky130_fd_sc_hd__dfrtp_2": {
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "kind": "seq",
+      "inputs": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "5782",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Q": "1988"
+      }
+    },
+    "554:sky130_fd_sc_hd__dfrtp_2": {
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "kind": "seq",
+      "inputs": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "2000",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Q": "2007"
+      }
+    },
+    "596:sky130_fd_sc_hd__mux2_1": {
+      "cell": "sky130_fd_sc_hd__mux2_1",
+      "kind": "comb",
+      "inputs": {
+        "A0": {
+          "net": "1965",
+          "inv": false
+        },
+        "A1": {
+          "net": "2007",
+          "inv": false
+        },
+        "S": {
+          "net": "1996",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2001"
+      }
+    },
+    "603:sky130_fd_sc_hd__mux2_1": {
+      "cell": "sky130_fd_sc_hd__mux2_1",
+      "kind": "comb",
+      "inputs": {
+        "A0": {
+          "net": "2092",
+          "inv": false
+        },
+        "A1": {
+          "net": "2088",
+          "inv": false
+        },
+        "S": {
+          "net": "1996",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1999"
+      }
+    },
+    "613:sky130_fd_sc_hd__a31o_2": {
+      "cell": "sky130_fd_sc_hd__a31o_2",
+      "kind": "comb",
+      "inputs": {
+        "A1": {
+          "net": "2088",
+          "inv": false
+        },
+        "A2": {
+          "net": "1542",
+          "inv": false
+        },
+        "A3": {
+          "net": "2037",
+          "inv": false
+        },
+        "B1": {
+          "net": "2039",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2052"
+      }
+    },
+    "616:sky130_fd_sc_hd__nor2_2": {
+      "cell": "sky130_fd_sc_hd__nor2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "1646",
+          "inv": false
+        },
+        "B": {
+          "net": "1908",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "2070"
+      }
+    },
+    "617:sky130_fd_sc_hd__nor2_2": {
+      "cell": "sky130_fd_sc_hd__nor2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2092",
+          "inv": false
+        },
+        "B": {
+          "net": "1957",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "1710"
+      }
+    },
+    "618:sky130_fd_sc_hd__nor2_2": {
+      "cell": "sky130_fd_sc_hd__nor2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "1965",
+          "inv": false
+        },
+        "B": {
+          "net": "1900",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "2058"
+      }
+    },
+    "619:sky130_fd_sc_hd__nor2_2": {
+      "cell": "sky130_fd_sc_hd__nor2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2046",
+          "inv": false
+        },
+        "B": {
+          "net": "2048",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "2051"
+      }
+    },
+    "622:sky130_fd_sc_hd__a21boi_2": {
+      "cell": "sky130_fd_sc_hd__a21boi_2",
+      "kind": "comb",
+      "inputs": {
+        "A1": {
+          "net": "1821",
+          "inv": false
+        },
+        "A2": {
+          "net": "2067",
+          "inv": false
+        },
+        "B1_N": {
+          "net": "2063",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "2072"
+      }
+    },
+    "623:sky130_fd_sc_hd__o21bai_2": {
+      "cell": "sky130_fd_sc_hd__o21bai_2",
+      "kind": "comb",
+      "inputs": {
+        "A1": {
+          "net": "2070",
+          "inv": false
+        },
+        "A2": {
+          "net": "2072",
+          "inv": false
+        },
+        "B1_N": {
+          "net": "2069",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "1895"
+      }
+    },
+    "629:sky130_fd_sc_hd__and2_2": {
+      "cell": "sky130_fd_sc_hd__and2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2022",
+          "inv": false
+        },
+        "B": {
+          "net": "2074",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1888"
+      }
+    },
+    "630:sky130_fd_sc_hd__and2_2": {
+      "cell": "sky130_fd_sc_hd__and2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "1646",
+          "inv": false
+        },
+        "B": {
+          "net": "1908",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2069"
+      }
+    },
+    "631:sky130_fd_sc_hd__xor2_2": {
+      "cell": "sky130_fd_sc_hd__xor2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "1989",
+          "inv": false
+        },
+        "B": {
+          "net": "1811",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2026"
+      }
+    },
+    "632:sky130_fd_sc_hd__xor2_2": {
+      "cell": "sky130_fd_sc_hd__xor2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2062",
+          "inv": false
+        },
+        "B": {
+          "net": "9400",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1892"
+      }
+    },
+    "633:sky130_fd_sc_hd__xor2_2": {
+      "cell": "sky130_fd_sc_hd__xor2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2051",
+          "inv": false
+        },
+        "B": {
+          "net": "2057",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1891"
+      }
+    },
+    "634:sky130_fd_sc_hd__xor2_2": {
+      "cell": "sky130_fd_sc_hd__xor2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2027",
+          "inv": false
+        },
+        "B": {
+          "net": "2034",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1889"
+      }
+    },
+    "635:sky130_fd_sc_hd__a31o_2": {
+      "cell": "sky130_fd_sc_hd__a31o_2",
+      "kind": "comb",
+      "inputs": {
+        "A1": {
+          "net": "2051",
+          "inv": false
+        },
+        "A2": {
+          "net": "2057",
+          "inv": false
+        },
+        "A3": {
+          "net": "2062",
+          "inv": false
+        },
+        "B1": {
+          "net": "2066",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2067"
+      }
+    },
+    "636:sky130_fd_sc_hd__or2_2": {
+      "cell": "sky130_fd_sc_hd__or2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "1968",
+          "inv": false
+        },
+        "B": {
+          "net": "2085",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1821"
+      }
+    },
+    "639:sky130_fd_sc_hd__and2_2": {
+      "cell": "sky130_fd_sc_hd__and2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "1965",
+          "inv": false
+        },
+        "B": {
+          "net": "1900",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2061"
+      }
+    },
+    "659:sky130_fd_sc_hd__and4bb_2": {
+      "cell": "sky130_fd_sc_hd__and4bb_2",
+      "kind": "comb",
+      "inputs": {
+        "A_N": {
+          "net": "2096",
+          "inv": false
+        },
+        "B_N": {
+          "net": "1888",
+          "inv": false
+        },
+        "C": {
+          "net": "1896",
+          "inv": false
+        },
+        "D": {
+          "net": "1897",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1877"
+      }
+    },
+    "685:sky130_fd_sc_hd__or2_2": {
+      "cell": "sky130_fd_sc_hd__or2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2088",
+          "inv": false
+        },
+        "B": {
+          "net": "1542",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2030"
+      }
+    },
+    "6:sky130_fd_sc_hd__and4bb_2": {
+      "cell": "sky130_fd_sc_hd__and4bb_2",
+      "kind": "comb",
+      "inputs": {
+        "A_N": {
+          "net": "1890",
+          "inv": false
+        },
+        "B_N": {
+          "net": "1889",
+          "inv": false
+        },
+        "C": {
+          "net": "1891",
+          "inv": false
+        },
+        "D": {
+          "net": "1892",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1897"
+      }
+    },
+    "707:sky130_fd_sc_hd__a21bo_2": {
+      "cell": "sky130_fd_sc_hd__a21bo_2",
+      "kind": "comb",
+      "inputs": {
+        "A1": {
+          "net": "2027",
+          "inv": false
+        },
+        "A2": {
+          "net": "2034",
+          "inv": false
+        },
+        "B1_N": {
+          "net": "2031",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2045"
+      }
+    },
+    "711:sky130_fd_sc_hd__and2_2": {
+      "cell": "sky130_fd_sc_hd__and2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2092",
+          "inv": false
+        },
+        "B": {
+          "net": "1957",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2039"
+      }
+    },
+    "761:sky130_fd_sc_hd__nor2_2": {
+      "cell": "sky130_fd_sc_hd__nor2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2058",
+          "inv": false
+        },
+        "B": {
+          "net": "2061",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "2062"
+      }
+    },
+    "765:sky130_fd_sc_hd__nor2_2": {
+      "cell": "sky130_fd_sc_hd__nor2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "1710",
+          "inv": false
+        },
+        "B": {
+          "net": "2039",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "1829"
+      }
+    },
+    "781:sky130_fd_sc_hd__a21o_2": {
+      "cell": "sky130_fd_sc_hd__a21o_2",
+      "kind": "comb",
+      "inputs": {
+        "A1": {
+          "net": "2051",
+          "inv": false
+        },
+        "A2": {
+          "net": "2057",
+          "inv": false
+        },
+        "B1": {
+          "net": "2046",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "9400"
+      }
+    },
+    "841:sky130_fd_sc_hd__or2_2": {
+      "cell": "sky130_fd_sc_hd__or2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "1965",
+          "inv": false
+        },
+        "B": {
+          "net": "1900",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2059"
+      }
+    },
+    "844:sky130_fd_sc_hd__nor2_2": {
+      "cell": "sky130_fd_sc_hd__nor2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2007",
+          "inv": false
+        },
+        "B": {
+          "net": "1881",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "2048"
+      }
+    },
+    "852:sky130_fd_sc_hd__nand2_2": {
+      "cell": "sky130_fd_sc_hd__nand2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2063",
+          "inv": false
+        },
+        "B": {
+          "net": "1821",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "2065"
+      }
+    },
+    "864:sky130_fd_sc_hd__and2_2": {
+      "cell": "sky130_fd_sc_hd__and2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "1989",
+          "inv": false
+        },
+        "B": {
+          "net": "1811",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2025"
+      }
+    },
+    "866:sky130_fd_sc_hd__a31o_2": {
+      "cell": "sky130_fd_sc_hd__a31o_2",
+      "kind": "comb",
+      "inputs": {
+        "A1": {
+          "net": "2007",
+          "inv": false
+        },
+        "A2": {
+          "net": "1881",
+          "inv": false
+        },
+        "A3": {
+          "net": "2059",
+          "inv": false
+        },
+        "B1": {
+          "net": "2061",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2066"
+      }
+    },
+    "895:sky130_fd_sc_hd__or2_2": {
+      "cell": "sky130_fd_sc_hd__or2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2092",
+          "inv": false
+        },
+        "B": {
+          "net": "1957",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2037"
+      }
+    },
+    "900:sky130_fd_sc_hd__xnor2_2": {
+      "cell": "sky130_fd_sc_hd__xnor2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2065",
+          "inv": false
+        },
+        "B": {
+          "net": "2067",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "1893"
+      }
+    },
+    "917:sky130_fd_sc_hd__a31o_2": {
+      "cell": "sky130_fd_sc_hd__a31o_2",
+      "kind": "comb",
+      "inputs": {
+        "A1": {
+          "net": "2027",
+          "inv": false
+        },
+        "A2": {
+          "net": "2034",
+          "inv": false
+        },
+        "A3": {
+          "net": "1829",
+          "inv": false
+        },
+        "B1": {
+          "net": "2052",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "2057"
+      }
+    },
+    "972:sky130_fd_sc_hd__xor2_2": {
+      "cell": "sky130_fd_sc_hd__xor2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "1829",
+          "inv": false
+        },
+        "B": {
+          "net": "2045",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "X": "1890"
+      }
+    },
+    "975:sky130_fd_sc_hd__xnor2_2": {
+      "cell": "sky130_fd_sc_hd__xnor2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2071",
+          "inv": false
+        },
+        "B": {
+          "net": "2072",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "1894"
+      }
+    },
+    "976:sky130_fd_sc_hd__nand2_2": {
+      "cell": "sky130_fd_sc_hd__nand2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "1968",
+          "inv": false
+        },
+        "B": {
+          "net": "2085",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "2063"
+      }
+    },
+    "978:sky130_fd_sc_hd__nand2_2": {
+      "cell": "sky130_fd_sc_hd__nand2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2088",
+          "inv": false
+        },
+        "B": {
+          "net": "1542",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "2031"
+      }
+    },
+    "989:sky130_fd_sc_hd__nor2_2": {
+      "cell": "sky130_fd_sc_hd__nor2_2",
+      "kind": "comb",
+      "inputs": {
+        "A": {
+          "net": "2069",
+          "inv": false
+        },
+        "B": {
+          "net": "2070",
+          "inv": false
+        }
+      },
+      "outputs": {
+        "Y": "2071"
+      }
+    }
+  },
+  "flops": [
+    {
+      "instance": "141:sky130_fd_sc_hd__dfrtp_2",
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "q_net": "1900",
+      "pins": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "1950",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "d_cone": "u141.D",
+      "block": "B5"
+    },
+    {
+      "instance": "142:sky130_fd_sc_hd__dfrtp_2",
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "q_net": "1881",
+      "pins": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "1949",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "d_cone": "u142.D",
+      "block": "B2"
+    },
+    {
+      "instance": "146:sky130_fd_sc_hd__dfrtp_2",
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "q_net": "1957",
+      "pins": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "1948",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "d_cone": "u146.D",
+      "block": "B1"
+    },
+    {
+      "instance": "180:sky130_fd_sc_hd__dfrtp_2",
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "q_net": "1542",
+      "pins": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "1947",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "d_cone": "u180.D",
+      "block": "B6"
+    },
+    {
+      "instance": "181:sky130_fd_sc_hd__dfrtp_2",
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "q_net": "2012",
+      "pins": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "3493",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "d_cone": "u181.D",
+      "block": "B4"
+    },
+    {
+      "instance": "182:sky130_fd_sc_hd__dfrtp_2",
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "q_net": "2085",
+      "pins": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "1951",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "d_cone": "u182.D",
+      "block": "B3"
+    },
+    {
+      "instance": "348:sky130_fd_sc_hd__dfrtp_2",
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "q_net": "1908",
+      "pins": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "1954",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "d_cone": "u348.D",
+      "block": "B7"
+    },
+    {
+      "instance": "368:sky130_fd_sc_hd__dfrtp_2",
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "q_net": "1811",
+      "pins": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "1946",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "d_cone": "u368.D",
+      "block": "B8"
+    },
+    {
+      "instance": "385:sky130_fd_sc_hd__dfrtp_2",
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "q_net": "1968",
+      "pins": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "2002",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "d_cone": "u385.D",
+      "block": "B14"
+    },
+    {
+      "instance": "386:sky130_fd_sc_hd__dfrtp_2",
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "q_net": "2092",
+      "pins": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "1999",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "d_cone": "u386.D",
+      "block": "B16"
+    },
+    {
+      "instance": "387:sky130_fd_sc_hd__dfrtp_2",
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "q_net": "1646",
+      "pins": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "2003",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "d_cone": "u387.D",
+      "block": "B12"
+    },
+    {
+      "instance": "388:sky130_fd_sc_hd__dfrtp_2",
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "q_net": "2088",
+      "pins": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "5645",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "d_cone": "u388.D",
+      "block": "B9"
+    },
+    {
+      "instance": "433:sky130_fd_sc_hd__dfrtp_2",
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "q_net": "1989",
+      "pins": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "5744",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "d_cone": "u433.D",
+      "block": "B10"
+    },
+    {
+      "instance": "453:sky130_fd_sc_hd__dfrtp_2",
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "q_net": "1965",
+      "pins": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "2001",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "d_cone": "u453.D",
+      "block": "B15"
+    },
+    {
+      "instance": "541:sky130_fd_sc_hd__dfrtp_2",
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "q_net": "1988",
+      "pins": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "5782",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "d_cone": "u541.D",
+      "block": "B11"
+    },
+    {
+      "instance": "554:sky130_fd_sc_hd__dfrtp_2",
+      "cell": "sky130_fd_sc_hd__dfrtp_2",
+      "q_net": "2007",
+      "pins": {
+        "CLK": {
+          "net": "1910",
+          "inv": false
+        },
+        "D": {
+          "net": "2000",
+          "inv": false
+        },
+        "RESET_B": {
+          "net": "3700",
+          "inv": false
+        }
+      },
+      "d_cone": "u554.D",
+      "block": "B13"
+    }
+  ],
+  "cones": [
+    {
+      "id": "u141.D",
+      "sink": {
+        "kind": "flop_data",
+        "instance": "141:sky130_fd_sc_hd__dfrtp_2",
+        "pin": "D",
+        "inv": false
+      },
+      "root_net": "1950",
+      "num_gates": 1,
+      "depth": 1,
+      "gates": [
+        "210:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "kind": "flop",
+          "net": "1881",
+          "instance": "142:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1900",
+          "instance": "141:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "input_port",
+          "net": "1996",
+          "port": "en"
+        }
+      ],
+      "source_flops": [
+        "141:sky130_fd_sc_hd__dfrtp_2",
+        "142:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [
+        "en"
+      ],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__mux2": 1
+      },
+      "shape": "400d368a6289"
+    },
+    {
+      "id": "u142.D",
+      "sink": {
+        "kind": "flop_data",
+        "instance": "142:sky130_fd_sc_hd__dfrtp_2",
+        "pin": "D",
+        "inv": false
+      },
+      "root_net": "1949",
+      "num_gates": 1,
+      "depth": 1,
+      "gates": [
+        "138:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "kind": "flop",
+          "net": "1881",
+          "instance": "142:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1957",
+          "instance": "146:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "input_port",
+          "net": "1996",
+          "port": "en"
+        }
+      ],
+      "source_flops": [
+        "142:sky130_fd_sc_hd__dfrtp_2",
+        "146:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [
+        "en"
+      ],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__mux2": 1
+      },
+      "shape": "400d368a6289"
+    },
+    {
+      "id": "u146.D",
+      "sink": {
+        "kind": "flop_data",
+        "instance": "146:sky130_fd_sc_hd__dfrtp_2",
+        "pin": "D",
+        "inv": false
+      },
+      "root_net": "1948",
+      "num_gates": 1,
+      "depth": 1,
+      "gates": [
+        "137:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "kind": "flop",
+          "net": "1542",
+          "instance": "180:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1957",
+          "instance": "146:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "input_port",
+          "net": "1996",
+          "port": "en"
+        }
+      ],
+      "source_flops": [
+        "146:sky130_fd_sc_hd__dfrtp_2",
+        "180:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [
+        "en"
+      ],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__mux2": 1
+      },
+      "shape": "400d368a6289"
+    },
+    {
+      "id": "u180.D",
+      "sink": {
+        "kind": "flop_data",
+        "instance": "180:sky130_fd_sc_hd__dfrtp_2",
+        "pin": "D",
+        "inv": false
+      },
+      "root_net": "1947",
+      "num_gates": 1,
+      "depth": 1,
+      "gates": [
+        "234:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "kind": "flop",
+          "net": "1542",
+          "instance": "180:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1811",
+          "instance": "368:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "input_port",
+          "net": "1996",
+          "port": "en"
+        }
+      ],
+      "source_flops": [
+        "180:sky130_fd_sc_hd__dfrtp_2",
+        "368:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [
+        "en"
+      ],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__mux2": 1
+      },
+      "shape": "400d368a6289"
+    },
+    {
+      "id": "u181.D",
+      "sink": {
+        "kind": "flop_data",
+        "instance": "181:sky130_fd_sc_hd__dfrtp_2",
+        "pin": "D",
+        "inv": false
+      },
+      "root_net": "3493",
+      "num_gates": 1,
+      "depth": 1,
+      "gates": [
+        "140:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "kind": "input_port",
+          "net": "1876",
+          "port": "A"
+        },
+        {
+          "kind": "input_port",
+          "net": "1996",
+          "port": "en"
+        },
+        {
+          "kind": "flop",
+          "net": "2012",
+          "instance": "181:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        }
+      ],
+      "source_flops": [
+        "181:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [
+        "A",
+        "en"
+      ],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__mux2": 1
+      },
+      "shape": "400d368a6289"
+    },
+    {
+      "id": "u182.D",
+      "sink": {
+        "kind": "flop_data",
+        "instance": "182:sky130_fd_sc_hd__dfrtp_2",
+        "pin": "D",
+        "inv": false
+      },
+      "root_net": "1951",
+      "num_gates": 1,
+      "depth": 1,
+      "gates": [
+        "139:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "kind": "flop",
+          "net": "1900",
+          "instance": "141:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "input_port",
+          "net": "1996",
+          "port": "en"
+        },
+        {
+          "kind": "flop",
+          "net": "2085",
+          "instance": "182:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        }
+      ],
+      "source_flops": [
+        "141:sky130_fd_sc_hd__dfrtp_2",
+        "182:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [
+        "en"
+      ],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__mux2": 1
+      },
+      "shape": "400d368a6289"
+    },
+    {
+      "id": "u348.D",
+      "sink": {
+        "kind": "flop_data",
+        "instance": "348:sky130_fd_sc_hd__dfrtp_2",
+        "pin": "D",
+        "inv": false
+      },
+      "root_net": "1954",
+      "num_gates": 1,
+      "depth": 1,
+      "gates": [
+        "274:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "kind": "flop",
+          "net": "1908",
+          "instance": "348:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "input_port",
+          "net": "1996",
+          "port": "en"
+        },
+        {
+          "kind": "flop",
+          "net": "2085",
+          "instance": "182:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        }
+      ],
+      "source_flops": [
+        "182:sky130_fd_sc_hd__dfrtp_2",
+        "348:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [
+        "en"
+      ],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__mux2": 1
+      },
+      "shape": "400d368a6289"
+    },
+    {
+      "id": "u368.D",
+      "sink": {
+        "kind": "flop_data",
+        "instance": "368:sky130_fd_sc_hd__dfrtp_2",
+        "pin": "D",
+        "inv": false
+      },
+      "root_net": "1946",
+      "num_gates": 1,
+      "depth": 1,
+      "gates": [
+        "339:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "kind": "flop",
+          "net": "1811",
+          "instance": "368:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "input_port",
+          "net": "1996",
+          "port": "en"
+        },
+        {
+          "kind": "flop",
+          "net": "2012",
+          "instance": "181:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        }
+      ],
+      "source_flops": [
+        "181:sky130_fd_sc_hd__dfrtp_2",
+        "368:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [
+        "en"
+      ],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__mux2": 1
+      },
+      "shape": "400d368a6289"
+    },
+    {
+      "id": "u385.D",
+      "sink": {
+        "kind": "flop_data",
+        "instance": "385:sky130_fd_sc_hd__dfrtp_2",
+        "pin": "D",
+        "inv": false
+      },
+      "root_net": "2002",
+      "num_gates": 1,
+      "depth": 1,
+      "gates": [
+        "426:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "kind": "flop",
+          "net": "1965",
+          "instance": "453:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1968",
+          "instance": "385:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "input_port",
+          "net": "1996",
+          "port": "en"
+        }
+      ],
+      "source_flops": [
+        "385:sky130_fd_sc_hd__dfrtp_2",
+        "453:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [
+        "en"
+      ],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__mux2": 1
+      },
+      "shape": "400d368a6289"
+    },
+    {
+      "id": "u386.D",
+      "sink": {
+        "kind": "flop_data",
+        "instance": "386:sky130_fd_sc_hd__dfrtp_2",
+        "pin": "D",
+        "inv": false
+      },
+      "root_net": "1999",
+      "num_gates": 1,
+      "depth": 1,
+      "gates": [
+        "603:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "kind": "input_port",
+          "net": "1996",
+          "port": "en"
+        },
+        {
+          "kind": "flop",
+          "net": "2088",
+          "instance": "388:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "2092",
+          "instance": "386:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        }
+      ],
+      "source_flops": [
+        "386:sky130_fd_sc_hd__dfrtp_2",
+        "388:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [
+        "en"
+      ],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__mux2": 1
+      },
+      "shape": "400d368a6289"
+    },
+    {
+      "id": "u387.D",
+      "sink": {
+        "kind": "flop_data",
+        "instance": "387:sky130_fd_sc_hd__dfrtp_2",
+        "pin": "D",
+        "inv": false
+      },
+      "root_net": "2003",
+      "num_gates": 1,
+      "depth": 1,
+      "gates": [
+        "404:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "kind": "flop",
+          "net": "1646",
+          "instance": "387:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1968",
+          "instance": "385:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "input_port",
+          "net": "1996",
+          "port": "en"
+        }
+      ],
+      "source_flops": [
+        "385:sky130_fd_sc_hd__dfrtp_2",
+        "387:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [
+        "en"
+      ],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__mux2": 1
+      },
+      "shape": "400d368a6289"
+    },
+    {
+      "id": "u388.D",
+      "sink": {
+        "kind": "flop_data",
+        "instance": "388:sky130_fd_sc_hd__dfrtp_2",
+        "pin": "D",
+        "inv": false
+      },
+      "root_net": "5645",
+      "num_gates": 1,
+      "depth": 1,
+      "gates": [
+        "369:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "kind": "flop",
+          "net": "1989",
+          "instance": "433:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "input_port",
+          "net": "1996",
+          "port": "en"
+        },
+        {
+          "kind": "flop",
+          "net": "2088",
+          "instance": "388:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        }
+      ],
+      "source_flops": [
+        "388:sky130_fd_sc_hd__dfrtp_2",
+        "433:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [
+        "en"
+      ],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__mux2": 1
+      },
+      "shape": "400d368a6289"
+    },
+    {
+      "id": "u433.D",
+      "sink": {
+        "kind": "flop_data",
+        "instance": "433:sky130_fd_sc_hd__dfrtp_2",
+        "pin": "D",
+        "inv": false
+      },
+      "root_net": "5744",
+      "num_gates": 1,
+      "depth": 1,
+      "gates": [
+        "378:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "kind": "flop",
+          "net": "1988",
+          "instance": "541:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1989",
+          "instance": "433:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "input_port",
+          "net": "1996",
+          "port": "en"
+        }
+      ],
+      "source_flops": [
+        "433:sky130_fd_sc_hd__dfrtp_2",
+        "541:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [
+        "en"
+      ],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__mux2": 1
+      },
+      "shape": "400d368a6289"
+    },
+    {
+      "id": "u453.D",
+      "sink": {
+        "kind": "flop_data",
+        "instance": "453:sky130_fd_sc_hd__dfrtp_2",
+        "pin": "D",
+        "inv": false
+      },
+      "root_net": "2001",
+      "num_gates": 1,
+      "depth": 1,
+      "gates": [
+        "596:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "kind": "flop",
+          "net": "1965",
+          "instance": "453:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "input_port",
+          "net": "1996",
+          "port": "en"
+        },
+        {
+          "kind": "flop",
+          "net": "2007",
+          "instance": "554:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        }
+      ],
+      "source_flops": [
+        "453:sky130_fd_sc_hd__dfrtp_2",
+        "554:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [
+        "en"
+      ],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__mux2": 1
+      },
+      "shape": "400d368a6289"
+    },
+    {
+      "id": "u541.D",
+      "sink": {
+        "kind": "flop_data",
+        "instance": "541:sky130_fd_sc_hd__dfrtp_2",
+        "pin": "D",
+        "inv": false
+      },
+      "root_net": "5782",
+      "num_gates": 1,
+      "depth": 1,
+      "gates": [
+        "379:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "kind": "input_port",
+          "net": "1972",
+          "port": "B"
+        },
+        {
+          "kind": "flop",
+          "net": "1988",
+          "instance": "541:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "input_port",
+          "net": "1996",
+          "port": "en"
+        }
+      ],
+      "source_flops": [
+        "541:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [
+        "B",
+        "en"
+      ],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__mux2": 1
+      },
+      "shape": "400d368a6289"
+    },
+    {
+      "id": "u554.D",
+      "sink": {
+        "kind": "flop_data",
+        "instance": "554:sky130_fd_sc_hd__dfrtp_2",
+        "pin": "D",
+        "inv": false
+      },
+      "root_net": "2000",
+      "num_gates": 1,
+      "depth": 1,
+      "gates": [
+        "418:sky130_fd_sc_hd__mux2_1"
+      ],
+      "sources": [
+        {
+          "kind": "input_port",
+          "net": "1996",
+          "port": "en"
+        },
+        {
+          "kind": "flop",
+          "net": "2007",
+          "instance": "554:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "2092",
+          "instance": "386:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        }
+      ],
+      "source_flops": [
+        "386:sky130_fd_sc_hd__dfrtp_2",
+        "554:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [
+        "en"
+      ],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__mux2": 1
+      },
+      "shape": "400d368a6289"
+    },
+    {
+      "id": "port:S",
+      "sink": {
+        "kind": "output_port",
+        "port": "S",
+        "inv": false
+      },
+      "root_net": "1877",
+      "num_gates": 44,
+      "depth": 8,
+      "gates": [
+        "1002:sky130_fd_sc_hd__nand2_2",
+        "1011:sky130_fd_sc_hd__and2_2",
+        "1048:sky130_fd_sc_hd__a31o_2",
+        "1052:sky130_fd_sc_hd__xnor2_2",
+        "1069:sky130_fd_sc_hd__or2_2",
+        "1070:sky130_fd_sc_hd__and2_2",
+        "108:sky130_fd_sc_hd__and3_2",
+        "613:sky130_fd_sc_hd__a31o_2",
+        "616:sky130_fd_sc_hd__nor2_2",
+        "617:sky130_fd_sc_hd__nor2_2",
+        "618:sky130_fd_sc_hd__nor2_2",
+        "619:sky130_fd_sc_hd__nor2_2",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "629:sky130_fd_sc_hd__and2_2",
+        "630:sky130_fd_sc_hd__and2_2",
+        "631:sky130_fd_sc_hd__xor2_2",
+        "632:sky130_fd_sc_hd__xor2_2",
+        "633:sky130_fd_sc_hd__xor2_2",
+        "634:sky130_fd_sc_hd__xor2_2",
+        "635:sky130_fd_sc_hd__a31o_2",
+        "636:sky130_fd_sc_hd__or2_2",
+        "639:sky130_fd_sc_hd__and2_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "685:sky130_fd_sc_hd__or2_2",
+        "6:sky130_fd_sc_hd__and4bb_2",
+        "707:sky130_fd_sc_hd__a21bo_2",
+        "711:sky130_fd_sc_hd__and2_2",
+        "761:sky130_fd_sc_hd__nor2_2",
+        "765:sky130_fd_sc_hd__nor2_2",
+        "781:sky130_fd_sc_hd__a21o_2",
+        "841:sky130_fd_sc_hd__or2_2",
+        "844:sky130_fd_sc_hd__nor2_2",
+        "852:sky130_fd_sc_hd__nand2_2",
+        "864:sky130_fd_sc_hd__and2_2",
+        "866:sky130_fd_sc_hd__a31o_2",
+        "895:sky130_fd_sc_hd__or2_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "917:sky130_fd_sc_hd__a31o_2",
+        "972:sky130_fd_sc_hd__xor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2",
+        "976:sky130_fd_sc_hd__nand2_2",
+        "978:sky130_fd_sc_hd__nand2_2",
+        "989:sky130_fd_sc_hd__nor2_2"
+      ],
+      "sources": [
+        {
+          "kind": "flop",
+          "net": "1542",
+          "instance": "180:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1646",
+          "instance": "387:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1811",
+          "instance": "368:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1881",
+          "instance": "142:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1900",
+          "instance": "141:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1908",
+          "instance": "348:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1957",
+          "instance": "146:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1965",
+          "instance": "453:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1968",
+          "instance": "385:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1988",
+          "instance": "541:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "1989",
+          "instance": "433:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "2007",
+          "instance": "554:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "2012",
+          "instance": "181:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "2085",
+          "instance": "182:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "2088",
+          "instance": "388:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        },
+        {
+          "kind": "flop",
+          "net": "2092",
+          "instance": "386:sky130_fd_sc_hd__dfrtp_2",
+          "pin": "Q"
+        }
+      ],
+      "source_flops": [
+        "141:sky130_fd_sc_hd__dfrtp_2",
+        "142:sky130_fd_sc_hd__dfrtp_2",
+        "146:sky130_fd_sc_hd__dfrtp_2",
+        "180:sky130_fd_sc_hd__dfrtp_2",
+        "181:sky130_fd_sc_hd__dfrtp_2",
+        "182:sky130_fd_sc_hd__dfrtp_2",
+        "348:sky130_fd_sc_hd__dfrtp_2",
+        "368:sky130_fd_sc_hd__dfrtp_2",
+        "385:sky130_fd_sc_hd__dfrtp_2",
+        "386:sky130_fd_sc_hd__dfrtp_2",
+        "387:sky130_fd_sc_hd__dfrtp_2",
+        "388:sky130_fd_sc_hd__dfrtp_2",
+        "433:sky130_fd_sc_hd__dfrtp_2",
+        "453:sky130_fd_sc_hd__dfrtp_2",
+        "541:sky130_fd_sc_hd__dfrtp_2",
+        "554:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "source_ports": [],
+      "source_consts": [],
+      "cell_histogram": {
+        "sky130_fd_sc_hd__a21bo": 1,
+        "sky130_fd_sc_hd__a21boi": 1,
+        "sky130_fd_sc_hd__a21o": 1,
+        "sky130_fd_sc_hd__a31o": 5,
+        "sky130_fd_sc_hd__and2": 7,
+        "sky130_fd_sc_hd__and3": 1,
+        "sky130_fd_sc_hd__and4bb": 2,
+        "sky130_fd_sc_hd__nand2": 4,
+        "sky130_fd_sc_hd__nor2": 8,
+        "sky130_fd_sc_hd__o21bai": 1,
+        "sky130_fd_sc_hd__or2": 5,
+        "sky130_fd_sc_hd__xnor2": 3,
+        "sky130_fd_sc_hd__xor2": 5
+      },
+      "shape": "feb7e5c29491"
+    }
+  ],
+  "gate_to_cones": {
+    "1002:sky130_fd_sc_hd__nand2_2": [
+      "port:S"
+    ],
+    "1011:sky130_fd_sc_hd__and2_2": [
+      "port:S"
+    ],
+    "1048:sky130_fd_sc_hd__a31o_2": [
+      "port:S"
+    ],
+    "1052:sky130_fd_sc_hd__xnor2_2": [
+      "port:S"
+    ],
+    "1069:sky130_fd_sc_hd__or2_2": [
+      "port:S"
+    ],
+    "1070:sky130_fd_sc_hd__and2_2": [
+      "port:S"
+    ],
+    "108:sky130_fd_sc_hd__and3_2": [
+      "port:S"
+    ],
+    "137:sky130_fd_sc_hd__mux2_1": [
+      "u146.D"
+    ],
+    "138:sky130_fd_sc_hd__mux2_1": [
+      "u142.D"
+    ],
+    "139:sky130_fd_sc_hd__mux2_1": [
+      "u182.D"
+    ],
+    "140:sky130_fd_sc_hd__mux2_1": [
+      "u181.D"
+    ],
+    "210:sky130_fd_sc_hd__mux2_1": [
+      "u141.D"
+    ],
+    "234:sky130_fd_sc_hd__mux2_1": [
+      "u180.D"
+    ],
+    "274:sky130_fd_sc_hd__mux2_1": [
+      "u348.D"
+    ],
+    "339:sky130_fd_sc_hd__mux2_1": [
+      "u368.D"
+    ],
+    "369:sky130_fd_sc_hd__mux2_1": [
+      "u388.D"
+    ],
+    "378:sky130_fd_sc_hd__mux2_1": [
+      "u433.D"
+    ],
+    "379:sky130_fd_sc_hd__mux2_1": [
+      "u541.D"
+    ],
+    "404:sky130_fd_sc_hd__mux2_1": [
+      "u387.D"
+    ],
+    "418:sky130_fd_sc_hd__mux2_1": [
+      "u554.D"
+    ],
+    "426:sky130_fd_sc_hd__mux2_1": [
+      "u385.D"
+    ],
+    "596:sky130_fd_sc_hd__mux2_1": [
+      "u453.D"
+    ],
+    "603:sky130_fd_sc_hd__mux2_1": [
+      "u386.D"
+    ],
+    "613:sky130_fd_sc_hd__a31o_2": [
+      "port:S"
+    ],
+    "616:sky130_fd_sc_hd__nor2_2": [
+      "port:S"
+    ],
+    "617:sky130_fd_sc_hd__nor2_2": [
+      "port:S"
+    ],
+    "618:sky130_fd_sc_hd__nor2_2": [
+      "port:S"
+    ],
+    "619:sky130_fd_sc_hd__nor2_2": [
+      "port:S"
+    ],
+    "622:sky130_fd_sc_hd__a21boi_2": [
+      "port:S"
+    ],
+    "623:sky130_fd_sc_hd__o21bai_2": [
+      "port:S"
+    ],
+    "629:sky130_fd_sc_hd__and2_2": [
+      "port:S"
+    ],
+    "630:sky130_fd_sc_hd__and2_2": [
+      "port:S"
+    ],
+    "631:sky130_fd_sc_hd__xor2_2": [
+      "port:S"
+    ],
+    "632:sky130_fd_sc_hd__xor2_2": [
+      "port:S"
+    ],
+    "633:sky130_fd_sc_hd__xor2_2": [
+      "port:S"
+    ],
+    "634:sky130_fd_sc_hd__xor2_2": [
+      "port:S"
+    ],
+    "635:sky130_fd_sc_hd__a31o_2": [
+      "port:S"
+    ],
+    "636:sky130_fd_sc_hd__or2_2": [
+      "port:S"
+    ],
+    "639:sky130_fd_sc_hd__and2_2": [
+      "port:S"
+    ],
+    "659:sky130_fd_sc_hd__and4bb_2": [
+      "port:S"
+    ],
+    "685:sky130_fd_sc_hd__or2_2": [
+      "port:S"
+    ],
+    "6:sky130_fd_sc_hd__and4bb_2": [
+      "port:S"
+    ],
+    "707:sky130_fd_sc_hd__a21bo_2": [
+      "port:S"
+    ],
+    "711:sky130_fd_sc_hd__and2_2": [
+      "port:S"
+    ],
+    "761:sky130_fd_sc_hd__nor2_2": [
+      "port:S"
+    ],
+    "765:sky130_fd_sc_hd__nor2_2": [
+      "port:S"
+    ],
+    "781:sky130_fd_sc_hd__a21o_2": [
+      "port:S"
+    ],
+    "841:sky130_fd_sc_hd__or2_2": [
+      "port:S"
+    ],
+    "844:sky130_fd_sc_hd__nor2_2": [
+      "port:S"
+    ],
+    "852:sky130_fd_sc_hd__nand2_2": [
+      "port:S"
+    ],
+    "864:sky130_fd_sc_hd__and2_2": [
+      "port:S"
+    ],
+    "866:sky130_fd_sc_hd__a31o_2": [
+      "port:S"
+    ],
+    "895:sky130_fd_sc_hd__or2_2": [
+      "port:S"
+    ],
+    "900:sky130_fd_sc_hd__xnor2_2": [
+      "port:S"
+    ],
+    "917:sky130_fd_sc_hd__a31o_2": [
+      "port:S"
+    ],
+    "972:sky130_fd_sc_hd__xor2_2": [
+      "port:S"
+    ],
+    "975:sky130_fd_sc_hd__xnor2_2": [
+      "port:S"
+    ],
+    "976:sky130_fd_sc_hd__nand2_2": [
+      "port:S"
+    ],
+    "978:sky130_fd_sc_hd__nand2_2": [
+      "port:S"
+    ],
+    "989:sky130_fd_sc_hd__nor2_2": [
+      "port:S"
+    ]
+  },
+  "sequential_edges": [
+    {
+      "cone": "u141.D",
+      "to": "141:sky130_fd_sc_hd__dfrtp_2",
+      "from_flops": [
+        "141:sky130_fd_sc_hd__dfrtp_2",
+        "142:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": [
+        "en"
+      ]
+    },
+    {
+      "cone": "u142.D",
+      "to": "142:sky130_fd_sc_hd__dfrtp_2",
+      "from_flops": [
+        "142:sky130_fd_sc_hd__dfrtp_2",
+        "146:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": [
+        "en"
+      ]
+    },
+    {
+      "cone": "u146.D",
+      "to": "146:sky130_fd_sc_hd__dfrtp_2",
+      "from_flops": [
+        "146:sky130_fd_sc_hd__dfrtp_2",
+        "180:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": [
+        "en"
+      ]
+    },
+    {
+      "cone": "u180.D",
+      "to": "180:sky130_fd_sc_hd__dfrtp_2",
+      "from_flops": [
+        "180:sky130_fd_sc_hd__dfrtp_2",
+        "368:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": [
+        "en"
+      ]
+    },
+    {
+      "cone": "u181.D",
+      "to": "181:sky130_fd_sc_hd__dfrtp_2",
+      "from_flops": [
+        "181:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": [
+        "A",
+        "en"
+      ]
+    },
+    {
+      "cone": "u182.D",
+      "to": "182:sky130_fd_sc_hd__dfrtp_2",
+      "from_flops": [
+        "141:sky130_fd_sc_hd__dfrtp_2",
+        "182:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": [
+        "en"
+      ]
+    },
+    {
+      "cone": "u348.D",
+      "to": "348:sky130_fd_sc_hd__dfrtp_2",
+      "from_flops": [
+        "182:sky130_fd_sc_hd__dfrtp_2",
+        "348:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": [
+        "en"
+      ]
+    },
+    {
+      "cone": "u368.D",
+      "to": "368:sky130_fd_sc_hd__dfrtp_2",
+      "from_flops": [
+        "181:sky130_fd_sc_hd__dfrtp_2",
+        "368:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": [
+        "en"
+      ]
+    },
+    {
+      "cone": "u385.D",
+      "to": "385:sky130_fd_sc_hd__dfrtp_2",
+      "from_flops": [
+        "385:sky130_fd_sc_hd__dfrtp_2",
+        "453:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": [
+        "en"
+      ]
+    },
+    {
+      "cone": "u386.D",
+      "to": "386:sky130_fd_sc_hd__dfrtp_2",
+      "from_flops": [
+        "386:sky130_fd_sc_hd__dfrtp_2",
+        "388:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": [
+        "en"
+      ]
+    },
+    {
+      "cone": "u387.D",
+      "to": "387:sky130_fd_sc_hd__dfrtp_2",
+      "from_flops": [
+        "385:sky130_fd_sc_hd__dfrtp_2",
+        "387:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": [
+        "en"
+      ]
+    },
+    {
+      "cone": "u388.D",
+      "to": "388:sky130_fd_sc_hd__dfrtp_2",
+      "from_flops": [
+        "388:sky130_fd_sc_hd__dfrtp_2",
+        "433:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": [
+        "en"
+      ]
+    },
+    {
+      "cone": "u433.D",
+      "to": "433:sky130_fd_sc_hd__dfrtp_2",
+      "from_flops": [
+        "433:sky130_fd_sc_hd__dfrtp_2",
+        "541:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": [
+        "en"
+      ]
+    },
+    {
+      "cone": "u453.D",
+      "to": "453:sky130_fd_sc_hd__dfrtp_2",
+      "from_flops": [
+        "453:sky130_fd_sc_hd__dfrtp_2",
+        "554:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": [
+        "en"
+      ]
+    },
+    {
+      "cone": "u541.D",
+      "to": "541:sky130_fd_sc_hd__dfrtp_2",
+      "from_flops": [
+        "541:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": [
+        "B",
+        "en"
+      ]
+    },
+    {
+      "cone": "u554.D",
+      "to": "554:sky130_fd_sc_hd__dfrtp_2",
+      "from_flops": [
+        "386:sky130_fd_sc_hd__dfrtp_2",
+        "554:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": [
+        "en"
+      ]
+    },
+    {
+      "cone": "port:S",
+      "to": "PORT:S",
+      "from_flops": [
+        "141:sky130_fd_sc_hd__dfrtp_2",
+        "142:sky130_fd_sc_hd__dfrtp_2",
+        "146:sky130_fd_sc_hd__dfrtp_2",
+        "180:sky130_fd_sc_hd__dfrtp_2",
+        "181:sky130_fd_sc_hd__dfrtp_2",
+        "182:sky130_fd_sc_hd__dfrtp_2",
+        "348:sky130_fd_sc_hd__dfrtp_2",
+        "368:sky130_fd_sc_hd__dfrtp_2",
+        "385:sky130_fd_sc_hd__dfrtp_2",
+        "386:sky130_fd_sc_hd__dfrtp_2",
+        "387:sky130_fd_sc_hd__dfrtp_2",
+        "388:sky130_fd_sc_hd__dfrtp_2",
+        "433:sky130_fd_sc_hd__dfrtp_2",
+        "453:sky130_fd_sc_hd__dfrtp_2",
+        "541:sky130_fd_sc_hd__dfrtp_2",
+        "554:sky130_fd_sc_hd__dfrtp_2"
+      ],
+      "from_ports": []
+    }
+  ],
+  "blocks": [
+    {
+      "id": "B0",
+      "num_gates": 44,
+      "gates": [
+        "1002:sky130_fd_sc_hd__nand2_2",
+        "1011:sky130_fd_sc_hd__and2_2",
+        "1048:sky130_fd_sc_hd__a31o_2",
+        "1052:sky130_fd_sc_hd__xnor2_2",
+        "1069:sky130_fd_sc_hd__or2_2",
+        "1070:sky130_fd_sc_hd__and2_2",
+        "108:sky130_fd_sc_hd__and3_2",
+        "613:sky130_fd_sc_hd__a31o_2",
+        "616:sky130_fd_sc_hd__nor2_2",
+        "617:sky130_fd_sc_hd__nor2_2",
+        "618:sky130_fd_sc_hd__nor2_2",
+        "619:sky130_fd_sc_hd__nor2_2",
+        "622:sky130_fd_sc_hd__a21boi_2",
+        "623:sky130_fd_sc_hd__o21bai_2",
+        "629:sky130_fd_sc_hd__and2_2",
+        "630:sky130_fd_sc_hd__and2_2",
+        "631:sky130_fd_sc_hd__xor2_2",
+        "632:sky130_fd_sc_hd__xor2_2",
+        "633:sky130_fd_sc_hd__xor2_2",
+        "634:sky130_fd_sc_hd__xor2_2",
+        "635:sky130_fd_sc_hd__a31o_2",
+        "636:sky130_fd_sc_hd__or2_2",
+        "639:sky130_fd_sc_hd__and2_2",
+        "659:sky130_fd_sc_hd__and4bb_2",
+        "685:sky130_fd_sc_hd__or2_2",
+        "6:sky130_fd_sc_hd__and4bb_2",
+        "707:sky130_fd_sc_hd__a21bo_2",
+        "711:sky130_fd_sc_hd__and2_2",
+        "761:sky130_fd_sc_hd__nor2_2",
+        "765:sky130_fd_sc_hd__nor2_2",
+        "781:sky130_fd_sc_hd__a21o_2",
+        "841:sky130_fd_sc_hd__or2_2",
+        "844:sky130_fd_sc_hd__nor2_2",
+        "852:sky130_fd_sc_hd__nand2_2",
+        "864:sky130_fd_sc_hd__and2_2",
+        "866:sky130_fd_sc_hd__a31o_2",
+        "895:sky130_fd_sc_hd__or2_2",
+        "900:sky130_fd_sc_hd__xnor2_2",
+        "917:sky130_fd_sc_hd__a31o_2",
+        "972:sky130_fd_sc_hd__xor2_2",
+        "975:sky130_fd_sc_hd__xnor2_2",
+        "976:sky130_fd_sc_hd__nand2_2",
+        "978:sky130_fd_sc_hd__nand2_2",
+        "989:sky130_fd_sc_hd__nor2_2"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1542",
+            "instance": "180:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "613:sky130_fd_sc_hd__a31o_2",
+              "pin": "A2",
+              "inv": false
+            },
+            {
+              "instance": "685:sky130_fd_sc_hd__or2_2",
+              "pin": "B",
+              "inv": false
+            },
+            {
+              "instance": "978:sky130_fd_sc_hd__nand2_2",
+              "pin": "B",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1646",
+            "instance": "387:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "616:sky130_fd_sc_hd__nor2_2",
+              "pin": "A",
+              "inv": false
+            },
+            {
+              "instance": "630:sky130_fd_sc_hd__and2_2",
+              "pin": "A",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1811",
+            "instance": "368:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "631:sky130_fd_sc_hd__xor2_2",
+              "pin": "B",
+              "inv": false
+            },
+            {
+              "instance": "864:sky130_fd_sc_hd__and2_2",
+              "pin": "B",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1881",
+            "instance": "142:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "1070:sky130_fd_sc_hd__and2_2",
+              "pin": "B",
+              "inv": false
+            },
+            {
+              "instance": "844:sky130_fd_sc_hd__nor2_2",
+              "pin": "B",
+              "inv": false
+            },
+            {
+              "instance": "866:sky130_fd_sc_hd__a31o_2",
+              "pin": "A2",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1900",
+            "instance": "141:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "618:sky130_fd_sc_hd__nor2_2",
+              "pin": "B",
+              "inv": false
+            },
+            {
+              "instance": "639:sky130_fd_sc_hd__and2_2",
+              "pin": "B",
+              "inv": false
+            },
+            {
+              "instance": "841:sky130_fd_sc_hd__or2_2",
+              "pin": "B",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1908",
+            "instance": "348:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "616:sky130_fd_sc_hd__nor2_2",
+              "pin": "B",
+              "inv": false
+            },
+            {
+              "instance": "630:sky130_fd_sc_hd__and2_2",
+              "pin": "B",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1957",
+            "instance": "146:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "617:sky130_fd_sc_hd__nor2_2",
+              "pin": "B",
+              "inv": false
+            },
+            {
+              "instance": "711:sky130_fd_sc_hd__and2_2",
+              "pin": "B",
+              "inv": false
+            },
+            {
+              "instance": "895:sky130_fd_sc_hd__or2_2",
+              "pin": "B",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1965",
+            "instance": "453:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "618:sky130_fd_sc_hd__nor2_2",
+              "pin": "A",
+              "inv": false
+            },
+            {
+              "instance": "639:sky130_fd_sc_hd__and2_2",
+              "pin": "A",
+              "inv": false
+            },
+            {
+              "instance": "841:sky130_fd_sc_hd__or2_2",
+              "pin": "A",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1968",
+            "instance": "385:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "636:sky130_fd_sc_hd__or2_2",
+              "pin": "A",
+              "inv": false
+            },
+            {
+              "instance": "976:sky130_fd_sc_hd__nand2_2",
+              "pin": "A",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1988",
+            "instance": "541:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "1002:sky130_fd_sc_hd__nand2_2",
+              "pin": "A",
+              "inv": false
+            },
+            {
+              "instance": "1048:sky130_fd_sc_hd__a31o_2",
+              "pin": "A1",
+              "inv": false
+            },
+            {
+              "instance": "1069:sky130_fd_sc_hd__or2_2",
+              "pin": "A",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1989",
+            "instance": "433:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "631:sky130_fd_sc_hd__xor2_2",
+              "pin": "A",
+              "inv": false
+            },
+            {
+              "instance": "864:sky130_fd_sc_hd__and2_2",
+              "pin": "A",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "2007",
+            "instance": "554:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "1070:sky130_fd_sc_hd__and2_2",
+              "pin": "A",
+              "inv": false
+            },
+            {
+              "instance": "844:sky130_fd_sc_hd__nor2_2",
+              "pin": "A",
+              "inv": false
+            },
+            {
+              "instance": "866:sky130_fd_sc_hd__a31o_2",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "2012",
+            "instance": "181:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "1002:sky130_fd_sc_hd__nand2_2",
+              "pin": "B",
+              "inv": false
+            },
+            {
+              "instance": "1048:sky130_fd_sc_hd__a31o_2",
+              "pin": "A2",
+              "inv": false
+            },
+            {
+              "instance": "1069:sky130_fd_sc_hd__or2_2",
+              "pin": "B",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "2085",
+            "instance": "182:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "636:sky130_fd_sc_hd__or2_2",
+              "pin": "B",
+              "inv": false
+            },
+            {
+              "instance": "976:sky130_fd_sc_hd__nand2_2",
+              "pin": "B",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "2088",
+            "instance": "388:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "613:sky130_fd_sc_hd__a31o_2",
+              "pin": "A1",
+              "inv": false
+            },
+            {
+              "instance": "685:sky130_fd_sc_hd__or2_2",
+              "pin": "A",
+              "inv": false
+            },
+            {
+              "instance": "978:sky130_fd_sc_hd__nand2_2",
+              "pin": "A",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "2092",
+            "instance": "386:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "617:sky130_fd_sc_hd__nor2_2",
+              "pin": "A",
+              "inv": false
+            },
+            {
+              "instance": "711:sky130_fd_sc_hd__and2_2",
+              "pin": "A",
+              "inv": false
+            },
+            {
+              "instance": "895:sky130_fd_sc_hd__or2_2",
+              "pin": "A",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "1877",
+          "driver": "659:sky130_fd_sc_hd__and4bb_2",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "output_port",
+              "port": "S",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [
+        "1710",
+        "1821",
+        "1829",
+        "1888",
+        "1889",
+        "1890",
+        "1891",
+        "1892",
+        "1893",
+        "1894",
+        "1895",
+        "1896",
+        "1897",
+        "2022",
+        "2025",
+        "2026",
+        "2027",
+        "2030",
+        "2031",
+        "2034",
+        "2037",
+        "2039",
+        "2045",
+        "2046",
+        "2048",
+        "2051",
+        "2052",
+        "2057",
+        "2058",
+        "2059",
+        "2061",
+        "2062",
+        "2063",
+        "2065",
+        "2066",
+        "2067",
+        "2069",
+        "2070",
+        "2071",
+        "2072",
+        "2074",
+        "2096",
+        "9400"
+      ],
+      "depth": 7
+    },
+    {
+      "id": "B1",
+      "num_gates": 1,
+      "gates": [
+        "137:sky130_fd_sc_hd__mux2_1"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1542",
+            "instance": "180:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "137:sky130_fd_sc_hd__mux2_1",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1957",
+            "instance": "146:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "137:sky130_fd_sc_hd__mux2_1",
+              "pin": "A0",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1996",
+            "port": "en"
+          },
+          "loads": [
+            {
+              "instance": "137:sky130_fd_sc_hd__mux2_1",
+              "pin": "S",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "1948",
+          "driver": "137:sky130_fd_sc_hd__mux2_1",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "flop_data",
+              "instance": "146:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [],
+      "depth": 0
+    },
+    {
+      "id": "B2",
+      "num_gates": 1,
+      "gates": [
+        "138:sky130_fd_sc_hd__mux2_1"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1881",
+            "instance": "142:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "138:sky130_fd_sc_hd__mux2_1",
+              "pin": "A0",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1957",
+            "instance": "146:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "138:sky130_fd_sc_hd__mux2_1",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1996",
+            "port": "en"
+          },
+          "loads": [
+            {
+              "instance": "138:sky130_fd_sc_hd__mux2_1",
+              "pin": "S",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "1949",
+          "driver": "138:sky130_fd_sc_hd__mux2_1",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "flop_data",
+              "instance": "142:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [],
+      "depth": 0
+    },
+    {
+      "id": "B3",
+      "num_gates": 1,
+      "gates": [
+        "139:sky130_fd_sc_hd__mux2_1"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1900",
+            "instance": "141:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "139:sky130_fd_sc_hd__mux2_1",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1996",
+            "port": "en"
+          },
+          "loads": [
+            {
+              "instance": "139:sky130_fd_sc_hd__mux2_1",
+              "pin": "S",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "2085",
+            "instance": "182:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "139:sky130_fd_sc_hd__mux2_1",
+              "pin": "A0",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "1951",
+          "driver": "139:sky130_fd_sc_hd__mux2_1",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "flop_data",
+              "instance": "182:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [],
+      "depth": 0
+    },
+    {
+      "id": "B4",
+      "num_gates": 1,
+      "gates": [
+        "140:sky130_fd_sc_hd__mux2_1"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1876",
+            "port": "A"
+          },
+          "loads": [
+            {
+              "instance": "140:sky130_fd_sc_hd__mux2_1",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1996",
+            "port": "en"
+          },
+          "loads": [
+            {
+              "instance": "140:sky130_fd_sc_hd__mux2_1",
+              "pin": "S",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "2012",
+            "instance": "181:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "140:sky130_fd_sc_hd__mux2_1",
+              "pin": "A0",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "3493",
+          "driver": "140:sky130_fd_sc_hd__mux2_1",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "flop_data",
+              "instance": "181:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [],
+      "depth": 0
+    },
+    {
+      "id": "B5",
+      "num_gates": 1,
+      "gates": [
+        "210:sky130_fd_sc_hd__mux2_1"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1881",
+            "instance": "142:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "210:sky130_fd_sc_hd__mux2_1",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1900",
+            "instance": "141:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "210:sky130_fd_sc_hd__mux2_1",
+              "pin": "A0",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1996",
+            "port": "en"
+          },
+          "loads": [
+            {
+              "instance": "210:sky130_fd_sc_hd__mux2_1",
+              "pin": "S",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "1950",
+          "driver": "210:sky130_fd_sc_hd__mux2_1",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "flop_data",
+              "instance": "141:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [],
+      "depth": 0
+    },
+    {
+      "id": "B6",
+      "num_gates": 1,
+      "gates": [
+        "234:sky130_fd_sc_hd__mux2_1"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1542",
+            "instance": "180:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "234:sky130_fd_sc_hd__mux2_1",
+              "pin": "A0",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1811",
+            "instance": "368:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "234:sky130_fd_sc_hd__mux2_1",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1996",
+            "port": "en"
+          },
+          "loads": [
+            {
+              "instance": "234:sky130_fd_sc_hd__mux2_1",
+              "pin": "S",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "1947",
+          "driver": "234:sky130_fd_sc_hd__mux2_1",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "flop_data",
+              "instance": "180:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [],
+      "depth": 0
+    },
+    {
+      "id": "B7",
+      "num_gates": 1,
+      "gates": [
+        "274:sky130_fd_sc_hd__mux2_1"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1908",
+            "instance": "348:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "274:sky130_fd_sc_hd__mux2_1",
+              "pin": "A0",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1996",
+            "port": "en"
+          },
+          "loads": [
+            {
+              "instance": "274:sky130_fd_sc_hd__mux2_1",
+              "pin": "S",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "2085",
+            "instance": "182:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "274:sky130_fd_sc_hd__mux2_1",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "1954",
+          "driver": "274:sky130_fd_sc_hd__mux2_1",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "flop_data",
+              "instance": "348:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [],
+      "depth": 0
+    },
+    {
+      "id": "B8",
+      "num_gates": 1,
+      "gates": [
+        "339:sky130_fd_sc_hd__mux2_1"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1811",
+            "instance": "368:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "339:sky130_fd_sc_hd__mux2_1",
+              "pin": "A0",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1996",
+            "port": "en"
+          },
+          "loads": [
+            {
+              "instance": "339:sky130_fd_sc_hd__mux2_1",
+              "pin": "S",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "2012",
+            "instance": "181:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "339:sky130_fd_sc_hd__mux2_1",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "1946",
+          "driver": "339:sky130_fd_sc_hd__mux2_1",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "flop_data",
+              "instance": "368:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [],
+      "depth": 0
+    },
+    {
+      "id": "B9",
+      "num_gates": 1,
+      "gates": [
+        "369:sky130_fd_sc_hd__mux2_1"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1989",
+            "instance": "433:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "369:sky130_fd_sc_hd__mux2_1",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1996",
+            "port": "en"
+          },
+          "loads": [
+            {
+              "instance": "369:sky130_fd_sc_hd__mux2_1",
+              "pin": "S",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "2088",
+            "instance": "388:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "369:sky130_fd_sc_hd__mux2_1",
+              "pin": "A0",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "5645",
+          "driver": "369:sky130_fd_sc_hd__mux2_1",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "flop_data",
+              "instance": "388:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [],
+      "depth": 0
+    },
+    {
+      "id": "B10",
+      "num_gates": 1,
+      "gates": [
+        "378:sky130_fd_sc_hd__mux2_1"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1988",
+            "instance": "541:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "378:sky130_fd_sc_hd__mux2_1",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1989",
+            "instance": "433:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "378:sky130_fd_sc_hd__mux2_1",
+              "pin": "A0",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1996",
+            "port": "en"
+          },
+          "loads": [
+            {
+              "instance": "378:sky130_fd_sc_hd__mux2_1",
+              "pin": "S",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "5744",
+          "driver": "378:sky130_fd_sc_hd__mux2_1",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "flop_data",
+              "instance": "433:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [],
+      "depth": 0
+    },
+    {
+      "id": "B11",
+      "num_gates": 1,
+      "gates": [
+        "379:sky130_fd_sc_hd__mux2_1"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1972",
+            "port": "B"
+          },
+          "loads": [
+            {
+              "instance": "379:sky130_fd_sc_hd__mux2_1",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1988",
+            "instance": "541:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "379:sky130_fd_sc_hd__mux2_1",
+              "pin": "A0",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1996",
+            "port": "en"
+          },
+          "loads": [
+            {
+              "instance": "379:sky130_fd_sc_hd__mux2_1",
+              "pin": "S",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "5782",
+          "driver": "379:sky130_fd_sc_hd__mux2_1",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "flop_data",
+              "instance": "541:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [],
+      "depth": 0
+    },
+    {
+      "id": "B12",
+      "num_gates": 1,
+      "gates": [
+        "404:sky130_fd_sc_hd__mux2_1"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1646",
+            "instance": "387:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "404:sky130_fd_sc_hd__mux2_1",
+              "pin": "A0",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1968",
+            "instance": "385:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "404:sky130_fd_sc_hd__mux2_1",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1996",
+            "port": "en"
+          },
+          "loads": [
+            {
+              "instance": "404:sky130_fd_sc_hd__mux2_1",
+              "pin": "S",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "2003",
+          "driver": "404:sky130_fd_sc_hd__mux2_1",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "flop_data",
+              "instance": "387:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [],
+      "depth": 0
+    },
+    {
+      "id": "B13",
+      "num_gates": 1,
+      "gates": [
+        "418:sky130_fd_sc_hd__mux2_1"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1996",
+            "port": "en"
+          },
+          "loads": [
+            {
+              "instance": "418:sky130_fd_sc_hd__mux2_1",
+              "pin": "S",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "2007",
+            "instance": "554:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "418:sky130_fd_sc_hd__mux2_1",
+              "pin": "A0",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "2092",
+            "instance": "386:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "418:sky130_fd_sc_hd__mux2_1",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "2000",
+          "driver": "418:sky130_fd_sc_hd__mux2_1",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "flop_data",
+              "instance": "554:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [],
+      "depth": 0
+    },
+    {
+      "id": "B14",
+      "num_gates": 1,
+      "gates": [
+        "426:sky130_fd_sc_hd__mux2_1"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1965",
+            "instance": "453:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "426:sky130_fd_sc_hd__mux2_1",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1968",
+            "instance": "385:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "426:sky130_fd_sc_hd__mux2_1",
+              "pin": "A0",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1996",
+            "port": "en"
+          },
+          "loads": [
+            {
+              "instance": "426:sky130_fd_sc_hd__mux2_1",
+              "pin": "S",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "2002",
+          "driver": "426:sky130_fd_sc_hd__mux2_1",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "flop_data",
+              "instance": "385:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [],
+      "depth": 0
+    },
+    {
+      "id": "B15",
+      "num_gates": 1,
+      "gates": [
+        "596:sky130_fd_sc_hd__mux2_1"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "flop",
+            "net": "1965",
+            "instance": "453:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "596:sky130_fd_sc_hd__mux2_1",
+              "pin": "A0",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1996",
+            "port": "en"
+          },
+          "loads": [
+            {
+              "instance": "596:sky130_fd_sc_hd__mux2_1",
+              "pin": "S",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "2007",
+            "instance": "554:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "596:sky130_fd_sc_hd__mux2_1",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "2001",
+          "driver": "596:sky130_fd_sc_hd__mux2_1",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "flop_data",
+              "instance": "453:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [],
+      "depth": 0
+    },
+    {
+      "id": "B16",
+      "num_gates": 1,
+      "gates": [
+        "603:sky130_fd_sc_hd__mux2_1"
+      ],
+      "inputs": [
+        {
+          "source": {
+            "kind": "input_port",
+            "net": "1996",
+            "port": "en"
+          },
+          "loads": [
+            {
+              "instance": "603:sky130_fd_sc_hd__mux2_1",
+              "pin": "S",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "2088",
+            "instance": "388:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "603:sky130_fd_sc_hd__mux2_1",
+              "pin": "A1",
+              "inv": false
+            }
+          ]
+        },
+        {
+          "source": {
+            "kind": "flop",
+            "net": "2092",
+            "instance": "386:sky130_fd_sc_hd__dfrtp_2",
+            "pin": "Q"
+          },
+          "loads": [
+            {
+              "instance": "603:sky130_fd_sc_hd__mux2_1",
+              "pin": "A0",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "net": "1999",
+          "driver": "603:sky130_fd_sc_hd__mux2_1",
+          "pin": "X",
+          "destinations": [
+            {
+              "kind": "flop_data",
+              "instance": "386:sky130_fd_sc_hd__dfrtp_2",
+              "pin": "D",
+              "inv": false
+            }
+          ]
+        }
+      ],
+      "internal_nets": [],
+      "depth": 0
+    }
+  ],
+  "stats": {
+    "cells_in": 79,
+    "cells_out": 76,
+    "num_comb_cells": 60,
+    "num_flops": 16,
+    "num_constants": 0,
+    "num_cones": 17,
+    "largest_cone": 44,
+    "max_cone_depth": 8,
+    "sum_of_cone_sizes": 60,
+    "shared_gates": 0,
+    "max_cones_per_gate": 1,
+    "num_blocks": 17,
+    "largest_block": 44,
+    "max_block_depth": 7
+  }
+}

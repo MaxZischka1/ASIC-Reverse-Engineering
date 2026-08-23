@@ -4,12 +4,10 @@
 #include <iostream>
 #include <stdlib.h>
 #include <random>
-// The same testbench drives either recovered netlist, because both expose
-// identical ports: the flat one from genVerilog.py (top `adder_demo`) and
-// the hierarchical, named one from genBlockVerilog.py (top `blockMatch`).
-// The Makefile picks which by defining TOP_HEADER/TOP_TYPE -- `make` runs
-// the flat netlist, `make blocks` the named one, and agreement between the
-// two is what says blockMatch.py's naming preserved the function.
+// Drives the recovered warmup netlist: genVerilog.py's flat reconstruction
+// (top `adder_demo`). The top is reached through TOP_TYPE, defaulting to
+// Vadder_demo, so a second netlist exposing the same ports (A, B, clk, en,
+// rst_n, S) can be checked against this same testbench by redefining it.
 #ifndef TOP_TYPE
 #define TOP_TYPE Vadder_demo
 #endif

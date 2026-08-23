@@ -1,0 +1,8323 @@
+{
+ "nodes": [
+  {
+   "id": "G01",
+   "signature": "691e98dfca4da857b6cc0cd6131e6cef",
+   "verified_by": "function",
+   "k": 4,
+   "size": 12,
+   "reference_cone": "u4993.D",
+   "members": [
+    {
+     "id": "u4993.D",
+     "num_gates": 2,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "7270",
+       "from": "5342:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7273",
+       "from": "4993:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    },
+    {
+     "id": "u5000.D",
+     "num_gates": 2,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7231",
+       "from": "5000:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    },
+    {
+     "id": "u5004.D",
+     "num_gates": 2,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6139",
+       "from": "5004:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "7238",
+       "from": "5399:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    },
+    {
+     "id": "u5093.D",
+     "num_gates": 2,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "7236",
+       "from": "5401:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7237",
+       "from": "5093:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    },
+    {
+     "id": "u5336.D",
+     "num_gates": 2,
+     "leaf_roles": [
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "3233",
+       "from": "5339:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7234",
+       "from": "5336:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    },
+    {
+     "id": "u5339.D",
+     "num_gates": 2,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3233",
+       "from": "5339:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "7278",
+       "from": "5344:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    },
+    {
+     "id": "u5342.D",
+     "num_gates": 2,
+     "leaf_roles": [
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6139",
+       "from": "5004:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7270",
+       "from": "5342:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    },
+    {
+     "id": "u5343.D",
+     "num_gates": 2,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "49975",
+       "from": "5343:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "7275",
+       "from": "5569:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    },
+    {
+     "id": "u5344.D",
+     "num_gates": 2,
+     "leaf_roles": [
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "49975",
+       "from": "5343:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7278",
+       "from": "5344:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    },
+    {
+     "id": "u5399.D",
+     "num_gates": 2,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "7237",
+       "from": "5093:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7238",
+       "from": "5399:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    },
+    {
+     "id": "u5401.D",
+     "num_gates": 2,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "7231",
+       "from": "5000:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7236",
+       "from": "5401:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    },
+    {
+     "id": "u5569.D",
+     "num_gates": 2,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "7273",
+       "from": "4993:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7275",
+       "from": "5569:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=d)",
+   "decomposition": "f = a ? d : (mux2to1)",
+   "expression": "c&d | ~b&d | a&d | ~a&b&c",
+   "onset": 8
+  },
+  {
+   "id": "G02",
+   "signature": "5541d10a1bc506d79ede2f33fa154907",
+   "verified_by": "function",
+   "k": 9,
+   "size": 5,
+   "reference_cone": "u1228.D",
+   "members": [
+    {
+     "id": "u1228.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6550",
+       "from": "1808:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6563",
+       "from": "1228:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    },
+    {
+     "id": "u1230.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6422",
+       "from": "1230:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6569",
+       "from": "1810:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    },
+    {
+     "id": "u1259.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6452",
+       "from": "1259:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6477",
+       "from": "1383:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    },
+    {
+     "id": "u1260.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6145",
+       "from": "1385:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6457",
+       "from": "1260:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    },
+    {
+     "id": "u1264.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6634",
+       "from": "1264:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6636",
+       "from": "2036:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=i)",
+   "decomposition": "f = a ? i : (b ? i : (c ? i : (~e&i | ~g&i | h&i | ~d&i | d&e&f&g&~i | ~f&i)))",
+   "expression": "~f&i | c&i | ~d&i | a&i | ~e&i | h&i | b&i | ~a&~b&~c&d&e&f&g&~i | ~g&i",
+   "onset": 257
+  },
+  {
+   "id": "G03",
+   "signature": "91856b5312a627807519f2dd3406b6ca",
+   "verified_by": "function",
+   "k": 9,
+   "size": 5,
+   "reference_cone": "u1383.D",
+   "members": [
+    {
+     "id": "u1383.D",
+     "num_gates": 4,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6452",
+       "from": "1259:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6477",
+       "from": "1383:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    },
+    {
+     "id": "u1385.D",
+     "num_gates": 4,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6145",
+       "from": "1385:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6457",
+       "from": "1260:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    },
+    {
+     "id": "u1808.D",
+     "num_gates": 4,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6550",
+       "from": "1808:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6563",
+       "from": "1228:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    },
+    {
+     "id": "u1810.D",
+     "num_gates": 4,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6422",
+       "from": "1230:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6569",
+       "from": "1810:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    },
+    {
+     "id": "u2036.D",
+     "num_gates": 4,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6634",
+       "from": "1264:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6636",
+       "from": "2036:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=i)",
+   "decomposition": "f = i | (and8_neg3)",
+   "expression": "i | ~a&~b&~c&d&e&f&g&h",
+   "onset": 257
+  },
+  {
+   "id": "G04",
+   "signature": "1318eb8dc47772d9a990c3ce4f15392f",
+   "verified_by": "function",
+   "k": 9,
+   "size": 4,
+   "reference_cone": "u1229.D",
+   "members": [
+    {
+     "id": "u1229.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6603",
+       "from": "1229:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6638",
+       "from": "1809:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    },
+    {
+     "id": "u1249.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "23154",
+       "from": "2037:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6754",
+       "from": "1249:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    },
+    {
+     "id": "u1384.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6510",
+       "from": "1261:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6513",
+       "from": "1384:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    },
+    {
+     "id": "u2039.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6747",
+       "from": "1250:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6749",
+       "from": "2039:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=i)",
+   "decomposition": "f = i | (and8_neg4)",
+   "expression": "i | ~a&~b&~c&~d&e&f&g&h",
+   "onset": 257
+  },
+  {
+   "id": "G05",
+   "signature": "89dc13b92bcb870b6f21848c82bea79a",
+   "verified_by": "function",
+   "k": 9,
+   "size": 4,
+   "reference_cone": "u1250.D",
+   "members": [
+    {
+     "id": "u1250.D",
+     "num_gates": 6,
+     "leaf_roles": [
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6747",
+       "from": "1250:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6749",
+       "from": "2039:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    },
+    {
+     "id": "u1261.D",
+     "num_gates": 6,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6510",
+       "from": "1261:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6513",
+       "from": "1384:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    },
+    {
+     "id": "u1809.D",
+     "num_gates": 6,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6603",
+       "from": "1229:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6638",
+       "from": "1809:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    },
+    {
+     "id": "u2037.D",
+     "num_gates": 6,
+     "leaf_roles": [
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "23154",
+       "from": "2037:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6754",
+       "from": "1249:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=i)",
+   "decomposition": "f = a ? i : (b ? i : (c ? i : (~e&i | ~g&i | ~f&i | h&i | ~d&e&f&g&~i | d&i)))",
+   "expression": "~f&i | c&i | d&i | a&i | ~e&i | h&i | b&i | ~a&~b&~c&~d&e&f&g&~i | ~g&i",
+   "onset": 257
+  },
+  {
+   "id": "G06",
+   "signature": "b939c51979bd62ad6f0e2ef8d65744b2",
+   "verified_by": "function",
+   "k": 12,
+   "size": 4,
+   "reference_cone": "u2947.D",
+   "members": [
+    {
+     "id": "u2947.D",
+     "num_gates": 11,
+     "leaf_roles": [
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "2987",
+       "from": "2947:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6671",
+       "from": "2957:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6790",
+       "from": "2946:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6791",
+       "from": "2948:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "6882",
+       "from": "2958:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    },
+    {
+     "id": "u2948.D",
+     "num_gates": 10,
+     "leaf_roles": [
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6671",
+       "from": "2957:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6788",
+       "from": "2959:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "6790",
+       "from": "2946:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "6791",
+       "from": "2948:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6842",
+       "from": "2944:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    },
+    {
+     "id": "u2958.D",
+     "num_gates": 10,
+     "leaf_roles": [
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6671",
+       "from": "2957:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6790",
+       "from": "2946:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "6791",
+       "from": "2948:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6842",
+       "from": "2944:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "6882",
+       "from": "2958:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    },
+    {
+     "id": "u2960.D",
+     "num_gates": 10,
+     "leaf_roles": [
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "2987",
+       "from": "2947:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6790",
+       "from": "2946:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6791",
+       "from": "2948:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "6795",
+       "from": "2960:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6882",
+       "from": "2958:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "unknown_k12_b939c519",
+   "decomposition": null,
+   "expression": null,
+   "onset": 2048
+  },
+  {
+   "id": "G07",
+   "signature": "fcc49afa6f15c7eb8a092a33c8fd92a3",
+   "verified_by": "function",
+   "k": 5,
+   "size": 2,
+   "reference_cone": "u4659.D",
+   "members": [
+    {
+     "id": "u4659.D",
+     "num_gates": 3,
+     "leaf_roles": [
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    },
+    {
+     "id": "u6109.D",
+     "num_gates": 4,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7458",
+       "from": "6111:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "7501",
+       "from": "6109:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "toggle(q=e)",
+   "decomposition": "f = e ^ (and4_neg1)",
+   "expression": "a&e | ~c&e | ~b&e | ~d&e | ~a&b&c&d&~e",
+   "onset": 16
+  },
+  {
+   "id": "G08",
+   "signature": "0f16feb77e3c129bd8bd4c439f12ebd1",
+   "verified_by": "function",
+   "k": 1,
+   "size": 1,
+   "reference_cone": "port:success",
+   "members": [
+    {
+     "id": "port:success",
+     "num_gates": 0,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6398",
+       "from": "228:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "buffer",
+   "decomposition": null,
+   "expression": "a",
+   "onset": 1
+  },
+  {
+   "id": "G09",
+   "signature": "4e554226421e94a3644dfb2a401adaf8",
+   "verified_by": "function",
+   "k": 2,
+   "size": 1,
+   "reference_cone": "u226.D",
+   "members": [
+    {
+     "id": "u226.D",
+     "num_gates": 1,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "or2",
+   "decomposition": null,
+   "expression": "a | b",
+   "onset": 3
+  },
+  {
+   "id": "G10",
+   "signature": "6a4b43223ff1117cf05cd90eeed886be",
+   "verified_by": "function",
+   "k": 4,
+   "size": 1,
+   "reference_cone": "u6111.D",
+   "members": [
+    {
+     "id": "u6111.D",
+     "num_gates": 4,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7458",
+       "from": "6111:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "toggle(q=d)",
+   "decomposition": "f = d ^ (and3_neg1)",
+   "expression": "~b&d | a&d | ~c&d | ~a&b&c&~d",
+   "onset": 8
+  },
+  {
+   "id": "G11",
+   "signature": "02759b087487e36db2fe86fec4f786e4",
+   "verified_by": "function",
+   "k": 5,
+   "size": 1,
+   "reference_cone": "u237.D",
+   "members": [
+    {
+     "id": "u237.D",
+     "num_gates": 2,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "clear_dominant(q=e)",
+   "decomposition": "f = e & (d | (and3))",
+   "expression": "d&e | a&b&c&e",
+   "onset": 9
+  },
+  {
+   "id": "G12",
+   "signature": "12b47289822ba15161e778b3af1fdee6",
+   "verified_by": "function",
+   "k": 5,
+   "size": 1,
+   "reference_cone": "u236.D",
+   "members": [
+    {
+     "id": "u236.D",
+     "num_gates": 3,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "clear_dominant(q=e)",
+   "decomposition": "f = e & (c ? (~d | a&b) : d)",
+   "expression": "c&~d&e | ~c&d&e | a&b&c&e",
+   "onset": 9
+  },
+  {
+   "id": "G13",
+   "signature": "a023d8bfb5e1b3f625982f03544f0ee8",
+   "verified_by": "function",
+   "k": 5,
+   "size": 1,
+   "reference_cone": "u234.D",
+   "members": [
+    {
+     "id": "u234.D",
+     "num_gates": 3,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "clear_dominant(q=e)",
+   "decomposition": "f = e & (b ? (c ? (or2_neg1) : d) : d)",
+   "expression": "~c&d&e | ~b&d&e | a&b&c&e | b&c&~d&e",
+   "onset": 9
+  },
+  {
+   "id": "G14",
+   "signature": "ff1f924f94a690431ca020554af795e0",
+   "verified_by": "function",
+   "k": 5,
+   "size": 1,
+   "reference_cone": "u235.D",
+   "members": [
+    {
+     "id": "u235.D",
+     "num_gates": 2,
+     "leaf_roles": [
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "clear_dominant(q=e)",
+   "decomposition": "f = e & (~a | b&c&d)",
+   "expression": "~a&e | b&c&d&e",
+   "onset": 9
+  },
+  {
+   "id": "G15",
+   "signature": "b9c2226bf359cbb01481356c4a46f4ad",
+   "verified_by": "function",
+   "k": 6,
+   "size": 1,
+   "reference_cone": "u4662.D",
+   "members": [
+    {
+     "id": "u4662.D",
+     "num_gates": 4,
+     "leaf_roles": [
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=f)",
+   "decomposition": "f = a ? f : (e ? (~b&~f | d&~f | ~c&~f) : f)",
+   "expression": "~e&f | a&f | ~a&d&e&~f | ~a&~c&e&~f | ~a&~b&e&~f",
+   "onset": 31
+  },
+  {
+   "id": "G16",
+   "signature": "dce9894e071936170a384f80e6a39d58",
+   "verified_by": "function",
+   "k": 6,
+   "size": 1,
+   "reference_cone": "u6106.D",
+   "members": [
+    {
+     "id": "u6106.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7458",
+       "from": "6111:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "7501",
+       "from": "6109:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "7509",
+       "from": "6106:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "toggle(q=f)",
+   "decomposition": "f = f ^ (and5_neg1)",
+   "expression": "~b&f | ~d&f | ~c&f | ~e&f | a&f | ~a&b&c&d&e&~f",
+   "onset": 32
+  },
+  {
+   "id": "G17",
+   "signature": "e0bca0b1adcb9f8235d155981824b562",
+   "verified_by": "function",
+   "k": 6,
+   "size": 1,
+   "reference_cone": "u4661.D",
+   "members": [
+    {
+     "id": "u4661.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=f)",
+   "decomposition": "f = a ? f : (b ? (c ? (d&e&~f | ~d&e&f | d&~e&f) : f) : f)",
+   "expression": "a&f | ~b&f | ~c&f | ~d&e&f | d&~e&f | ~a&b&c&d&e&~f",
+   "onset": 31
+  },
+  {
+   "id": "G18",
+   "signature": "e8f31c47fc86bc6f4d79a798e4120d6b",
+   "verified_by": "function",
+   "k": 6,
+   "size": 1,
+   "reference_cone": "u4838.D",
+   "members": [
+    {
+     "id": "u4838.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=f)",
+   "decomposition": "f = a ? f : (d ? (f ? (c&~e | ~b&~e) : e) : f)",
+   "expression": "~d&f | a&f | ~a&d&e&~f | ~b&~e&f | c&~e&f",
+   "onset": 31
+  },
+  {
+   "id": "G19",
+   "signature": "a66bc13327fae917bd056ee8adbf3d80",
+   "verified_by": "function",
+   "k": 7,
+   "size": 1,
+   "reference_cone": "u6095.D",
+   "members": [
+    {
+     "id": "u6095.D",
+     "num_gates": 6,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7458",
+       "from": "6111:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "7501",
+       "from": "6109:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "7509",
+       "from": "6106:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "7520",
+       "from": "6095:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "toggle(q=g)",
+   "decomposition": "f = g ^ (and6_neg1)",
+   "expression": "~b&g | ~d&g | ~f&g | ~e&g | a&g | ~c&g | ~a&b&c&d&e&f&~g",
+   "onset": 64
+  },
+  {
+   "id": "G20",
+   "signature": "8ec7e1e98096281b5f68ca1d70b02394",
+   "verified_by": "function",
+   "k": 8,
+   "size": 1,
+   "reference_cone": "u6198.D",
+   "members": [
+    {
+     "id": "u6198.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7458",
+       "from": "6111:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "7501",
+       "from": "6109:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "7509",
+       "from": "6106:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "7520",
+       "from": "6095:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "7522",
+       "from": "6198:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "toggle(q=h)",
+   "decomposition": "f = h ^ (and7_neg1)",
+   "expression": "~b&h | ~d&h | a&h | ~c&h | ~f&h | ~e&h | ~g&h | ~a&b&c&d&e&f&g&~h",
+   "onset": 128
+  },
+  {
+   "id": "G21",
+   "signature": "52fdb817a2a59fd9accd90a9d9108ad1",
+   "verified_by": "function",
+   "k": 9,
+   "size": 1,
+   "reference_cone": "u2293.D",
+   "members": [
+    {
+     "id": "u2293.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6698",
+       "from": "2293:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6732",
+       "from": "2372:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=i)",
+   "decomposition": "f = a ? i : (b ? i : (c ? i : (h&i | ~g&i | ~f&i | e&i | ~d&~e&f&g&~i | d&i)))",
+   "expression": "~f&i | e&i | c&i | d&i | a&i | h&i | b&i | ~a&~b&~c&~d&~e&f&g&~i | ~g&i",
+   "onset": 257
+  },
+  {
+   "id": "G22",
+   "signature": "6cd57d4bd9263674cad5988e95b282a9",
+   "verified_by": "function",
+   "k": 9,
+   "size": 1,
+   "reference_cone": "u6436.D",
+   "members": [
+    {
+     "id": "u6436.D",
+     "num_gates": 4,
+     "leaf_roles": [
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "toggle(q=i)",
+   "decomposition": "f = i ^ (and8_neg3)",
+   "expression": "~b&i | h&i | ~d&i | f&i | ~c&i | ~a&i | ~e&i | g&i | a&b&c&d&e&~f&~g&~h&~i",
+   "onset": 256
+  },
+  {
+   "id": "G23",
+   "signature": "99d0d33169637b849747f3ea9cbb1518",
+   "verified_by": "function",
+   "k": 9,
+   "size": 1,
+   "reference_cone": "u1626.D",
+   "members": [
+    {
+     "id": "u1626.D",
+     "num_gates": 4,
+     "leaf_roles": [
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "2035",
+       "from": "1258:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6523",
+       "from": "1626:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=i)",
+   "decomposition": "f = i | (and8_neg2)",
+   "expression": "i | ~a&~b&c&d&e&f&g&h",
+   "onset": 257
+  },
+  {
+   "id": "G24",
+   "signature": "a23e1be13052296cb3b90962e3c40f34",
+   "verified_by": "function",
+   "k": 9,
+   "size": 1,
+   "reference_cone": "u5634.D",
+   "members": [
+    {
+     "id": "u5634.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "7356",
+       "from": "5639:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7361",
+       "from": "5634:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=i)",
+   "decomposition": "f = a ? i : (f ? (~c&i | d&i | ~b&g&h | e&i | ~c&g&h | ~b&i | d&g&h | e&g&h) : i)",
+   "expression": "~f&i | ~b&i | e&i | ~c&i | ~a&d&f&g&h | a&i | ~a&~c&f&g&h | d&i | ~a&e&f&g&h | ~a&~b&f&g&h",
+   "onset": 267
+  },
+  {
+   "id": "G25",
+   "signature": "c96340574b3c47223bc0e6f2fabbefc2",
+   "verified_by": "function",
+   "k": 9,
+   "size": 1,
+   "reference_cone": "u1258.D",
+   "members": [
+    {
+     "id": "u1258.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "2035",
+       "from": "1258:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6523",
+       "from": "1626:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=i)",
+   "decomposition": "f = a ? i : (b ? i : (c ? (~e&i | ~g&i | h&i | ~d&i | d&e&f&g&~i | ~f&i) : i))",
+   "expression": "~f&i | ~d&i | ~c&i | a&i | ~e&i | h&i | b&i | ~a&~b&c&d&e&f&g&~i | ~g&i",
+   "onset": 257
+  },
+  {
+   "id": "G26",
+   "signature": "cb329473ff549783ef79eeccd4d558ac",
+   "verified_by": "function",
+   "k": 9,
+   "size": 1,
+   "reference_cone": "u2372.D",
+   "members": [
+    {
+     "id": "u2372.D",
+     "num_gates": 4,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6698",
+       "from": "2293:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6732",
+       "from": "2372:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=i)",
+   "decomposition": "f = i | (nor8_neg3)",
+   "expression": "i | ~a&~b&~c&~d&~e&f&g&h",
+   "onset": 257
+  },
+  {
+   "id": "G27",
+   "signature": "d9b46a49b36a6f6998c0436be3974c41",
+   "verified_by": "function",
+   "k": 9,
+   "size": 1,
+   "reference_cone": "u5639.D",
+   "members": [
+    {
+     "id": "u5639.D",
+     "num_gates": 6,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7356",
+       "from": "5639:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "7361",
+       "from": "5634:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=i)",
+   "decomposition": "f = a ? i : (f ? (<7-input function>) : i)",
+   "expression": "~f&i | a&i | ~b&h&i | ~a&~b&f&g&~i | e&~g&i | ~a&~c&f&g&h | d&~g&i | ~a&e&f&g&~i | ~c&~g&i | ~a&d&f&g&~i | d&h&i | ~b&~g&i | e&h&i | ~a&~c&f&g&~i",
+   "onset": 267
+  },
+  {
+   "id": "G28",
+   "signature": "f543c9b5258c68c2863c846cf2e56958",
+   "verified_by": "function",
+   "k": 9,
+   "size": 1,
+   "reference_cone": "u6197.D",
+   "members": [
+    {
+     "id": "u6197.D",
+     "num_gates": 7,
+     "leaf_roles": [
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7451",
+       "from": "6197:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "7458",
+       "from": "6111:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7501",
+       "from": "6109:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "7509",
+       "from": "6106:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "7520",
+       "from": "6095:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "7522",
+       "from": "6198:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "toggle(q=i)",
+   "decomposition": "f = i ^ (and8_neg1)",
+   "expression": "~f&i | ~b&i | ~d&i | ~c&i | ~a&i | ~e&i | h&i | ~g&i | a&b&c&d&e&f&g&~h&~i",
+   "onset": 256
+  },
+  {
+   "id": "G29",
+   "signature": "8741399c9608b0cc10221bed881ea807",
+   "verified_by": "function",
+   "k": 10,
+   "size": 1,
+   "reference_cone": "u6451.D",
+   "members": [
+    {
+     "id": "u6451.D",
+     "num_gates": 7,
+     "leaf_roles": [
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=a, hold=j)",
+   "decomposition": "f = a ? (b ? (c ? (i&j | h&j | g&j | e&~g&~h&~i&~j | ~e&f&j | ~d&~e&j) : j) : j) : j",
+   "expression": "g&j | i&j | ~b&j | h&j | ~c&j | ~a&j | a&b&c&e&~g&~h&~i&~j | ~e&f&j | ~d&~e&j",
+   "onset": 511
+  },
+  {
+   "id": "G30",
+   "signature": "9a360380bbb986bbb52e060ecb0958a2",
+   "verified_by": "function",
+   "k": 10,
+   "size": 1,
+   "reference_cone": "u6199.D",
+   "members": [
+    {
+     "id": "u6199.D",
+     "num_gates": 7,
+     "leaf_roles": [
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "7451",
+       "from": "6197:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7458",
+       "from": "6111:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "7501",
+       "from": "6109:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "7509",
+       "from": "6106:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "7520",
+       "from": "6095:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "7522",
+       "from": "6198:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "7532",
+       "from": "6199:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "toggle(q=j)",
+   "decomposition": "f = j ^ (and9_neg1)",
+   "expression": "~e&j | ~g&j | ~f&j | ~h&j | i&j | ~b&j | ~d&j | ~c&j | ~a&j | a&b&c&d&e&f&g&h&~i&~j",
+   "onset": 512
+  },
+  {
+   "id": "G31",
+   "signature": "c951fd35f0d18c9f36a898d793fb4795",
+   "verified_by": "function",
+   "k": 10,
+   "size": 1,
+   "reference_cone": "u6435.D",
+   "members": [
+    {
+     "id": "u6435.D",
+     "num_gates": 8,
+     "leaf_roles": [
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=a, hold=j)",
+   "decomposition": "f = a ? (b ? (c ? (i&j | h&j | ~d&j | g&j | ~e&f&j | e&~f&j | d&e&f&~g&~h&~i&~j) : j) : j) : j",
+   "expression": "g&j | i&j | ~b&j | h&j | ~d&j | ~c&j | ~a&j | ~e&f&j | e&~f&j | a&b&c&d&e&f&~g&~h&~i&~j",
+   "onset": 511
+  },
+  {
+   "id": "G32",
+   "signature": "d3375383e4d9984dab29111d54731de2",
+   "verified_by": "function",
+   "k": 10,
+   "size": 1,
+   "reference_cone": "u4182.D",
+   "members": [
+    {
+     "id": "u4182.D",
+     "num_gates": 5,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=j)",
+   "decomposition": "f = j | (and9_neg4)",
+   "expression": "j | ~a&~b&~c&~d&e&f&g&h&i",
+   "onset": 513
+  },
+  {
+   "id": "G33",
+   "signature": "f6f49e4301d565ff05a0450165b75d48",
+   "verified_by": "function",
+   "k": 10,
+   "size": 1,
+   "reference_cone": "u6442.D",
+   "members": [
+    {
+     "id": "u6442.D",
+     "num_gates": 6,
+     "leaf_roles": [
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=a, hold=j)",
+   "decomposition": "f = a ? (b ? (c ? (i&j | h&j | g&j | ~d&~g&~h&~i&~j | f&~g&~h&~i&~j | ~e&~g&~h&~i&~j) : j) : j) : j",
+   "expression": "g&j | i&j | ~b&j | h&j | ~c&j | ~a&j | a&b&c&~e&~g&~h&~i&~j | a&b&c&f&~g&~h&~i&~j | a&b&c&~d&~g&~h&~i&~j",
+   "onset": 511
+  },
+  {
+   "id": "G34",
+   "signature": "fc2b729bd2d57463351be8fc974ce4fc",
+   "verified_by": "function",
+   "k": 10,
+   "size": 1,
+   "reference_cone": "u5638.D",
+   "members": [
+    {
+     "id": "u5638.D",
+     "num_gates": 6,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "7355",
+       "from": "5638:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "7356",
+       "from": "5639:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "7361",
+       "from": "5634:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=j)",
+   "decomposition": "f = j | (g & (h & (~a&~b&~c&~d&e&i | ~a&~b&~c&~e&~f&i | ~a&~b&~c&d&f&i)))",
+   "expression": "j | ~a&~b&~c&~d&e&g&h&i | ~a&~b&~c&~e&~f&g&h&i | ~a&~b&~c&d&f&g&h&i",
+   "onset": 518
+  },
+  {
+   "id": "G35",
+   "signature": "914d431de4b6a3a54f2362266b227502",
+   "verified_by": "function",
+   "k": 11,
+   "size": 1,
+   "reference_cone": "u6159.D",
+   "members": [
+    {
+     "id": "u6159.D",
+     "num_gates": 6,
+     "leaf_roles": [
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "7451",
+       "from": "6197:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7458",
+       "from": "6111:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "7501",
+       "from": "6109:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "7509",
+       "from": "6106:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "7520",
+       "from": "6095:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "7522",
+       "from": "6198:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7532",
+       "from": "6199:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "7535",
+       "from": "6159:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "toggle(q=k)",
+   "decomposition": "f = k ^ (and10_neg1)",
+   "expression": "~g&k | ~h&k | ~b&k | ~i&k | j&k | ~d&k | ~c&k | ~a&k | ~f&k | ~e&k | a&b&c&d&e&f&g&h&i&~j&~k",
+   "onset": 1024
+  },
+  {
+   "id": "G36",
+   "signature": "3f61679ae28124ea4f1c581eb3780dfa",
+   "verified_by": "function",
+   "k": 12,
+   "size": 1,
+   "reference_cone": "u2944.D",
+   "members": [
+    {
+     "id": "u2944.D",
+     "num_gates": 9,
+     "leaf_roles": [
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "2987",
+       "from": "2947:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "6788",
+       "from": "2959:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6790",
+       "from": "2946:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6795",
+       "from": "2960:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "6842",
+       "from": "2944:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "unknown_k12_3f61679a",
+   "decomposition": null,
+   "expression": null,
+   "onset": 2048
+  },
+  {
+   "id": "G37",
+   "signature": "d1fb04a88e6398d73a4c7b9d4ced84e2",
+   "verified_by": "function",
+   "k": 12,
+   "size": 1,
+   "reference_cone": "u5337.D",
+   "members": [
+    {
+     "id": "u5337.D",
+     "num_gates": 6,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "3233",
+       "from": "5339:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "6137",
+       "from": "5337:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "7231",
+       "from": "5000:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "7234",
+       "from": "5336:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "7278",
+       "from": "5344:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=l)",
+   "decomposition": "f = l | (j & (k & (<9-input function>)))",
+   "expression": "l | ~a&i&j&k | ~a&e&f&j&k | ~a&d&g&j&k | ~a&~c&h&j&k | ~a&c&f&j&k | ~a&c&g&j&k | ~a&e&h&j&k | ~a&b&f&j&k | ~a&e&g&j&k | ~a&~b&h&j&k | ~a&b&g&j&k | ~a&d&h&j&k | ~a&d&f&j&k",
+   "onset": 2284
+  },
+  {
+   "id": "G38",
+   "signature": "1d59cac2e520d026188fa1a9017499b7",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u2301.D",
+   "members": [
+    {
+     "id": "u2301.D",
+     "num_gates": 149,
+     "leaf_roles": [
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "6185",
+       "from": "2301:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7740",
+       "from": "2574:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=m)",
+   "decomposition": "f = m | (i & (j & (~a&~b&~c&e&~f&g&h&k&l | ~a&~b&~c&~e&f&g&h&k&l | ~a&~b&c&~d&~e&f&~g&~h&k&l | ~a&~b&c&~d&e&~f&~g&~h&k&l)))",
+   "expression": null,
+   "onset": 4102
+  },
+  {
+   "id": "G39",
+   "signature": "42fea366a7b9f59760782a0aef13d68a",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u8602.D",
+   "members": [
+    {
+     "id": "u8602.D",
+     "num_gates": 151,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7970",
+       "from": "8602:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7973",
+       "from": "8591:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=m)",
+   "decomposition": "f = a ? m : (b ? m : (i ? (<10-input function>) : m))",
+   "expression": null,
+   "onset": 4111
+  },
+  {
+   "id": "G40",
+   "signature": "4c19c8a6ce7a90d9b9058f7af92bb22d",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u8084.D",
+   "members": [
+    {
+     "id": "u8084.D",
+     "num_gates": 149,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7961",
+       "from": "8084:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7981",
+       "from": "8815:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=m)",
+   "decomposition": "f = m | (j & (k & (<10-input function>)))",
+   "expression": null,
+   "onset": 4197
+  },
+  {
+   "id": "G41",
+   "signature": "4da0bf91b1956ae57586813e5d4ab2c8",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u8092.D",
+   "members": [
+    {
+     "id": "u8092.D",
+     "num_gates": 151,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "4282",
+       "from": "8092:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "4356",
+       "from": "8431:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=m)",
+   "decomposition": "f = a ? m : (b ? m : (i ? (<10-input function>) : m))",
+   "expression": null,
+   "onset": 4105
+  },
+  {
+   "id": "G42",
+   "signature": "59d89e303542c3f8bdfe841b9ee920d3",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u8591.D",
+   "members": [
+    {
+     "id": "u8591.D",
+     "num_gates": 150,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7970",
+       "from": "8602:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7973",
+       "from": "8591:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=m)",
+   "decomposition": "f = m | (i & (j & (~a&~b&~c&~d&f&h&k&l | ~a&~b&~c&~e&f&g&k&l | ~a&~b&c&d&e&~g&h&k&l | ~a&~b&c&d&e&~f&g&k&l | ~a&~b&~c&~e&f&h&k&l | ~a&~b&~c&~d&f&g&k&l | ~a&~b&~c&~d&~e&g&~h&k&l | ~a&~b&~c&~d&e&g&h&k&l)))",
+   "expression": null,
+   "onset": 4111
+  },
+  {
+   "id": "G43",
+   "signature": "62f53a2b287ddeef1ec405ba89eb5ad2",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u8431.D",
+   "members": [
+    {
+     "id": "u8431.D",
+     "num_gates": 150,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "4282",
+       "from": "8092:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "4356",
+       "from": "8431:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=m)",
+   "decomposition": "f = m | (i & (j & (~a&~b&~c&~e&f&~g&h&k&l | ~a&~b&~c&~d&~f&g&h&k&l | ~a&~b&c&~d&~e&~f&g&k&l | ~a&~b&~c&~d&f&~g&h&k&l | ~a&~b&~c&~d&~e&f&~g&k&l | ~a&~b&~c&~e&~f&g&h&k&l)))",
+   "expression": null,
+   "onset": 4105
+  },
+  {
+   "id": "G44",
+   "signature": "69ea387edb32b1318edef7da6bae5260",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u8095.D",
+   "members": [
+    {
+     "id": "u8095.D",
+     "num_gates": 150,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7572",
+       "from": "8429:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7979",
+       "from": "8095:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=m)",
+   "decomposition": "f = a ? m : (j ? (k ? (<10-input function>) : m) : m)",
+   "expression": null,
+   "onset": 4104
+  },
+  {
+   "id": "G45",
+   "signature": "6aec958ecb35f0abd62ab6e2d8eaca11",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u2710.D",
+   "members": [
+    {
+     "id": "u2710.D",
+     "num_gates": 150,
+     "leaf_roles": [
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7735",
+       "from": "2710:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7788",
+       "from": "2708:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=m)",
+   "decomposition": "f = m | (j & (k & (<10-input function>)))",
+   "expression": null,
+   "onset": 4132
+  },
+  {
+   "id": "G46",
+   "signature": "7bd331a975048f07663fc25044aded66",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u8199.D",
+   "members": [
+    {
+     "id": "u8199.D",
+     "num_gates": 151,
+     "leaf_roles": [
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7870",
+       "from": "8199:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7873",
+       "from": "8085:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=m)",
+   "decomposition": "f = a ? m : (b ? m : (c ? m : (<10-input function>)))",
+   "expression": null,
+   "onset": 4101
+  },
+  {
+   "id": "G47",
+   "signature": "7ddf90c86c503ff14ff59d5940606917",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u8815.D",
+   "members": [
+    {
+     "id": "u8815.D",
+     "num_gates": 150,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7961",
+       "from": "8084:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7981",
+       "from": "8815:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=m)",
+   "decomposition": "f = a ? m : (j ? (k ? (<10-input function>) : m) : m)",
+   "expression": null,
+   "onset": 4197
+  },
+  {
+   "id": "G48",
+   "signature": "8320401782fec022fd4f6d8cd2f9d9ae",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u8214.D",
+   "members": [
+    {
+     "id": "u8214.D",
+     "num_gates": 150,
+     "leaf_roles": [
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7886",
+       "from": "8214:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7892",
+       "from": "8090:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=m)",
+   "decomposition": "f = a ? m : (b ? m : (c ? m : (<10-input function>)))",
+   "expression": null,
+   "onset": 4103
+  },
+  {
+   "id": "G49",
+   "signature": "9347d16d7a1daa7a6439bd242439db86",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u2709.D",
+   "members": [
+    {
+     "id": "u2709.D",
+     "num_gates": 150,
+     "leaf_roles": [
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7771",
+       "from": "2709:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7784",
+       "from": "8091:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=m)",
+   "decomposition": "f = a ? m : (j ? (k ? (<10-input function>) : m) : m)",
+   "expression": null,
+   "onset": 4112
+  },
+  {
+   "id": "G50",
+   "signature": "a542329d5556368cd89933048cc38495",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u8219.D",
+   "members": [
+    {
+     "id": "u8219.D",
+     "num_gates": 150,
+     "leaf_roles": [
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7895",
+       "from": "8219:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7896",
+       "from": "8086:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=m)",
+   "decomposition": "f = a ? m : (b ? m : (j ? (<10-input function>) : m))",
+   "expression": null,
+   "onset": 4119
+  },
+  {
+   "id": "G51",
+   "signature": "a5682bb8a228d0a0c126b318f9c81987",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u2574.D",
+   "members": [
+    {
+     "id": "u2574.D",
+     "num_gates": 150,
+     "leaf_roles": [
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "6185",
+       "from": "2301:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7740",
+       "from": "2574:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=m)",
+   "decomposition": "f = a ? m : (b ? m : (i ? (<10-input function>) : m))",
+   "expression": null,
+   "onset": 4102
+  },
+  {
+   "id": "G52",
+   "signature": "a836f5e8c760e1530b5ffcec6b56c056",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u2708.D",
+   "members": [
+    {
+     "id": "u2708.D",
+     "num_gates": 151,
+     "leaf_roles": [
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7735",
+       "from": "2710:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7788",
+       "from": "2708:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=m)",
+   "decomposition": "f = a ? m : (j ? (k ? (<10-input function>) : m) : m)",
+   "expression": null,
+   "onset": 4132
+  },
+  {
+   "id": "G53",
+   "signature": "c713dce3d72a5c5235d97dc9ec8220cd",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u2542.D",
+   "members": [
+    {
+     "id": "u2542.D",
+     "num_gates": 150,
+     "leaf_roles": [
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7736",
+       "from": "2542:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7738",
+       "from": "2299:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "load_enable(sel=~a, hold=m)",
+   "decomposition": "f = a ? m : (j ? (k ? (<10-input function>) : m) : m)",
+   "expression": null,
+   "onset": 4126
+  },
+  {
+   "id": "G54",
+   "signature": "d1f7fe3a86c390b1531fb3f5d5644464",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u8091.D",
+   "members": [
+    {
+     "id": "u8091.D",
+     "num_gates": 149,
+     "leaf_roles": [
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7771",
+       "from": "2709:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7784",
+       "from": "8091:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=m)",
+   "decomposition": "f = m | (j & (k & (<10-input function>)))",
+   "expression": null,
+   "onset": 4112
+  },
+  {
+   "id": "G55",
+   "signature": "d561fb7ac3e7f2ba37e6e752a175f8f8",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u2299.D",
+   "members": [
+    {
+     "id": "u2299.D",
+     "num_gates": 149,
+     "leaf_roles": [
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7736",
+       "from": "2542:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7738",
+       "from": "2299:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=m)",
+   "decomposition": "f = m | (j & (k & (<10-input function>)))",
+   "expression": null,
+   "onset": 4126
+  },
+  {
+   "id": "G56",
+   "signature": "d9df4f2660e0d0197c39b318be599a2e",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u8086.D",
+   "members": [
+    {
+     "id": "u8086.D",
+     "num_gates": 149,
+     "leaf_roles": [
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7895",
+       "from": "8219:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7896",
+       "from": "8086:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=m)",
+   "decomposition": "f = m | (j & (k & (~a&~b&~c&~e&~f&~h&l | ~a&~b&~c&e&~f&h&~i&l | ~a&~b&~c&~d&~e&f&i&l | ~a&~b&~c&~d&~f&~h&~i&l | ~a&~b&~c&~d&e&f&~g&h&l | ~a&~b&~c&~d&~e&~g&~h&l | ~a&~b&~d&~e&~f&~g&~h&i&l | ~a&~b&~c&~e&f&~g&h&i&l)))",
+   "expression": null,
+   "onset": 4119
+  },
+  {
+   "id": "G57",
+   "signature": "dfb144562b778456c7c60eff2ee72bc1",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u8429.D",
+   "members": [
+    {
+     "id": "u8429.D",
+     "num_gates": 149,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7572",
+       "from": "8429:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7979",
+       "from": "8095:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=m)",
+   "decomposition": "f = m | (j & (k & (~a&~b&d&~e&~f&~g&h&i&l | ~a&~b&~c&~d&f&g&h&i&l | ~a&~b&~c&~e&f&g&h&i&l | ~a&~b&~c&d&~f&~g&h&i&l | ~a&~b&~c&~d&e&~f&g&h&~i&l | ~a&b&c&~d&e&f&g&~h&i&l)))",
+   "expression": null,
+   "onset": 4104
+  },
+  {
+   "id": "G58",
+   "signature": "dfcc40e3a7199d9c8272da881adc62b6",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u8085.D",
+   "members": [
+    {
+     "id": "u8085.D",
+     "num_gates": 150,
+     "leaf_roles": [
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7870",
+       "from": "8199:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7873",
+       "from": "8085:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=m)",
+   "decomposition": "f = m | (i & (j & (~a&~b&~c&~d&~e&~f&k&l | ~a&~b&~c&~d&~e&~g&h&k&l)))",
+   "expression": null,
+   "onset": 4101
+  },
+  {
+   "id": "G59",
+   "signature": "e41b8db0c3ffd14efd060e4e418a2aaf",
+   "verified_by": "function",
+   "k": 13,
+   "size": 1,
+   "reference_cone": "u8090.D",
+   "members": [
+    {
+     "id": "u8090.D",
+     "num_gates": 149,
+     "leaf_roles": [
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "3015",
+       "from": "4662:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "4764",
+       "from": "6451:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6110",
+       "from": "4838:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6592",
+       "from": "4661:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6705",
+       "from": "4659:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7886",
+       "from": "8214:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7892",
+       "from": "8090:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "8149",
+       "from": "6442:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "8184",
+       "from": "6435:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "8220",
+       "from": "6436:sky130_fd_sc_hd__dfrtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "set_dominant_sticky(q=m)",
+   "decomposition": "f = m | (j & (k & (~a&~b&~c&~d&e&f&~g&i&l | ~a&~b&~c&d&~e&~f&g&i&l | ~a&~b&~c&~d&e&f&h&~i&l | ~a&~b&~c&d&~e&~f&g&~h&l)))",
+   "expression": null,
+   "onset": 4103
+  },
+  {
+   "id": "G60",
+   "signature": "2a7841a528ea015dd14a95c7795c52b7",
+   "verified_by": "function",
+   "k": 14,
+   "size": 1,
+   "reference_cone": "u2946.D",
+   "members": [
+    {
+     "id": "u2946.D",
+     "num_gates": 14,
+     "leaf_roles": [
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "6671",
+       "from": "2957:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6788",
+       "from": "2959:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 13,
+       "kind": "flop",
+       "net": "6790",
+       "from": "2946:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6791",
+       "from": "2948:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6795",
+       "from": "2960:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6842",
+       "from": "2944:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6882",
+       "from": "2958:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "unknown_k14_2a7841a5",
+   "decomposition": null,
+   "expression": null,
+   "onset": 8192
+  },
+  {
+   "id": "G61",
+   "signature": "73f028c0ab0fd623aa6116931e59175d",
+   "verified_by": "function",
+   "k": 15,
+   "size": 1,
+   "reference_cone": "u2957.D",
+   "members": [
+    {
+     "id": "u2957.D",
+     "num_gates": 15,
+     "leaf_roles": [
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "2987",
+       "from": "2947:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 14,
+       "kind": "flop",
+       "net": "6671",
+       "from": "2957:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6788",
+       "from": "2959:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6790",
+       "from": "2946:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6791",
+       "from": "2948:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "6795",
+       "from": "2960:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 13,
+       "kind": "flop",
+       "net": "6842",
+       "from": "2944:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6882",
+       "from": "2958:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "unknown_k15_73f028c0",
+   "decomposition": null,
+   "expression": null,
+   "onset": 16384
+  },
+  {
+   "id": "G62",
+   "signature": "f89573afe6dd1a20d9b704e6752308b4",
+   "verified_by": "function",
+   "k": 15,
+   "size": 1,
+   "reference_cone": "u2959.D",
+   "members": [
+    {
+     "id": "u2959.D",
+     "num_gates": 13,
+     "leaf_roles": [
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "2987",
+       "from": "2947:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 13,
+       "kind": "flop",
+       "net": "6443",
+       "from": "4182:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "input_port",
+       "net": "6485",
+       "from": "I"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "6671",
+       "from": "2957:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 14,
+       "kind": "flop",
+       "net": "6788",
+       "from": "2959:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6790",
+       "from": "2946:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6791",
+       "from": "2948:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "6795",
+       "from": "2960:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "6882",
+       "from": "2958:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "input_port",
+       "net": "7167",
+       "from": "enable"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "unknown_k15_f89573af",
+   "decomposition": null,
+   "expression": null,
+   "onset": 16384
+  },
+  {
+   "id": "G63",
+   "signature": "5703b7e07d8cde74e076f9075115a912",
+   "verified_by": "function",
+   "k": 16,
+   "size": 1,
+   "reference_cone": "port:O[4]",
+   "members": [
+    {
+     "id": "port:O[4]",
+     "num_gates": 42,
+     "leaf_roles": [
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 13,
+       "kind": "flop",
+       "net": "6239",
+       "from": "227:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 15,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 14,
+       "kind": "flop",
+       "net": "6398",
+       "from": "228:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6791",
+       "from": "2948:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "7451",
+       "from": "6197:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "7458",
+       "from": "6111:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "7501",
+       "from": "6109:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7509",
+       "from": "6106:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "7520",
+       "from": "6095:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7522",
+       "from": "6198:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "7532",
+       "from": "6199:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7535",
+       "from": "6159:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "clear_dominant(q=p)",
+   "decomposition": "f = p & (<15-input function>)",
+   "expression": null,
+   "onset": 11724
+  },
+  {
+   "id": "G64",
+   "signature": "72846d193fbd08e84af4be06362c190e",
+   "verified_by": "function",
+   "k": 16,
+   "size": 1,
+   "reference_cone": "port:O[5]",
+   "members": [
+    {
+     "id": "port:O[5]",
+     "num_gates": 39,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "6239",
+       "from": "227:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 15,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 13,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 14,
+       "kind": "flop",
+       "net": "6398",
+       "from": "228:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6882",
+       "from": "2958:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7451",
+       "from": "6197:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "7458",
+       "from": "6111:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7501",
+       "from": "6109:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "7509",
+       "from": "6106:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "7520",
+       "from": "6095:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "7522",
+       "from": "6198:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "7532",
+       "from": "6199:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "7535",
+       "from": "6159:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "clear_dominant(q=p)",
+   "decomposition": "f = p & (<15-input function>)",
+   "expression": null,
+   "onset": 9160
+  },
+  {
+   "id": "G65",
+   "signature": "81ab4f24de1a5428389525067eb71f2b",
+   "verified_by": "function",
+   "k": 16,
+   "size": 1,
+   "reference_cone": "port:O[6]",
+   "members": [
+    {
+     "id": "port:O[6]",
+     "num_gates": 41,
+     "leaf_roles": [
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "2987",
+       "from": "2947:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 14,
+       "kind": "flop",
+       "net": "6239",
+       "from": "227:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 15,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6398",
+       "from": "228:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "7451",
+       "from": "6197:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "7458",
+       "from": "6111:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7501",
+       "from": "6109:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7509",
+       "from": "6106:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7520",
+       "from": "6095:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "7522",
+       "from": "6198:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "7532",
+       "from": "6199:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 13,
+       "kind": "flop",
+       "net": "7535",
+       "from": "6159:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "clear_dominant(q=p)",
+   "decomposition": "f = p & (<15-input function>)",
+   "expression": null,
+   "onset": 17392
+  },
+  {
+   "id": "G66",
+   "signature": "88f3070de18f577d9de7c1015af7ecd8",
+   "verified_by": "function",
+   "k": 16,
+   "size": 1,
+   "reference_cone": "port:O[2]",
+   "members": [
+    {
+     "id": "port:O[2]",
+     "num_gates": 42,
+     "leaf_roles": [
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 14,
+       "kind": "flop",
+       "net": "6239",
+       "from": "227:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 15,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 13,
+       "kind": "flop",
+       "net": "6398",
+       "from": "228:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "6671",
+       "from": "2957:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "7451",
+       "from": "6197:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "7458",
+       "from": "6111:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "7501",
+       "from": "6109:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "7509",
+       "from": "6106:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "7520",
+       "from": "6095:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "7522",
+       "from": "6198:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7532",
+       "from": "6199:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7535",
+       "from": "6159:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "clear_dominant(q=p)",
+   "decomposition": "f = p & (<15-input function>)",
+   "expression": null,
+   "onset": 13764
+  },
+  {
+   "id": "G67",
+   "signature": "9fa2c33f7134e53aec09232ee1670227",
+   "verified_by": "function",
+   "k": 16,
+   "size": 1,
+   "reference_cone": "port:O[3]",
+   "members": [
+    {
+     "id": "port:O[3]",
+     "num_gates": 55,
+     "leaf_roles": [
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 13,
+       "kind": "flop",
+       "net": "6239",
+       "from": "227:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 15,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 14,
+       "kind": "flop",
+       "net": "6398",
+       "from": "228:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6790",
+       "from": "2946:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "7451",
+       "from": "6197:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "7458",
+       "from": "6111:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "7501",
+       "from": "6109:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7509",
+       "from": "6106:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "7520",
+       "from": "6095:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7522",
+       "from": "6198:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "7532",
+       "from": "6199:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7535",
+       "from": "6159:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "clear_dominant(q=p)",
+   "decomposition": "f = p & (<15-input function>)",
+   "expression": null,
+   "onset": 11732
+  },
+  {
+   "id": "G68",
+   "signature": "d25f498d02cb22002177d1d257b6dd81",
+   "verified_by": "function",
+   "k": 16,
+   "size": 1,
+   "reference_cone": "port:O[7]",
+   "members": [
+    {
+     "id": "port:O[7]",
+     "num_gates": 28,
+     "leaf_roles": [
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "6239",
+       "from": "227:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 14,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 15,
+       "kind": "flop",
+       "net": "6398",
+       "from": "228:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6795",
+       "from": "2960:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "7451",
+       "from": "6197:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "7458",
+       "from": "6111:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7501",
+       "from": "6109:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7509",
+       "from": "6106:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "7520",
+       "from": "6095:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7522",
+       "from": "6198:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "7532",
+       "from": "6199:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 13,
+       "kind": "flop",
+       "net": "7535",
+       "from": "6159:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "clear_dominant(q=o)",
+   "decomposition": "f = o & (p & (<14-input function>))",
+   "expression": null,
+   "onset": 7620
+  },
+  {
+   "id": "G69",
+   "signature": "d974d0a7cb96b4d0413d46d6f0ad89ef",
+   "verified_by": "function",
+   "k": 16,
+   "size": 1,
+   "reference_cone": "port:O[1]",
+   "members": [
+    {
+     "id": "port:O[1]",
+     "num_gates": 47,
+     "leaf_roles": [
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 13,
+       "kind": "flop",
+       "net": "6239",
+       "from": "227:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 15,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 14,
+       "kind": "flop",
+       "net": "6398",
+       "from": "228:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "6842",
+       "from": "2944:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7451",
+       "from": "6197:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "7458",
+       "from": "6111:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7501",
+       "from": "6109:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "7509",
+       "from": "6106:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "7520",
+       "from": "6095:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "7522",
+       "from": "6198:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "7532",
+       "from": "6199:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "7535",
+       "from": "6159:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "clear_dominant(q=p)",
+   "decomposition": "f = p & (<15-input function>)",
+   "expression": null,
+   "onset": 12248
+  },
+  {
+   "id": "G70",
+   "signature": "e44840093760c0584ad622c80f911839",
+   "verified_by": "function",
+   "k": 16,
+   "size": 1,
+   "reference_cone": "port:O[0]",
+   "members": [
+    {
+     "id": "port:O[0]",
+     "num_gates": 46,
+     "leaf_roles": [
+      {
+       "canonical_position": 1,
+       "kind": "flop",
+       "net": "6197",
+       "from": "237:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 13,
+       "kind": "flop",
+       "net": "6239",
+       "from": "227:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 2,
+       "kind": "flop",
+       "net": "6245",
+       "from": "234:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 15,
+       "kind": "flop",
+       "net": "6254",
+       "from": "226:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 9,
+       "kind": "flop",
+       "net": "6335",
+       "from": "235:sky130_fd_sc_hd__dfxtp_2"
+      },
+      {
+       "canonical_position": 14,
+       "kind": "flop",
+       "net": "6398",
+       "from": "228:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 0,
+       "kind": "flop",
+       "net": "6788",
+       "from": "2959:sky130_fd_sc_hd__dfstp_2"
+      },
+      {
+       "canonical_position": 3,
+       "kind": "flop",
+       "net": "7451",
+       "from": "6197:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 4,
+       "kind": "flop",
+       "net": "7458",
+       "from": "6111:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 10,
+       "kind": "flop",
+       "net": "7501",
+       "from": "6109:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 11,
+       "kind": "flop",
+       "net": "7509",
+       "from": "6106:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 5,
+       "kind": "flop",
+       "net": "7520",
+       "from": "6095:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 6,
+       "kind": "flop",
+       "net": "7522",
+       "from": "6198:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 7,
+       "kind": "flop",
+       "net": "7532",
+       "from": "6199:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 12,
+       "kind": "flop",
+       "net": "7535",
+       "from": "6159:sky130_fd_sc_hd__dfrtp_2"
+      },
+      {
+       "canonical_position": 8,
+       "kind": "flop",
+       "net": "7691",
+       "from": "236:sky130_fd_sc_hd__dfxtp_2"
+      }
+     ]
+    }
+   ],
+   "label": "clear_dominant(q=p)",
+   "decomposition": "f = p & (<15-input function>)",
+   "expression": null,
+   "onset": 13288
+  },
+  {
+   "id": "G71",
+   "signature": "21b6eb52fdd5d1913bd793895d754695",
+   "verified_by": "structural",
+   "k": 57,
+   "size": 1,
+   "reference_cone": "u227.D",
+   "members": [
+    {
+     "id": "u227.D",
+     "num_gates": 37
+    }
+   ],
+   "label": "structural_only_k57_21b6eb52",
+   "decomposition": null,
+   "expression": null,
+   "onset": null
+  },
+  {
+   "id": "G72",
+   "signature": "eff9715a30cceb509174c84aa12a95b3",
+   "verified_by": "structural",
+   "k": 57,
+   "size": 1,
+   "reference_cone": "u228.D",
+   "members": [
+    {
+     "id": "u228.D",
+     "num_gates": 37
+    }
+   ],
+   "label": "structural_only_k57_eff9715a",
+   "decomposition": null,
+   "expression": null,
+   "onset": null
+  }
+ ],
+ "adjacency": {
+  "G01": {
+   "G01": 23,
+   "G37": 4
+  },
+  "G02": {
+   "G02": 5,
+   "G03": 5,
+   "G71": 5,
+   "G72": 5
+  },
+  "G03": {
+   "G02": 5,
+   "G03": 5,
+   "G71": 5,
+   "G72": 5
+  },
+  "G04": {
+   "G04": 4,
+   "G05": 4,
+   "G71": 4,
+   "G72": 4
+  },
+  "G05": {
+   "G04": 4,
+   "G05": 4,
+   "G71": 4,
+   "G72": 4
+  },
+  "G06": {
+   "G06": 10,
+   "G36": 2,
+   "G60": 3,
+   "G61": 4,
+   "G62": 4,
+   "G63": 1,
+   "G64": 1,
+   "G65": 1,
+   "G68": 1
+  },
+  "G07": {
+   "G02": 5,
+   "G03": 5,
+   "G04": 4,
+   "G05": 4,
+   "G07": 2,
+   "G15": 1,
+   "G16": 1,
+   "G17": 1,
+   "G18": 1,
+   "G19": 1,
+   "G20": 1,
+   "G21": 1,
+   "G22": 1,
+   "G23": 1,
+   "G24": 1,
+   "G25": 1,
+   "G26": 1,
+   "G27": 1,
+   "G28": 1,
+   "G29": 1,
+   "G30": 1,
+   "G31": 1,
+   "G32": 1,
+   "G33": 1,
+   "G34": 1,
+   "G35": 1,
+   "G37": 1,
+   "G38": 1,
+   "G39": 1,
+   "G40": 1,
+   "G41": 1,
+   "G42": 1,
+   "G43": 1,
+   "G44": 1,
+   "G45": 1,
+   "G46": 1,
+   "G47": 1,
+   "G48": 1,
+   "G49": 1,
+   "G50": 1,
+   "G51": 1,
+   "G52": 1,
+   "G53": 1,
+   "G54": 1,
+   "G55": 1,
+   "G56": 1,
+   "G57": 1,
+   "G58": 1,
+   "G59": 1,
+   "G63": 1,
+   "G64": 1,
+   "G65": 1,
+   "G66": 1,
+   "G67": 1,
+   "G68": 1,
+   "G69": 1,
+   "G70": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G09": {
+   "G06": 4,
+   "G09": 1,
+   "G11": 1,
+   "G12": 1,
+   "G13": 1,
+   "G14": 1,
+   "G36": 1,
+   "G60": 1,
+   "G61": 1,
+   "G62": 1,
+   "G63": 1,
+   "G64": 1,
+   "G65": 1,
+   "G66": 1,
+   "G67": 1,
+   "G68": 1,
+   "G69": 1,
+   "G70": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G10": {
+   "G07": 1,
+   "G10": 1,
+   "G16": 1,
+   "G19": 1,
+   "G20": 1,
+   "G28": 1,
+   "G30": 1,
+   "G35": 1,
+   "G63": 1,
+   "G64": 1,
+   "G65": 1,
+   "G66": 1,
+   "G67": 1,
+   "G68": 1,
+   "G69": 1,
+   "G70": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G11": {
+   "G06": 4,
+   "G11": 1,
+   "G12": 1,
+   "G13": 1,
+   "G14": 1,
+   "G36": 1,
+   "G60": 1,
+   "G61": 1,
+   "G62": 1,
+   "G63": 1,
+   "G64": 1,
+   "G65": 1,
+   "G66": 1,
+   "G67": 1,
+   "G68": 1,
+   "G69": 1,
+   "G70": 1
+  },
+  "G12": {
+   "G06": 4,
+   "G11": 1,
+   "G12": 1,
+   "G13": 1,
+   "G14": 1,
+   "G36": 1,
+   "G60": 1,
+   "G61": 1,
+   "G62": 1,
+   "G63": 1,
+   "G64": 1,
+   "G65": 1,
+   "G66": 1,
+   "G67": 1,
+   "G68": 1,
+   "G69": 1,
+   "G70": 1
+  },
+  "G13": {
+   "G06": 4,
+   "G11": 1,
+   "G12": 1,
+   "G13": 1,
+   "G14": 1,
+   "G36": 1,
+   "G60": 1,
+   "G61": 1,
+   "G62": 1,
+   "G63": 1,
+   "G64": 1,
+   "G65": 1,
+   "G66": 1,
+   "G67": 1,
+   "G68": 1,
+   "G69": 1,
+   "G70": 1
+  },
+  "G14": {
+   "G06": 4,
+   "G11": 1,
+   "G12": 1,
+   "G13": 1,
+   "G14": 1,
+   "G36": 1,
+   "G60": 1,
+   "G61": 1,
+   "G62": 1,
+   "G63": 1,
+   "G64": 1,
+   "G65": 1,
+   "G66": 1,
+   "G67": 1,
+   "G68": 1,
+   "G69": 1,
+   "G70": 1
+  },
+  "G15": {
+   "G02": 5,
+   "G03": 5,
+   "G04": 4,
+   "G05": 4,
+   "G07": 1,
+   "G15": 1,
+   "G17": 1,
+   "G18": 1,
+   "G21": 1,
+   "G22": 1,
+   "G23": 1,
+   "G24": 1,
+   "G25": 1,
+   "G26": 1,
+   "G27": 1,
+   "G29": 1,
+   "G31": 1,
+   "G32": 1,
+   "G33": 1,
+   "G34": 1,
+   "G37": 1,
+   "G38": 1,
+   "G39": 1,
+   "G40": 1,
+   "G41": 1,
+   "G42": 1,
+   "G43": 1,
+   "G44": 1,
+   "G45": 1,
+   "G46": 1,
+   "G47": 1,
+   "G48": 1,
+   "G49": 1,
+   "G50": 1,
+   "G51": 1,
+   "G52": 1,
+   "G53": 1,
+   "G54": 1,
+   "G55": 1,
+   "G56": 1,
+   "G57": 1,
+   "G58": 1,
+   "G59": 1
+  },
+  "G16": {
+   "G16": 1,
+   "G19": 1,
+   "G20": 1,
+   "G28": 1,
+   "G30": 1,
+   "G35": 1,
+   "G63": 1,
+   "G64": 1,
+   "G65": 1,
+   "G66": 1,
+   "G67": 1,
+   "G68": 1,
+   "G69": 1,
+   "G70": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G17": {
+   "G02": 5,
+   "G03": 5,
+   "G04": 4,
+   "G05": 4,
+   "G15": 1,
+   "G17": 1,
+   "G18": 1,
+   "G21": 1,
+   "G22": 1,
+   "G23": 1,
+   "G24": 1,
+   "G25": 1,
+   "G26": 1,
+   "G27": 1,
+   "G29": 1,
+   "G31": 1,
+   "G32": 1,
+   "G33": 1,
+   "G34": 1,
+   "G37": 1,
+   "G38": 1,
+   "G39": 1,
+   "G40": 1,
+   "G41": 1,
+   "G42": 1,
+   "G43": 1,
+   "G44": 1,
+   "G45": 1,
+   "G46": 1,
+   "G47": 1,
+   "G48": 1,
+   "G49": 1,
+   "G50": 1,
+   "G51": 1,
+   "G52": 1,
+   "G53": 1,
+   "G54": 1,
+   "G55": 1,
+   "G56": 1,
+   "G57": 1,
+   "G58": 1,
+   "G59": 1
+  },
+  "G18": {
+   "G02": 5,
+   "G03": 5,
+   "G04": 4,
+   "G05": 4,
+   "G07": 1,
+   "G15": 1,
+   "G17": 1,
+   "G18": 1,
+   "G21": 1,
+   "G22": 1,
+   "G23": 1,
+   "G24": 1,
+   "G25": 1,
+   "G26": 1,
+   "G27": 1,
+   "G29": 1,
+   "G31": 1,
+   "G32": 1,
+   "G33": 1,
+   "G34": 1,
+   "G37": 1,
+   "G38": 1,
+   "G39": 1,
+   "G40": 1,
+   "G41": 1,
+   "G42": 1,
+   "G43": 1,
+   "G44": 1,
+   "G45": 1,
+   "G46": 1,
+   "G47": 1,
+   "G48": 1,
+   "G49": 1,
+   "G50": 1,
+   "G51": 1,
+   "G52": 1,
+   "G53": 1,
+   "G54": 1,
+   "G55": 1,
+   "G56": 1,
+   "G57": 1,
+   "G58": 1,
+   "G59": 1
+  },
+  "G19": {
+   "G19": 1,
+   "G20": 1,
+   "G28": 1,
+   "G30": 1,
+   "G35": 1,
+   "G63": 1,
+   "G64": 1,
+   "G65": 1,
+   "G66": 1,
+   "G67": 1,
+   "G68": 1,
+   "G69": 1,
+   "G70": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G20": {
+   "G20": 1,
+   "G28": 1,
+   "G30": 1,
+   "G35": 1,
+   "G63": 1,
+   "G64": 1,
+   "G65": 1,
+   "G66": 1,
+   "G67": 1,
+   "G68": 1,
+   "G69": 1,
+   "G70": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G21": {
+   "G21": 1,
+   "G26": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G22": {
+   "G22": 1,
+   "G29": 1,
+   "G31": 1,
+   "G32": 1,
+   "G33": 1,
+   "G38": 1,
+   "G39": 1,
+   "G40": 1,
+   "G41": 1,
+   "G42": 1,
+   "G43": 1,
+   "G44": 1,
+   "G45": 1,
+   "G46": 1,
+   "G47": 1,
+   "G48": 1,
+   "G49": 1,
+   "G50": 1,
+   "G51": 1,
+   "G52": 1,
+   "G53": 1,
+   "G54": 1,
+   "G55": 1,
+   "G56": 1,
+   "G57": 1,
+   "G58": 1,
+   "G59": 1
+  },
+  "G23": {
+   "G23": 1,
+   "G25": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G24": {
+   "G24": 1,
+   "G27": 1,
+   "G34": 1
+  },
+  "G25": {
+   "G23": 1,
+   "G25": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G26": {
+   "G21": 1,
+   "G26": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G27": {
+   "G24": 1,
+   "G27": 1,
+   "G34": 1
+  },
+  "G28": {
+   "G28": 1,
+   "G30": 1,
+   "G35": 1,
+   "G63": 1,
+   "G64": 1,
+   "G65": 1,
+   "G66": 1,
+   "G67": 1,
+   "G68": 1,
+   "G69": 1,
+   "G70": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G29": {
+   "G22": 1,
+   "G29": 1,
+   "G31": 1,
+   "G32": 1,
+   "G33": 1,
+   "G38": 1,
+   "G39": 1,
+   "G40": 1,
+   "G41": 1,
+   "G42": 1,
+   "G43": 1,
+   "G44": 1,
+   "G45": 1,
+   "G46": 1,
+   "G47": 1,
+   "G48": 1,
+   "G49": 1,
+   "G50": 1,
+   "G51": 1,
+   "G52": 1,
+   "G53": 1,
+   "G54": 1,
+   "G55": 1,
+   "G56": 1,
+   "G57": 1,
+   "G58": 1,
+   "G59": 1
+  },
+  "G30": {
+   "G30": 1,
+   "G35": 1,
+   "G63": 1,
+   "G64": 1,
+   "G65": 1,
+   "G66": 1,
+   "G67": 1,
+   "G68": 1,
+   "G69": 1,
+   "G70": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G31": {
+   "G29": 1,
+   "G31": 1,
+   "G32": 1,
+   "G33": 1,
+   "G38": 1,
+   "G39": 1,
+   "G40": 1,
+   "G41": 1,
+   "G42": 1,
+   "G43": 1,
+   "G44": 1,
+   "G45": 1,
+   "G46": 1,
+   "G47": 1,
+   "G48": 1,
+   "G49": 1,
+   "G50": 1,
+   "G51": 1,
+   "G52": 1,
+   "G53": 1,
+   "G54": 1,
+   "G55": 1,
+   "G56": 1,
+   "G57": 1,
+   "G58": 1,
+   "G59": 1
+  },
+  "G32": {
+   "G01": 12,
+   "G02": 5,
+   "G03": 5,
+   "G04": 4,
+   "G05": 4,
+   "G06": 4,
+   "G07": 2,
+   "G09": 1,
+   "G10": 1,
+   "G15": 1,
+   "G16": 1,
+   "G17": 1,
+   "G18": 1,
+   "G19": 1,
+   "G20": 1,
+   "G21": 1,
+   "G22": 1,
+   "G23": 1,
+   "G24": 1,
+   "G25": 1,
+   "G26": 1,
+   "G27": 1,
+   "G28": 1,
+   "G29": 1,
+   "G30": 1,
+   "G31": 1,
+   "G32": 1,
+   "G33": 1,
+   "G34": 1,
+   "G35": 1,
+   "G36": 1,
+   "G37": 1,
+   "G38": 1,
+   "G39": 1,
+   "G40": 1,
+   "G41": 1,
+   "G42": 1,
+   "G43": 1,
+   "G44": 1,
+   "G45": 1,
+   "G46": 1,
+   "G47": 1,
+   "G48": 1,
+   "G49": 1,
+   "G50": 1,
+   "G51": 1,
+   "G52": 1,
+   "G53": 1,
+   "G54": 1,
+   "G55": 1,
+   "G56": 1,
+   "G57": 1,
+   "G58": 1,
+   "G59": 1,
+   "G60": 1,
+   "G61": 1,
+   "G62": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G33": {
+   "G22": 1,
+   "G29": 1,
+   "G31": 1,
+   "G32": 1,
+   "G33": 1,
+   "G38": 1,
+   "G39": 1,
+   "G40": 1,
+   "G41": 1,
+   "G42": 1,
+   "G43": 1,
+   "G44": 1,
+   "G45": 1,
+   "G46": 1,
+   "G47": 1,
+   "G48": 1,
+   "G49": 1,
+   "G50": 1,
+   "G51": 1,
+   "G52": 1,
+   "G53": 1,
+   "G54": 1,
+   "G55": 1,
+   "G56": 1,
+   "G57": 1,
+   "G58": 1,
+   "G59": 1
+  },
+  "G34": {
+   "G34": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G35": {
+   "G35": 1,
+   "G63": 1,
+   "G64": 1,
+   "G65": 1,
+   "G66": 1,
+   "G67": 1,
+   "G68": 1,
+   "G69": 1,
+   "G70": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G36": {
+   "G06": 2,
+   "G36": 1,
+   "G60": 1,
+   "G61": 1,
+   "G69": 1
+  },
+  "G37": {
+   "G37": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G38": {
+   "G38": 1,
+   "G51": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G39": {
+   "G39": 1,
+   "G42": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G40": {
+   "G40": 1,
+   "G47": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G41": {
+   "G41": 1,
+   "G43": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G42": {
+   "G39": 1,
+   "G42": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G43": {
+   "G41": 1,
+   "G43": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G44": {
+   "G44": 1,
+   "G57": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G45": {
+   "G45": 1,
+   "G52": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G46": {
+   "G46": 1,
+   "G58": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G47": {
+   "G40": 1,
+   "G47": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G48": {
+   "G48": 1,
+   "G59": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G49": {
+   "G49": 1,
+   "G54": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G50": {
+   "G50": 1,
+   "G56": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G51": {
+   "G38": 1,
+   "G51": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G52": {
+   "G45": 1,
+   "G52": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G53": {
+   "G53": 1,
+   "G55": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G54": {
+   "G49": 1,
+   "G54": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G55": {
+   "G53": 1,
+   "G55": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G56": {
+   "G50": 1,
+   "G56": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G57": {
+   "G44": 1,
+   "G57": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G58": {
+   "G46": 1,
+   "G58": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G59": {
+   "G48": 1,
+   "G59": 1,
+   "G71": 1,
+   "G72": 1
+  },
+  "G60": {
+   "G06": 4,
+   "G36": 1,
+   "G60": 1,
+   "G61": 1,
+   "G62": 1,
+   "G67": 1
+  },
+  "G61": {
+   "G06": 3,
+   "G60": 1,
+   "G61": 1,
+   "G62": 1,
+   "G66": 1
+  },
+  "G62": {
+   "G06": 1,
+   "G36": 1,
+   "G60": 1,
+   "G61": 1,
+   "G62": 1,
+   "G70": 1
+  },
+  "G71": {
+   "G63": 1,
+   "G64": 1,
+   "G65": 1,
+   "G66": 1,
+   "G67": 1,
+   "G68": 1,
+   "G69": 1,
+   "G70": 1,
+   "G71": 1
+  },
+  "G72": {
+   "G08": 1,
+   "G63": 1,
+   "G64": 1,
+   "G65": 1,
+   "G66": 1,
+   "G67": 1,
+   "G68": 1,
+   "G69": 1,
+   "G70": 1,
+   "G72": 1
+  }
+ },
+ "cone_to_group": {
+  "u4993.D": "G01",
+  "u5000.D": "G01",
+  "u5004.D": "G01",
+  "u5093.D": "G01",
+  "u5336.D": "G01",
+  "u5339.D": "G01",
+  "u5342.D": "G01",
+  "u5343.D": "G01",
+  "u5344.D": "G01",
+  "u5399.D": "G01",
+  "u5401.D": "G01",
+  "u5569.D": "G01",
+  "u1228.D": "G02",
+  "u1230.D": "G02",
+  "u1259.D": "G02",
+  "u1260.D": "G02",
+  "u1264.D": "G02",
+  "u1383.D": "G03",
+  "u1385.D": "G03",
+  "u1808.D": "G03",
+  "u1810.D": "G03",
+  "u2036.D": "G03",
+  "u1229.D": "G04",
+  "u1249.D": "G04",
+  "u1384.D": "G04",
+  "u2039.D": "G04",
+  "u1250.D": "G05",
+  "u1261.D": "G05",
+  "u1809.D": "G05",
+  "u2037.D": "G05",
+  "u2947.D": "G06",
+  "u2948.D": "G06",
+  "u2958.D": "G06",
+  "u2960.D": "G06",
+  "u4659.D": "G07",
+  "u6109.D": "G07",
+  "port:success": "G08",
+  "u226.D": "G09",
+  "u6111.D": "G10",
+  "u237.D": "G11",
+  "u236.D": "G12",
+  "u234.D": "G13",
+  "u235.D": "G14",
+  "u4662.D": "G15",
+  "u6106.D": "G16",
+  "u4661.D": "G17",
+  "u4838.D": "G18",
+  "u6095.D": "G19",
+  "u6198.D": "G20",
+  "u2293.D": "G21",
+  "u6436.D": "G22",
+  "u1626.D": "G23",
+  "u5634.D": "G24",
+  "u1258.D": "G25",
+  "u2372.D": "G26",
+  "u5639.D": "G27",
+  "u6197.D": "G28",
+  "u6451.D": "G29",
+  "u6199.D": "G30",
+  "u6435.D": "G31",
+  "u4182.D": "G32",
+  "u6442.D": "G33",
+  "u5638.D": "G34",
+  "u6159.D": "G35",
+  "u2944.D": "G36",
+  "u5337.D": "G37",
+  "u2301.D": "G38",
+  "u8602.D": "G39",
+  "u8084.D": "G40",
+  "u8092.D": "G41",
+  "u8591.D": "G42",
+  "u8431.D": "G43",
+  "u8095.D": "G44",
+  "u2710.D": "G45",
+  "u8199.D": "G46",
+  "u8815.D": "G47",
+  "u8214.D": "G48",
+  "u2709.D": "G49",
+  "u8219.D": "G50",
+  "u2574.D": "G51",
+  "u2708.D": "G52",
+  "u2542.D": "G53",
+  "u8091.D": "G54",
+  "u2299.D": "G55",
+  "u8086.D": "G56",
+  "u8429.D": "G57",
+  "u8085.D": "G58",
+  "u8090.D": "G59",
+  "u2946.D": "G60",
+  "u2957.D": "G61",
+  "u2959.D": "G62",
+  "port:O[4]": "G63",
+  "port:O[5]": "G64",
+  "port:O[6]": "G65",
+  "port:O[2]": "G66",
+  "port:O[3]": "G67",
+  "port:O[7]": "G68",
+  "port:O[1]": "G69",
+  "port:O[0]": "G70",
+  "u227.D": "G71",
+  "u228.D": "G72"
+ }
+}

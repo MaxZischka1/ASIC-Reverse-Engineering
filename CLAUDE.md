@@ -9,8 +9,8 @@ and the linked blog post). The only ground-truth inputs shipped by the puzzle ar
 `puzzle.gds` (a manufacturable layout with internal names stripped) and
 `example_inputs.vcd` (recorded stimulus + response from the real design, which does *not*
 assert `success`). Everything else at the top level is reconstruction: a from-scratch
-Python pipeline that lifts raw GDSII geometry back up to a structural Verilog netlist and
-then to named logic blocks.
+Python pipeline that lifts raw GDSII geometry back up to a structural Verilog netlist,
+then to per-flop logic cones grouped by the Boolean function they compute.
 
 `warmup/` is the puzzle authors' small reference design (two shift registers + adder +
 comparator, `success` when `A + B == 496`), shipped at *every* stage of the flow
@@ -21,6 +21,26 @@ run the pipeline on `04_final.gds` and check the recovered netlist against
 Python is standard-library only (no gdstk/gdspy/klayout — parsing GDSII by hand is
 deliberate). Simulation needs `verilator` and a C++17 compiler; `make waves` needs
 `gtkwave`.
+
+## Rule: never read waveform or GDS files directly
+
+Claude must not open, read, dump, grep, or otherwise inspect the contents of any
+waveform or layout file:
+
+- `*.vcd` — `example_inputs.vcd`, `waveform_puzzle.vcd`, `warmup/waveform_adderDemo.vcd`
+- `*.gds` — `puzzle.gds`, `warmup/04_final.gds`
+
+This covers reading them by any means: `Read`, `cat`/`head`/`sed`, `grep`, a throwaway
+Python snippet, or a script written to print their contents. Inspect them only through the
+committed pipeline tools, and reason from those tools' outputs.
+
+This restricts *Claude*, not the code. `gdsParser.py` parses `puzzle.gds` and the testbench
+consumes stimulus transcribed from `example_inputs.vcd` — that is the point of the project
+and is unaffected. Verilator may write VCDs and `make waves` may open one in gtkwave; what
+is forbidden is Claude reading the bytes.
+
+If a task seems to need the contents of one of these files, say so and stop rather than
+working around the rule.
 
 ## The extraction pipeline
 
@@ -36,9 +56,11 @@ puzzle.gds
   │     │  python3 moduleGraph.py         # nodes=cells, edges=nets, pin directions
   │     └─> MODULE_GRAPH.json
   │           ├─ python3 genVerilog.py   -> puzzleNetlist.v   (flat structural netlist)
-  │           ├─ python3 logicGraph.py   -> LOGIC_GRAPH.json  (+ --verilog puzzleReduced.v)
-  │           └─ python3 blockMatch.py   -> BLOCK_MATCH.json  (named blocks)
-  │                 └─ python3 genBlockVerilog.py -> blockMatch.v (hierarchical netlist)
+  │           └─ python3 logicGraph.py   -> LOGIC_GRAPH.json  (+ --verilog puzzleReduced.v)
+  │                 │  python3 coneClasses.py   # cones -> truth tables -> equivalence groups
+  │                 ├─> CONE_CLASSES.json
+  │                 │     │  python3 coneGraph.py   # groups as nodes, flop dataflow as edges
+  │                 │     └─> CONE_GRAPH.json + CONE_GRAPH.md
 ```
 
 Regenerating a stage invalidates everything downstream of it; the JSON files are committed
@@ -53,19 +75,16 @@ python3 netGraph.py   warmup/OUT.json     --out warmup/NET_GRAPH.json
 python3 moduleGraph.py warmup/OUT.json    --out warmup/MODULE_GRAPH.json --verilog warmup/sky130_prims.v
 python3 genVerilog.py --module-graph warmup/MODULE_GRAPH.json --net-graph warmup/NET_GRAPH.json \
                       --out warmup/adder_demo.v --module-name adder_demo
-python3 blockMatch.py warmup/MODULE_GRAPH.json --out warmup/BLOCK_MATCH.json
-python3 genBlockVerilog.py --module-graph warmup/MODULE_GRAPH.json \
-                           --block-match warmup/BLOCK_MATCH.json --out warmup/blockMatch.v
+python3 logicGraph.py warmup/MODULE_GRAPH.json --out warmup/LOGIC_GRAPH.json \
+                      --prims warmup/sky130_prims.v
+python3 coneClasses.py warmup/LOGIC_GRAPH.json --out warmup/CONE_CLASSES.json \
+                       --prims warmup/sky130_prims.v
 ```
 
 The check that matters: `warmup/MODULE_GRAPH.json` must come out at 85 nodes / 84 wires,
 and its 79 cell instances must match `01_netlist.v`'s 79 non-filler cells per cell type
 (`01_netlist.v` also holds 151 `decap_3`/`tapvpwrvgnd_1` fillers, which carry no signal and
 are correctly absent from the recovered graph).
-
-`genBlockVerilog.py` asserts that every cell landed in some block, so today it only runs on
-the warmup — blockMatch.py names all 79 warmup cells but only 125 of the puzzle's 738, and
-the assert is what stops it emitting a netlist that silently drops the other 613.
 
 The scripts carry long module docstrings explaining the *why*
 of each design decision — read the docstring before changing a stage's logic.
@@ -95,11 +114,24 @@ Key stage semantics that are easy to get wrong:
   pins as a `(net, inverted)` pair (also lossless), then cuts the graph at flip-flops into
   per-sink cones. Cones overlap by design: a gate feeding five flops appears in five cones,
   so cone sizes sum to more than the gate count.
-- **`blockMatch.py`** — structural NFA matcher over gate templates, but structure is only a
-  hypothesis: every match is verified by exhaustive truth-table simulation (up to output
-  inversion or full NPN equivalence) before it is kept. Blocks record whether they were
-  established by function, structure, or context, so a contextual label is never mistaken
-  for a proof.
+- **`cellLibrary.py`** — parses `sky130_prims.v` into `{class: CellSpec}`: pins, Boolean
+  function compiled from the continuous assignments, sequential flag, and pin symmetry
+  *derived* by swapping inputs and re-testing the truth table (so an AND2's A/B are known
+  interchangeable and a MUX2's A0/A1/S are known not to be). Import-only, no CLI. It is the
+  single source of cell semantics for the cone stage.
+- **`coneClasses.py`** — evaluates each cone's full truth table (numpy bit-packed, 64
+  assignments per machine op), then canonicalizes it under leaf permutation so two cones
+  computing the same function group together even when synthesis built one as the De Morgan
+  dual of the other or landed the operand bits on different pins. Grouping is by hash of the
+  canonical table, so it is exact: a functional group can never be a false positive, only a
+  missed merge. Constants are folded as fixed columns, which lowers k and is what makes the
+  wide cones tractable. Groups flagged `structural` fell out of the functional path and are
+  heuristic.
+- **`coneGraph.py`** — promotes those groups to graph nodes and recovers the edges: group A
+  -> group B when a flop in A drives a leaf of a cone in B. Each node is labelled by matching
+  its canonical truth table against a primitive library (AND/OR/NAND/NOR/XOR/XNOR of each
+  arity including mixed-polarity product/sum families, adder sum/carry, 2:1 and 4:1 muxes);
+  unmatched nodes are named `unknown_k<N>_<hash>`.
 
 ## Build and simulate
 
@@ -109,6 +141,7 @@ From the repo root (real puzzle):
 make            # verilate + build + simulate puzzleNetlist.v, writes waveform_puzzle.vcd
 make lint       # verilator --lint-only on puzzleNetlist.v + sky130_prims.v
 make logic      # regenerate LOGIC_GRAPH.json
+make cones      # regenerate CONE_CLASSES.json, then CONE_GRAPH.json + CONE_GRAPH.md
 make reduced    # regenerate puzzleReduced.v, then run the SAME testbench against it
 make waves      # open waveform_puzzle.vcd in gtkwave
 make clean      # remove obj_dir_TL/, obj_dir_reduced/, .stamp.*, the VCD
@@ -117,19 +150,15 @@ make clean      # remove obj_dir_TL/, obj_dir_reduced/, .stamp.*, the VCD
 `make reduced` is the equivalence check for `logicGraph.py`: if the reference frames still
 pass against the buffer/inverter-reduced netlist, the reduction preserved behavior.
 
-`warmup/` has its own Makefile with the same target names, and simulates BOTH recovered
-netlists against the one testbench (`adderTestbench.cpp` selects between them on
-`-DTOP_TYPE`):
+`warmup/` has its own Makefile with the same target names, simulating the recovered flat
+netlist (`adder_demo.v`, top `adder_demo`) under `adderTestbench.cpp`:
 
 ```
-make            # flat netlist from genVerilog.py      (adder_demo.v, top adder_demo)
-make blocks     # named netlist from genBlockVerilog.py (blockMatch.v, top blockMatch)
+make            # flat netlist from genVerilog.py (adder_demo.v, top adder_demo)
 ```
 
-`make blocks` is the warmup's analogue of `make reduced`: both tops expose the same ports
-(`A, B, clk, en, rst_n, S`), so agreement between them says blockMatch.py's naming
-preserved the function. Note `blockMatch.v`'s top module is `blockMatch` — `adder_compare`
-inside it is a *sub*-module taking `a_reg0..7`/`b_reg0..7`, not the top.
+The testbench reaches its top through `-DTOP_TYPE` (default `Vadder_demo`), so any other
+netlist exposing the same ports (`A, B, clk, en, rst_n, S`) can be checked against it.
 
 ## The testbench is the regression test
 

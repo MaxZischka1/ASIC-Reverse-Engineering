@@ -2,7 +2,7 @@
 //
 // This file is the single source of truth for what a cell IS: moduleGraph.py
 // reads it for pin directions (which pin drives a net, which reads it), and
-// blockMatch.py derives its whole cell library from it -- pin names, pin
+// cellLibrary.py derives the whole cell library from it -- pin names, pin
 // order, Boolean function, and, by testing the function, which inputs are
 // interchangeable. Nothing downstream hardcodes a pinout, so a cell added
 // here is a cell the rest of the pipeline immediately understands.

@@ -55,6 +55,17 @@ reduced: $(REDUCED) sky130_prims.v $(TB)
 	@$(MAKE) -C $(REDDIR) -f V$(MODULE).mk V$(MODULE)
 	@./$(REDDIR)/V$(MODULE)
 
+# Cone classification and the cone-level dataflow graph -- the top of the
+# reconstruction as it stands. Both derive from LOGIC_GRAPH.json.
+CONE_CLASSES.json: coneClasses.py LOGIC_GRAPH.json sky130_prims.v cellLibrary.py
+	python3 coneClasses.py
+
+CONE_GRAPH.json CONE_GRAPH.md: coneGraph.py CONE_CLASSES.json LOGIC_GRAPH.json
+	python3 coneGraph.py
+
+.PHONY: cones
+cones: CONE_GRAPH.json
+
 .PHONY:lint
 lint: $(SRCS)
 	verilator --lint-only $(SRCS) --top-module $(MODULE)

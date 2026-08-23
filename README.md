@@ -1,28 +1,10 @@
-# ASIC Reverse-Engineering Puzzle
+# Solution
 
-This repository provides the files for the Jane Street ASIC reverse-engineering puzzle! See the [blog post](https://blog.janestreet.com/can-you-reverse-engineer-an-asic/) for more details.
+## Notes before reading: I followed the rules of the puzzle not having the puzzle files fed into the AI but used AI HEAVILY. I don't usually vibe code especially with hardware design but I didn't have much experience with GDS files and LVS parsing so I thought this would be a cool way to try a bit of vibecoding. 
 
-### Puzzle GDS
+## Approach: The puzzle gives you two clues to solve your problem the GDS file and the waveform. The waveform really only provided two clues for the solution: 
 
-The puzzle GDS is in this repository, in the file named `puzzle.gds`. You can preview it using [KLayout](https://www.klayout.de/) or the [TinyTapeout Online GDS Viewer](https://gds-viewer.tinytapeout.com/).
+## Waveform hint/ Easter Egg
+The number of clock cycles from enable being set to being disabled is 121 and the output is the string TRY AGAIN. At first I tried examining the values as 7 or 8 bit values and it stopped works LSB or MSB first by character 3. The repeated long 0 signal followed by a 1 with the space incouraged to still think this was an ASCII value. The 121 clock cycles came back when the AI was building the larger blocks of the circuit and created the 11 count sequencer, with 121 clock cycles the only way it could be ASCII values is if every bit is 11 I tried this and got ASCII values spelling out "The night s" and "ky awaits  ". To be honest this was the most problem I found with the puzzle and most after this was prompting the AI in the right direction to come up with a solution.
 
-See `example_inputs.vcd` which shows some inputs being fed to the design (unfortunately, not the correct inputs to make `success` go high!). You can view it using [Surfer](https://surfer-project.org/) or a similar tool.
-
-To help you get started, below is an image with some hints. The region labelled as "output generator" is safe to ignore during your initial reverse-engineering steps, but you'll need to simulate it to get your final answer!
-
-![](layout.png)
-
-### Warm-up Puzzle
-
-To familiarize yourself with the flow and help develop your tools, we've put together a small example design and run it through a very similar flow to the one used for the real thing! The example design consists of two shift registers, an adder, and a comparator, outputting success if `A + B == 496`.
-
-You'll find the following files related to the warm-up puzzle:
-
-- `warmup/00_source.v`: The original Verilog source code of the example design
-- `warmup/01_netlist.v`: Synthesized netlist comprising of a list of standard cells
-  and connections
-- `warmup/02_netlist_with_power_rails.v`: Netlist with VDD and GND rails added
-- `warmup/03_post_place_and_route.def`: Physical layout of cells and routing
-  connections, corresponding to cell and net names.
-- `warmup/04_final.gds`: The final manufacturable layout file, with many internal names
-  removed
+## GDS File Parsing
