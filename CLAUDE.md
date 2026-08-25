@@ -61,6 +61,12 @@ puzzle.gds
   │                 ├─> CONE_CLASSES.json
   │                 │     │  python3 coneGraph.py   # groups as nodes, flop dataflow as edges
   │                 │     └─> CONE_GRAPH.json + CONE_GRAPH.md
+  │                 │           │  python3 coneProfile.py  # per-cone attributes + class views
+  │                 │           ├─> CONE_PROFILE.json + CONE_PROFILE.md
+  │                 │           │     │  python3 coneSignals.py  # shared control + correlation
+  │                 │           │     └─> CONE_SIGNALS.json + CONE_SIGNALS.md
+  │                 │           │           │  python3 coneBlocks.py  # control/data + typed blocks
+  │                 │           │           └─> CONE_BLOCKS.json + CONE_BLOCKS.md
 ```
 
 Regenerating a stage invalidates everything downstream of it; the JSON files are committed
@@ -127,6 +133,39 @@ Key stage semantics that are easy to get wrong:
   missed merge. Constants are folded as fixed columns, which lowers k and is what makes the
   wide cones tractable. Groups flagged `structural` fell out of the functional path and are
   heuristic.
+- **`coneProfile.py`** — the descriptive counterpart to `coneClasses.py`. Where that
+  module asks "which cones are exactly equal" (and answers with 65 singletons out of 72
+  groups), this one measures each cone — size, depth, fan-in, fan-out, leaf composition,
+  where its Q goes, position in the sequential graph — and offers four *independent* class
+  views over those attributes. They are not a hierarchy: only `class_profile` →
+  `class_coarse` actually refines, and `class_shape` provably collides (u227.D/u228.D share
+  a `shape` while computing different functions — they overlap in 36 of 37 gates). A profile
+  match is evidence; a signature match is proof, so every record carries its exact
+  `signature` alongside.
+- **`class_block` is defined once, in `coneProfile.py`.** `coneSignals.py` and
+  `coneBlocks.py` both *read* that field rather than deriving their own notion of a bank —
+  they previously disagreed, which skewed the control/data scores. See
+  `coneProfile.block_key()` for why the key is `(role, fan_in, depth, self_feedback,
+  label_family)`, overridden by strongly-connected component, and why gate count is excluded.
+- **`coneSignals.py`** — the transpose of `coneProfile.py`: profiles the leaf *nets*
+  rather than the cones, so the shared control of a bank gets named. A net read by every
+  member of a bank is that bank's control line, found by **set equality** — no threshold.
+  The control/data split for everything else is derived by scanning the fanout distribution
+  for its largest multiplicative gap rather than hardcoded (it lands at 56 on this design).
+  Two traps it documents: canonical leaf positions are *not* comparable across groups (they
+  come from a per-function canonicalization), so stability is measured within a group; and
+  bank coverage must exclude narrow buckets, or "covers a bank" is true of nearly every net.
+- **`coneBlocks.py`** — first level above the cone. Splits every cone into a **control**
+  or **data** domain by a small signed evidence score (fanout weighted heavily, then
+  corroborated by bank coverage and select use), then types each block: shifter, register,
+  matcher, decoder, clearable, toggle, buffer. Two calibration facts are baked into the
+  design rather than tuned: control requires score ≥ 2, because "+1 fanout above the median"
+  alone swept 22 evidence-free cones into control; and a block is keyed on
+  `(role, fan_in, depth, self_feedback, label_family)` — **not** gate count, which synthesis
+  varies across bits of one uniform unit (the 8 output bits run 28–55 gates at a constant
+  depth 8, and keying on gates shattered them into 7 blocks). Every cone keeps its score,
+  evidence list and a strong/weak confidence, so borderline calls stay visible. Blocks come
+  from `class_block`; this stage adds only the domain and the kind.
 - **`coneGraph.py`** — promotes those groups to graph nodes and recovers the edges: group A
   -> group B when a flop in A drives a leaf of a cone in B. Each node is labelled by matching
   its canonical truth table against a primitive library (AND/OR/NAND/NOR/XOR/XNOR of each
@@ -142,6 +181,9 @@ make            # verilate + build + simulate puzzleNetlist.v, writes waveform_p
 make lint       # verilator --lint-only on puzzleNetlist.v + sky130_prims.v
 make logic      # regenerate LOGIC_GRAPH.json
 make cones      # regenerate CONE_CLASSES.json, then CONE_GRAPH.json + CONE_GRAPH.md
+make profile    # regenerate CONE_PROFILE.json + CONE_PROFILE.md
+make signals    # regenerate CONE_SIGNALS.json + CONE_SIGNALS.md
+make blocks     # regenerate CONE_BLOCKS.json + CONE_BLOCKS.md
 make reduced    # regenerate puzzleReduced.v, then run the SAME testbench against it
 make waves      # open waveform_puzzle.vcd in gtkwave
 make clean      # remove obj_dir_TL/, obj_dir_reduced/, .stamp.*, the VCD

@@ -576,7 +576,7 @@ def parse_gds_cells(path):
 
         # Any other record type (XY, WIDTH, PATHTYPE, STRANS, SNAME,
         # COLROW, TEXTTYPE, PRESENTATION, STRING, MAG, ANGLE, ENDLIB,
-        # BGNEXTN/ENDEXTN, ...) doesn't affect cell/polygon grouping
+        # ...) doesn't affect cell/polygon grouping
         # for this first version, so we deliberately ignore it here.
         # (Notice there's no final `else:` -- if none of the branches
         # above match, Python just falls through and does nothing, which
@@ -607,7 +607,12 @@ def parse_gds_full(path):
       structures: {struct_name: {"polygons": [...], "paths": [...], "labels": [...]}}
         polygon: {"layer", "datatype", "material", "xy": [[x, y], ...]}
         path:    {"layer", "datatype", "material", "width", "pathtype",
-                   "xy": [[x, y], ...]}   (xy = centerline points)
+                   "bgnextn", "endextn", "xy": [[x, y], ...]}
+                  (xy = centerline points). bgnextn/endextn are the CUSTOM
+                  end extensions carried by BGNEXTN/ENDEXTN records, and are
+                  meaningful only for pathtype 4 -- GDS's "custom extension"
+                  end style. They are in database units, may be negative
+                  (a pulled-back end), and default to 0 when absent.
         label:   {"layer", "text", "xy": [x, y]}   -- a GDS TEXT element.
                   This is the ONLY place a real pin/net/port name shows up
                   anywhere in a GDS file (e.g. "VPWR", "VGND", "A", "Y",
@@ -651,6 +656,8 @@ def parse_gds_full(path):
     current_datatype = None
     current_width = None
     current_pathtype = None
+    current_bgnextn = None
+    current_endextn = None
     current_xy = None
     current_sname = None
     current_mirror = False
@@ -719,6 +726,15 @@ def parse_gds_full(path):
 
         elif rectype == PATHTYPE:
             current_pathtype = decode_int16(payload)
+
+        elif rectype == BGNEXTN:
+            # Custom start extension, only meaningful for pathtype 4. Same
+            # 4-byte signed encoding as WIDTH; signed because a path may be
+            # pulled BACK from its endpoint, not just pushed past it.
+            current_bgnextn = struct.unpack(">i", payload)[0]
+
+        elif rectype == ENDEXTN:
+            current_endextn = struct.unpack(">i", payload)[0]
 
         elif rectype == XY:
             current_xy = decode_xy(payload)
@@ -800,6 +816,8 @@ def parse_gds_full(path):
                     "material": material,
                     "width": current_width or 0,
                     "pathtype": current_pathtype or 0,
+                    "bgnextn": current_bgnextn or 0,
+                    "endextn": current_endextn or 0,
                     "xy": current_xy or [],
                 })
 

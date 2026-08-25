@@ -1,0 +1,6211 @@
+{
+ "stats": {
+  "signals": 94,
+  "roles": {
+   "shared_control": 27,
+   "data": 58,
+   "local": 9
+  },
+  "banks_with_shared_control": 11,
+  "correlated_pairs": 819,
+  "correlation_clusters": 6,
+  "min_jaccard": 0.6,
+  "control_floor": 56
+ },
+ "signals": [
+  {
+   "net": "6443",
+   "name": "gctl_4182",
+   "kind": "flop",
+   "source": "4182:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 88,
+   "banks_covered": [
+    "port_register|13|14|True|load_enable",
+    "port_register|13|14|True|set_dominant_sticky",
+    "port_register|4|2|True|load_enable",
+    "port_register|9|3|True|load_enable",
+    "port_register|9|3|True|set_dominant_sticky",
+    "port_register|9|4|True|load_enable",
+    "port_register|9|4|True|set_dominant_sticky",
+    "scc0",
+    "scc2"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 21,
+   "positions_by_group": {
+    "G02": [
+     0,
+     1
+    ],
+    "G04": [
+     1,
+     2
+    ],
+    "G05": [
+     1,
+     2
+    ],
+    "G25": [
+     0
+    ],
+    "G03": [
+     0,
+     1
+    ],
+    "G23": [
+     0
+    ],
+    "G09": [
+     1
+    ],
+    "G21": [
+     2
+    ],
+    "G55": [
+     0
+    ],
+    "G38": [
+     0
+    ],
+    "G26": [
+     2
+    ],
+    "G53": [
+     0
+    ],
+    "G51": [
+     0
+    ],
+    "G52": [
+     0
+    ],
+    "G49": [
+     0
+    ],
+    "G45": [
+     0
+    ],
+    "G36": [
+     0
+    ],
+    "G60": [
+     0
+    ],
+    "G06": [
+     0
+    ],
+    "G61": [
+     0
+    ],
+    "G62": [
+     13
+    ],
+    "G32": [
+     9
+    ],
+    "G07": [
+     0
+    ],
+    "G17": [
+     0
+    ],
+    "G15": [
+     0
+    ],
+    "G18": [
+     0
+    ],
+    "G01": [
+     0
+    ],
+    "G37": [
+     0
+    ],
+    "G24": [
+     0
+    ],
+    "G34": [
+     1
+    ],
+    "G27": [
+     0
+    ],
+    "G19": [
+     0
+    ],
+    "G16": [
+     0
+    ],
+    "G10": [
+     0
+    ],
+    "G35": [
+     9
+    ],
+    "G28": [
+     7
+    ],
+    "G20": [
+     0
+    ],
+    "G30": [
+     8
+    ],
+    "G31": [
+     7
+    ],
+    "G22": [
+     6
+    ],
+    "G33": [
+     7
+    ],
+    "G29": [
+     7
+    ],
+    "G40": [
+     0
+    ],
+    "G58": [
+     1
+    ],
+    "G56": [
+     0
+    ],
+    "G59": [
+     0
+    ],
+    "G54": [
+     0
+    ],
+    "G41": [
+     0
+    ],
+    "G44": [
+     0
+    ],
+    "G46": [
+     1
+    ],
+    "G48": [
+     0
+    ],
+    "G50": [
+     0
+    ],
+    "G57": [
+     0
+    ],
+    "G43": [
+     0
+    ],
+    "G42": [
+     0
+    ],
+    "G39": [
+     0
+    ],
+    "G47": [
+     0
+    ]
+   },
+   "position_stable": false,
+   "is_select": true,
+   "is_hold": true,
+   "consumers": [
+    "u1228.D",
+    "u1229.D",
+    "u1230.D",
+    "u1249.D",
+    "u1250.D",
+    "u1258.D",
+    "u1259.D",
+    "u1260.D",
+    "u1261.D",
+    "u1264.D",
+    "u1383.D",
+    "u1384.D",
+    "u1385.D",
+    "u1626.D",
+    "u1808.D",
+    "u1809.D",
+    "u1810.D",
+    "u2036.D",
+    "u2037.D",
+    "u2039.D",
+    "u226.D",
+    "u227.D",
+    "u228.D",
+    "u2293.D",
+    "u2299.D",
+    "u2301.D",
+    "u2372.D",
+    "u2542.D",
+    "u2574.D",
+    "u2708.D",
+    "u2709.D",
+    "u2710.D",
+    "u2944.D",
+    "u2946.D",
+    "u2947.D",
+    "u2948.D",
+    "u2957.D",
+    "u2958.D",
+    "u2959.D",
+    "u2960.D",
+    "u4182.D",
+    "u4659.D",
+    "u4661.D",
+    "u4662.D",
+    "u4838.D",
+    "u4993.D",
+    "u5000.D",
+    "u5004.D",
+    "u5093.D",
+    "u5336.D",
+    "u5337.D",
+    "u5339.D",
+    "u5342.D",
+    "u5343.D",
+    "u5344.D",
+    "u5399.D",
+    "u5401.D",
+    "u5569.D",
+    "u5634.D",
+    "u5638.D",
+    "u5639.D",
+    "u6095.D",
+    "u6106.D",
+    "u6109.D",
+    "u6111.D",
+    "u6159.D",
+    "u6197.D",
+    "u6198.D",
+    "u6199.D",
+    "u6435.D",
+    "u6436.D",
+    "u6442.D",
+    "u6451.D",
+    "u8084.D",
+    "u8085.D",
+    "u8086.D",
+    "u8090.D",
+    "u8091.D",
+    "u8092.D",
+    "u8095.D",
+    "u8199.D",
+    "u8214.D",
+    "u8219.D",
+    "u8429.D",
+    "u8431.D",
+    "u8591.D",
+    "u8602.D",
+    "u8815.D"
+   ]
+  },
+  {
+   "net": "7167",
+   "name": "enable",
+   "kind": "input_port",
+   "source": "enable",
+   "role": "shared_control",
+   "fanout": 85,
+   "banks_covered": [
+    "port_register|13|14|True|load_enable",
+    "port_register|13|14|True|set_dominant_sticky",
+    "port_register|4|2|True|load_enable",
+    "port_register|9|3|True|load_enable",
+    "port_register|9|3|True|set_dominant_sticky",
+    "port_register|9|4|True|load_enable",
+    "port_register|9|4|True|set_dominant_sticky",
+    "scc0",
+    "scc2"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 19,
+   "positions_by_group": {
+    "G02": [
+     6
+    ],
+    "G04": [
+     7
+    ],
+    "G05": [
+     6
+    ],
+    "G25": [
+     6
+    ],
+    "G03": [
+     7
+    ],
+    "G23": [
+     7
+    ],
+    "G21": [
+     6
+    ],
+    "G55": [
+     10
+    ],
+    "G38": [
+     10
+    ],
+    "G26": [
+     7
+    ],
+    "G53": [
+     10
+    ],
+    "G51": [
+     10
+    ],
+    "G52": [
+     10
+    ],
+    "G49": [
+     10
+    ],
+    "G45": [
+     10
+    ],
+    "G36": [
+     9
+    ],
+    "G60": [
+     11
+    ],
+    "G06": [
+     9
+    ],
+    "G61": [
+     12
+    ],
+    "G62": [
+     1
+    ],
+    "G32": [
+     7
+    ],
+    "G07": [
+     2,
+     3
+    ],
+    "G17": [
+     2
+    ],
+    "G15": [
+     4
+    ],
+    "G18": [
+     3
+    ],
+    "G01": [
+     1
+    ],
+    "G37": [
+     10
+    ],
+    "G24": [
+     5
+    ],
+    "G34": [
+     8
+    ],
+    "G27": [
+     5
+    ],
+    "G19": [
+     2
+    ],
+    "G16": [
+     2
+    ],
+    "G10": [
+     2
+    ],
+    "G35": [
+     1
+    ],
+    "G28": [
+     1
+    ],
+    "G20": [
+     2
+    ],
+    "G30": [
+     1
+    ],
+    "G31": [
+     3
+    ],
+    "G22": [
+     3
+    ],
+    "G33": [
+     2
+    ],
+    "G29": [
+     2
+    ],
+    "G40": [
+     10
+    ],
+    "G58": [
+     10
+    ],
+    "G56": [
+     10
+    ],
+    "G59": [
+     10
+    ],
+    "G54": [
+     10
+    ],
+    "G41": [
+     10
+    ],
+    "G44": [
+     10
+    ],
+    "G46": [
+     10
+    ],
+    "G48": [
+     10
+    ],
+    "G50": [
+     10
+    ],
+    "G57": [
+     10
+    ],
+    "G43": [
+     11
+    ],
+    "G42": [
+     10
+    ],
+    "G39": [
+     10
+    ],
+    "G47": [
+     10
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": false,
+   "consumers": [
+    "u1228.D",
+    "u1229.D",
+    "u1230.D",
+    "u1249.D",
+    "u1250.D",
+    "u1258.D",
+    "u1259.D",
+    "u1260.D",
+    "u1261.D",
+    "u1264.D",
+    "u1383.D",
+    "u1384.D",
+    "u1385.D",
+    "u1626.D",
+    "u1808.D",
+    "u1809.D",
+    "u1810.D",
+    "u2036.D",
+    "u2037.D",
+    "u2039.D",
+    "u2293.D",
+    "u2299.D",
+    "u2301.D",
+    "u2372.D",
+    "u2542.D",
+    "u2574.D",
+    "u2708.D",
+    "u2709.D",
+    "u2710.D",
+    "u2944.D",
+    "u2946.D",
+    "u2947.D",
+    "u2948.D",
+    "u2957.D",
+    "u2958.D",
+    "u2959.D",
+    "u2960.D",
+    "u4182.D",
+    "u4659.D",
+    "u4661.D",
+    "u4662.D",
+    "u4838.D",
+    "u4993.D",
+    "u5000.D",
+    "u5004.D",
+    "u5093.D",
+    "u5336.D",
+    "u5337.D",
+    "u5339.D",
+    "u5342.D",
+    "u5343.D",
+    "u5344.D",
+    "u5399.D",
+    "u5401.D",
+    "u5569.D",
+    "u5634.D",
+    "u5638.D",
+    "u5639.D",
+    "u6095.D",
+    "u6106.D",
+    "u6109.D",
+    "u6111.D",
+    "u6159.D",
+    "u6197.D",
+    "u6198.D",
+    "u6199.D",
+    "u6435.D",
+    "u6436.D",
+    "u6442.D",
+    "u6451.D",
+    "u8084.D",
+    "u8085.D",
+    "u8086.D",
+    "u8090.D",
+    "u8091.D",
+    "u8092.D",
+    "u8095.D",
+    "u8199.D",
+    "u8214.D",
+    "u8219.D",
+    "u8429.D",
+    "u8431.D",
+    "u8591.D",
+    "u8602.D",
+    "u8815.D"
+   ]
+  },
+  {
+   "net": "6485",
+   "name": "I",
+   "kind": "input_port",
+   "source": "I",
+   "role": "shared_control",
+   "fanout": 58,
+   "banks_covered": [
+    "port_register|13|14|True|load_enable",
+    "port_register|13|14|True|set_dominant_sticky",
+    "port_register|9|3|True|load_enable",
+    "port_register|9|3|True|set_dominant_sticky",
+    "port_register|9|4|True|load_enable",
+    "port_register|9|4|True|set_dominant_sticky"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 18,
+   "positions_by_group": {
+    "G02": [
+     4,
+     5
+    ],
+    "G04": [
+     4,
+     5,
+     6
+    ],
+    "G05": [
+     4,
+     5
+    ],
+    "G25": [
+     4
+    ],
+    "G03": [
+     4,
+     5
+    ],
+    "G23": [
+     5
+    ],
+    "G21": [
+     5
+    ],
+    "G55": [
+     9
+    ],
+    "G38": [
+     8
+    ],
+    "G26": [
+     5
+    ],
+    "G53": [
+     9
+    ],
+    "G51": [
+     8
+    ],
+    "G52": [
+     9
+    ],
+    "G49": [
+     9
+    ],
+    "G45": [
+     9
+    ],
+    "G62": [
+     2
+    ],
+    "G01": [
+     2
+    ],
+    "G37": [
+     9
+    ],
+    "G24": [
+     6
+    ],
+    "G34": [
+     3
+    ],
+    "G27": [
+     6
+    ],
+    "G19": [
+     1
+    ],
+    "G16": [
+     1
+    ],
+    "G07": [
+     1
+    ],
+    "G10": [
+     1
+    ],
+    "G35": [
+     0
+    ],
+    "G28": [
+     0
+    ],
+    "G20": [
+     1
+    ],
+    "G30": [
+     0
+    ],
+    "G40": [
+     9
+    ],
+    "G58": [
+     8
+    ],
+    "G56": [
+     9
+    ],
+    "G59": [
+     9
+    ],
+    "G54": [
+     9
+    ],
+    "G41": [
+     8
+    ],
+    "G44": [
+     9
+    ],
+    "G46": [
+     8
+    ],
+    "G48": [
+     9
+    ],
+    "G50": [
+     9
+    ],
+    "G57": [
+     9
+    ],
+    "G43": [
+     9
+    ],
+    "G42": [
+     8
+    ],
+    "G39": [
+     8
+    ],
+    "G47": [
+     9
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": false,
+   "consumers": [
+    "u1228.D",
+    "u1229.D",
+    "u1230.D",
+    "u1249.D",
+    "u1250.D",
+    "u1258.D",
+    "u1259.D",
+    "u1260.D",
+    "u1261.D",
+    "u1264.D",
+    "u1383.D",
+    "u1384.D",
+    "u1385.D",
+    "u1626.D",
+    "u1808.D",
+    "u1809.D",
+    "u1810.D",
+    "u2036.D",
+    "u2037.D",
+    "u2039.D",
+    "u2293.D",
+    "u2299.D",
+    "u2301.D",
+    "u2372.D",
+    "u2542.D",
+    "u2574.D",
+    "u2708.D",
+    "u2709.D",
+    "u2710.D",
+    "u2959.D",
+    "u5000.D",
+    "u5337.D",
+    "u5634.D",
+    "u5638.D",
+    "u5639.D",
+    "u6095.D",
+    "u6106.D",
+    "u6109.D",
+    "u6111.D",
+    "u6159.D",
+    "u6197.D",
+    "u6198.D",
+    "u6199.D",
+    "u8084.D",
+    "u8085.D",
+    "u8086.D",
+    "u8090.D",
+    "u8091.D",
+    "u8092.D",
+    "u8095.D",
+    "u8199.D",
+    "u8214.D",
+    "u8219.D",
+    "u8429.D",
+    "u8431.D",
+    "u8591.D",
+    "u8602.D",
+    "u8815.D"
+   ]
+  },
+  {
+   "net": "3015",
+   "name": "gctl_4662",
+   "kind": "flop",
+   "source": "4662:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 57,
+   "banks_covered": [
+    "port_register|13|14|True|load_enable",
+    "port_register|13|14|True|set_dominant_sticky",
+    "port_register|9|3|True|load_enable",
+    "port_register|9|3|True|set_dominant_sticky",
+    "port_register|9|4|True|load_enable",
+    "port_register|9|4|True|set_dominant_sticky",
+    "scc2"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 9,
+   "positions_by_group": {
+    "G02": [
+     0,
+     3
+    ],
+    "G04": [
+     0,
+     4
+    ],
+    "G05": [
+     0,
+     4
+    ],
+    "G25": [
+     2
+    ],
+    "G03": [
+     0,
+     3
+    ],
+    "G23": [
+     3
+    ],
+    "G21": [
+     0
+    ],
+    "G55": [
+     6
+    ],
+    "G38": [
+     4
+    ],
+    "G26": [
+     0
+    ],
+    "G53": [
+     6
+    ],
+    "G51": [
+     4
+    ],
+    "G52": [
+     7
+    ],
+    "G49": [
+     6
+    ],
+    "G45": [
+     7
+    ],
+    "G32": [
+     0
+    ],
+    "G07": [
+     1
+    ],
+    "G17": [
+     3
+    ],
+    "G15": [
+     5
+    ],
+    "G18": [
+     4
+    ],
+    "G37": [
+     3
+    ],
+    "G24": [
+     3
+    ],
+    "G34": [
+     0
+    ],
+    "G27": [
+     3
+    ],
+    "G31": [
+     6
+    ],
+    "G22": [
+     5
+    ],
+    "G33": [
+     6
+    ],
+    "G29": [
+     6
+    ],
+    "G40": [
+     3
+    ],
+    "G58": [
+     7
+    ],
+    "G56": [
+     8
+    ],
+    "G59": [
+     7
+    ],
+    "G54": [
+     6
+    ],
+    "G41": [
+     3
+    ],
+    "G44": [
+     3
+    ],
+    "G46": [
+     7
+    ],
+    "G48": [
+     7
+    ],
+    "G50": [
+     8
+    ],
+    "G57": [
+     3
+    ],
+    "G43": [
+     3
+    ],
+    "G42": [
+     3
+    ],
+    "G39": [
+     3
+    ],
+    "G47": [
+     3
+    ]
+   },
+   "position_stable": false,
+   "is_select": true,
+   "is_hold": true,
+   "consumers": [
+    "u1228.D",
+    "u1229.D",
+    "u1230.D",
+    "u1249.D",
+    "u1250.D",
+    "u1258.D",
+    "u1259.D",
+    "u1260.D",
+    "u1261.D",
+    "u1264.D",
+    "u1383.D",
+    "u1384.D",
+    "u1385.D",
+    "u1626.D",
+    "u1808.D",
+    "u1809.D",
+    "u1810.D",
+    "u2036.D",
+    "u2037.D",
+    "u2039.D",
+    "u2293.D",
+    "u2299.D",
+    "u2301.D",
+    "u2372.D",
+    "u2542.D",
+    "u2574.D",
+    "u2708.D",
+    "u2709.D",
+    "u2710.D",
+    "u4182.D",
+    "u4659.D",
+    "u4661.D",
+    "u4662.D",
+    "u4838.D",
+    "u5337.D",
+    "u5634.D",
+    "u5638.D",
+    "u5639.D",
+    "u6435.D",
+    "u6436.D",
+    "u6442.D",
+    "u6451.D",
+    "u8084.D",
+    "u8085.D",
+    "u8086.D",
+    "u8090.D",
+    "u8091.D",
+    "u8092.D",
+    "u8095.D",
+    "u8199.D",
+    "u8214.D",
+    "u8219.D",
+    "u8429.D",
+    "u8431.D",
+    "u8591.D",
+    "u8602.D",
+    "u8815.D"
+   ]
+  },
+  {
+   "net": "6110",
+   "name": "gctl_4838",
+   "kind": "flop",
+   "source": "4838:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 57,
+   "banks_covered": [
+    "port_register|13|14|True|load_enable",
+    "port_register|13|14|True|set_dominant_sticky",
+    "port_register|9|3|True|load_enable",
+    "port_register|9|3|True|set_dominant_sticky",
+    "port_register|9|4|True|load_enable",
+    "port_register|9|4|True|set_dominant_sticky",
+    "scc2"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 9,
+   "positions_by_group": {
+    "G02": [
+     0,
+     3,
+     4
+    ],
+    "G04": [
+     0,
+     1,
+     5
+    ],
+    "G05": [
+     0,
+     1,
+     4
+    ],
+    "G25": [
+     3
+    ],
+    "G03": [
+     0,
+     3,
+     4
+    ],
+    "G23": [
+     4
+    ],
+    "G21": [
+     1
+    ],
+    "G55": [
+     8
+    ],
+    "G38": [
+     5
+    ],
+    "G26": [
+     1
+    ],
+    "G53": [
+     8
+    ],
+    "G51": [
+     5
+    ],
+    "G52": [
+     8
+    ],
+    "G49": [
+     1
+    ],
+    "G45": [
+     8
+    ],
+    "G32": [
+     5
+    ],
+    "G07": [
+     2
+    ],
+    "G17": [
+     1
+    ],
+    "G15": [
+     1
+    ],
+    "G18": [
+     5
+    ],
+    "G37": [
+     1
+    ],
+    "G24": [
+     1
+    ],
+    "G34": [
+     6
+    ],
+    "G27": [
+     1
+    ],
+    "G31": [
+     1
+    ],
+    "G22": [
+     1
+    ],
+    "G33": [
+     0
+    ],
+    "G29": [
+     0
+    ],
+    "G40": [
+     1
+    ],
+    "G58": [
+     0
+    ],
+    "G56": [
+     5
+    ],
+    "G59": [
+     4
+    ],
+    "G54": [
+     1
+    ],
+    "G41": [
+     4
+    ],
+    "G44": [
+     8
+    ],
+    "G46": [
+     0
+    ],
+    "G48": [
+     4
+    ],
+    "G50": [
+     5
+    ],
+    "G57": [
+     8
+    ],
+    "G43": [
+     4
+    ],
+    "G42": [
+     4
+    ],
+    "G39": [
+     4
+    ],
+    "G47": [
+     1
+    ]
+   },
+   "position_stable": false,
+   "is_select": true,
+   "is_hold": true,
+   "consumers": [
+    "u1228.D",
+    "u1229.D",
+    "u1230.D",
+    "u1249.D",
+    "u1250.D",
+    "u1258.D",
+    "u1259.D",
+    "u1260.D",
+    "u1261.D",
+    "u1264.D",
+    "u1383.D",
+    "u1384.D",
+    "u1385.D",
+    "u1626.D",
+    "u1808.D",
+    "u1809.D",
+    "u1810.D",
+    "u2036.D",
+    "u2037.D",
+    "u2039.D",
+    "u2293.D",
+    "u2299.D",
+    "u2301.D",
+    "u2372.D",
+    "u2542.D",
+    "u2574.D",
+    "u2708.D",
+    "u2709.D",
+    "u2710.D",
+    "u4182.D",
+    "u4659.D",
+    "u4661.D",
+    "u4662.D",
+    "u4838.D",
+    "u5337.D",
+    "u5634.D",
+    "u5638.D",
+    "u5639.D",
+    "u6435.D",
+    "u6436.D",
+    "u6442.D",
+    "u6451.D",
+    "u8084.D",
+    "u8085.D",
+    "u8086.D",
+    "u8090.D",
+    "u8091.D",
+    "u8092.D",
+    "u8095.D",
+    "u8199.D",
+    "u8214.D",
+    "u8219.D",
+    "u8429.D",
+    "u8431.D",
+    "u8591.D",
+    "u8602.D",
+    "u8815.D"
+   ]
+  },
+  {
+   "net": "6705",
+   "name": "gctl_4659",
+   "kind": "flop",
+   "source": "4659:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 57,
+   "banks_covered": [
+    "port_register|13|14|True|load_enable",
+    "port_register|13|14|True|set_dominant_sticky",
+    "port_register|9|3|True|load_enable",
+    "port_register|9|3|True|set_dominant_sticky",
+    "port_register|9|4|True|load_enable",
+    "port_register|9|4|True|set_dominant_sticky",
+    "scc2"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 9,
+   "positions_by_group": {
+    "G02": [
+     2,
+     5
+    ],
+    "G04": [
+     3,
+     6
+    ],
+    "G05": [
+     3,
+     5
+    ],
+    "G25": [
+     5
+    ],
+    "G03": [
+     2,
+     6
+    ],
+    "G23": [
+     6
+    ],
+    "G21": [
+     4
+    ],
+    "G55": [
+     7
+    ],
+    "G38": [
+     1
+    ],
+    "G26": [
+     4
+    ],
+    "G53": [
+     7
+    ],
+    "G51": [
+     1
+    ],
+    "G52": [
+     6
+    ],
+    "G49": [
+     5
+    ],
+    "G45": [
+     6
+    ],
+    "G32": [
+     1
+    ],
+    "G07": [
+     4
+    ],
+    "G17": [
+     4
+    ],
+    "G15": [
+     3
+    ],
+    "G18": [
+     2
+    ],
+    "G37": [
+     4
+    ],
+    "G24": [
+     4
+    ],
+    "G34": [
+     2
+    ],
+    "G27": [
+     4
+    ],
+    "G31": [
+     8
+    ],
+    "G22": [
+     7
+    ],
+    "G33": [
+     8
+    ],
+    "G29": [
+     8
+    ],
+    "G40": [
+     2
+    ],
+    "G58": [
+     2
+    ],
+    "G56": [
+     4
+    ],
+    "G59": [
+     5
+    ],
+    "G54": [
+     5
+    ],
+    "G41": [
+     1
+    ],
+    "G44": [
+     6
+    ],
+    "G46": [
+     2
+    ],
+    "G48": [
+     5
+    ],
+    "G50": [
+     4
+    ],
+    "G57": [
+     6
+    ],
+    "G43": [
+     1
+    ],
+    "G42": [
+     9
+    ],
+    "G39": [
+     9
+    ],
+    "G47": [
+     2
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1228.D",
+    "u1229.D",
+    "u1230.D",
+    "u1249.D",
+    "u1250.D",
+    "u1258.D",
+    "u1259.D",
+    "u1260.D",
+    "u1261.D",
+    "u1264.D",
+    "u1383.D",
+    "u1384.D",
+    "u1385.D",
+    "u1626.D",
+    "u1808.D",
+    "u1809.D",
+    "u1810.D",
+    "u2036.D",
+    "u2037.D",
+    "u2039.D",
+    "u2293.D",
+    "u2299.D",
+    "u2301.D",
+    "u2372.D",
+    "u2542.D",
+    "u2574.D",
+    "u2708.D",
+    "u2709.D",
+    "u2710.D",
+    "u4182.D",
+    "u4659.D",
+    "u4661.D",
+    "u4662.D",
+    "u4838.D",
+    "u5337.D",
+    "u5634.D",
+    "u5638.D",
+    "u5639.D",
+    "u6435.D",
+    "u6436.D",
+    "u6442.D",
+    "u6451.D",
+    "u8084.D",
+    "u8085.D",
+    "u8086.D",
+    "u8090.D",
+    "u8091.D",
+    "u8092.D",
+    "u8095.D",
+    "u8199.D",
+    "u8214.D",
+    "u8219.D",
+    "u8429.D",
+    "u8431.D",
+    "u8591.D",
+    "u8602.D",
+    "u8815.D"
+   ]
+  },
+  {
+   "net": "6592",
+   "name": "gctl_4661",
+   "kind": "flop",
+   "source": "4661:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 56,
+   "banks_covered": [
+    "port_register|13|14|True|load_enable",
+    "port_register|13|14|True|set_dominant_sticky",
+    "port_register|9|3|True|load_enable",
+    "port_register|9|3|True|set_dominant_sticky",
+    "port_register|9|4|True|load_enable",
+    "port_register|9|4|True|set_dominant_sticky"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 9,
+   "positions_by_group": {
+    "G02": [
+     1,
+     2,
+     5
+    ],
+    "G04": [
+     2,
+     3,
+     6
+    ],
+    "G05": [
+     2,
+     3,
+     5
+    ],
+    "G25": [
+     1
+    ],
+    "G03": [
+     1,
+     2,
+     6
+    ],
+    "G23": [
+     1
+    ],
+    "G21": [
+     3
+    ],
+    "G55": [
+     3
+    ],
+    "G38": [
+     9
+    ],
+    "G26": [
+     3
+    ],
+    "G53": [
+     3
+    ],
+    "G51": [
+     9
+    ],
+    "G52": [
+     2
+    ],
+    "G49": [
+     4
+    ],
+    "G45": [
+     2
+    ],
+    "G32": [
+     6
+    ],
+    "G17": [
+     5
+    ],
+    "G15": [
+     2
+    ],
+    "G18": [
+     1
+    ],
+    "G37": [
+     2
+    ],
+    "G24": [
+     2
+    ],
+    "G34": [
+     7
+    ],
+    "G27": [
+     2
+    ],
+    "G31": [
+     2
+    ],
+    "G22": [
+     2
+    ],
+    "G33": [
+     1
+    ],
+    "G29": [
+     1
+    ],
+    "G40": [
+     4
+    ],
+    "G58": [
+     9
+    ],
+    "G56": [
+     7
+    ],
+    "G59": [
+     3
+    ],
+    "G54": [
+     4
+    ],
+    "G41": [
+     9
+    ],
+    "G44": [
+     5
+    ],
+    "G46": [
+     9
+    ],
+    "G48": [
+     3
+    ],
+    "G50": [
+     7
+    ],
+    "G57": [
+     5
+    ],
+    "G43": [
+     10
+    ],
+    "G42": [
+     2
+    ],
+    "G39": [
+     2
+    ],
+    "G47": [
+     4
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1228.D",
+    "u1229.D",
+    "u1230.D",
+    "u1249.D",
+    "u1250.D",
+    "u1258.D",
+    "u1259.D",
+    "u1260.D",
+    "u1261.D",
+    "u1264.D",
+    "u1383.D",
+    "u1384.D",
+    "u1385.D",
+    "u1626.D",
+    "u1808.D",
+    "u1809.D",
+    "u1810.D",
+    "u2036.D",
+    "u2037.D",
+    "u2039.D",
+    "u2293.D",
+    "u2299.D",
+    "u2301.D",
+    "u2372.D",
+    "u2542.D",
+    "u2574.D",
+    "u2708.D",
+    "u2709.D",
+    "u2710.D",
+    "u4182.D",
+    "u4661.D",
+    "u4662.D",
+    "u4838.D",
+    "u5337.D",
+    "u5634.D",
+    "u5638.D",
+    "u5639.D",
+    "u6435.D",
+    "u6436.D",
+    "u6442.D",
+    "u6451.D",
+    "u8084.D",
+    "u8085.D",
+    "u8086.D",
+    "u8090.D",
+    "u8091.D",
+    "u8092.D",
+    "u8095.D",
+    "u8199.D",
+    "u8214.D",
+    "u8219.D",
+    "u8429.D",
+    "u8431.D",
+    "u8591.D",
+    "u8602.D",
+    "u8815.D"
+   ]
+  },
+  {
+   "net": "4764",
+   "name": "gctl_6451",
+   "kind": "flop",
+   "source": "6451:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 27,
+   "banks_covered": [
+    "port_register|13|14|True|load_enable",
+    "port_register|13|14|True|set_dominant_sticky"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G55": [
+     4
+    ],
+    "G38": [
+     6
+    ],
+    "G53": [
+     4
+    ],
+    "G51": [
+     6
+    ],
+    "G52": [
+     5
+    ],
+    "G49": [
+     8
+    ],
+    "G45": [
+     5
+    ],
+    "G32": [
+     4
+    ],
+    "G31": [
+     0
+    ],
+    "G22": [
+     0
+    ],
+    "G33": [
+     3
+    ],
+    "G29": [
+     9
+    ],
+    "G40": [
+     6
+    ],
+    "G58": [
+     5
+    ],
+    "G56": [
+     3
+    ],
+    "G59": [
+     6
+    ],
+    "G54": [
+     8
+    ],
+    "G41": [
+     2
+    ],
+    "G44": [
+     2
+    ],
+    "G46": [
+     5
+    ],
+    "G48": [
+     6
+    ],
+    "G50": [
+     3
+    ],
+    "G57": [
+     2
+    ],
+    "G43": [
+     2
+    ],
+    "G42": [
+     7
+    ],
+    "G39": [
+     7
+    ],
+    "G47": [
+     6
+    ]
+   },
+   "position_stable": true,
+   "is_select": true,
+   "is_hold": true,
+   "consumers": [
+    "u2299.D",
+    "u2301.D",
+    "u2542.D",
+    "u2574.D",
+    "u2708.D",
+    "u2709.D",
+    "u2710.D",
+    "u4182.D",
+    "u6435.D",
+    "u6436.D",
+    "u6442.D",
+    "u6451.D",
+    "u8084.D",
+    "u8085.D",
+    "u8086.D",
+    "u8090.D",
+    "u8091.D",
+    "u8092.D",
+    "u8095.D",
+    "u8199.D",
+    "u8214.D",
+    "u8219.D",
+    "u8429.D",
+    "u8431.D",
+    "u8591.D",
+    "u8602.D",
+    "u8815.D"
+   ]
+  },
+  {
+   "net": "8149",
+   "name": "gctl_6442",
+   "kind": "flop",
+   "source": "6442:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 27,
+   "banks_covered": [
+    "port_register|13|14|True|load_enable",
+    "port_register|13|14|True|set_dominant_sticky"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G55": [
+     2
+    ],
+    "G38": [
+     3
+    ],
+    "G53": [
+     2
+    ],
+    "G51": [
+     3
+    ],
+    "G52": [
+     3
+    ],
+    "G49": [
+     7
+    ],
+    "G45": [
+     3
+    ],
+    "G32": [
+     2
+    ],
+    "G31": [
+     4
+    ],
+    "G22": [
+     4
+    ],
+    "G33": [
+     9
+    ],
+    "G29": [
+     4
+    ],
+    "G40": [
+     5
+    ],
+    "G58": [
+     6
+    ],
+    "G56": [
+     6
+    ],
+    "G59": [
+     8
+    ],
+    "G54": [
+     7
+    ],
+    "G41": [
+     7
+    ],
+    "G44": [
+     4
+    ],
+    "G46": [
+     6
+    ],
+    "G48": [
+     8
+    ],
+    "G50": [
+     6
+    ],
+    "G57": [
+     4
+    ],
+    "G43": [
+     7
+    ],
+    "G42": [
+     5
+    ],
+    "G39": [
+     5
+    ],
+    "G47": [
+     5
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u2299.D",
+    "u2301.D",
+    "u2542.D",
+    "u2574.D",
+    "u2708.D",
+    "u2709.D",
+    "u2710.D",
+    "u4182.D",
+    "u6435.D",
+    "u6436.D",
+    "u6442.D",
+    "u6451.D",
+    "u8084.D",
+    "u8085.D",
+    "u8086.D",
+    "u8090.D",
+    "u8091.D",
+    "u8092.D",
+    "u8095.D",
+    "u8199.D",
+    "u8214.D",
+    "u8219.D",
+    "u8429.D",
+    "u8431.D",
+    "u8591.D",
+    "u8602.D",
+    "u8815.D"
+   ]
+  },
+  {
+   "net": "8220",
+   "name": "gctl_6436",
+   "kind": "flop",
+   "source": "6436:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 27,
+   "banks_covered": [
+    "port_register|13|14|True|load_enable",
+    "port_register|13|14|True|set_dominant_sticky"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G55": [
+     1
+    ],
+    "G38": [
+     7
+    ],
+    "G53": [
+     1
+    ],
+    "G51": [
+     7
+    ],
+    "G52": [
+     4
+    ],
+    "G49": [
+     3
+    ],
+    "G45": [
+     4
+    ],
+    "G32": [
+     3
+    ],
+    "G31": [
+     5
+    ],
+    "G22": [
+     8
+    ],
+    "G33": [
+     5
+    ],
+    "G29": [
+     5
+    ],
+    "G40": [
+     7
+    ],
+    "G58": [
+     4
+    ],
+    "G56": [
+     2
+    ],
+    "G59": [
+     2
+    ],
+    "G54": [
+     3
+    ],
+    "G41": [
+     6
+    ],
+    "G44": [
+     1
+    ],
+    "G46": [
+     4
+    ],
+    "G48": [
+     2
+    ],
+    "G50": [
+     2
+    ],
+    "G57": [
+     1
+    ],
+    "G43": [
+     6
+    ],
+    "G42": [
+     6
+    ],
+    "G39": [
+     6
+    ],
+    "G47": [
+     7
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u2299.D",
+    "u2301.D",
+    "u2542.D",
+    "u2574.D",
+    "u2708.D",
+    "u2709.D",
+    "u2710.D",
+    "u4182.D",
+    "u6435.D",
+    "u6436.D",
+    "u6442.D",
+    "u6451.D",
+    "u8084.D",
+    "u8085.D",
+    "u8086.D",
+    "u8090.D",
+    "u8091.D",
+    "u8092.D",
+    "u8095.D",
+    "u8199.D",
+    "u8214.D",
+    "u8219.D",
+    "u8429.D",
+    "u8431.D",
+    "u8591.D",
+    "u8602.D",
+    "u8815.D"
+   ]
+  },
+  {
+   "net": "8184",
+   "name": "gctl_6435",
+   "kind": "flop",
+   "source": "6435:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 26,
+   "banks_covered": [
+    "port_register|13|14|True|load_enable",
+    "port_register|13|14|True|set_dominant_sticky"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G55": [
+     5
+    ],
+    "G38": [
+     2
+    ],
+    "G53": [
+     5
+    ],
+    "G51": [
+     2
+    ],
+    "G52": [
+     1
+    ],
+    "G49": [
+     2
+    ],
+    "G45": [
+     1
+    ],
+    "G32": [
+     8
+    ],
+    "G31": [
+     9
+    ],
+    "G33": [
+     4
+    ],
+    "G29": [
+     3
+    ],
+    "G40": [
+     8
+    ],
+    "G58": [
+     3
+    ],
+    "G56": [
+     1
+    ],
+    "G59": [
+     1
+    ],
+    "G54": [
+     2
+    ],
+    "G41": [
+     5
+    ],
+    "G44": [
+     7
+    ],
+    "G46": [
+     3
+    ],
+    "G48": [
+     1
+    ],
+    "G50": [
+     1
+    ],
+    "G57": [
+     7
+    ],
+    "G43": [
+     5
+    ],
+    "G42": [
+     1
+    ],
+    "G39": [
+     1
+    ],
+    "G47": [
+     8
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u2299.D",
+    "u2301.D",
+    "u2542.D",
+    "u2574.D",
+    "u2708.D",
+    "u2709.D",
+    "u2710.D",
+    "u4182.D",
+    "u6435.D",
+    "u6442.D",
+    "u6451.D",
+    "u8084.D",
+    "u8085.D",
+    "u8086.D",
+    "u8090.D",
+    "u8091.D",
+    "u8092.D",
+    "u8095.D",
+    "u8199.D",
+    "u8214.D",
+    "u8219.D",
+    "u8429.D",
+    "u8431.D",
+    "u8591.D",
+    "u8602.D",
+    "u8815.D"
+   ]
+  },
+  {
+   "net": "6254",
+   "name": "gctl_226",
+   "kind": "flop",
+   "source": "226:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 23,
+   "banks_covered": [
+    "output_driver|16|8|False|clear_dominant",
+    "scc0",
+    "scc1"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 5,
+   "positions_by_group": {
+    "G09": [
+     0
+    ],
+    "G13": [
+     4
+    ],
+    "G14": [
+     4
+    ],
+    "G12": [
+     4
+    ],
+    "G11": [
+     4
+    ],
+    "G36": [
+     1
+    ],
+    "G60": [
+     1
+    ],
+    "G06": [
+     1
+    ],
+    "G61": [
+     1
+    ],
+    "G62": [
+     0
+    ],
+    "G66": [
+     15
+    ],
+    "G67": [
+     15
+    ],
+    "G69": [
+     15
+    ],
+    "G63": [
+     15
+    ],
+    "G64": [
+     15
+    ],
+    "G68": [
+     14
+    ],
+    "G70": [
+     15
+    ],
+    "G65": [
+     15
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "port:O[0]",
+    "port:O[1]",
+    "port:O[2]",
+    "port:O[3]",
+    "port:O[4]",
+    "port:O[5]",
+    "port:O[6]",
+    "port:O[7]",
+    "u226.D",
+    "u227.D",
+    "u228.D",
+    "u234.D",
+    "u235.D",
+    "u236.D",
+    "u237.D",
+    "u2944.D",
+    "u2946.D",
+    "u2947.D",
+    "u2948.D",
+    "u2957.D",
+    "u2958.D",
+    "u2959.D",
+    "u2960.D"
+   ]
+  },
+  {
+   "net": "6197",
+   "name": "gctl_237",
+   "kind": "flop",
+   "source": "237:sky130_fd_sc_hd__dfxtp_2",
+   "role": "shared_control",
+   "fanout": 20,
+   "banks_covered": [
+    "output_driver|16|8|False|clear_dominant",
+    "scc0",
+    "scc1"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G13": [
+     0
+    ],
+    "G14": [
+     1
+    ],
+    "G12": [
+     0
+    ],
+    "G11": [
+     3
+    ],
+    "G36": [
+     5
+    ],
+    "G60": [
+     7
+    ],
+    "G06": [
+     5
+    ],
+    "G61": [
+     8
+    ],
+    "G62": [
+     9
+    ],
+    "G66": [
+     1
+    ],
+    "G67": [
+     0
+    ],
+    "G69": [
+     1
+    ],
+    "G63": [
+     2
+    ],
+    "G64": [
+     0
+    ],
+    "G68": [
+     3
+    ],
+    "G70": [
+     1
+    ],
+    "G65": [
+     0
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": false,
+   "consumers": [
+    "port:O[0]",
+    "port:O[1]",
+    "port:O[2]",
+    "port:O[3]",
+    "port:O[4]",
+    "port:O[5]",
+    "port:O[6]",
+    "port:O[7]",
+    "u234.D",
+    "u235.D",
+    "u236.D",
+    "u237.D",
+    "u2944.D",
+    "u2946.D",
+    "u2947.D",
+    "u2948.D",
+    "u2957.D",
+    "u2958.D",
+    "u2959.D",
+    "u2960.D"
+   ]
+  },
+  {
+   "net": "6245",
+   "name": "gctl_234",
+   "kind": "flop",
+   "source": "234:sky130_fd_sc_hd__dfxtp_2",
+   "role": "shared_control",
+   "fanout": 20,
+   "banks_covered": [
+    "output_driver|16|8|False|clear_dominant",
+    "scc0",
+    "scc1"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G13": [
+     3
+    ],
+    "G14": [
+     2
+    ],
+    "G12": [
+     1
+    ],
+    "G11": [
+     0
+    ],
+    "G36": [
+     6
+    ],
+    "G60": [
+     8
+    ],
+    "G06": [
+     6
+    ],
+    "G61": [
+     9
+    ],
+    "G62": [
+     10
+    ],
+    "G66": [
+     2
+    ],
+    "G67": [
+     3
+    ],
+    "G69": [
+     2
+    ],
+    "G63": [
+     0
+    ],
+    "G64": [
+     1
+    ],
+    "G68": [
+     2
+    ],
+    "G70": [
+     2
+    ],
+    "G65": [
+     3
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": false,
+   "consumers": [
+    "port:O[0]",
+    "port:O[1]",
+    "port:O[2]",
+    "port:O[3]",
+    "port:O[4]",
+    "port:O[5]",
+    "port:O[6]",
+    "port:O[7]",
+    "u234.D",
+    "u235.D",
+    "u236.D",
+    "u237.D",
+    "u2944.D",
+    "u2946.D",
+    "u2947.D",
+    "u2948.D",
+    "u2957.D",
+    "u2958.D",
+    "u2959.D",
+    "u2960.D"
+   ]
+  },
+  {
+   "net": "6335",
+   "name": "gctl_235",
+   "kind": "flop",
+   "source": "235:sky130_fd_sc_hd__dfxtp_2",
+   "role": "shared_control",
+   "fanout": 20,
+   "banks_covered": [
+    "output_driver|16|8|False|clear_dominant",
+    "scc0",
+    "scc1"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G13": [
+     1
+    ],
+    "G14": [
+     0
+    ],
+    "G12": [
+     2
+    ],
+    "G11": [
+     1
+    ],
+    "G36": [
+     7
+    ],
+    "G60": [
+     9
+    ],
+    "G06": [
+     7
+    ],
+    "G61": [
+     10
+    ],
+    "G62": [
+     11
+    ],
+    "G66": [
+     3
+    ],
+    "G67": [
+     2
+    ],
+    "G69": [
+     12
+    ],
+    "G63": [
+     1
+    ],
+    "G64": [
+     13
+    ],
+    "G68": [
+     4
+    ],
+    "G70": [
+     9
+    ],
+    "G65": [
+     1
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": false,
+   "consumers": [
+    "port:O[0]",
+    "port:O[1]",
+    "port:O[2]",
+    "port:O[3]",
+    "port:O[4]",
+    "port:O[5]",
+    "port:O[6]",
+    "port:O[7]",
+    "u234.D",
+    "u235.D",
+    "u236.D",
+    "u237.D",
+    "u2944.D",
+    "u2946.D",
+    "u2947.D",
+    "u2948.D",
+    "u2957.D",
+    "u2958.D",
+    "u2959.D",
+    "u2960.D"
+   ]
+  },
+  {
+   "net": "7691",
+   "name": "gctl_236",
+   "kind": "flop",
+   "source": "236:sky130_fd_sc_hd__dfxtp_2",
+   "role": "shared_control",
+   "fanout": 20,
+   "banks_covered": [
+    "output_driver|16|8|False|clear_dominant",
+    "scc0",
+    "scc1"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G13": [
+     2
+    ],
+    "G14": [
+     3
+    ],
+    "G12": [
+     3
+    ],
+    "G11": [
+     2
+    ],
+    "G36": [
+     8
+    ],
+    "G60": [
+     10
+    ],
+    "G06": [
+     8
+    ],
+    "G61": [
+     11
+    ],
+    "G62": [
+     12
+    ],
+    "G66": [
+     0
+    ],
+    "G67": [
+     1
+    ],
+    "G69": [
+     0
+    ],
+    "G63": [
+     3
+    ],
+    "G64": [
+     12
+    ],
+    "G68": [
+     0
+    ],
+    "G70": [
+     8
+    ],
+    "G65": [
+     2
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": false,
+   "consumers": [
+    "port:O[0]",
+    "port:O[1]",
+    "port:O[2]",
+    "port:O[3]",
+    "port:O[4]",
+    "port:O[5]",
+    "port:O[6]",
+    "port:O[7]",
+    "u234.D",
+    "u235.D",
+    "u236.D",
+    "u237.D",
+    "u2944.D",
+    "u2946.D",
+    "u2947.D",
+    "u2948.D",
+    "u2957.D",
+    "u2958.D",
+    "u2959.D",
+    "u2960.D"
+   ]
+  },
+  {
+   "net": "7458",
+   "name": "gctl_6111",
+   "kind": "flop",
+   "source": "6111:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 18,
+   "banks_covered": [
+    "output_driver|16|8|False|clear_dominant"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 10,
+   "positions_by_group": {
+    "G19": [
+     3
+    ],
+    "G16": [
+     3
+    ],
+    "G07": [
+     3
+    ],
+    "G10": [
+     3
+    ],
+    "G35": [
+     3
+    ],
+    "G28": [
+     2
+    ],
+    "G20": [
+     3
+    ],
+    "G30": [
+     3
+    ],
+    "G66": [
+     5
+    ],
+    "G67": [
+     6
+    ],
+    "G69": [
+     4
+    ],
+    "G63": [
+     6
+    ],
+    "G64": [
+     4
+    ],
+    "G68": [
+     6
+    ],
+    "G70": [
+     4
+    ],
+    "G65": [
+     7
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "port:O[0]",
+    "port:O[1]",
+    "port:O[2]",
+    "port:O[3]",
+    "port:O[4]",
+    "port:O[5]",
+    "port:O[6]",
+    "port:O[7]",
+    "u227.D",
+    "u228.D",
+    "u6095.D",
+    "u6106.D",
+    "u6109.D",
+    "u6111.D",
+    "u6159.D",
+    "u6197.D",
+    "u6198.D",
+    "u6199.D"
+   ]
+  },
+  {
+   "net": "7501",
+   "name": "gctl_6109",
+   "kind": "flop",
+   "source": "6109:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 17,
+   "banks_covered": [
+    "output_driver|16|8|False|clear_dominant"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 9,
+   "positions_by_group": {
+    "G19": [
+     4
+    ],
+    "G16": [
+     4
+    ],
+    "G07": [
+     4
+    ],
+    "G35": [
+     4
+    ],
+    "G28": [
+     3
+    ],
+    "G20": [
+     4
+    ],
+    "G30": [
+     4
+    ],
+    "G66": [
+     9
+    ],
+    "G67": [
+     10
+    ],
+    "G69": [
+     8
+    ],
+    "G63": [
+     10
+    ],
+    "G64": [
+     8
+    ],
+    "G68": [
+     11
+    ],
+    "G70": [
+     10
+    ],
+    "G65": [
+     11
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "port:O[0]",
+    "port:O[1]",
+    "port:O[2]",
+    "port:O[3]",
+    "port:O[4]",
+    "port:O[5]",
+    "port:O[6]",
+    "port:O[7]",
+    "u227.D",
+    "u228.D",
+    "u6095.D",
+    "u6106.D",
+    "u6109.D",
+    "u6159.D",
+    "u6197.D",
+    "u6198.D",
+    "u6199.D"
+   ]
+  },
+  {
+   "net": "7509",
+   "name": "gctl_6106",
+   "kind": "flop",
+   "source": "6106:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 16,
+   "banks_covered": [
+    "output_driver|16|8|False|clear_dominant"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 8,
+   "positions_by_group": {
+    "G19": [
+     5
+    ],
+    "G16": [
+     5
+    ],
+    "G35": [
+     5
+    ],
+    "G28": [
+     4
+    ],
+    "G20": [
+     5
+    ],
+    "G30": [
+     5
+    ],
+    "G66": [
+     10
+    ],
+    "G67": [
+     11
+    ],
+    "G69": [
+     9
+    ],
+    "G63": [
+     11
+    ],
+    "G64": [
+     9
+    ],
+    "G68": [
+     12
+    ],
+    "G70": [
+     11
+    ],
+    "G65": [
+     12
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "port:O[0]",
+    "port:O[1]",
+    "port:O[2]",
+    "port:O[3]",
+    "port:O[4]",
+    "port:O[5]",
+    "port:O[6]",
+    "port:O[7]",
+    "u227.D",
+    "u228.D",
+    "u6095.D",
+    "u6106.D",
+    "u6159.D",
+    "u6197.D",
+    "u6198.D",
+    "u6199.D"
+   ]
+  },
+  {
+   "net": "7520",
+   "name": "gctl_6095",
+   "kind": "flop",
+   "source": "6095:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 15,
+   "banks_covered": [
+    "output_driver|16|8|False|clear_dominant"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 7,
+   "positions_by_group": {
+    "G19": [
+     6
+    ],
+    "G35": [
+     6
+    ],
+    "G28": [
+     5
+    ],
+    "G20": [
+     6
+    ],
+    "G30": [
+     6
+    ],
+    "G66": [
+     6
+    ],
+    "G67": [
+     7
+    ],
+    "G69": [
+     5
+    ],
+    "G63": [
+     7
+    ],
+    "G64": [
+     5
+    ],
+    "G68": [
+     7
+    ],
+    "G70": [
+     5
+    ],
+    "G65": [
+     8
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "port:O[0]",
+    "port:O[1]",
+    "port:O[2]",
+    "port:O[3]",
+    "port:O[4]",
+    "port:O[5]",
+    "port:O[6]",
+    "port:O[7]",
+    "u227.D",
+    "u228.D",
+    "u6095.D",
+    "u6159.D",
+    "u6197.D",
+    "u6198.D",
+    "u6199.D"
+   ]
+  },
+  {
+   "net": "7522",
+   "name": "gctl_6198",
+   "kind": "flop",
+   "source": "6198:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 14,
+   "banks_covered": [
+    "output_driver|16|8|False|clear_dominant"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 6,
+   "positions_by_group": {
+    "G35": [
+     7
+    ],
+    "G28": [
+     6
+    ],
+    "G20": [
+     7
+    ],
+    "G30": [
+     7
+    ],
+    "G66": [
+     7
+    ],
+    "G67": [
+     8
+    ],
+    "G69": [
+     6
+    ],
+    "G63": [
+     8
+    ],
+    "G64": [
+     6
+    ],
+    "G68": [
+     8
+    ],
+    "G70": [
+     6
+    ],
+    "G65": [
+     9
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "port:O[0]",
+    "port:O[1]",
+    "port:O[2]",
+    "port:O[3]",
+    "port:O[4]",
+    "port:O[5]",
+    "port:O[6]",
+    "port:O[7]",
+    "u227.D",
+    "u228.D",
+    "u6159.D",
+    "u6197.D",
+    "u6198.D",
+    "u6199.D"
+   ]
+  },
+  {
+   "net": "7451",
+   "name": "gctl_6197",
+   "kind": "flop",
+   "source": "6197:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 13,
+   "banks_covered": [
+    "output_driver|16|8|False|clear_dominant"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 5,
+   "positions_by_group": {
+    "G35": [
+     2
+    ],
+    "G28": [
+     8
+    ],
+    "G30": [
+     2
+    ],
+    "G66": [
+     4
+    ],
+    "G67": [
+     5
+    ],
+    "G69": [
+     3
+    ],
+    "G63": [
+     5
+    ],
+    "G64": [
+     3
+    ],
+    "G68": [
+     5
+    ],
+    "G70": [
+     3
+    ],
+    "G65": [
+     6
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "port:O[0]",
+    "port:O[1]",
+    "port:O[2]",
+    "port:O[3]",
+    "port:O[4]",
+    "port:O[5]",
+    "port:O[6]",
+    "port:O[7]",
+    "u227.D",
+    "u228.D",
+    "u6159.D",
+    "u6197.D",
+    "u6199.D"
+   ]
+  },
+  {
+   "net": "7532",
+   "name": "gctl_6199",
+   "kind": "flop",
+   "source": "6199:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 12,
+   "banks_covered": [
+    "output_driver|16|8|False|clear_dominant"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 4,
+   "positions_by_group": {
+    "G35": [
+     8
+    ],
+    "G30": [
+     9
+    ],
+    "G66": [
+     8
+    ],
+    "G67": [
+     9
+    ],
+    "G69": [
+     7
+    ],
+    "G63": [
+     9
+    ],
+    "G64": [
+     7
+    ],
+    "G68": [
+     9
+    ],
+    "G70": [
+     7
+    ],
+    "G65": [
+     10
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "port:O[0]",
+    "port:O[1]",
+    "port:O[2]",
+    "port:O[3]",
+    "port:O[4]",
+    "port:O[5]",
+    "port:O[6]",
+    "port:O[7]",
+    "u227.D",
+    "u228.D",
+    "u6159.D",
+    "u6199.D"
+   ]
+  },
+  {
+   "net": "7535",
+   "name": "gctl_6159",
+   "kind": "flop",
+   "source": "6159:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 11,
+   "banks_covered": [
+    "output_driver|16|8|False|clear_dominant"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G35": [
+     10
+    ],
+    "G66": [
+     11
+    ],
+    "G67": [
+     12
+    ],
+    "G69": [
+     10
+    ],
+    "G63": [
+     12
+    ],
+    "G64": [
+     10
+    ],
+    "G68": [
+     13
+    ],
+    "G70": [
+     12
+    ],
+    "G65": [
+     13
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "port:O[0]",
+    "port:O[1]",
+    "port:O[2]",
+    "port:O[3]",
+    "port:O[4]",
+    "port:O[5]",
+    "port:O[6]",
+    "port:O[7]",
+    "u227.D",
+    "u228.D",
+    "u6159.D"
+   ]
+  },
+  {
+   "net": "6398",
+   "name": "gctl_228",
+   "kind": "flop",
+   "source": "228:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 10,
+   "banks_covered": [
+    "output_driver|16|8|False|clear_dominant"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G66": [
+     13
+    ],
+    "G67": [
+     14
+    ],
+    "G69": [
+     14
+    ],
+    "G63": [
+     14
+    ],
+    "G64": [
+     14
+    ],
+    "G68": [
+     15
+    ],
+    "G70": [
+     14
+    ],
+    "G08": [
+     0
+    ],
+    "G65": [
+     4
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": false,
+   "consumers": [
+    "port:O[0]",
+    "port:O[1]",
+    "port:O[2]",
+    "port:O[3]",
+    "port:O[4]",
+    "port:O[5]",
+    "port:O[6]",
+    "port:O[7]",
+    "port:success",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6239",
+   "name": "gctl_227",
+   "kind": "flop",
+   "source": "227:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 9,
+   "banks_covered": [
+    "output_driver|16|8|False|clear_dominant"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G66": [
+     14
+    ],
+    "G67": [
+     13
+    ],
+    "G69": [
+     13
+    ],
+    "G63": [
+     13
+    ],
+    "G64": [
+     11
+    ],
+    "G68": [
+     10
+    ],
+    "G70": [
+     13
+    ],
+    "G65": [
+     14
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": false,
+   "consumers": [
+    "port:O[0]",
+    "port:O[1]",
+    "port:O[2]",
+    "port:O[3]",
+    "port:O[4]",
+    "port:O[5]",
+    "port:O[6]",
+    "port:O[7]",
+    "u227.D"
+   ]
+  },
+  {
+   "net": "6790",
+   "name": "gctl_2946",
+   "kind": "flop",
+   "source": "2946:sky130_fd_sc_hd__dfrtp_2",
+   "role": "shared_control",
+   "fanout": 9,
+   "banks_covered": [
+    "scc0"
+   ],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G36": [
+     3
+    ],
+    "G60": [
+     13
+    ],
+    "G06": [
+     2,
+     3,
+     10
+    ],
+    "G61": [
+     2
+    ],
+    "G62": [
+     3
+    ],
+    "G67": [
+     4
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": false,
+   "consumers": [
+    "port:O[3]",
+    "u2944.D",
+    "u2946.D",
+    "u2947.D",
+    "u2948.D",
+    "u2957.D",
+    "u2958.D",
+    "u2959.D",
+    "u2960.D"
+   ]
+  },
+  {
+   "net": "6791",
+   "name": "d_2948",
+   "kind": "flop",
+   "source": "2948:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 8,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G60": [
+     3
+    ],
+    "G06": [
+     3,
+     4,
+     10,
+     11
+    ],
+    "G61": [
+     3
+    ],
+    "G62": [
+     4
+    ],
+    "G63": [
+     4
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": false,
+   "consumers": [
+    "port:O[4]",
+    "u2946.D",
+    "u2947.D",
+    "u2948.D",
+    "u2957.D",
+    "u2958.D",
+    "u2959.D",
+    "u2960.D"
+   ]
+  },
+  {
+   "net": "6671",
+   "name": "d_2957",
+   "kind": "flop",
+   "source": "2957:sky130_fd_sc_hd__dfstp_2",
+   "role": "data",
+   "fanout": 7,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G60": [
+     12
+    ],
+    "G06": [
+     2
+    ],
+    "G61": [
+     14
+    ],
+    "G62": [
+     7
+    ],
+    "G66": [
+     12
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": false,
+   "consumers": [
+    "port:O[2]",
+    "u2946.D",
+    "u2947.D",
+    "u2948.D",
+    "u2957.D",
+    "u2958.D",
+    "u2959.D"
+   ]
+  },
+  {
+   "net": "6882",
+   "name": "d_2958",
+   "kind": "flop",
+   "source": "2958:sky130_fd_sc_hd__dfstp_2",
+   "role": "data",
+   "fanout": 7,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G60": [
+     6
+    ],
+    "G06": [
+     4,
+     10,
+     11
+    ],
+    "G61": [
+     7
+    ],
+    "G62": [
+     8
+    ],
+    "G64": [
+     2
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": false,
+   "consumers": [
+    "port:O[5]",
+    "u2946.D",
+    "u2947.D",
+    "u2957.D",
+    "u2958.D",
+    "u2959.D",
+    "u2960.D"
+   ]
+  },
+  {
+   "net": "2987",
+   "name": "d_2947",
+   "kind": "flop",
+   "source": "2947:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 6,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G36": [
+     2
+    ],
+    "G06": [
+     10,
+     11
+    ],
+    "G61": [
+     4
+    ],
+    "G62": [
+     6
+    ],
+    "G65": [
+     5
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": false,
+   "consumers": [
+    "port:O[6]",
+    "u2944.D",
+    "u2947.D",
+    "u2957.D",
+    "u2959.D",
+    "u2960.D"
+   ]
+  },
+  {
+   "net": "6788",
+   "name": "d_2959",
+   "kind": "flop",
+   "source": "2959:sky130_fd_sc_hd__dfstp_2",
+   "role": "data",
+   "fanout": 6,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G36": [
+     10
+    ],
+    "G60": [
+     2
+    ],
+    "G06": [
+     3
+    ],
+    "G61": [
+     5
+    ],
+    "G62": [
+     14
+    ],
+    "G70": [
+     0
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": false,
+   "consumers": [
+    "port:O[0]",
+    "u2944.D",
+    "u2946.D",
+    "u2948.D",
+    "u2957.D",
+    "u2959.D"
+   ]
+  },
+  {
+   "net": "6795",
+   "name": "d_2960",
+   "kind": "flop",
+   "source": "2960:sky130_fd_sc_hd__dfstp_2",
+   "role": "data",
+   "fanout": 6,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G36": [
+     4
+    ],
+    "G60": [
+     4
+    ],
+    "G61": [
+     6
+    ],
+    "G62": [
+     5
+    ],
+    "G06": [
+     11
+    ],
+    "G68": [
+     1
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": false,
+   "consumers": [
+    "port:O[7]",
+    "u2944.D",
+    "u2946.D",
+    "u2957.D",
+    "u2959.D",
+    "u2960.D"
+   ]
+  },
+  {
+   "net": "6842",
+   "name": "d_2944",
+   "kind": "flop",
+   "source": "2944:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 6,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G36": [
+     11
+    ],
+    "G60": [
+     5
+    ],
+    "G06": [
+     4
+    ],
+    "G61": [
+     13
+    ],
+    "G69": [
+     11
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": false,
+   "consumers": [
+    "port:O[1]",
+    "u2944.D",
+    "u2946.D",
+    "u2948.D",
+    "u2957.D",
+    "u2958.D"
+   ]
+  },
+  {
+   "net": "6550",
+   "name": "d_1808",
+   "kind": "flop",
+   "source": "1808:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G02": [
+     7
+    ],
+    "G03": [
+     8
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1228.D",
+    "u1808.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6563",
+   "name": "d_1228",
+   "kind": "flop",
+   "source": "1228:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G02": [
+     8
+    ],
+    "G03": [
+     5
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1228.D",
+    "u1808.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6603",
+   "name": "d_1229",
+   "kind": "flop",
+   "source": "1229:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G04": [
+     8
+    ],
+    "G05": [
+     7
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1229.D",
+    "u1809.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6638",
+   "name": "d_1809",
+   "kind": "flop",
+   "source": "1809:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G04": [
+     5
+    ],
+    "G05": [
+     8
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1229.D",
+    "u1809.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6422",
+   "name": "d_1230",
+   "kind": "flop",
+   "source": "1230:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G02": [
+     8
+    ],
+    "G03": [
+     4
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1230.D",
+    "u1810.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6569",
+   "name": "d_1810",
+   "kind": "flop",
+   "source": "1810:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G02": [
+     7
+    ],
+    "G03": [
+     8
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1230.D",
+    "u1810.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "23154",
+   "name": "d_2037",
+   "kind": "flop",
+   "source": "2037:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G04": [
+     4
+    ],
+    "G05": [
+     8
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1249.D",
+    "u2037.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6754",
+   "name": "d_1249",
+   "kind": "flop",
+   "source": "1249:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G04": [
+     8
+    ],
+    "G05": [
+     7
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1249.D",
+    "u2037.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6747",
+   "name": "d_1250",
+   "kind": "flop",
+   "source": "1250:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G05": [
+     8
+    ],
+    "G04": [
+     6
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1250.D",
+    "u2039.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6749",
+   "name": "d_2039",
+   "kind": "flop",
+   "source": "2039:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G05": [
+     7
+    ],
+    "G04": [
+     8
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1250.D",
+    "u2039.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "2035",
+   "name": "d_1258",
+   "kind": "flop",
+   "source": "1258:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G25": [
+     8
+    ],
+    "G23": [
+     2
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1258.D",
+    "u1626.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6523",
+   "name": "d_1626",
+   "kind": "flop",
+   "source": "1626:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G25": [
+     7
+    ],
+    "G23": [
+     8
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1258.D",
+    "u1626.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6452",
+   "name": "d_1259",
+   "kind": "flop",
+   "source": "1259:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G02": [
+     8
+    ],
+    "G03": [
+     4
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1259.D",
+    "u1383.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6477",
+   "name": "d_1383",
+   "kind": "flop",
+   "source": "1383:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G02": [
+     7
+    ],
+    "G03": [
+     8
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1259.D",
+    "u1383.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6145",
+   "name": "d_1385",
+   "kind": "flop",
+   "source": "1385:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G02": [
+     7
+    ],
+    "G03": [
+     8
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1260.D",
+    "u1385.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6457",
+   "name": "d_1260",
+   "kind": "flop",
+   "source": "1260:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G02": [
+     8
+    ],
+    "G03": [
+     4
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1260.D",
+    "u1385.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6510",
+   "name": "d_1261",
+   "kind": "flop",
+   "source": "1261:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G05": [
+     8
+    ],
+    "G04": [
+     5
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1261.D",
+    "u1384.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6513",
+   "name": "d_1384",
+   "kind": "flop",
+   "source": "1384:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G05": [
+     7
+    ],
+    "G04": [
+     8
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1261.D",
+    "u1384.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6634",
+   "name": "d_1264",
+   "kind": "flop",
+   "source": "1264:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G02": [
+     8
+    ],
+    "G03": [
+     6
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1264.D",
+    "u2036.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "6636",
+   "name": "d_2036",
+   "kind": "flop",
+   "source": "2036:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G02": [
+     7
+    ],
+    "G03": [
+     8
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u1264.D",
+    "u2036.D",
+    "u227.D",
+    "u228.D"
+   ]
+  },
+  {
+   "net": "4282",
+   "name": "d_8092",
+   "kind": "flop",
+   "source": "8092:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G41": [
+     12
+    ],
+    "G43": [
+     8
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u8092.D",
+    "u8431.D"
+   ]
+  },
+  {
+   "net": "4356",
+   "name": "d_8431",
+   "kind": "flop",
+   "source": "8431:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G41": [
+     11
+    ],
+    "G43": [
+     12
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u8092.D",
+    "u8431.D"
+   ]
+  },
+  {
+   "net": "6185",
+   "name": "d_2301",
+   "kind": "flop",
+   "source": "2301:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G38": [
+     12
+    ],
+    "G51": [
+     11
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u2301.D",
+    "u2574.D"
+   ]
+  },
+  {
+   "net": "6698",
+   "name": "d_2293",
+   "kind": "flop",
+   "source": "2293:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G21": [
+     8
+    ],
+    "G26": [
+     6
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u2293.D",
+    "u2372.D"
+   ]
+  },
+  {
+   "net": "6732",
+   "name": "d_2372",
+   "kind": "flop",
+   "source": "2372:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G21": [
+     7
+    ],
+    "G26": [
+     8
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u2293.D",
+    "u2372.D"
+   ]
+  },
+  {
+   "net": "7572",
+   "name": "d_8429",
+   "kind": "flop",
+   "source": "8429:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G44": [
+     11
+    ],
+    "G57": [
+     12
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u8095.D",
+    "u8429.D"
+   ]
+  },
+  {
+   "net": "7735",
+   "name": "d_2710",
+   "kind": "flop",
+   "source": "2710:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G52": [
+     11
+    ],
+    "G45": [
+     12
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u2708.D",
+    "u2710.D"
+   ]
+  },
+  {
+   "net": "7736",
+   "name": "d_2542",
+   "kind": "flop",
+   "source": "2542:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G55": [
+     11
+    ],
+    "G53": [
+     12
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u2299.D",
+    "u2542.D"
+   ]
+  },
+  {
+   "net": "7738",
+   "name": "d_2299",
+   "kind": "flop",
+   "source": "2299:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G55": [
+     12
+    ],
+    "G53": [
+     11
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u2299.D",
+    "u2542.D"
+   ]
+  },
+  {
+   "net": "7740",
+   "name": "d_2574",
+   "kind": "flop",
+   "source": "2574:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G38": [
+     11
+    ],
+    "G51": [
+     12
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u2301.D",
+    "u2574.D"
+   ]
+  },
+  {
+   "net": "7771",
+   "name": "d_2709",
+   "kind": "flop",
+   "source": "2709:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G49": [
+     12
+    ],
+    "G54": [
+     11
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u2709.D",
+    "u8091.D"
+   ]
+  },
+  {
+   "net": "7784",
+   "name": "d_8091",
+   "kind": "flop",
+   "source": "8091:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G49": [
+     11
+    ],
+    "G54": [
+     12
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u2709.D",
+    "u8091.D"
+   ]
+  },
+  {
+   "net": "7788",
+   "name": "d_2708",
+   "kind": "flop",
+   "source": "2708:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G52": [
+     12
+    ],
+    "G45": [
+     11
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u2708.D",
+    "u2710.D"
+   ]
+  },
+  {
+   "net": "7870",
+   "name": "d_8199",
+   "kind": "flop",
+   "source": "8199:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G58": [
+     11
+    ],
+    "G46": [
+     12
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u8085.D",
+    "u8199.D"
+   ]
+  },
+  {
+   "net": "7873",
+   "name": "d_8085",
+   "kind": "flop",
+   "source": "8085:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G58": [
+     12
+    ],
+    "G46": [
+     11
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u8085.D",
+    "u8199.D"
+   ]
+  },
+  {
+   "net": "7886",
+   "name": "d_8214",
+   "kind": "flop",
+   "source": "8214:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G59": [
+     11
+    ],
+    "G48": [
+     12
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u8090.D",
+    "u8214.D"
+   ]
+  },
+  {
+   "net": "7892",
+   "name": "d_8090",
+   "kind": "flop",
+   "source": "8090:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G59": [
+     12
+    ],
+    "G48": [
+     11
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u8090.D",
+    "u8214.D"
+   ]
+  },
+  {
+   "net": "7895",
+   "name": "d_8219",
+   "kind": "flop",
+   "source": "8219:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G56": [
+     11
+    ],
+    "G50": [
+     12
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u8086.D",
+    "u8219.D"
+   ]
+  },
+  {
+   "net": "7896",
+   "name": "d_8086",
+   "kind": "flop",
+   "source": "8086:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G56": [
+     12
+    ],
+    "G50": [
+     11
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u8086.D",
+    "u8219.D"
+   ]
+  },
+  {
+   "net": "7961",
+   "name": "d_8084",
+   "kind": "flop",
+   "source": "8084:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G40": [
+     12
+    ],
+    "G47": [
+     11
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u8084.D",
+    "u8815.D"
+   ]
+  },
+  {
+   "net": "7970",
+   "name": "d_8602",
+   "kind": "flop",
+   "source": "8602:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G42": [
+     11
+    ],
+    "G39": [
+     12
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u8591.D",
+    "u8602.D"
+   ]
+  },
+  {
+   "net": "7973",
+   "name": "d_8591",
+   "kind": "flop",
+   "source": "8591:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G42": [
+     12
+    ],
+    "G39": [
+     11
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u8591.D",
+    "u8602.D"
+   ]
+  },
+  {
+   "net": "7979",
+   "name": "d_8095",
+   "kind": "flop",
+   "source": "8095:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G44": [
+     12
+    ],
+    "G57": [
+     11
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u8095.D",
+    "u8429.D"
+   ]
+  },
+  {
+   "net": "7981",
+   "name": "d_8815",
+   "kind": "flop",
+   "source": "8815:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 4,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 3,
+   "positions_by_group": {
+    "G40": [
+     11
+    ],
+    "G47": [
+     12
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u8084.D",
+    "u8815.D"
+   ]
+  },
+  {
+   "net": "6137",
+   "name": "d_5337",
+   "kind": "flop",
+   "source": "5337:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 3,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G37": [
+     11
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u5337.D"
+   ]
+  },
+  {
+   "net": "7355",
+   "name": "d_5638",
+   "kind": "flop",
+   "source": "5638:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 3,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G34": [
+     9
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u227.D",
+    "u228.D",
+    "u5638.D"
+   ]
+  },
+  {
+   "net": "7231",
+   "name": "d_5000",
+   "kind": "flop",
+   "source": "5000:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 3,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G01": [
+     2,
+     3
+    ],
+    "G37": [
+     5
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u5000.D",
+    "u5337.D",
+    "u5401.D"
+   ]
+  },
+  {
+   "net": "3233",
+   "name": "d_5339",
+   "kind": "flop",
+   "source": "5339:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 3,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G01": [
+     2,
+     3
+    ],
+    "G37": [
+     8
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u5336.D",
+    "u5337.D",
+    "u5339.D"
+   ]
+  },
+  {
+   "net": "7278",
+   "name": "d_5344",
+   "kind": "flop",
+   "source": "5344:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 3,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G37": [
+     7
+    ],
+    "G01": [
+     2,
+     3
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u5337.D",
+    "u5339.D",
+    "u5344.D"
+   ]
+  },
+  {
+   "net": "7356",
+   "name": "d_5639",
+   "kind": "flop",
+   "source": "5639:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 3,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G24": [
+     7
+    ],
+    "G34": [
+     4
+    ],
+    "G27": [
+     8
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u5634.D",
+    "u5638.D",
+    "u5639.D"
+   ]
+  },
+  {
+   "net": "7361",
+   "name": "d_5634",
+   "kind": "flop",
+   "source": "5634:sky130_fd_sc_hd__dfrtp_2",
+   "role": "data",
+   "fanout": 3,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G24": [
+     8
+    ],
+    "G34": [
+     5
+    ],
+    "G27": [
+     7
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u5634.D",
+    "u5638.D",
+    "u5639.D"
+   ]
+  },
+  {
+   "net": "7270",
+   "name": "d_5342",
+   "kind": "flop",
+   "source": "5342:sky130_fd_sc_hd__dfrtp_2",
+   "role": "local",
+   "fanout": 2,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 1,
+   "positions_by_group": {
+    "G01": [
+     2,
+     3
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u4993.D",
+    "u5342.D"
+   ]
+  },
+  {
+   "net": "7273",
+   "name": "d_4993",
+   "kind": "flop",
+   "source": "4993:sky130_fd_sc_hd__dfrtp_2",
+   "role": "local",
+   "fanout": 2,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 1,
+   "positions_by_group": {
+    "G01": [
+     2,
+     3
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u4993.D",
+    "u5569.D"
+   ]
+  },
+  {
+   "net": "6139",
+   "name": "d_5004",
+   "kind": "flop",
+   "source": "5004:sky130_fd_sc_hd__dfrtp_2",
+   "role": "local",
+   "fanout": 2,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 1,
+   "positions_by_group": {
+    "G01": [
+     2,
+     3
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u5004.D",
+    "u5342.D"
+   ]
+  },
+  {
+   "net": "7238",
+   "name": "d_5399",
+   "kind": "flop",
+   "source": "5399:sky130_fd_sc_hd__dfrtp_2",
+   "role": "local",
+   "fanout": 2,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 1,
+   "positions_by_group": {
+    "G01": [
+     2,
+     3
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u5004.D",
+    "u5399.D"
+   ]
+  },
+  {
+   "net": "7236",
+   "name": "d_5401",
+   "kind": "flop",
+   "source": "5401:sky130_fd_sc_hd__dfrtp_2",
+   "role": "local",
+   "fanout": 2,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 1,
+   "positions_by_group": {
+    "G01": [
+     2,
+     3
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u5093.D",
+    "u5401.D"
+   ]
+  },
+  {
+   "net": "7237",
+   "name": "d_5093",
+   "kind": "flop",
+   "source": "5093:sky130_fd_sc_hd__dfrtp_2",
+   "role": "local",
+   "fanout": 2,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 1,
+   "positions_by_group": {
+    "G01": [
+     2,
+     3
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u5093.D",
+    "u5399.D"
+   ]
+  },
+  {
+   "net": "7234",
+   "name": "d_5336",
+   "kind": "flop",
+   "source": "5336:sky130_fd_sc_hd__dfrtp_2",
+   "role": "local",
+   "fanout": 2,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 2,
+   "positions_by_group": {
+    "G01": [
+     3
+    ],
+    "G37": [
+     6
+    ]
+   },
+   "position_stable": true,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u5336.D",
+    "u5337.D"
+   ]
+  },
+  {
+   "net": "49975",
+   "name": "d_5343",
+   "kind": "flop",
+   "source": "5343:sky130_fd_sc_hd__dfrtp_2",
+   "role": "local",
+   "fanout": 2,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 1,
+   "positions_by_group": {
+    "G01": [
+     2,
+     3
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u5343.D",
+    "u5344.D"
+   ]
+  },
+  {
+   "net": "7275",
+   "name": "d_5569",
+   "kind": "flop",
+   "source": "5569:sky130_fd_sc_hd__dfrtp_2",
+   "role": "local",
+   "fanout": 2,
+   "banks_covered": [],
+   "banks_exclusive": [],
+   "banks_spanned": 1,
+   "positions_by_group": {
+    "G01": [
+     2,
+     3
+    ]
+   },
+   "position_stable": false,
+   "is_select": false,
+   "is_hold": true,
+   "consumers": [
+    "u5343.D",
+    "u5569.D"
+   ]
+  }
+ ],
+ "banks": [
+  {
+   "bank": "port_register|4|2|True|load_enable",
+   "members": [
+    "u4993.D",
+    "u5000.D",
+    "u5004.D",
+    "u5093.D",
+    "u5336.D",
+    "u5339.D",
+    "u5342.D",
+    "u5343.D",
+    "u5344.D",
+    "u5399.D",
+    "u5401.D",
+    "u5569.D"
+   ],
+   "width": 12,
+   "common_leaves": [
+    "6443",
+    "7167"
+   ],
+   "common_named": [
+    "gctl_4182",
+    "enable"
+   ],
+   "private_per_member": {
+    "u4993.D": [
+     "7270",
+     "7273"
+    ],
+    "u5000.D": [
+     "6485",
+     "7231"
+    ],
+    "u5004.D": [
+     "6139",
+     "7238"
+    ],
+    "u5093.D": [
+     "7236",
+     "7237"
+    ],
+    "u5336.D": [
+     "3233",
+     "7234"
+    ],
+    "u5339.D": [
+     "3233",
+     "7278"
+    ],
+    "u5342.D": [
+     "6139",
+     "7270"
+    ],
+    "u5343.D": [
+     "49975",
+     "7275"
+    ],
+    "u5344.D": [
+     "49975",
+     "7278"
+    ],
+    "u5399.D": [
+     "7237",
+     "7238"
+    ],
+    "u5401.D": [
+     "7231",
+     "7236"
+    ],
+    "u5569.D": [
+     "7273",
+     "7275"
+    ]
+   },
+   "num_common": 2,
+   "num_union": 15
+  },
+  {
+   "bank": "port_register|13|14|True|set_dominant_sticky",
+   "members": [
+    "u2299.D",
+    "u2301.D",
+    "u2710.D",
+    "u8084.D",
+    "u8085.D",
+    "u8086.D",
+    "u8090.D",
+    "u8091.D",
+    "u8429.D",
+    "u8431.D",
+    "u8591.D"
+   ],
+   "width": 11,
+   "common_leaves": [
+    "3015",
+    "4764",
+    "6110",
+    "6443",
+    "6485",
+    "6592",
+    "6705",
+    "7167",
+    "8149",
+    "8184",
+    "8220"
+   ],
+   "common_named": [
+    "gctl_4662",
+    "gctl_6451",
+    "gctl_4838",
+    "gctl_4182",
+    "I",
+    "gctl_4661",
+    "gctl_4659",
+    "enable",
+    "gctl_6442",
+    "gctl_6435",
+    "gctl_6436"
+   ],
+   "private_per_member": {
+    "u2299.D": [
+     "7736",
+     "7738"
+    ],
+    "u2301.D": [
+     "6185",
+     "7740"
+    ],
+    "u2710.D": [
+     "7735",
+     "7788"
+    ],
+    "u8084.D": [
+     "7961",
+     "7981"
+    ],
+    "u8085.D": [
+     "7870",
+     "7873"
+    ],
+    "u8086.D": [
+     "7895",
+     "7896"
+    ],
+    "u8090.D": [
+     "7886",
+     "7892"
+    ],
+    "u8091.D": [
+     "7771",
+     "7784"
+    ],
+    "u8429.D": [
+     "7572",
+     "7979"
+    ],
+    "u8431.D": [
+     "4282",
+     "4356"
+    ],
+    "u8591.D": [
+     "7970",
+     "7973"
+    ]
+   },
+   "num_common": 11,
+   "num_union": 33
+  },
+  {
+   "bank": "port_register|13|14|True|load_enable",
+   "members": [
+    "u2542.D",
+    "u2574.D",
+    "u2708.D",
+    "u2709.D",
+    "u8092.D",
+    "u8095.D",
+    "u8199.D",
+    "u8214.D",
+    "u8219.D",
+    "u8602.D",
+    "u8815.D"
+   ],
+   "width": 11,
+   "common_leaves": [
+    "3015",
+    "4764",
+    "6110",
+    "6443",
+    "6485",
+    "6592",
+    "6705",
+    "7167",
+    "8149",
+    "8184",
+    "8220"
+   ],
+   "common_named": [
+    "gctl_4662",
+    "gctl_6451",
+    "gctl_4838",
+    "gctl_4182",
+    "I",
+    "gctl_4661",
+    "gctl_4659",
+    "enable",
+    "gctl_6442",
+    "gctl_6435",
+    "gctl_6436"
+   ],
+   "private_per_member": {
+    "u2542.D": [
+     "7736",
+     "7738"
+    ],
+    "u2574.D": [
+     "6185",
+     "7740"
+    ],
+    "u2708.D": [
+     "7735",
+     "7788"
+    ],
+    "u2709.D": [
+     "7771",
+     "7784"
+    ],
+    "u8092.D": [
+     "4282",
+     "4356"
+    ],
+    "u8095.D": [
+     "7572",
+     "7979"
+    ],
+    "u8199.D": [
+     "7870",
+     "7873"
+    ],
+    "u8214.D": [
+     "7886",
+     "7892"
+    ],
+    "u8219.D": [
+     "7895",
+     "7896"
+    ],
+    "u8602.D": [
+     "7970",
+     "7973"
+    ],
+    "u8815.D": [
+     "7961",
+     "7981"
+    ]
+   },
+   "num_common": 11,
+   "num_union": 33
+  },
+  {
+   "bank": "port_register|9|3|True|load_enable",
+   "members": [
+    "u1228.D",
+    "u1230.D",
+    "u1258.D",
+    "u1259.D",
+    "u1260.D",
+    "u1264.D",
+    "u2293.D",
+    "u5634.D",
+    "u5639.D"
+   ],
+   "width": 9,
+   "common_leaves": [
+    "3015",
+    "6110",
+    "6443",
+    "6485",
+    "6592",
+    "6705",
+    "7167"
+   ],
+   "common_named": [
+    "gctl_4662",
+    "gctl_4838",
+    "gctl_4182",
+    "I",
+    "gctl_4661",
+    "gctl_4659",
+    "enable"
+   ],
+   "private_per_member": {
+    "u1228.D": [
+     "6550",
+     "6563"
+    ],
+    "u1230.D": [
+     "6422",
+     "6569"
+    ],
+    "u1258.D": [
+     "2035",
+     "6523"
+    ],
+    "u1259.D": [
+     "6452",
+     "6477"
+    ],
+    "u1260.D": [
+     "6145",
+     "6457"
+    ],
+    "u1264.D": [
+     "6634",
+     "6636"
+    ],
+    "u2293.D": [
+     "6698",
+     "6732"
+    ],
+    "u5634.D": [
+     "7356",
+     "7361"
+    ],
+    "u5639.D": [
+     "7356",
+     "7361"
+    ]
+   },
+   "num_common": 7,
+   "num_union": 23
+  },
+  {
+   "bank": "scc2",
+   "members": [
+    "u4182.D",
+    "u4659.D",
+    "u4661.D",
+    "u4662.D",
+    "u4838.D",
+    "u6435.D",
+    "u6436.D",
+    "u6442.D",
+    "u6451.D"
+   ],
+   "width": 9,
+   "common_leaves": [
+    "3015",
+    "6110",
+    "6443",
+    "6705",
+    "7167"
+   ],
+   "common_named": [
+    "gctl_4662",
+    "gctl_4838",
+    "gctl_4182",
+    "gctl_4659",
+    "enable"
+   ],
+   "private_per_member": {
+    "u4182.D": [
+     "4764",
+     "6592",
+     "8149",
+     "8184",
+     "8220"
+    ],
+    "u4659.D": [],
+    "u4661.D": [
+     "6592"
+    ],
+    "u4662.D": [
+     "6592"
+    ],
+    "u4838.D": [
+     "6592"
+    ],
+    "u6435.D": [
+     "4764",
+     "6592",
+     "8149",
+     "8184",
+     "8220"
+    ],
+    "u6436.D": [
+     "4764",
+     "6592",
+     "8149",
+     "8220"
+    ],
+    "u6442.D": [
+     "4764",
+     "6592",
+     "8149",
+     "8184",
+     "8220"
+    ],
+    "u6451.D": [
+     "4764",
+     "6592",
+     "8149",
+     "8184",
+     "8220"
+    ]
+   },
+   "num_common": 5,
+   "num_union": 10
+  },
+  {
+   "bank": "output_driver|16|8|False|clear_dominant",
+   "members": [
+    "port:O[0]",
+    "port:O[1]",
+    "port:O[2]",
+    "port:O[3]",
+    "port:O[4]",
+    "port:O[5]",
+    "port:O[6]",
+    "port:O[7]"
+   ],
+   "width": 8,
+   "common_leaves": [
+    "6197",
+    "6239",
+    "6245",
+    "6254",
+    "6335",
+    "6398",
+    "7451",
+    "7458",
+    "7501",
+    "7509",
+    "7520",
+    "7522",
+    "7532",
+    "7535",
+    "7691"
+   ],
+   "common_named": [
+    "gctl_237",
+    "gctl_227",
+    "gctl_234",
+    "gctl_226",
+    "gctl_235",
+    "gctl_228",
+    "gctl_6197",
+    "gctl_6111",
+    "gctl_6109",
+    "gctl_6106",
+    "gctl_6095",
+    "gctl_6198",
+    "gctl_6199",
+    "gctl_6159",
+    "gctl_236"
+   ],
+   "private_per_member": {
+    "port:O[0]": [
+     "6788"
+    ],
+    "port:O[1]": [
+     "6842"
+    ],
+    "port:O[2]": [
+     "6671"
+    ],
+    "port:O[3]": [
+     "6790"
+    ],
+    "port:O[4]": [
+     "6791"
+    ],
+    "port:O[5]": [
+     "6882"
+    ],
+    "port:O[6]": [
+     "2987"
+    ],
+    "port:O[7]": [
+     "6795"
+    ]
+   },
+   "num_common": 15,
+   "num_union": 23
+  },
+  {
+   "bank": "scc0",
+   "members": [
+    "u2944.D",
+    "u2946.D",
+    "u2947.D",
+    "u2948.D",
+    "u2957.D",
+    "u2958.D",
+    "u2959.D",
+    "u2960.D"
+   ],
+   "width": 8,
+   "common_leaves": [
+    "6197",
+    "6245",
+    "6254",
+    "6335",
+    "6443",
+    "6790",
+    "7167",
+    "7691"
+   ],
+   "common_named": [
+    "gctl_237",
+    "gctl_234",
+    "gctl_226",
+    "gctl_235",
+    "gctl_4182",
+    "gctl_2946",
+    "enable",
+    "gctl_236"
+   ],
+   "private_per_member": {
+    "u2944.D": [
+     "2987",
+     "6788",
+     "6795",
+     "6842"
+    ],
+    "u2946.D": [
+     "6671",
+     "6788",
+     "6791",
+     "6795",
+     "6842",
+     "6882"
+    ],
+    "u2947.D": [
+     "2987",
+     "6671",
+     "6791",
+     "6882"
+    ],
+    "u2948.D": [
+     "6671",
+     "6788",
+     "6791",
+     "6842"
+    ],
+    "u2957.D": [
+     "2987",
+     "6671",
+     "6788",
+     "6791",
+     "6795",
+     "6842",
+     "6882"
+    ],
+    "u2958.D": [
+     "6671",
+     "6791",
+     "6842",
+     "6882"
+    ],
+    "u2959.D": [
+     "2987",
+     "6485",
+     "6671",
+     "6788",
+     "6791",
+     "6795",
+     "6882"
+    ],
+    "u2960.D": [
+     "2987",
+     "6791",
+     "6795",
+     "6882"
+    ]
+   },
+   "num_common": 8,
+   "num_union": 16
+  },
+  {
+   "bank": "port_register|9|3|True|set_dominant_sticky",
+   "members": [
+    "u1383.D",
+    "u1385.D",
+    "u1626.D",
+    "u1808.D",
+    "u1810.D",
+    "u2036.D",
+    "u2372.D"
+   ],
+   "width": 7,
+   "common_leaves": [
+    "3015",
+    "6110",
+    "6443",
+    "6485",
+    "6592",
+    "6705",
+    "7167"
+   ],
+   "common_named": [
+    "gctl_4662",
+    "gctl_4838",
+    "gctl_4182",
+    "I",
+    "gctl_4661",
+    "gctl_4659",
+    "enable"
+   ],
+   "private_per_member": {
+    "u1383.D": [
+     "6452",
+     "6477"
+    ],
+    "u1385.D": [
+     "6145",
+     "6457"
+    ],
+    "u1626.D": [
+     "2035",
+     "6523"
+    ],
+    "u1808.D": [
+     "6550",
+     "6563"
+    ],
+    "u1810.D": [
+     "6422",
+     "6569"
+    ],
+    "u2036.D": [
+     "6634",
+     "6636"
+    ],
+    "u2372.D": [
+     "6698",
+     "6732"
+    ]
+   },
+   "num_common": 7,
+   "num_union": 21
+  },
+  {
+   "bank": "port_register|9|4|True|set_dominant_sticky",
+   "members": [
+    "u1229.D",
+    "u1249.D",
+    "u1384.D",
+    "u2039.D"
+   ],
+   "width": 4,
+   "common_leaves": [
+    "3015",
+    "6110",
+    "6443",
+    "6485",
+    "6592",
+    "6705",
+    "7167"
+   ],
+   "common_named": [
+    "gctl_4662",
+    "gctl_4838",
+    "gctl_4182",
+    "I",
+    "gctl_4661",
+    "gctl_4659",
+    "enable"
+   ],
+   "private_per_member": {
+    "u1229.D": [
+     "6603",
+     "6638"
+    ],
+    "u1249.D": [
+     "23154",
+     "6754"
+    ],
+    "u1384.D": [
+     "6510",
+     "6513"
+    ],
+    "u2039.D": [
+     "6747",
+     "6749"
+    ]
+   },
+   "num_common": 7,
+   "num_union": 15
+  },
+  {
+   "bank": "port_register|9|4|True|load_enable",
+   "members": [
+    "u1250.D",
+    "u1261.D",
+    "u1809.D",
+    "u2037.D"
+   ],
+   "width": 4,
+   "common_leaves": [
+    "3015",
+    "6110",
+    "6443",
+    "6485",
+    "6592",
+    "6705",
+    "7167"
+   ],
+   "common_named": [
+    "gctl_4662",
+    "gctl_4838",
+    "gctl_4182",
+    "I",
+    "gctl_4661",
+    "gctl_4659",
+    "enable"
+   ],
+   "private_per_member": {
+    "u1250.D": [
+     "6747",
+     "6749"
+    ],
+    "u1261.D": [
+     "6510",
+     "6513"
+    ],
+    "u1809.D": [
+     "6603",
+     "6638"
+    ],
+    "u2037.D": [
+     "23154",
+     "6754"
+    ]
+   },
+   "num_common": 7,
+   "num_union": 15
+  },
+  {
+   "bank": "scc1",
+   "members": [
+    "u234.D",
+    "u235.D",
+    "u236.D",
+    "u237.D"
+   ],
+   "width": 4,
+   "common_leaves": [
+    "6197",
+    "6245",
+    "6254",
+    "6335",
+    "7691"
+   ],
+   "common_named": [
+    "gctl_237",
+    "gctl_234",
+    "gctl_226",
+    "gctl_235",
+    "gctl_236"
+   ],
+   "private_per_member": {
+    "u234.D": [],
+    "u235.D": [],
+    "u236.D": [],
+    "u237.D": []
+   },
+   "num_common": 5,
+   "num_union": 5
+  }
+ ],
+ "clusters": [
+  [
+   "u1228.D",
+   "u1229.D",
+   "u1230.D",
+   "u1249.D",
+   "u1250.D",
+   "u1258.D",
+   "u1259.D",
+   "u1260.D",
+   "u1261.D",
+   "u1264.D",
+   "u1383.D",
+   "u1384.D",
+   "u1385.D",
+   "u1626.D",
+   "u1808.D",
+   "u1809.D",
+   "u1810.D",
+   "u2036.D",
+   "u2037.D",
+   "u2039.D",
+   "u2293.D",
+   "u2299.D",
+   "u2301.D",
+   "u2372.D",
+   "u2542.D",
+   "u2574.D",
+   "u2708.D",
+   "u2709.D",
+   "u2710.D",
+   "u4182.D",
+   "u4659.D",
+   "u4661.D",
+   "u4662.D",
+   "u4838.D",
+   "u5634.D",
+   "u5638.D",
+   "u5639.D",
+   "u6435.D",
+   "u6436.D",
+   "u6442.D",
+   "u6451.D",
+   "u8084.D",
+   "u8085.D",
+   "u8086.D",
+   "u8090.D",
+   "u8091.D",
+   "u8092.D",
+   "u8095.D",
+   "u8199.D",
+   "u8214.D",
+   "u8219.D",
+   "u8429.D",
+   "u8431.D",
+   "u8591.D",
+   "u8602.D",
+   "u8815.D"
+  ],
+  [
+   "u4993.D",
+   "u5000.D",
+   "u5004.D",
+   "u5093.D",
+   "u5336.D",
+   "u5339.D",
+   "u5342.D",
+   "u5343.D",
+   "u5344.D",
+   "u5399.D",
+   "u5401.D",
+   "u5569.D",
+   "u6095.D",
+   "u6106.D",
+   "u6109.D",
+   "u6111.D",
+   "u6159.D",
+   "u6197.D",
+   "u6198.D",
+   "u6199.D"
+  ],
+  [
+   "port:O[0]",
+   "port:O[1]",
+   "port:O[2]",
+   "port:O[3]",
+   "port:O[4]",
+   "port:O[5]",
+   "port:O[6]",
+   "port:O[7]"
+  ],
+  [
+   "u2944.D",
+   "u2946.D",
+   "u2947.D",
+   "u2948.D",
+   "u2957.D",
+   "u2958.D",
+   "u2959.D",
+   "u2960.D"
+  ],
+  [
+   "u234.D",
+   "u235.D",
+   "u236.D",
+   "u237.D"
+  ],
+  [
+   "u227.D",
+   "u228.D"
+  ]
+ ]
+}

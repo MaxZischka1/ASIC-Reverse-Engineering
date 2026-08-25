@@ -372,13 +372,28 @@ def bbox_overlap(a, b):
     return a[0] <= b[2] and b[0] <= a[2] and a[1] <= b[3] and b[1] <= a[3]
 
 
-def path_segment_rect(x0, y0, x1, y1, width, pathtype):
+def path_segment_rect(x0, y0, x1, y1, width, pathtype,
+                      bgnextn=0, endextn=0):
     """A PATH centerline segment -> its actual drawn rectangle (4 corners),
     not just an axis-aligned bbox -- matters for diagonal segments, and
     keeps this consistent with the exact polygon-overlap test below.
-    pathtype 2 = square, ends extended by half-width; 0 = flush butt ends;
-    1 (round) is approximated here as square, close enough for overlap
-    purposes."""
+
+    End styles:
+      0  flush butt ends, no extension
+      1  round -- approximated as square, close enough for overlap
+      2  square, both ends extended by half the width
+      4  CUSTOM: each end extended by its own BGNEXTN/ENDEXTN amount,
+         which is what those records exist to carry. The extensions are
+         independent, so the two ends are computed separately, and either
+         may be NEGATIVE (the drawn wire is pulled back from its
+         centerline endpoint rather than pushed past it).
+
+    Treating pathtype 4 as if it were pathtype 2 -- the previous behaviour
+    -- silently substitutes half-width for the real extension on the 78
+    pathtype-4 paths in this layout. Too short and a genuine touch is
+    missed, splitting one net in two; too long and two nets are welded
+    together. Either way the recovered netlist is wrong in a way nothing
+    downstream can detect, which is why the real values are read now."""
     # Basic vector math: (dx, dy) is the direction from the segment's
     # start to its end; `math.hypot(dx, dy)` computes its LENGTH
     # (equivalent to sqrt(dx**2 + dy**2), just a built-in that does it in
@@ -400,12 +415,18 @@ def path_segment_rect(x0, y0, x1, y1, width, pathtype):
     # pathtype 2 (and, approximated, 1) extend the drawn rectangle past
     # each endpoint by half the wire's width, like a Sharpie's rounded/
     # square cap sticking out past where you lifted the pen; pathtype 0
-    # stops exactly at the endpoint ("butt" end, no extension).
-    ext = half if pathtype != 0 else 0.0
+    # stops exactly at the endpoint ("butt" end, no extension); pathtype 4
+    # uses the per-end amounts the file itself carries.
+    if pathtype == 4:
+        ext0, ext1 = float(bgnextn), float(endextn)
+    elif pathtype == 0:
+        ext0 = ext1 = 0.0
+    else:
+        ext0 = ext1 = half
     # Push the two endpoints outward along the direction vector (ux, uy)
-    # by `ext`, to account for that end-cap extension.
-    px0, py0 = x0 - ux * ext, y0 - uy * ext
-    px1, py1 = x1 + ux * ext, y1 + uy * ext
+    # by each end's own extension.
+    px0, py0 = x0 - ux * ext0, y0 - uy * ext0
+    px1, py1 = x1 + ux * ext1, y1 + uy * ext1
     # perpendicular unit vector, scaled to half-width
     #
     # Rotating a 2D vector (ux, uy) by 90 degrees gives (-uy, ux) -- a
@@ -654,7 +675,8 @@ def build_shapes(data):
         shapes.append({"material": material, "layer": layer, "poly": xy, "bbox": bbox_of(xy),
                        "instance_id": instance_id, "src": src})
 
-    def add_path(material, layer, width, xy, instance_id, pathtype):
+    def add_path(material, layer, width, xy, instance_id, pathtype,
+                 bgnextn=0, endextn=0):
         # `zip(xy, xy[1:])` pairs up CONSECUTIVE points: zip walks two (or
         # more) lists side by side, stopping as soon as the shortest one
         # runs out. `xy[1:]` is "xy, but starting from its second element"
@@ -664,8 +686,16 @@ def build_shapes(data):
         # multi-point path." The `for (x0, y0), (x1, y1) in ...` then
         # unpacks each of those pairs-of-points straight down into four
         # separate numbers in one go.
-        for (x0, y0), (x1, y1) in zip(xy, xy[1:]):
-            rect = path_segment_rect(x0, y0, x1, y1, width, pathtype)
+        # A custom extension belongs to the PATH's two outer ends only:
+        # BGNEXTN to the very start, ENDEXTN to the very finish. Interior
+        # joints are where consecutive segments already meet, so extending
+        # them would push metal out sideways at every corner and could weld
+        # a corner onto a neighbouring wire that the layout never touches.
+        nseg = len(xy) - 1
+        for i, ((x0, y0), (x1, y1)) in enumerate(zip(xy, xy[1:])):
+            b = bgnextn if i == 0 else 0
+            e = endextn if i == nseg - 1 else 0
+            rect = path_segment_rect(x0, y0, x1, y1, width, pathtype, b, e)
             shapes.append({
                 "material": material,
                 "layer": layer,
@@ -693,7 +723,9 @@ def build_shapes(data):
                 add_polygon(poly["material"], poly["layer"], poly["xy"], "TOP")
         for path in struct.get("paths", []):
             if is_conductive(path["material"]):
-                add_path(path["material"], path["layer"], path["width"], path["xy"], "TOP", path.get("pathtype", 0))
+                add_path(path["material"], path["layer"], path["width"],
+                         path["xy"], "TOP", path.get("pathtype", 0),
+                         path.get("bgnextn", 0), path.get("endextn", 0))
 
         # every individual instantiation placed inside this container
         #
@@ -739,7 +771,12 @@ def build_shapes(data):
                 # to scale along with its coordinates, or the drawn
                 # rectangle would be the wrong thickness relative to the
                 # rest of the (scaled) shape.
-                add_path(path["material"], path["layer"], path["width"] * mag, xy_abs, instance_id, path.get("pathtype", 0))
+                # extensions scale with the placement magnification exactly
+                # as the width does -- they are lengths in the same units.
+                add_path(path["material"], path["layer"], path["width"] * mag,
+                         xy_abs, instance_id, path.get("pathtype", 0),
+                         path.get("bgnextn", 0) * mag,
+                         path.get("endextn", 0) * mag)
 
     return shapes
 
@@ -964,7 +1001,9 @@ def _rail_bound_li1(struct):
         if not is_conductive(p["material"]):
             continue
         for (x0, y0), (x1, y1) in zip(p["xy"], p["xy"][1:]):
-            rect = path_segment_rect(x0, y0, x1, y1, p["width"], p.get("pathtype", 0))
+            rect = path_segment_rect(x0, y0, x1, y1, p["width"],
+                                     p.get("pathtype", 0),
+                                     p.get("bgnextn", 0), p.get("endextn", 0))
             local.append((p["material"], p["layer"], rect, bbox_of(rect), None))
 
     dsu = UnionFind(len(local))

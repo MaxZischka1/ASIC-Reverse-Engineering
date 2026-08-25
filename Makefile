@@ -66,6 +66,27 @@ CONE_GRAPH.json CONE_GRAPH.md: coneGraph.py CONE_CLASSES.json LOGIC_GRAPH.json
 .PHONY: cones
 cones: CONE_GRAPH.json
 
+# Descriptive per-cone attributes and the four class views built from them.
+CONE_PROFILE.json CONE_PROFILE.md: coneProfile.py LOGIC_GRAPH.json CONE_GRAPH.json
+	python3 coneProfile.py
+
+.PHONY: profile
+profile: CONE_PROFILE.json
+
+# Signal-side view: shared control lines and cone correlation.
+CONE_SIGNALS.json CONE_SIGNALS.md: coneSignals.py LOGIC_GRAPH.json CONE_GRAPH.json CONE_PROFILE.json
+	python3 coneSignals.py
+
+.PHONY: signals
+signals: CONE_SIGNALS.json
+
+# Control/data domains and typed blocks -- the first level above the cone.
+CONE_BLOCKS.json CONE_BLOCKS.md: coneBlocks.py LOGIC_GRAPH.json CONE_GRAPH.json CONE_PROFILE.json CONE_SIGNALS.json
+	python3 coneBlocks.py
+
+.PHONY: blocks
+blocks: CONE_BLOCKS.json
+
 .PHONY:lint
 lint: $(SRCS)
 	verilator --lint-only $(SRCS) --top-module $(MODULE)
