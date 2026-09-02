@@ -1,226 +1,97 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this
+repository.
 
 ## What this is
 
-A solution-in-progress for the Jane Street ASIC reverse-engineering puzzle (see `README.md`
-and the linked blog post). The only ground-truth inputs shipped by the puzzle are
-`puzzle.gds` (a manufacturable layout with internal names stripped) and
-`example_inputs.vcd` (recorded stimulus + response from the real design, which does *not*
-assert `success`). Everything else at the top level is reconstruction: a from-scratch
-Python pipeline that lifts raw GDSII geometry back up to a structural Verilog netlist,
-then to per-flop logic cones grouped by the Boolean function they compute.
+A clean-room rebuild (started 2026-08-27, competition deadline 2026-09-04) of a
+structure-recovery pipeline for the Jane Street ASIC reverse-engineering puzzle. A prior
+attempt was deleted in full because it violated the competition's AI rules: Claude was
+shown files derived from the puzzle GDS. Its files exist only in pre-restart git history.
 
-`warmup/` is the puzzle authors' small reference design (two shift registers + adder +
-comparator, `success` when `A + B == 496`), shipped at *every* stage of the flow
-(`00_source.v` through `04_final.gds`). It is the ground truth used to validate the tools:
-run the pipeline on `04_final.gds` and check the recovered netlist against
-`01_netlist.v`/`00_source.v`. Do this before trusting a tool change on the real puzzle.
+Scope: **stages 1–5 only** — recover the netlist, slice it into flop-to-flop cones,
+group cones by function. Other downstream stages (cone graph, backward walk, block
+decomposition) were built and then removed on 2026-09-01.
 
-Python is standard-library only (no gdstk/gdspy/klayout — parsing GDSII by hand is
-deliberate). Simulation needs `verilator` and a C++17 compiler; `make waves` needs
-`gtkwave`.
+Layout: `src/` holds the pipeline modules, `tests/` one fixture suite each, `lib/` the
+LEF, `out/` the (git-ignored) outputs, `warmup/` the authors' reference design.
+`bench/` is a self-contained Verilator sim harness (netlist / cone Verilog generators +
+testbenches) — a tweaking aid, **not** a pipeline stage; nothing in `src/` depends on it.
 
-## Rule: never read waveform or GDS files directly
+Shipped puzzle inputs (the only non-tool files that belong at top level):
 
-Claude must not open, read, dump, grep, or otherwise inspect the contents of any
-waveform or layout file:
+- `puzzle.gds` — the flattened layout to reverse-engineer
+- `layout.png` — a render of the layout
+- `example_inputs.vcd` — a recorded waveform of the design's pins, used as `bench/`
+  stimulus (readable by Claude — see the exception in the rule below)
+- `warmup/00_source.v` … `warmup/04_final.gds` — the authors' small reference design at
+  every flow stage
 
-- `*.vcd` — `example_inputs.vcd`, `waveform_puzzle.vcd`, `warmup/waveform_adderDemo.vcd`
-- `*.gds` — `puzzle.gds`, `warmup/04_final.gds`
+## Rule: Claude never views the puzzle or anything derived from it
 
-This covers reading them by any means: `Read`, `cat`/`head`/`sed`, `grep`, a throwaway
-Python snippet, or a script written to print their contents. Inspect them only through the
-committed pipeline tools, and reason from those tools' outputs.
+This is the competition's AI-usage rule and it is absolute:
 
-This restricts *Claude*, not the code. `gdsParser.py` parses `puzzle.gds` and the testbench
-consumes stimulus transcribed from `example_inputs.vcd` — that is the point of the project
-and is unaffected. Verilator may write VCDs and `make waves` may open one in gtkwave; what
-is forbidden is Claude reading the bytes.
+- Claude must not open, read, dump, grep, render, screenshot, or otherwise inspect
+  `puzzle.gds`,  `layout.png`, `warmup/04_final.gds`, or **any file
+  produced by parsing or simulating them** — extracted netlists, connectivity graphs,
+  JSON dumps, truth tables, waveforms, logs containing their contents. Not even for
+  debugging. No throwaway scripts that print their contents.
+- Reading vs using (see README, "The rule, and the line it draws"): Claude *may* run a
+  stage or the whole pipeline on the real files and read **verification signals only** —
+  exit codes, test pass/fail, structural counts like "N registers, 0 orphan cells".
+  Claude must *not* read or reason about the circuit's content — the extracted netlist, a
+  cone's truth table, what any signal or block computes. Check that a build works; do not
+  look at what it says. If a check can't be made without seeing content, stop and hand it
+  to the user.
+- Claude builds general-purpose tooling and validates every stage on small **synthetic
+  fixtures** it constructs itself, with hand-computed expected output. The user runs the
+  finished pipeline on the real files locally, outside any AI session, and does not paste
+  its output back.
+- If a task appears to require the contents of a forbidden file, stop and say so rather
+  than working around the rule.
+- Claude CAN reconfigure input files of any kind and read any files to extract data to put into files but never give clues as to how the circuit function.
+- Exception, decided 2026-09-02: the shipped stimulus recording `example_inputs.vcd`
+  and everything derived from it — `bench/stimulus.json`, the `STIM_*` strings
+  inlined into `bench/tb_*.cpp` — are readable. They are waveforms of the design's
+  pins (a tool input), not the circuit: they show what was driven in and what came
+  out, never how anything is computed. The forbidden list above is unchanged
+  otherwise, and the recovered logic itself (`out/*.json`, `bench/netlistVerilog.v`,
+  `bench/ConesVerilog.v`) stays off limits.
 
-If a task seems to need the contents of one of these files, say so and stop rather than
-working around the rule.
+The restriction is on *Claude viewing content*, not on the code: the pipeline scripts are
+supposed to parse `puzzle.gds` when the user runs them.
 
-## The extraction pipeline
+## Pipeline (general-purpose, nothing puzzle-specific baked in)
 
-Each stage is a standalone script with argparse defaults wired to the previous stage's
-output, so the whole chain runs with no arguments from the repo root:
+1–3. Netlist extraction — `src/klayoutNetlist.py` hands the layout to KLayout's
+   connectivity engine; standard cells stay as subcircuits, pin/port names come from
+   the layout's own labels. → `out/NETLIST_GRAPH.json`
+4. Cone decomposition — `src/coneDecompose.py`, backward fan-in from each register data
+   pin / primary output to the nearest sequential boundary. → `out/CONES.json`
+5. Cone groups — `src/coneClasses.py` (+ `src/boolExpr.py`), each cone's Boolean
+   function and the functional equivalence classes over cones. → `out/CONE_CLASSES.json`
 
-```
-puzzle.gds
-  │  python3 gdsParser.py                 # GDSII binary -> per-structure geometry
-  ├─> puzzleNetlist.json
-  │     │  python3 netGraph.py            # union-find over touching shapes -> nets
-  │     ├─> puzzleGraph.json              # carries instance_pins (net -> named pin)
-  │     │  python3 moduleGraph.py         # nodes=cells, edges=nets, pin directions
-  │     └─> MODULE_GRAPH.json
-  │           ├─ python3 genVerilog.py   -> puzzleNetlist.v   (flat structural netlist)
-  │           └─ python3 logicGraph.py   -> LOGIC_GRAPH.json  (+ --verilog puzzleReduced.v)
-  │                 │  python3 coneClasses.py   # cones -> truth tables -> equivalence groups
-  │                 ├─> CONE_CLASSES.json
-  │                 │     │  python3 coneGraph.py   # groups as nodes, flop dataflow as edges
-  │                 │     └─> CONE_GRAPH.json + CONE_GRAPH.md
-  │                 │           │  python3 coneProfile.py  # per-cone attributes + class views
-  │                 │           ├─> CONE_PROFILE.json + CONE_PROFILE.md
-  │                 │           │     │  python3 coneSignals.py  # shared control + correlation
-  │                 │           │     └─> CONE_SIGNALS.json + CONE_SIGNALS.md
-  │                 │           │           │  python3 coneBlocks.py  # control/data + typed blocks
-  │                 │           │           └─> CONE_BLOCKS.json + CONE_BLOCKS.md
-```
+`src/genCellModels.py` is the shared cell-function source of truth (imported by stages
+4 and 5). Every stage ships with its synthetic-fixture test in `tests/`; a stage is done
+when the fixture passes. `./runPipeline.sh` runs 1–5 end to end; the README documents it.
 
-Regenerating a stage invalidates everything downstream of it; the JSON files are committed
-build products, not sources.
+## bench/ — the replay harness (not a pipeline stage)
 
-To run the same chain on the warmup, every path must be passed explicitly (the argparse
-defaults all point at the real puzzle), and the warmup uses its own filenames:
+`bench/vcdToStimulus.py` samples `example_inputs.vcd` once per rising clock edge and
+rewrites `bench/tb_cones.cpp` and `bench/tb_netlist.cpp` **in place**, replacing the block
+between their `// ---- BEGIN/END GENERATED STIMULUS` markers. Each signal becomes one
+binary string covering the whole run — `STIM_W_<sig>` chars per cycle, MSB first, back to
+back, `'x'` for a cycle the recording left unknown — read with `STIM(sig, c)` and
+`STIM_KNOWN(sig, c)`. The two testbenches must end up with byte-identical stimulus blocks.
 
-```
-python3 gdsParser.py  warmup/04_final.gds --out warmup/OUT.json
-python3 netGraph.py   warmup/OUT.json     --out warmup/NET_GRAPH.json
-python3 moduleGraph.py warmup/OUT.json    --out warmup/MODULE_GRAPH.json --verilog warmup/sky130_prims.v
-python3 genVerilog.py --module-graph warmup/MODULE_GRAPH.json --net-graph warmup/NET_GRAPH.json \
-                      --out warmup/adder_demo.v --module-name adder_demo
-python3 logicGraph.py warmup/MODULE_GRAPH.json --out warmup/LOGIC_GRAPH.json \
-                      --prims warmup/sky130_prims.v
-python3 coneClasses.py warmup/LOGIC_GRAPH.json --out warmup/CONE_CLASSES.json \
-                       --prims warmup/sky130_prims.v
-```
+The testbenches are tracked and compile as they stand; there is no `tb_*.gen.cpp`
+indirection any more (removed 2026-09-02). `make -C bench stimulus` edits tracked source,
+so it is never a build prerequisite — run it by hand when the recording changes, and after
+running it check that the file is not open in an editor with a stale buffer (one such
+save silently corrupted a `STIM_I` string on 2026-09-02).
 
-The check that matters: `warmup/MODULE_GRAPH.json` must come out at 85 nodes / 84 wires,
-and its 79 cell instances must match `01_netlist.v`'s 79 non-filler cells per cell type
-(`01_netlist.v` also holds 151 `decap_3`/`tapvpwrvgnd_1` fillers, which carry no signal and
-are correctly absent from the recovered graph).
-
-The scripts carry long module docstrings explaining the *why*
-of each design decision — read the docstring before changing a stage's logic.
-
-Key stage semantics that are easy to get wrong:
-
-- **`gdsParser.py`** — hand-written GDSII record reader. GDS has no concept of a net; layer
-  numbers are bare integers mapped to sky130 materials by a table in this file. Emits
-  BOUNDARY polygons, PATH segments and every SREF instantiation in *local* coordinates plus
-  its placement transform.
-- **`netGraph.py`** — flattens placements to absolute coordinates, then union-finds every
-  conductive shape into nets using exact polygon intersection (bbox-only overlap snowballs
-  into one giant net). Only interconnect layers (li1, met1..met5) and their contacts/vias
-  participate; poly/diff/tap are excluded on purpose. `bond_intra_cell_pins()` rejoins li1
-  islands that a cell ties together *below* li1 through poly — computed once per cell type,
-  and deliberately never applied to power rails.
-- **`moduleGraph.py`** — reuses netGraph's pipeline and re-assembles it as one edge per net
-  (not a pairwise clique), each edge listing every (instance, pin) endpoint. Pin directions
-  come from parsing `sky130_prims.v`, which is the source of truth for cell pinouts. Power
-  nets (identified from VPWR/VGND/VPB/VNB TEXT labels), vias, TOP routing, and single-endpoint
-  intra-cell nets are all dropped here — downstream stages never need to re-filter them.
-- **`genVerilog.py`** — nothing about the design is hardcoded: port names, port directions,
-  and per-cell-type pinouts are all derived from the graphs. A hardcoded port table here
-  previously emitted a header for the warmup adder's ports on the real puzzle; don't
-  reintroduce one.
-- **`logicGraph.py`** — splices buffers out (lossless) and absorbs inverters into consuming
-  pins as a `(net, inverted)` pair (also lossless), then cuts the graph at flip-flops into
-  per-sink cones. Cones overlap by design: a gate feeding five flops appears in five cones,
-  so cone sizes sum to more than the gate count.
-- **`cellLibrary.py`** — parses `sky130_prims.v` into `{class: CellSpec}`: pins, Boolean
-  function compiled from the continuous assignments, sequential flag, and pin symmetry
-  *derived* by swapping inputs and re-testing the truth table (so an AND2's A/B are known
-  interchangeable and a MUX2's A0/A1/S are known not to be). Import-only, no CLI. It is the
-  single source of cell semantics for the cone stage.
-- **`coneClasses.py`** — evaluates each cone's full truth table (numpy bit-packed, 64
-  assignments per machine op), then canonicalizes it under leaf permutation so two cones
-  computing the same function group together even when synthesis built one as the De Morgan
-  dual of the other or landed the operand bits on different pins. Grouping is by hash of the
-  canonical table, so it is exact: a functional group can never be a false positive, only a
-  missed merge. Constants are folded as fixed columns, which lowers k and is what makes the
-  wide cones tractable. Groups flagged `structural` fell out of the functional path and are
-  heuristic.
-- **`coneProfile.py`** — the descriptive counterpart to `coneClasses.py`. Where that
-  module asks "which cones are exactly equal" (and answers with 65 singletons out of 72
-  groups), this one measures each cone — size, depth, fan-in, fan-out, leaf composition,
-  where its Q goes, position in the sequential graph — and offers four *independent* class
-  views over those attributes. They are not a hierarchy: only `class_profile` →
-  `class_coarse` actually refines, and `class_shape` provably collides (u227.D/u228.D share
-  a `shape` while computing different functions — they overlap in 36 of 37 gates). A profile
-  match is evidence; a signature match is proof, so every record carries its exact
-  `signature` alongside.
-- **`class_block` is defined once, in `coneProfile.py`.** `coneSignals.py` and
-  `coneBlocks.py` both *read* that field rather than deriving their own notion of a bank —
-  they previously disagreed, which skewed the control/data scores. See
-  `coneProfile.block_key()` for why the key is `(role, fan_in, depth, self_feedback,
-  label_family)`, overridden by strongly-connected component, and why gate count is excluded.
-- **`coneSignals.py`** — the transpose of `coneProfile.py`: profiles the leaf *nets*
-  rather than the cones, so the shared control of a bank gets named. A net read by every
-  member of a bank is that bank's control line, found by **set equality** — no threshold.
-  The control/data split for everything else is derived by scanning the fanout distribution
-  for its largest multiplicative gap rather than hardcoded (it lands at 56 on this design).
-  Two traps it documents: canonical leaf positions are *not* comparable across groups (they
-  come from a per-function canonicalization), so stability is measured within a group; and
-  bank coverage must exclude narrow buckets, or "covers a bank" is true of nearly every net.
-- **`coneBlocks.py`** — first level above the cone. Splits every cone into a **control**
-  or **data** domain by a small signed evidence score (fanout weighted heavily, then
-  corroborated by bank coverage and select use), then types each block: shifter, register,
-  matcher, decoder, clearable, toggle, buffer. Two calibration facts are baked into the
-  design rather than tuned: control requires score ≥ 2, because "+1 fanout above the median"
-  alone swept 22 evidence-free cones into control; and a block is keyed on
-  `(role, fan_in, depth, self_feedback, label_family)` — **not** gate count, which synthesis
-  varies across bits of one uniform unit (the 8 output bits run 28–55 gates at a constant
-  depth 8, and keying on gates shattered them into 7 blocks). Every cone keeps its score,
-  evidence list and a strong/weak confidence, so borderline calls stay visible. Blocks come
-  from `class_block`; this stage adds only the domain and the kind.
-- **`coneGraph.py`** — promotes those groups to graph nodes and recovers the edges: group A
-  -> group B when a flop in A drives a leaf of a cone in B. Each node is labelled by matching
-  its canonical truth table against a primitive library (AND/OR/NAND/NOR/XOR/XNOR of each
-  arity including mixed-polarity product/sum families, adder sum/carry, 2:1 and 4:1 muxes);
-  unmatched nodes are named `unknown_k<N>_<hash>`.
-
-## Build and simulate
-
-From the repo root (real puzzle):
-
-```
-make            # verilate + build + simulate puzzleNetlist.v, writes waveform_puzzle.vcd
-make lint       # verilator --lint-only on puzzleNetlist.v + sky130_prims.v
-make logic      # regenerate LOGIC_GRAPH.json
-make cones      # regenerate CONE_CLASSES.json, then CONE_GRAPH.json + CONE_GRAPH.md
-make profile    # regenerate CONE_PROFILE.json + CONE_PROFILE.md
-make signals    # regenerate CONE_SIGNALS.json + CONE_SIGNALS.md
-make blocks     # regenerate CONE_BLOCKS.json + CONE_BLOCKS.md
-make reduced    # regenerate puzzleReduced.v, then run the SAME testbench against it
-make waves      # open waveform_puzzle.vcd in gtkwave
-make clean      # remove obj_dir_TL/, obj_dir_reduced/, .stamp.*, the VCD
-```
-
-`make reduced` is the equivalence check for `logicGraph.py`: if the reference frames still
-pass against the buffer/inverter-reduced netlist, the reduction preserved behavior.
-
-`warmup/` has its own Makefile with the same target names, simulating the recovered flat
-netlist (`adder_demo.v`, top `adder_demo`) under `adderTestbench.cpp`:
-
-```
-make            # flat netlist from genVerilog.py (adder_demo.v, top adder_demo)
-```
-
-The testbench reaches its top through `-DTOP_TYPE` (default `Vadder_demo`), so any other
-netlist exposing the same ports (`A, B, clk, en, rst_n, S`) can be checked against it.
-
-## The testbench is the regression test
-
-`puzzleTestbench.cpp` is the only end-to-end test of the whole extraction chain. There is
-no reference model — recovering the function *is* the puzzle — so it replays the two frames
-transcribed from `example_inputs.vcd` and asserts the netlist reproduces the recorded
-message ("TRY AGAIN") with `success` low. If those pass, GDS → nets → cells → netlist is
-behaving like the real silicon on the only inputs with ground truth.
-
-Frame protocol (recovered from the VCD, not guessed): 3 cycles `rst_n=0, enable=0`;
-1 cycle idle; 121 cycles `enable=1` shifting bits in on `I`; 35 cycles readout, during
-which the design drives one ASCII byte per character on `O[7:0]` with zero bytes between.
-
-```
-./obj_dir_TL/Vpuzzle                 # replay both reference frames and check them
-./obj_dir_TL/Vpuzzle <121 bits>      # drive one custom frame ('0'/'1' string, shift order)
-```
-
-The custom-frame mode is how candidate solutions get tried. Ports are `clk, rst_n, enable, I`
-in and `O[7:0], success` out. The top module is named `puzzle` so signal paths line up with
-`example_inputs.vcd` when both are opened in a waveform viewer.
-
-
+Known issue: `bench/ConesVerilog.v` does not elaborate — `cone54` appears in the
+`conesTop` port list with no matching input/output declaration. Unresolved; it is a
+`conesToVerilog.py` or hand-edit problem, not a stimulus one. `make -C bench netlist`
+builds and replays fine.

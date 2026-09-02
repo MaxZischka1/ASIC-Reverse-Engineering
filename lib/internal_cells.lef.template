@@ -1,0 +1,65 @@
+# Template LEF for the puzzle's custom constant-generator cells (INTERNAL_3,
+# INTERNAL_7). Fill in the RECT lines, save as lib/internal_cells.lef, then run
+# ./runPipeline.sh — it picks the file up automatically.
+#
+# ONLY ONE THING IS NEEDED PER CONSTANT OUTPUT:
+#
+#   a rectangle, in MICRONS and CELL-LOCAL coordinates, that overlaps the shape
+#   where outside routing attaches to that output
+#
+# plus two labels you already know: the layer that shape is on (li1 unless the
+# routing attaches higher up), and whether the output is high or low (pin name
+# HI or LO). Nothing else about the cell matters — no SIZE, no CLASS, no
+# internal geometry, no transistors, no power pins. Connectivity is decided by
+# overlap, so a rectangle that comfortably covers the attach shape is fine;
+# it does not need to match the real pin shape exactly. Being slightly
+# generous is safer than being tight, as long as it doesn't reach a
+# neighbouring net.
+#
+# To read one off in KLayout: descend into the INTERNAL_3 cell, click the li1
+# shape the outside wire lands on, and read its x1 y1 x2 y2 (µm). If KLayout
+# shows absolute coordinates, subtract the cell instance's origin.
+#
+# Delete the HI or LO block if that cell drives only one constant; duplicate a
+# block if it drives several of the same polarity (name them HI2, LO2, ... —
+# any name containing HI/LO works).
+
+VERSION 5.7 ;
+
+MACRO INTERNAL_3
+  PIN HI
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER li1 ;
+        RECT <x1> <y1> <x2> <y2> ;
+    END
+  END HI
+  PIN LO
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER li1 ;
+        RECT <x1> <y1> <x2> <y2> ;
+    END
+  END LO
+END INTERNAL_3
+
+MACRO INTERNAL_7
+  PIN HI
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER li1 ;
+        RECT <x1> <y1> <x2> <y2> ;
+    END
+  END HI
+  PIN LO
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER li1 ;
+        RECT <x1> <y1> <x2> <y2> ;
+    END
+  END LO
+END INTERNAL_7

@@ -1,15 +1,19 @@
-# Verilator build trees and bookkeeping (recreate with `make`)
-obj_dir_*/
-.stamp.*
+# Pipeline outputs — reproducible with ./runPipeline.sh
+out/
 
-# Simulation output (recreate with `make sim`)
-*.vcd
-# ...except the puzzle's own reference stimulus, which is a shipped input.
-!example_inputs.vcd
+# Generated cell models (tests/testCellModels.py / bench regenerate)
+lib/sky130_cells_sim.v
 
-# Python bytecode
-__pycache__/
-*.pyc
+# bench/ generated Verilog + Verilator build trees + waveforms
+# (tb_*.cpp are tracked: they carry their stimulus inline, see bench/vcdToStimulus.py)
+bench/*.v
+bench/stimulus.h
+bench/stimulus.json
+bench/obj_dir_*/
+bench/*.vcd
 
-# macOS
+# Scratch
+*.dot
+*.log
 .DS_Store
+__pycache__/
