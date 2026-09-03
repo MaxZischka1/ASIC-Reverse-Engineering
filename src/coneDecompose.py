@@ -25,11 +25,11 @@ Output (CONES.json):
      "sinks": [{"kind": "reg", "inst": "u5", "pin": "D"},
                {"kind": "port", "name": "OUT"}],
      "cells": ["u1", "u2"],            # topologically ordered, inputs first
-     "leaves": [{"kind": "port", "name": "I"},
-                {"kind": "reg", "inst": "u9", "pin": "Q"},
-                {"kind": "const", "value": "1"},
-                {"kind": "opaque", "inst": "b0", "pin": "P0"},
-                {"kind": "undriven", "net": 12}],
+     "leaves": [{"kind": "port", "name": "I", "from_cone": None},
+                {"kind": "reg", "inst": "u9", "pin": "Q", "from_cone": 3},
+                {"kind": "const", "value": "1", "from_cone": None},
+                {"kind": "opaque", "inst": "b0", "pin": "P0", "from_cone": None},
+                {"kind": "undriven", "net": 12, "from_cone": None}],
      "depth": int,                     # levels of combinational logic
      "n_cells": int, "n_leaves": int}
   ],
@@ -41,6 +41,12 @@ Output (CONES.json):
 
 Cells inside a cone are listed in topological order so a consumer (stage 5) can
 evaluate the cone by walking the list once.
+
+`from_cone` on a leaf is the cone that produces it: for a register output, the
+cone feeding that register's data pin. It is the one leaf kind that leads
+somewhere, so it is what lets a reader walk from a cone to the cones upstream of
+it. Every other leaf kind — and a register whose data pin has no cone, or several
+ambiguous ones — gets None, and a consumer names the net instead.
 """
 
 import argparse
@@ -136,6 +142,53 @@ class Netlist(object):
         if kind == "opaque":
             return ("leaf", {"kind": "opaque", "inst": inst, "pin": pin})
         return ("comb", inst)
+
+
+# Every sequential family in SEQ_TEMPLATES names its data input `D`; the other
+# data pins (SCD, SCE, DE, RESET_B, SET_B) are scan and control. Asserted against
+# the templates by tests/testConeDecompose.py.
+DATA_PIN = "D"
+
+
+def annotate_leaf_origins(cones, registers, warnings):
+    """Tag each cone leaf with the cone that produces it, where there is one.
+
+    A cone's leaves are its boundary: primary inputs, constants, black boxes, and
+    register outputs. A register output is the one kind that leads somewhere —
+    back to the cone feeding that register's data pin — so tagging it lets a
+    reader walk from a cone to the cones upstream of it without re-deriving the
+    connectivity. Everything else gets None, and the caller falls back to naming
+    the net.
+    """
+    cone_at = {}                        # (register instance, pin) -> cone id
+    for cone in cones:
+        for sink in cone["sinks"]:
+            if sink["kind"] == "reg":
+                cone_at[(sink["inst"], sink["pin"])] = cone["id"]
+
+    data_pins_of = {r["inst"]: r["data_pins"] for r in registers}
+    resolved = unresolved = 0
+    for cone in cones:
+        for leaf in cone["leaves"]:
+            leaf["from_cone"] = None
+            if leaf["kind"] != "reg":
+                continue
+            inst = leaf["inst"]
+            src = cone_at.get((inst, DATA_PIN))
+            if src is None:
+                # No cone on D: a tied-off or unconnected data input, or a family
+                # that takes its data elsewhere. One candidate is still an answer;
+                # several are ambiguous, and the caller names the net instead.
+                candidates = sorted({cone_at[(inst, p)]
+                                     for p in data_pins_of.get(inst, [])
+                                     if (inst, p) in cone_at})
+                src = candidates[0] if len(candidates) == 1 else None
+            leaf["from_cone"] = src
+            if src is None:
+                unresolved += 1
+            else:
+                resolved += 1
+    return resolved, unresolved
 
 
 def leaf_key(leaf):
@@ -246,6 +299,9 @@ def decompose(graph, warnings):
             "n_leaves": len(leaves),
         })
 
+    origins_resolved, origins_unresolved = annotate_leaf_origins(
+        cones, registers, warnings)
+
     covered = set()
     for c in cones:
         covered.update(c["cells"])
@@ -307,6 +363,8 @@ def decompose(graph, warnings):
         "max_depth": max([c["depth"] for c in cones], default=0),
         "max_cells": max([c["n_cells"] for c in cones], default=0),
         "max_leaves": max([c["n_leaves"] for c in cones], default=0),
+        "leaves_from_cone": origins_resolved,
+        "leaves_without_cone": origins_unresolved,
         "depth_histogram": dict(sorted(depth_hist.items())),
     }
     return {"cones": cones, "registers": registers,
@@ -339,6 +397,8 @@ def main(argv=None):
              s["orphan_cells"]))
     print("  max depth %d, max cells/cone %d, max leaves/cone %d"
           % (s["max_depth"], s["max_cells"], s["max_leaves"]))
+    print("  register leaves traced to a producing cone: %d (%d left as nets)"
+          % (s["leaves_from_cone"], s["leaves_without_cone"]))
     print("  depth histogram: %s" % s["depth_histogram"])
     for w in warnings[:10]:
         print("warning:", w)

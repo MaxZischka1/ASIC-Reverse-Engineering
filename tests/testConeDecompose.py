@@ -8,15 +8,21 @@ register boundary, primary inputs, constants (net-level and tied-pin), a scan
 flop's several data roots, a latch whose GATE is a clock, an unconnected sink,
 an opaque black box, a combinational loop, and topological ordering.
 
+Also covers the `from_cone` leaf annotation and the comment `bench/conesToVerilog.py`
+builds from it, which is the one place a bench/ file is tested from here: the
+annotation is stage-4 data and the comment is its only consumer, so they are
+checked together or not at all.
+
 Run:  python3 tests/testConeDecompose.py
 """
 
 import os
 import sys
 
-sys.path.insert(0, os.path.join(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src"))
-from coneDecompose import decompose, clock_pins_of  # noqa: E402
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "src"))
+sys.path.insert(0, os.path.join(ROOT, "bench"))
+from coneDecompose import DATA_PIN, decompose, clock_pins_of  # noqa: E402
 
 HD = "sky130_fd_sc_hd__"
 
@@ -27,6 +33,19 @@ CELLS = {
     HD + "nand2_1":  {"inputs": ["A", "B"], "outputs": ["Y"]},
     HD + "and2_1":   {"inputs": ["A", "B"], "outputs": ["X"]},
     HD + "or2_1":    {"inputs": ["A", "B"], "outputs": ["X"]},
+    HD + "nor2_1":   {"inputs": ["A", "B"], "outputs": ["Y"]},
+    HD + "nand3_1":  {"inputs": ["A", "B", "C"], "outputs": ["Y"]},
+    HD + "xor2_1":   {"inputs": ["A", "B"], "outputs": ["X"]},
+    HD + "xnor2_1":  {"inputs": ["A", "B"], "outputs": ["Y"]},
+    HD + "mux2_1":   {"inputs": ["A0", "A1", "S"], "outputs": ["X"]},
+    HD + "mux4_1":   {"inputs": ["A0", "A1", "A2", "A3", "S0", "S1"],
+                      "outputs": ["X"]},
+    HD + "maj3_1":   {"inputs": ["A", "B", "C"], "outputs": ["X"]},
+    HD + "o21ai_1":  {"inputs": ["A1", "A2", "B1"], "outputs": ["Y"]},
+    HD + "a21oi_1":  {"inputs": ["A1", "A2", "B1"], "outputs": ["Y"]},
+    HD + "o22ai_1":  {"inputs": ["A1", "A2", "B1", "B2"], "outputs": ["Y"]},
+    HD + "a22oi_1":  {"inputs": ["A1", "A2", "B1", "B2"], "outputs": ["Y"]},
+    HD + "conb_1":   {"inputs": [], "outputs": ["HI", "LO"]},
     HD + "dfxtp_1":  {"inputs": ["CLK", "D"], "outputs": ["Q"]},
     HD + "sdfrtp_1": {"inputs": ["CLK", "D", "RESET_B", "SCD", "SCE"],
                       "outputs": ["Q"]},
@@ -342,8 +361,122 @@ def check_clock_pin_table():
     print("clock pins: OK (all %d sequential families classified)" % len(SEQ_TEMPLATES))
 
 
+def check_leaf_origins():
+    """Every sequential family names its data input D, and a register-output leaf
+    is tagged with the cone feeding that D.
+
+    IN0,IN1 -> nand -> f1 ; f1.Q & IN2 -> and -> f2 ; f2.Q -> OUT, so the chain of
+    cones is 0 -> 1 -> 2 and each leaf points one step back up it.
+    """
+    from genCellModels import SEQ_TEMPLATES, used_idents
+    for fam, body in SEQ_TEMPLATES.items():
+        if fam in ("dlclkp", "sdlclkp"):
+            continue                       # clock gates latch an enable, not data
+        assert DATA_PIN in used_idents(body), (fam, DATA_PIN)
+
+    g = make_graph(
+        instances=[("u0", HD + "nand2_1"), ("f1", HD + "dfxtp_1"),
+                   ("u1", HD + "and2_1"), ("f2", HD + "dfxtp_1")],
+        nets=[(0, [("u0", "A", "input")]),                       # IN0
+              (1, [("u0", "B", "input")]),                       # IN1
+              (2, [("u0", "Y", "output"), ("f1", "D", "input")]),
+              (3, [("f1", "CLK", "input"), ("f2", "CLK", "input")]),
+              (4, [("f1", "Q", "output"), ("u1", "A", "input")]),
+              (5, [("u1", "B", "input")]),                       # IN2
+              (6, [("u1", "X", "output"), ("f2", "D", "input")]),
+              (7, [("f2", "Q", "output")])],
+        ports=[("IN0", "input", 0), ("IN1", "input", 1), ("clk", "input", 3),
+               ("IN2", "input", 5), ("OUT", "output", 7)])
+    res = decompose(g, [])
+
+    def origins(net):
+        return {(l["kind"], l.get("inst") or l.get("name"), l["from_cone"])
+                for l in cone_by_root(res, net)["leaves"]}
+
+    assert origins(2) == {("port", "IN0", None), ("port", "IN1", None)}, origins(2)
+    assert origins(6) == {("port", "IN2", None), ("reg", "f1", 0)}, origins(6)
+    assert origins(7) == {("reg", "f2", 1)}, origins(7)
+    assert res["summary"]["leaves_from_cone"] == 2, res["summary"]
+    assert res["summary"]["leaves_without_cone"] == 0, res["summary"]
+    print("leaf origins: OK (each register leaf points at the cone feeding its D)")
+
+
+def check_unresolvable_origins_fall_back():
+    """A register whose data pin has no cone leaves the leaf untagged, so the
+    consumer names the net instead of inventing a source."""
+    g = make_graph(
+        instances=[("f1", HD + "dfxtp_1"), ("u0", HD + "inv_1"),
+                   ("b0", "MYBLACKBOX"), ("f2", HD + "dfxtp_1")],
+        nets=[(0, [("f1", "CLK", "input"), ("f2", "CLK", "input")]),
+              (1, [("f1", "Q", "output"), ("u0", "A", "input")]),
+              (2, [("u0", "Y", "output"), ("f2", "D", "input")]),
+              (3, [("b0", "P0", "output"), ("f2", "CLK", "input")]),
+              (4, [("f2", "Q", "output")])],
+        ports=[("clk", "input", 0), ("OUT", "output", 4)],
+        tied_pins=[("f1", "D", "0")])          # f1's data is tied off: no cone
+    warnings = []
+    res = decompose(g, warnings)
+
+    # f1's data is tied off, so the leaf that is f1.Q has no producing cone...
+    leaves = {l["kind"]: l for l in cone_by_root(res, 2)["leaves"]}
+    assert leaves["reg"]["inst"] == "f1", leaves
+    assert leaves["reg"]["from_cone"] is None, leaves["reg"]
+    # ...while f2, whose D is driven by that cone, resolves normally
+    out_leaf = cone_by_root(res, 4)["leaves"][0]
+    assert (out_leaf["inst"], out_leaf["from_cone"]) == ("f2", 0), out_leaf
+    assert res["summary"]["leaves_from_cone"] == 1, res["summary"]
+    assert res["summary"]["leaves_without_cone"] == 1, res["summary"]
+    print("unresolvable origins: OK (a tied-off data pin leaves from_cone None; "
+          "its neighbour still resolves)")
+
+
+def check_verilog_input_comment():
+    """conesToVerilog turns the annotation into the comment above each module:
+    an upstream cone where stage 4 found one, the port name for a primary input,
+    and the net itself otherwise."""
+    import conesToVerilog
+
+    g = make_graph(
+        instances=[("u0", HD + "nand2_1"), ("f1", HD + "dfxtp_1"),
+                   ("u1", HD + "and2_1"), ("f2", HD + "dfxtp_1")],
+        nets=[(0, [("u0", "A", "input")]), (1, [("u0", "B", "input")]),
+              (2, [("u0", "Y", "output"), ("f1", "D", "input")]),
+              (3, [("f1", "CLK", "input"), ("f2", "CLK", "input")]),
+              (4, [("f1", "Q", "output"), ("u1", "A", "input")]),
+              (5, [("u1", "B", "input")]),
+              (6, [("u1", "X", "output"), ("f2", "D", "input")]),
+              (7, [("f2", "Q", "output")])],
+        ports=[("IN0", "input", 0), ("IN1", "input", 1), ("clk", "input", 3),
+               ("IN2", "input", 5), ("OUT", "output", 7)])
+    warnings = []
+    res = decompose(g, warnings)
+    text = conesToVerilog.emit(res, g, "CONE", 0, "Y", warnings, no_top=True)
+
+    assert "// CONE0 — inputs and the cone each comes from:" in text, text
+    assert "//   IN0  <-  primary input IN0" in text, text
+    assert "//   f1_Q  <-  CONE0  (register f1)" in text, text
+    assert "//   f2_Q  <-  CONE1  (register f2)" in text, text
+    # the comment is above the module, not inside it
+    head = text.split("module CONE1 (")[0]
+    assert "f1_Q  <-  CONE0" in head, head
+
+    # --start shifts module names, and the comment must follow
+    shifted = conesToVerilog.emit(res, g, "C", 1, "Y", [], no_top=True)
+    assert "//   f1_Q  <-  C1  (register f1)" in shifted, shifted
+
+    bare = conesToVerilog.emit(res, g, "CONE", 0, "Y", [], no_top=True,
+                               no_origins=True)
+    assert "inputs and the cone each comes from" not in bare
+    assert bare.count("module CONE") == text.count("module CONE")
+    print("verilog input comment: OK (upstream cone, primary input, --start "
+          "offset, and --no-origins all correct)")
+
+
 if __name__ == "__main__":
     check_basic()
+    check_leaf_origins()
+    check_unresolvable_origins_fall_back()
+    check_verilog_input_comment()
     check_sharing_and_constants()
     check_scan_latch_tied_opaque()
     check_opaque_and_loop()

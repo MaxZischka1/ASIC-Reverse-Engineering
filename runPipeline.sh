@@ -27,5 +27,42 @@ echo "## CONE GROUPS — cone truth tables and functional equivalence classes ##
 python3 src/coneClasses.py "$OUT/NETLIST_GRAPH.json" "$OUT/CONES.json" \
     --out "$OUT/CONE_CLASSES.json"
 
+# ------------------------------------- stage 6: solve for an input (opt-in)
+# Off by default: it is the expensive stage and it needs to be told what to
+# solve for. Run it with, e.g.
+#
+#   SOLVE=1 GOAL=success SYMBOLIC=I SYMBOLIC_WHEN=enable MAX_CYCLES=400 \
+#       ./runPipeline.sh
+#
+# Start with SOLVE=preflight to see the structure report — register counts,
+# clock domains, how many registers have no reset — before committing to a solve.
+if [ -n "${SOLVE:-}" ]; then
+    echo
+    echo "## SOLVE — unroll and search for an input that reaches the goal ##"
+    # Built as positional parameters rather than one word-split string, so an
+    # empty or spaced value cannot silently become the wrong argument list.
+    set -- --goal "${GOAL:-success}" --max-cycles "${MAX_CYCLES:-200}" \
+           --init "${INIT:-free}" --clock "${CLOCK:-clk}"
+    if [ -n "${SYMBOLIC:-}" ]; then
+        set -- "$@" --symbolic "$SYMBOLIC"
+    fi
+    if [ -n "${SYMBOLIC_WHEN:-}" ]; then
+        set -- "$@" --symbolic-when "$SYMBOLIC_WHEN"
+    fi
+    if [ -f "${STIMULUS:-bench/stimulus.json}" ]; then
+        set -- "$@" --stimulus "${STIMULUS:-bench/stimulus.json}"
+    fi
+    if [ "$SOLVE" = "preflight" ]; then
+        set -- "$@" --preflight
+    else
+        set -- "$@" --check-unique --check-robust
+    fi
+    python3 src/symSolve.py "$OUT/NETLIST_GRAPH.json" "$OUT/CONES.json" "$@" \
+        --out "$OUT/SOLUTION.json" --bits-out "$OUT/solution.bits"
+fi
+
 echo
 echo "Done. Outputs in $OUT/: NETLIST_GRAPH.json, CONES.json, CONE_CLASSES.json"
+if [ -n "${SOLVE:-}" ]; then
+    echo "        plus SOLUTION.json, solution.bits"
+fi

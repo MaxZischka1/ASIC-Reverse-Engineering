@@ -10,8 +10,9 @@ structure-recovery pipeline for the Jane Street ASIC reverse-engineering puzzle.
 attempt was deleted in full because it violated the competition's AI rules: Claude was
 shown files derived from the puzzle GDS. Its files exist only in pre-restart git history.
 
-Scope: **stages 1–5 only** — recover the netlist, slice it into flop-to-flop cones,
-group cones by function. Other downstream stages (cone graph, backward walk, block
+Scope: **stages 1–6** — recover the netlist, slice it into flop-to-flop cones,
+group cones by function, then solve the design for an input sequence that drives a
+chosen output high. Other downstream stages (cone graph, backward walk, block
 decomposition) were built and then removed on 2026-09-01.
 
 Layout: `src/` holds the pipeline modules, `tests/` one fixture suite each, `lib/` the
@@ -57,7 +58,11 @@ This is the competition's AI-usage rule and it is absolute:
   pins (a tool input), not the circuit: they show what was driven in and what came
   out, never how anything is computed. The forbidden list above is unchanged
   otherwise, and the recovered logic itself (`out/*.json`, `bench/netlistVerilog.v`,
-  `bench/ConesVerilog.v`) stays off limits.
+  `bench/ConesVerilog.v`) stays off limits — as does stage 6's answer,
+  `out/solution.bits`, which is the puzzle's solution outright. What Claude may
+  read back from a stage-6 run is the verification signal only: sat/unsat, the
+  cycle count, the structural counts in the preflight report, solve time, and
+  whether the unique and robust checks passed.
 
 The restriction is on *Claude viewing content*, not on the code: the pipeline scripts are
 supposed to parse `puzzle.gds` when the user runs them.
@@ -68,13 +73,62 @@ supposed to parse `puzzle.gds` when the user runs them.
    connectivity engine; standard cells stay as subcircuits, pin/port names come from
    the layout's own labels. → `out/NETLIST_GRAPH.json`
 4. Cone decomposition — `src/coneDecompose.py`, backward fan-in from each register data
-   pin / primary output to the nearest sequential boundary. → `out/CONES.json`
+   pin / primary output to the nearest sequential boundary. Each leaf also carries
+   `from_cone`: for a register output, the cone feeding that register's data pin, so a
+   reader can walk from a cone to the ones upstream of it. Other leaf kinds — and a
+   register whose data pin has no cone, or several ambiguous ones — get `null`, and the
+   consumer names the net instead. → `out/CONES.json`
 5. Cone groups — `src/coneClasses.py` (+ `src/boolExpr.py`), each cone's Boolean
    function and the functional equivalence classes over cones. → `out/CONE_CLASSES.json`
+6. Input solving — `src/symSolve.py`, bounded model checking. Unrolls the
+   sequential netlist one step per rising clock edge, makes the nominated input
+   pins free Booleans, and asks Z3 for an assignment that drives a chosen output
+   high; deepens the bound one cycle at a time so it reports the *earliest*
+   cycle. `--check-unique` looks for a second answer, `--check-robust` proves the
+   answer works from every power-on state. Needs `z3-solver`.
+   → `out/SOLUTION.json`, `out/solution.bits`
+
+`src/decomposeCone.py` is an **analysis tool, not a pipeline stage**: nothing in the
+pipeline depends on it and `runPipeline.sh` does not run it. Given one cone and a target
+value it asks Z3 which assignments to that cone's boundary inputs force its output --
+`--mode implicants` (the default: an irredundant cover of prime implicants, don't-cares
+shown as `-`), `models`, `support` (which inputs can affect the output at all, proven by
+UNSAT), or `count`. `CONE7`, `cone7` and `7` all name cone id 7, which is also the module
+name `bench/conesToVerilog.py` gives it; `--by-root NET` addresses one by root net.
+Every boundary input is listed with where it comes from — the cone feeding it via
+stage 4's `from_cone`, or what it is (primary input, black box, undriven) when nothing
+upstream is a cone — in the human report and as `input_origins` / `input_cones` in
+`--json`. A CONES.json predating the tag still works: it is recomputed on load.
+A block with two outputs is two cones: `--also CONE9=1` puts them in one query over a
+shared boundary, which is not the same as two separate runs (separately reachable
+targets can be jointly unreachable). Nothing enumerates a truth table: cubes are grown
+by SAT queries and shrunk by their unsat cores, `count` sums disjoint cubes rather than
+solving once per solution, and `--budget SEC` caps the whole run — a search stopped by
+`--limit`, `--budget` or `--timeout` keeps what it proved and says so instead of
+reporting UNSAT. `--seed` makes runs reproducible. It
+adds no cell semantics of its own -- combinational cells go through `FAMILY_FUNCS` and
+the `boolExpr` parser, and `symSolve.z3_from_ast` turns them into Z3 terms -- and it
+refuses rather than guesses on an unmodelled family, a tri-state cell, or a sequential
+cell inside a cone. Needs `z3-solver`. Its output is circuit content, so the
+reading-vs-using rule applies to it in full.
 
 `src/genCellModels.py` is the shared cell-function source of truth (imported by stages
-4 and 5). Every stage ships with its synthetic-fixture test in `tests/`; a stage is done
-when the fixture passes. `./runPipeline.sh` runs 1–5 end to end; the README documents it.
+4, 5 and 6, and by `decomposeCone`). Every stage ships with its synthetic-fixture test
+in `tests/`; a stage is done when the fixture passes. `./runPipeline.sh` runs 1–5 end to
+end; the README documents it.
+
+Stage 6 is opt-in, because it is the expensive stage and has to be told what to solve
+for. `SOLVE=preflight ./runPipeline.sh` adds a structure report (register counts, clock
+domains, how many registers have no reset) and stops there; `SOLVE=1 SYMBOLIC=I
+SYMBOLIC_WHEN=enable MAX_CYCLES=400 ./runPipeline.sh` solves. It restates no circuit
+semantics: combinational cells go through `FAMILY_FUNCS` and the `boolExpr` parser, the
+register inventory comes from stage 4. The one table it adds is `SEQ_SPECS`, a
+declarative reading of `SEQ_TEMPLATES` (whose Verilog bodies are procedural and cannot
+be evaluated as expressions); `tests/testSymSolve.py` fails if the two disagree about a
+family or a pin. Anything it cannot model — an unknown sequential family, an
+unresolvable clock, a transparent latch, an unconnected data pin with no inactive value
+— is a hard error naming the cells, never a silent guess, because a mis-modelled clock
+gate yields a confidently wrong answer.
 
 ## bench/ — the replay harness (not a pipeline stage)
 
@@ -91,7 +145,9 @@ so it is never a build prerequisite — run it by hand when the recording change
 running it check that the file is not open in an editor with a stale buffer (one such
 save silently corrupted a `STIM_I` string on 2026-09-02).
 
-Known issue: `bench/ConesVerilog.v` does not elaborate — `cone54` appears in the
-`conesTop` port list with no matching input/output declaration. Unresolved; it is a
-`conesToVerilog.py` or hand-edit problem, not a stimulus one. `make -C bench netlist`
-builds and replays fine.
+`bench/conesToVerilog.py` puts a comment above each cone module naming every input and
+where it comes from — the upstream cone from stage 4's `from_cone`, the port name for a
+primary input, the net itself when neither applies. `--no-origins` omits it.
+
+`bench/ConesVerilog.v` is git-ignored and may carry hand edits that the generator will
+not reproduce — regenerate it only when the user asks, and back it up first.

@@ -26,6 +26,12 @@ A depth-0 cone (root driven directly by a register or a port) emits
 ``assign Y = <leaf>;`` with no instances, and is not instantiated in the top
 (whatever drives its root is already there).
 
+Above each cone module is a comment naming every input and where it comes from —
+the upstream cone for a register output (stage 4's ``from_cone``), the port name
+for a primary input, and the net itself when neither applies. That is what makes
+a single module readable on its own: an input called ``u9_Q`` is some other
+cone's output, and the comment says which one. ``--no-origins`` omits it.
+
 This lives in bench/, not src/: it is a simulation aid, not part of stages 1-5.
 """
 
@@ -124,7 +130,41 @@ def leaf_source_name(gv, net):
     return ("%s_%s" % (sanitize(inst), sanitize(pin)), False)
 
 
-def build_module(cone, gv, module_name, out_port, warnings, boundary_insts=frozenset()):
+def input_origins(cone, gv, inputs, cone_name, warnings):
+    """Comment lines naming where each of a cone module's inputs comes from.
+
+    Stage 4 tags a register-output leaf with the cone feeding that register's
+    data pin (`from_cone`), which is what makes a cone module navigable: an input
+    port named `u9_Q` is the output of some other cone, and this says which. When
+    stage 4 could not resolve one — a tied-off data pin, an ambiguous scan flop, a
+    black box, a cut combinational loop — the net is named instead, which is
+    always true even when it is not informative.
+    """
+    from_cone = {}
+    for leaf in cone.get("leaves", []):
+        if leaf.get("from_cone") is not None:
+            from_cone[(leaf["inst"], leaf["pin"])] = leaf["from_cone"]
+
+    lines = []
+    width = max([len(p) for p, _n in inputs] or [0])
+    for port, net in inputs:
+        if net in gv.in_port_of_net:
+            origin = "primary input %s" % gv.in_port_of_net[net]
+        else:
+            drv = gv.driver.get(net)
+            if drv is None:
+                origin = "net %d, undriven" % net
+            elif (drv[0], drv[1]) in from_cone:
+                origin = "%s  (register %s)" % (
+                    cone_name(from_cone[(drv[0], drv[1])]), drv[0])
+            else:
+                origin = "net %d  (driven by %s.%s)" % (net, drv[0], drv[1])
+        lines.append("//   %-*s  <-  %s" % (width, port, origin))
+    return lines
+
+
+def build_module(cone, gv, module_name, out_port, warnings, boundary_insts=frozenset(),
+                 cone_name=None):
     """Return (text, port_info) for one cone.
 
     port_info = {"name", "out_port", "root_net", "inputs": [(port_name, net_id)]}
@@ -195,6 +235,12 @@ def build_module(cone, gv, module_name, out_port, warnings, boundary_insts=froze
             assigns.append("assign %s = %s;" % (out_port, src))
 
     lines = []
+    if cone_name is not None:
+        lines.append("// %s — inputs and the cone each comes from:" % module_name)
+        if inputs:
+            lines.extend(input_origins(cone, gv, inputs, cone_name, warnings))
+        else:
+            lines.append("//   (none: this cone reads only constants)")
     lines.append("module %s (" % module_name)
     lines.append("    " + ",\n    ".join([out_port] + [p for p, _n in inputs]))
     lines.append(");")
@@ -339,16 +385,20 @@ def build_top(cones_data, graph, gv, port_infos, prefix, start, top_name, warnin
 
 
 def emit(cones_data, graph, prefix, start, out_port, warnings,
-         top_module="conesTop", no_top=False):
+         top_module="conesTop", no_top=False, no_origins=False):
     gv = GraphView(graph)
     boundary_insts = {r["inst"] for r in cones_data.get("registers", [])}
     boundary_insts |= {l["inst"] for c in cones_data["cones"]
                        for l in c["leaves"] if l["kind"] in ("reg", "opaque")}
+    def cone_name(cone_id):
+        return "%s%d" % (prefix, cone_id + start)
+
     blocks = []
     port_infos = []
     for cone in cones_data["cones"]:
-        name = "%s%d" % (prefix, cone["id"] + start)
-        text, pi = build_module(cone, gv, name, out_port, warnings, boundary_insts)
+        name = cone_name(cone["id"])
+        text, pi = build_module(cone, gv, name, out_port, warnings, boundary_insts,
+                                cone_name=None if no_origins else cone_name)
         blocks.append(text)
         port_infos.append(pi)
     if not no_top:
@@ -373,6 +423,9 @@ def main(argv=None):
                     help="name of the assembled top module (default conesTop)")
     ap.add_argument("--no-top", action="store_true",
                     help="emit only the per-cone modules, no assembled top")
+    ap.add_argument("--no-origins", action="store_true",
+                    help="omit the comment above each cone naming where its "
+                         "inputs come from")
     args = ap.parse_args(argv)
 
     with open(args.cones_json) as f:
@@ -382,7 +435,8 @@ def main(argv=None):
 
     warnings = []
     text = emit(cones_data, graph, args.prefix, args.start, args.out_port,
-                warnings, top_module=args.top_module, no_top=args.no_top)
+                warnings, top_module=args.top_module, no_top=args.no_top,
+                no_origins=args.no_origins)
     with open(args.out, "w") as f:
         f.write(text)
 

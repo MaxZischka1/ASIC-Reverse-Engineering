@@ -10,6 +10,11 @@
 # Paths are relative to bench/. The DUTs and cell models are generated from
 # out/*.json and are git-ignored; the testbenches carry the recording's stimulus
 # inline (one binary string per signal) and are tracked as they stand.
+#
+# Each obj_dir_* rule depends on this Makefile and wipes its --Mdir first:
+# verilator skips regenerating an --Mdir whose inputs hash identically, so an
+# edited recipe (a changed --exe, say) would otherwise leave a stale V*.mk in
+# place pointing at a file that no longer exists.
 
 MODELS = ../lib/sky130_cells_sim.v
 LEF    = ../lib/sky130_fd_sc_hd_merged.lef
@@ -42,7 +47,8 @@ stimulus:
 ConesVerilog.v: conesToVerilog.py netlistVerilog.py $(CONES) $(GRAPH)
 	python3 conesToVerilog.py $(CONES) $(GRAPH) --out $@ --top-module conesTop
 
-obj_dir_cones/VconesTop: ConesVerilog.v $(MODELS) tb_cones.cpp verilatorTB.h
+obj_dir_cones/VconesTop: ConesVerilog.v $(MODELS) tb_cones.cpp verilatorTB.h Makefile
+	rm -rf obj_dir_cones
 	verilator $(VFLAGS) --trace -cc ConesVerilog.v $(MODELS) \
 	    --top-module conesTop --exe ../tb_cones.cpp \
 	    --Mdir obj_dir_cones -CFLAGS "$(CFLAGS)"
@@ -57,7 +63,8 @@ lint-cones: ConesVerilog.v $(MODELS)
 
 # --------------------------------------------------- try: one hand-written frame
 # tb_try.cpp carries its own hand-written 121-bit frame, not the recording.
-obj_dir_try/VconesTop: ConesVerilog.v $(MODELS) tb_try.cpp verilatorTB.h
+obj_dir_try/VconesTop: ConesVerilog.v $(MODELS) tb_try.cpp verilatorTB.h Makefile
+	rm -rf obj_dir_try
 	verilator $(VFLAGS) --trace -cc ConesVerilog.v $(MODELS) \
 	    --top-module conesTop --exe ../tb_try.cpp \
 	    --Mdir obj_dir_try -CFLAGS "$(CFLAGS)"
@@ -71,7 +78,8 @@ try: obj_dir_try/VconesTop
 netlistVerilog.v: netlistVerilog.py $(GRAPH)
 	python3 netlistVerilog.py $(GRAPH) --out $@ --module-name netlistVerilog
 
-obj_dir_netlist/VnetlistVerilog: netlistVerilog.v $(MODELS) tb_netlist.cpp verilatorTB.h
+obj_dir_netlist/VnetlistVerilog: netlistVerilog.v $(MODELS) tb_netlist.cpp verilatorTB.h Makefile
+	rm -rf obj_dir_netlist
 	verilator $(VFLAGS) --trace -cc netlistVerilog.v $(MODELS) \
 	    --top-module netlistVerilog --exe ../tb_netlist.cpp \
 	    --Mdir obj_dir_netlist -CFLAGS "$(CFLAGS)"
