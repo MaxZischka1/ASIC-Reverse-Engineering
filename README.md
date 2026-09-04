@@ -24,7 +24,7 @@ With two data structures containing the recovered gds file the next step is turn
 
 For the circuit analysis I started by looking into the most complex cone. From looking at the verilog file CONE98 is the one to look into. It drives the success output which is the function of circuit along with the output drivers. From here I drew out this cone as you can see below. When looking into this cone I started by examing the cones based on how much of an influence they have on driving success. 
 
-![Alt text](photosReadME/CONE98.jpg)
+<img src="images/CONE98.jpg" width="300">
 
 ### Control 
 
