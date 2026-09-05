@@ -11,10 +11,10 @@ From a broad standpoint, the GDS parsing was a 5-stage process, starting from th
 #### [GDS file to netlist graph](src/klayoutNetlist.py)
 The first file to look into is klayoutNetlist. This really does the first 3 steps of the pipeline described above, taking a GDS file as an input and a netlist as an output. To simplify this step as much as possible, I asked Claude to also use the Klayout LayoutToNetlist tool for this task. What this provided was a readable file in return that the Python file organizes into formatted information. The information important are instances of cells; this is a graph of sky130 logic cells as nodes and connections between each as edges. So this step allowed us to take a GDS file, which does not have a user-readable format and turn it into a data structure that is very easy to walk through and understand for later algorithms created.
 
-#### netlist to combinational blocks
+#### Netlist to Combinational Blocks
 So now there is a Netlist Graph, the issue with a netlist graph is the size and organization; the amount of cells is too large to say draw out and if you tried making specific larger blocks from this step you would have to think of some algorithm that says there is a limit to how many logic cells I will search around me before I am just making the entire circuit in this clock. Instead, for organization, we can just separate the chip's design into every combinational block between two flip-flops. What this gives us is an organized set of every computational step in this circuit AND a very definitive approach to achieving this organized set; all you are doing is walking some graph to see all cells between a data input pin of a flip-flop to the output of another flip-flop or a direct input of the circuit. For this step, I used [coneDecompose.py](src/coneDecompose.py), which, as stated before, just starts walking back from every sequential element to the FF outputs and chip inputs to provide the fan-in of the cone.
 
-#### Json files to Verilog
+#### JSON Files to Verilog
 With two data structures containing the recovered GDS file, the next step is turning these into Verilog files to test if the algorithms Claude created actually worked. This is when [coneToVerilog.py](bench/conesToVerilog.py) and [netlistVerilog.py](bench/netlistVerilog.py) are used. All it does is parse a JSON file, and it does so in two main functions: cleaning the JSON file to include only the specific information the parser needs and then declaring ports, which provide the name and direction of each port.
 
 
