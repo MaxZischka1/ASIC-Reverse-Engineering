@@ -66,7 +66,7 @@ I wanted to add a section on a correction from my previous write-up. In "bit che
   </tr>
 </table>
 
-<img src="photosReadME/THEASIC?.jpeg" width="700">
+<img src="photosReadME/THEASIC.jpeg" width="700">
 
 ## Final Thoughts
 This is the second Jane Street Puzzle I have done, and I absolutely loved it. Circuit design and circuit deriving are really fun tasks, and what I loved about this was the number of unexpected turns the puzzle had. My two favourites were the LFSR in cone 70 and, of course, the Easter Egg I missed. I really love the fact that Jane Street produces these puzzles for the public to do, as they let me practice my hardware engineering in a really fun way. After doing the AoC in Hardcaml in January, I looked at the GitHub of Anish Singhani, and if he himself is reading this README, I would love it if he could reach out and provide some tips on my very old-fashioned brute-force approach with this puzzle or any new development tools in the FPGA/ASIC development space. If anyone else finds themselves reading this repo and has any questions or comments, please reach out @ max.zischka1@gmail.com or connect with me on [LinkedIn](https://www.linkedin.com/in/max-zischka/).
