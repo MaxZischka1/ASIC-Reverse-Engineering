@@ -50,9 +50,9 @@ Now when I first started this puzzle I really wanted to do it more the vibe codi
 ## Easter Egg I missed
 I wanted to add an additional section on a correction from my previous write up. In "bit checking with control" I gave an example of decoding cone 30 which is actually wrong as I wrote at the bottom. There was two things about the top group of cones in cone 98 that made me revisit the problem. Why did high signals around the specific point where it should go high also trigger the system of two cones. This checker is searching for a specific combination of 121 bits. Secondly, why right below it was there a structure that did the exact same thing but correctly. So I threw two cones into my z3 decomposeCone tool the image of the output is shown below and theres something very obvious. That middle section of bits is all control bits. For cone 66 the first example there is only one point in time, shown by the control bit, when that signal can be high. For cone 30 there are 4 distinct times it can be high. So I had to find out where these possible points were. Did they just represent things like what triggered cone 95? Or was it pattern? I will show an example of how you can see which points on the 11x11 grid a 1 causes a high signal. This is a table deriving which 1's trigger cone 27(chosen because it is the smallest).
 
-| 74   | en   | 22   | 28   | 32   | Col6 | Col7 | Col8 | Col9 | Col10 | Col11 | Col12 | Col13 | Col14 |
-|------|------|------|------|------|------|------|------|------|-------|-------|-------|-------|-------|
-| R1C1 | R1C2 | R1C3 | R1C4 | R1C5 | R1C6 | R1C7 | R1C8 | R1C9 | R1C10 | R1C11 | R1C12 | R1C13 | R1C14 |
+| 74 | en | 22 | 28 | 32 | 45 | 50| 56| 25| 59| I | 27| 29|                                    |
+|----|----|--- |----|----|----|---|---|---|---|---|---|---|------------------------------------|
+| 0  | 1  | 0  |  - |  0 | 1  | 1 | 1 | 0 | 0 | 1 | 0 | - | only at col 8 cycle 0-11 and 22-33 |
 | R2C1 | R2C2 | R2C3 | R2C4 | R2C5 | R2C6 | R2C7 | R2C8 | R2C9 | R2C10 | R2C11 | R2C12 | R2C13 | R2C14 |
 | R3C1 | R3C2 | R3C3 | R3C4 | R3C5 | R3C6 | R3C7 | R3C8 | R3C9 | R3C10 | R3C11 | R3C12 | R3C13 | R3C14 |
 | R4C1 | R4C2 | R4C3 | R4C4 | R4C5 | R4C6 | R4C7 | R4C8 | R4C9 | R4C10 | R4C11 | R4C12 | R4C13 | R4C14 |
